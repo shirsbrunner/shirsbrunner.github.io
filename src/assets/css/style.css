@@ -1,0 +1,307 @@
+html{
+  overflow-y: scroll;
+}
+
+/*-- structure --*/
+body {
+    font-family:montserrat; /*- body-font -*/
+    font-size: 11px/1.5em;
+    max-width: 1024px;
+    /*box-shadow: 5px 5px 0 0 black; /*-- this will have to go--*/
+    margin: 0px auto;
+
+}
+
+main{ /*-- do we need to adjust this? --*/
+  margin-bottom: 32px;
+  height: auto; 
+  overflow:auto;
+  padding:8px; 
+}
+
+.content_container{ /*-- the flex container to float everything --*/
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page_content{
+  margin-top: 3em; /*-- needs to be adjusted for dynamic type --*/
+  flex: 0 1 690px; /*flexbox shorthand for grow, shrink, initial width, or max width. No need for min-Width as flexbox controls it*/
+  max-width: 690px;
+}
+
+.page_content p img{ /*-- stuff for the image within an article --*/
+    max-width: 100%;
+    height: auto;
+}
+
+.page_content ul{
+  line-height: 160%;
+  margin:0.8em 0px;  
+}
+
+/*-- end of structure *--/
+
+/*-- own webfonts --*/
+@font-face {
+  font-family: 'segundaregular';
+  src: url('/fonts/segunda-regular-webfont.woff2') format('woff2'),
+       url('/fonts/segunda-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*- fonts for titles and things*/
+.big_text{
+  font-family: Archivo Black;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem; /*-- needs to be adjusted for dynamic type --*/
+  line-height: 3rem; /*-- needs to be adjusted for dynamic type --*/
+  /*display: flex;
+  align-items: flex-end;*/
+  letter-spacing: -0.11em;
+  margin-top: 3.5rem; 
+  margin-bottom:0px;
+  /*margin-left: -0.1em;*/
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.big_text::first-letter{
+  color:rgb(155, 20, 20);
+}
+
+h1, h2 {
+  font-family:'Baskervville';
+  /*line-height: 160%;*/
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0.5em; 
+}
+
+h1{
+  font-size:218%;
+}
+
+h2{
+  font-size:164%;
+}
+
+h2 a, h2 a:visited, h2 a:active { 
+  color: black;
+  text-decoration: none; 
+}
+h2 a:hover{
+  text-decoration: underline; 
+}
+
+.subtitle{
+  font-family: Baskervville;
+  /*font-family: 'segundaregular';
+  color: #666666;*/
+  font-style: normal;
+  font-weight: normal;
+  font-size: 218%; 
+  /*line-height: 160%; /*-- needs to be adjusted for dynamic type --*/
+  margin: 0px; /*-- needs to be adjusted for dynamic type --*/
+  margin-bottom: 1rem;
+  
+}
+
+p {
+  line-height: 160%;
+  margin:0.8em 0px;  
+}
+
+/*--- end of fonts for titles and things ---*/
+
+
+blockquote { /*-- not the metrics block-quote --*/
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0px;
+  padding: 0.5em 10px;
+  /*font-family: space mono;*/
+  font-family: 'segundaregular';
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: #666666;
+}
+blockquote p {
+  display: inline;
+}
+
+/*.pagelist { /* this is the list of blogs in a preview
+
+}*/
+article {/*-- the box containing the article preview --*/
+  margin: 24px 0px 48px 0px; /* maybe adjust to dynamic sizing */ 
+}
+.article_preview_nav{ /*-- the nav in the preview articles --*/
+  display:flex;
+  /*align-items: flex-end;
+  justify-content: space-between;*/
+  max-width: 500px;
+}
+article h2::before{
+  font-family: 'segundaregular';
+  color:rgb(155, 20, 20); 
+  content: "· ";
+}
+
+
+.article_metrics{ /*-- we need this in the article view for detailed metrics --*/
+  /*background: #f9f9f9;*/
+  /*border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 0 black;
+  margin: 0.5em 0px;
+  padding: 0.5rem 16px;*/
+  /*font-family: space mono;*/
+  font-family: 'segundaregular';
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #666666;
+}
+
+.time{ /*-- we need this in the article metrics and article preview --*/
+  /*font-family: space mono;*/
+  font-family: 'segundaregular';
+  font-size: 0.8rem;
+  /*line-height: 1rem;*/
+  color: #666666;
+  margin: 0px; 
+}
+.words { /*-- we need this in the blog-metrics--*/
+  margin:0px;
+}
+.contact_icons{ /*-- the social icon class --*/
+  display:flex; 
+}
+
+.bubble_icon{ /*-- the icon for social things like twitter --*/ 
+  height: 40px;
+  width: auto; 
+  margin-right: 1rem; 
+}
+
+/*-- the nav, all things nav --*/
+.logo{/*-- the logo at the upper left--*/
+  width:48px; /* you can use % */
+  height: auto;
+  float:left;  
+}
+.nav_top {
+  font-family: Montserrat, sans-serif;
+  border-bottom: 1px dotted black;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_top ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+.nav_top li {
+  float: left;
+}
+.nav_top li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #666666;
+  color: white; 
+}
+.active {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: black;
+}
+
+.button{ /*-- we need this --*/
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 3px; 
+      color: black;
+      padding: 8px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+}
+.b_small{ /*-- we need this --*/
+  padding: 5px 16px;
+  font-size: 0.9em; 
+  margin: 4px 0px;
+}
+.b_small:hover { /*-- we need this --*/
+  background-color: #666666;
+  color: white; 
+}
+
+.post_nav{
+  border-top: 1px dotted black; 
+  margin-top: 32px; 
+  padding-top: 8px;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  /*text-align: center;*/
+  align-items: center;
+  justify-content: space-between;
+}
+.post_link{
+  display:flex;
+  align-items: center;
+  cursor: pointer;
+}
+.post_link img, /*-- this is for the little arrows within a blog nav--*/
+.post_link a {
+  display: block;
+  margin: 0 0.25rem;
+  height: 40px;
+}
+
+
+
+/*-- things at the bottom of the page --*/
+footer{
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-top: 1px dotted black
+}
+.bot_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bot_nav a{
+  display: block;
+  color: black; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.bot_nav a:hover{
+  background-color: #666;
+  color: white; 
+}
+.footer_text{
+  font-family: 'segundaregular';
+  font-size: 0.8rem;
+  color: #666666;
+}

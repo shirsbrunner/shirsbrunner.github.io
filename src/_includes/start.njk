@@ -1,0 +1,34 @@
+{% extends "page.njk" %}
+
+{% block content %}
+
+  <p class="big_text">{{ title }}</p>
+  <h1 class="subtitle"> {{subtitle}} </h1>
+  <div class="content_container">
+    <div class="page_content">
+      {{ content | safe }} 
+
+    {# shows the latest article - could probs be easier... #}
+    {% set postslist = collections.post | head(-1) %}
+    {%- for post in postslist -%}
+      <article>
+        <h2><a href="{{ post.url }}">Latest article: {{ post.data.title }}</a></h2>
+        {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
+        <p>{{ post.data.description }}</p>
+        
+        <div class="article_preview_nav">
+          <a class="button b_small" href="{{ post.url }}">read article</a>
+        </div>
+      </article>
+    {%- endfor -%}
+
+
+    {#{{ postslist[0].templateContent | safe }}#}
+  
+
+    </div>
+  </div>
+
+
+
+{% endblock %}

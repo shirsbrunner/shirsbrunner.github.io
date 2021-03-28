@@ -1,0 +1,34 @@
+{% include "partials/htmlhead.njk" %}
+
+<header>
+  
+  <nav class="nav_top">
+    <a href="/">
+    <img class="logo" src="/images/structural/Logo_48.png" alt="Logo of the page showing the Hirschlbrummbaer" width="48" height="48">
+    </a>
+    {% navlist collections.all | eleventyNavigation, page, 1 %}
+  </nav>
+</header>
+
+
+<main>
+{% block content %}
+
+  <p class="big_text">{{ title }}</p>
+  <h1 class="subtitle"> {{subtitle}} </h1>
+  <div class="content_container">
+    <div class="page_content">
+      {{ content | safe }} 
+      {% include "partials/pagelist.njk" %}
+    </div>
+  </div>
+{% endblock %}
+</main>
+
+<footer class="bot_nav">
+    <a  href="/about/privacy">privacy info</a>
+    <p class="footer_text">made with 11ty</p>
+    <p class="footer_text">written content & images © Simon Hirsbrunner 2021</p>
+</footer>
+
+{% include "partials/htmlfoot.njk" %}
