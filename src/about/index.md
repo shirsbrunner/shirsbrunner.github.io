@@ -8,8 +8,8 @@ eleventyNavigation:
   order: 900
 ---
 
-## Hi
-I UX-Consultant working for ELCA Informatik SA during the working hours, but I often can't let go of design topics during the rest of the day. 
+## Hi there
+I am a UX-Consultant working for ELCA Informatik SA during the working hours, but I often can't let go of design topics during the rest of the day. 
 
 I'm better at doing the X than the I of everything related to U. That said, I feel at home in the whole user centred design process. Also I try to increase accessibility in the things I touch.
 
