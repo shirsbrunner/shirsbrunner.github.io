@@ -20,17 +20,15 @@
       <div class="post_nav">
         {% set nextPost = collections.post | getNextCollectionItem(page) %}
         {% if nextPost %}
-          <div class="post_link" id="next_post">
-            <a href="{{ nextPost.url }}"><img class="control_icon" src="/images/structural/Previous.svg" alt="next post" width="40" height="40"></a>
-            {{ nextPost.data.title }}
+          <div class="post_link_element" id="next_post">
+            <a class="post_link" href="{{ nextPost.url }}"><img class="control_icon" src="/images/structural/Previous.svg" alt="next post" width="40" height="40">{{ nextPost.data.title }}</a>
           </div>
         {% endif %} 
-        <div class="post_link"> </div>
+        <div class="post_link_element"> </div>
         {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
         {% if previousPost %}
-          <div class="post_link" id="previous_post">
-            {{ previousPost.data.title }}
-            <a href="{{ previousPost.url }}"><img class="control_icon" src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+          <div class="post_link_element" id="previous_post"> 
+            <a class="post_link" href="{{ previousPost.url }}">{{ previousPost.data.title }}<img class="control_icon" src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
           </div>
         {% endif %}
       </div>
