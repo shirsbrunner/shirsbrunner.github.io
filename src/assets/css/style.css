@@ -33,6 +33,7 @@ main{ /*-- do we need to adjust this? --*/
 .page_content p img{ /*-- stuff for the image within an article --*/
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .page_content ul{
@@ -55,13 +56,14 @@ main{ /*-- do we need to adjust this? --*/
 /*- fonts for titles and things*/
 .big_text{
   font-family: Archivo Black;
+  letter-spacing: -0.11em;
   font-style: normal;
   font-weight: normal;
   font-size: 3rem; /*-- needs to be adjusted for dynamic type --*/
   line-height: 3rem; /*-- needs to be adjusted for dynamic type --*/
   /*display: flex;
   align-items: flex-end;*/
-  letter-spacing: -0.11em;
+
   margin-top: 3.5rem; 
   margin-bottom:0px;
   /*margin-left: -0.1em;*/
@@ -75,6 +77,8 @@ main{ /*-- do we need to adjust this? --*/
 
 h1, h2 {
   font-family:'Baskervville';
+  /*font-family:'segundaregular';
+  color: #333333;*/ 
   /*line-height: 160%;*/
   font-style: normal;
   font-weight: normal;
