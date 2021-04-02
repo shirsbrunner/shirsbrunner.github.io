@@ -16,7 +16,8 @@ eleventyComputed:
   subtitle: For “{{ tag }}”
 permalink: /tags/{{ tag | slug }}/
 ---
+<p>See <a href="{{ '/tags/' | url }}">all tags</a></p>
+
 {% set taglist = collections[ tag ] %}
 {% include "partials/taglist.njk" %}
 
-<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>

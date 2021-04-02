@@ -25,7 +25,7 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 .page_content{
-  margin-top: 3em; /*-- needs to be adjusted for dynamic type --*/
+  margin-top: 1em; /*-- needs to be adjusted for dynamic type --*/
   flex: 0 1 690px; /*flexbox shorthand for grow, shrink, initial width, or max width. No need for min-Width as flexbox controls it*/
   max-width: 690px;
 }
@@ -116,7 +116,7 @@ h2 a:hover{
 
 p {
   line-height: 160%;
-  margin:0.8em 0px;  
+  margin:0px 0px 1em 0px;  
 }
 
 /*--- end of fonts for titles and things ---*/
@@ -153,7 +153,7 @@ article {/*-- the box containing the article preview --*/
 article h2::before{
   font-family: 'segundaregular';
   color:rgb(155, 20, 20); 
-  content: "# ";
+  content: "··· ";
 }
 
 
@@ -177,7 +177,8 @@ article h2::before{
   font-size: 0.8rem;
   /*line-height: 1rem;*/
   color: #666666;
-  margin: 0px; 
+  margin: 0px 0.8em 0.8em 0px;
+   
 }
 .words { /*-- we need this in the blog-metrics--*/
   margin:0px;
@@ -289,6 +290,7 @@ nav li a:hover {
 
 .tag_group{
   display:flex; 
+  flex-wrap: wrap;
 }
 .post-tag{
   font-family:'segundaregular'; 
@@ -300,7 +302,7 @@ nav li a:hover {
   padding: 0.4em 0.8em 0.3em; 
   border-radius: 0.2em; 
   cursor: pointer; 
-  margin-left :0.8em; 
+  margin: 0px 0.8em 0.8em 0px; 
 }
 .post-tag:hover{
   background-color: white;
