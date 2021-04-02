@@ -5,18 +5,20 @@
   <article>
 
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <div class="tag_group">
      {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
+    
+      {% for tag in post.data.tags | filterTagList %}
+        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+        <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+      {% endfor %}
+    </div>
     <p>{{ post.data.description }}</p>
     
     <div class="article_preview_nav">
       <a class="button b_small" href="{{ post.url }}">read article</a>
     </div>
 
-    <p> TAGS </p>
-    {% for tag in post.data.tags | filterTagList %}
-      {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-    {% endfor %}
   </article>
   {%- endfor -%}
 

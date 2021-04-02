@@ -153,7 +153,7 @@ article {/*-- the box containing the article preview --*/
 article h2::before{
   font-family: 'segundaregular';
   color:rgb(155, 20, 20); 
-  content: "· ";
+  content: "# ";
 }
 
 
@@ -287,16 +287,20 @@ nav li a:hover {
   margin: 0 0.25rem;
 }
 
+.tag_group{
+  display:flex; 
+}
 .post-tag{
   font-family:'segundaregular'; 
   font-size: 0.7rem;
   text-decoration: none; 
   display:inline-block; 
-  background-color: #666;
-  color: white;
-  padding: 0.4em 0.8em; 
+  background-color:rgba(155, 20, 20, 0.2);;
+  color: black;
+  padding: 0.4em 0.8em 0.3em; 
   border-radius: 0.2em; 
   cursor: pointer; 
+  margin-left :0.8em; 
 }
 .post-tag:hover{
   background-color: white;
