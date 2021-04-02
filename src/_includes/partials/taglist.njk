@@ -1,0 +1,9 @@
+{% if taglist %}
+<div class="pagelist">
+
+  {%- for post in taglist -%}
+    {% include "partials/postpreview.njk" %}
+  {%- endfor -%}
+
+</div>
+{% endif %}

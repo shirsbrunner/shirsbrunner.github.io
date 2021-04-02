@@ -19,7 +19,9 @@
   <div class="content_container">
     <div class="page_content">
       {{ content | safe }} 
-      {% include "partials/pagelist.njk" %}
+      {% if pagelist %}
+        {% include "partials/pagelist.njk" %}
+      {% endif %}
     </div>
   </div>
 {% endblock %}

@@ -2,16 +2,7 @@
 <div class="pagelist">
 
   {%- for post in pagelist -%}
-  <article>
-
-    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-     {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
-    <p>{{ post.data.description }}</p>
-    
-    <div class="article_preview_nav">
-      <a class="button b_small" href="{{ post.url }}">read article</a>
-    </div>
-  </article>
+    {% include "partials/postpreview.njk" %}
   {%- endfor -%}
 
 </div>
@@ -19,30 +10,23 @@
 
 {% if pagination.href.previous or pagination.href.next %}
 <nav class="post_nav">
-  {% if page.url != pagination.href.first %}
-    <a href="{{ pagination.href.first }}">
-      <img class="control_icon" src="/images/structural/First.svg" alt="first page" width="40" height="40">
-    </a>
-  {% endif %}
-
+  
   {% if pagination.href.previous %}
-    {# <p><a class="button" href="{{ pagination.href.previous }}">previous page</a></p> #}
-    <a href="{{ pagination.href.previous }}">
-      <img class="control_icon" src="/images/structural/Previous.svg" alt="previous page" width="40" height="40">
-    </a>
+    <div>
+      {% if page.url != pagination.href.first %}
+        <a href="{{ pagination.href.first }}"><img class="control_icon" src="/images/structural/First.svg" alt="first page" width="40" height="40"></a>
+      {% endif %}
+      <a href="{{ pagination.href.previous }}"><img class="control_icon" src="/images/structural/Previous.svg" alt="previous page" width="40" height="40"></a>
+    </div>
   {% endif %}
-
+  <div></div>
   {% if pagination.href.next %}
-    {# <p><a class="button" href="{{ pagination.href.next }}">next page</a></p> #}
-    <a href="{{ pagination.href.next }}">
-      <img class="control_icon" src="/images/structural/Next.svg" alt="next page" width="40" height="40">
-    </a>
-  {% endif %}
-
-  {% if page.url != pagination.href.last %}
-    <a href="{{ pagination.href.last }}">
-      <img class="control_icon" src="/images/structural/Last.svg" alt="last page" width="40" height="40">
-    </a>
+    <div>
+      <a href="{{ pagination.href.next }}"><img class="control_icon" src="/images/structural/Next.svg" alt="next page" width="40" height="40"></a>
+      {% if page.url != pagination.href.last %}
+        <a href="{{ pagination.href.last }}"><img class="control_icon" src="/images/structural/Last.svg" alt="last page" width="40" height="40"></a>
+      {% endif %}
+    </div>
   {% endif %}
 
 </nav>
