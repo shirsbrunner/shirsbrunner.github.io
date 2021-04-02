@@ -48,6 +48,7 @@ module.exports = config => {
   // format word count and reading time
   config.addFilter('readtime', require('./lib/filters/readtime')); 
   
+  //the following two are used to display tags on a blog entry. 
   config.addFilter("filterTagList", tags => {
     // should match the list in tags.njk
     return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
