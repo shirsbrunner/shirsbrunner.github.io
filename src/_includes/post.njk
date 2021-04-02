@@ -5,10 +5,18 @@
   <p class="big_text">article</p>
   <h1 class="subtitle"> {{ title }} </h1>
 
-        <div class="article_metrics">
+      <div class="article_metrics">
         {% if date %}<p class="time"><time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
         <p class="words">{{ content | wordcount | readtime }}</p>
       </div>
+      <div class="tag_group">
+        {% for tag in tags | filterTagList %}
+          {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+          <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+
+
   <div class="content_container">
     <div class="page_content">
 
