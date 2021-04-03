@@ -303,6 +303,7 @@ nav li a:hover {
   border-radius: 0.2em; 
   cursor: pointer; 
   margin: 0px 0.8em 0.8em 0px; 
+  border: 1px solid black;
 }
 .post-tag:hover{
   background-color: white;

@@ -61,7 +61,7 @@ module.exports = config => {
       (item.data.tags || []).forEach(tag => tagSet.add(tag));
     });
 
-    return [...tagSet];
+    return [...tagSet].sort((a, b) => a.localeCompare(b));
   });
 
   /* --- CSS-Stuff --- */
