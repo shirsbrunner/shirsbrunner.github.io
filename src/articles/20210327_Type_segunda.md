@@ -24,10 +24,20 @@ The hardest part were hinting and kerning. Kerning in a geometric font is harder
 This is also where I eventually deviated from creating multiple font weights from the same base - it just didn't look good enough. I suppose there needs to be a different structure (similar to italics), but I'd like to read more on that topic. Also: variable fonts - it's the current big thing (but apparently not supported in fontforge).
 
 ## The result
-In the end the font has more than 170 letters or signs and can apparently be used in a multitude of languages from Albanian to Zulu (if I can trust font squirrel). The font is used in this page for technical things, copyright-notice and decorations. Initially I wanted to used it as the font for titles, however after going with what I use now (Mono Black)
+In the end the font has more than 170 letters or signs and can apparently be used in a multitude of languages from Albanian to Zulu (if I can trust font squirrel). The font is used in this page for technical things, copyright-notice and decorations. Initially I wanted to used it as the font for titles, however after going with what I use now (Mono Black).
 
-The following image is a screenshot of the outcome of the font squirrel webfont creator. The real font is less fuzzy. 
-![A screenshot of a preview of the font as rendered in the browser, created on fontsquirrel](/images/posts/Segunda_preview1000.jpg "A screenshot of a preview of the font as rendered in the browser, created on fontsquirrel")
+The following paragraph shows the outcome with some "cupcake ipsum" text: 
+
+<div style="display:flex; flex-direction:column">
+<p style="font-family:'segundaregular';font-size:0.9em"> <mark style="color:rgb(155, 20, 20); background-color:white">0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segundaregular';font-size:1em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segundaregular';font-size:1.2em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segundaregular';font-size:1.4em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+
+There are still some issues to be fixed, but the "my baby-effect" is strong. 
+
+## Try it!
 
 It is always fun, to use your own creation replacing every other font in your browser (and helps to find issues with the typeface).
 
