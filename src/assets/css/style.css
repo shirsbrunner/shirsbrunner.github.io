@@ -12,11 +12,21 @@ body {
 
 }
 
+header{
+  position:fixed;
+  top:0;
+  max-width:1024px;
+  width:100%;
+  background-color: #fff; 
+}
+
+
 main{ /*-- do we need to adjust this? --*/
   margin-bottom: 32px;
   height: auto; 
   overflow:auto;
-  padding:8px; 
+  padding:8px;
+  margin-top: 4em;
 }
 
 .content_container{ /*-- the flex container to float everything --*/
