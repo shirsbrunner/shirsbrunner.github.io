@@ -63,6 +63,15 @@ main{ /*-- do we need to adjust this? --*/
 
 }
 
+@font-face {
+  font-family: 'primera_regular';
+  src: url('/fonts/primera_regular-webfont.woff2') format('woff2'),
+       url('/fonts/primera_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 /*- fonts for titles and things*/
 .big_text{
   font-family: Archivo Black;
@@ -87,7 +96,9 @@ main{ /*-- do we need to adjust this? --*/
 
 h1, h2 {
   font-family:'Baskervville';
+  /*font-family:'primera_regular';*/
   /*font-family:'segundaregular';
+  font-family:primera_regular;
   color: #333333;*/ 
   /*line-height: 160%;*/
   font-style: normal;
