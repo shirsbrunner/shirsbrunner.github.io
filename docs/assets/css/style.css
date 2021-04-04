@@ -133,16 +133,16 @@ p {
 
 
 blockquote { /*-- not the metrics block-quote --*/
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 0px;
-  padding: 0.5em 10px;
+  /*background: #f9f9f9;*/
+  border-left: 10px solid rgba(155, 20, 20, 0.2);
+  margin: 1.5em 0em;
+  padding: 0.25em 10px;
   /*font-family: space mono;*/
-  font-family: 'segundaregular';
-  letter-spacing: 0.1em;
-  font-size: 0.8em;
-  line-height: 1.5em;
-  color: #666666;
+  font-family: 'montserrat';
+  /*letter-spacing: 0.1em;*/
+  font-size: 1em;
+  line-height: 1em;
+  color: #000;
 }
 blockquote p {
   display: inline;
@@ -314,6 +314,9 @@ nav li a:hover {
   cursor: pointer; 
   margin: 0px 0.8em 0.8em 0px; 
   border: 1px solid black;
+}
+.post-tag::after{
+  content:" >"
 }
 .post-tag:hover{
   background-color: white;

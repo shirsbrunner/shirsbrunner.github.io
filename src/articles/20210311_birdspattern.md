@@ -19,11 +19,11 @@ While I was initially thinking of the migration of Gnu's, I was quickly correcte
 
 ## Process
 
-It's tricky to keep the essence of the drawing and the sheer density and different orientations of the animals. The original painting would not let itself convert easily into a pattern as the characteristics of the birds on both sides of the drawing were different. 
+It's tricky to keep the essence of the drawing and the sheer density and different orientations of the animals. The original painting would not let itself convert easily into a pattern, as the characteristics and size of the birds on both sides of the drawing were different. 
 
 I experimented with merging streams of birds, I tried to catch the different colour densities of the felt pen (while converting the painting into a vector style) and was looking for something more complex than a rectangular pattern. 
 
-In the end calculating an angle for the streams of animals given the angle and size of the birds, I managed to keep the basic orientation and feeling of the original painting. Combining multiple birds of different sizes from all over the source while keeping a loose style and thus breaking repetition and symetry, the outcome still has some of the chaotic nature of the original. I also experimented with different colour combination but settled for different hues of blue on white. The slightly different colours again help in making it more difficult to spot the pattern.
+In the end, calculating an angle for the streams of animals given the angle and size of the birds, I believe, I managed to keep the basic orientation and feeling of the original painting. Combining multiple birds of different sizes from all over the source while keeping a loose style and thus breaking repetition and symetry, the outcome still has some of the chaotic nature of the original. I also experimented with different colour combination (or even only outlines) but settled for different hues of blue on white. The slightly different colours again help in making it more difficult to spot the pattern.
 
 ## Results
 

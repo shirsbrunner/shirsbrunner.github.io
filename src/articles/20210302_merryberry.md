@@ -9,7 +9,7 @@ tags:
 
 ## Looking for inspiration
 
-In summer 2020 our kid started painting with fat, waterbased crayons. While initially expressing himself while hammering colour on a page, he nevertheless is a great source of inspiration. One of his first drawings proved to be the base for a pattern I ended up having printed on fabric. 
+In summer 2020 our kid started painting with fat, waterbased crayons. While initially expressing himself hammering colour on a page, he nevertheless is a great source of inspiration. One of his first drawings proved to be the base for a pattern I ended up having printed on fabric. 
 
 ![A kids drawing as inspiration to the final pattern](/images/posts/Merry_Inspiration1000.jpg "A kids drawing as inspiration to the final pattern")
 
