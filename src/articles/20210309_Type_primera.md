@@ -9,25 +9,25 @@ tags:
 
 ## Back to the past...
 
-This is an attempt to remember the approach of creating my first typeface ages ago, without knowing anything, without having the nice(r) handwriting I have today, but with some ambition.
+This is an attempt to remember the approach of creating my first typeface years ago, without knowing a lot about typography but with some ambition.
 
 ## The goal
 
-Fooling around with type was always something on my bucket list. I'm impressed on what you can do with enough skill and tools like inesign or publisher and some fonts as a base. 
+Fooling around with type was always something on my bucket list. I'm impressed on what you can do with enough skill, some fonts as a base and tools like InDesign or affinity publisher. 
 
-Reading on typography I decided to design something myself and quickly rediscovered [Fontforge](https://fontforge.org/) that I read about some time ago. Fontforge is not an easy to use program. Lots of functions are burried within menues and behind arcane names. But it's free to use, can generate impressive fonts and has enough online help. I decided to give it a go. 
+Reading on typography I decided to design something myself and quickly rediscovered [Fontforge](https://fontforge.org/) that I read about some time ago. Fontforge is not an easy to use program. Lots of functions are burried within menus, dialogues and behind arcane names. But it's free to use, can generate impressive fonts and has enough online help. I decided to give it a go. 
 
-As designing entire fonts did appear tricky (after trying to design some variations of the letter "n") I quickly decided to start with handwriting. Handwriting seemed simpler (compared to geomtrically designing all letters of an alphabet, not to what I thought to be the amount of work, that you have to put into a typeface like Frutiger, Open Sans or Verdana).
+As designing entire fonts did appear tricky (after trying to design some variations of the letter "n"), I quickly decided to start with a handwritten base. Handwriting seemed simpler (compared to geomtrically designing all letters of an alphabet, not to what I thought to be the amount of work, that you have to put into a typeface like Frutiger, Open Sans or Verdana).
 
 ## Process & Learnings
 
-To digitize your handwriting, one first needs to create some sample-text. Having the "correct" sample text was harder than I thought. The letters of my handwriting tend to change shape depending on their place on the page, the letters they are next to or connected to the, the pen I use, the amount of text written, my mood among other things. 
+To digitize your handwriting, one first needs to create some sample-text. Getting "correct" sample text was harder than I thought. The letters of my handwriting tend to change shape depending on their place on the page, the letters they are next to or connected to the, the pen I use, the amount of text written, my mood among other things. 
 
 > It turns out, my handwriting is full of ligatures 
 
-Also some of the letters are just not readable, if I don't concentrate, and if I concentrate and take it slow, the letter does not look like my handwriting - only my hand knows what my real handwriting looks like. 
+Also some of the letters are just not readable, if I don't concentrate. If I concentrate and take it slow, the letter does not look like my handwriting - only my hand seems to know what my real handwriting looks like. 
 
-After experimenting a bit, I decided to approach this more systematically. To create a usable base and it helps to add some rules to a piece of paper. I started writing out the alphabet in upper case and lower case. I then proceeded with some text to make sure, that the individual letters at least looked similar to the way I normally write. 
+After experimenting a bit, I decided to approach this more systematically. To create a usable base, it helps to add some rules to a piece of paper. I started writing out the alphabet in upper case and lower case. I then proceeded with some text to make sure, that the individual letters at least looked similar to the way I normally write. 
 
 I started up fontforge and followed the basic tutorial to create a font. Turns out, that an entire font has a lot of letters and other glyphs - way more than what I thought to be the case. Following the grid, I started to add additional things to my base-document. 
 
