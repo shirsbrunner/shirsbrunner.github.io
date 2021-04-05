@@ -37,9 +37,9 @@ It helps if you do a lot of math - else you probably don't use all the signs in 
 
 After taking a picture and importing everything into affinity designer I copied the pictures of the individual letters into fontforge and traced all of them individually. The tools in fontforge are not that easy to use or maybe, I'm just spoilt with tools from graphical design software. 
 
-Next learnings: some letters were to big, letters didn't all have the same line-width (a soft-tip-pen does not generate identical line-weights also errors while tracing), ascenders and descenders were to big on single letters and didn't look pleasing in combination. 
+Next learnings: some letters were to big, letters didn't all have the same line-weight (a soft-tip-pen does not give identical line-weights, also errors while tracing), ascenders and descenders were to big on single letters and didn't look pleasing in combination. 
 
-Furthermore I learnt about kerning. Kerning is done automatically when writing by hand, but a computer really has to be told where to move two letters nearer to each other. 
+Furthermore I learnt about kerning. We "kern" automatically when writing by hand, but a computer really has to be told where to move two letters nearer to each other. 
 
 ## The result
 
