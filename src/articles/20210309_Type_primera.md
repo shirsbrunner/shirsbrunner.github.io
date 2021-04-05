@@ -9,33 +9,33 @@ tags:
 
 ## Back to the past...
 
-This is an attempt to remember the approach of creating a first typeface ages ago, without knowing anything, without having the nice(r) handwriting I have today, but with lots of ambition.
+This is an attempt to remember the approach of creating my first typeface ages ago, without knowing anything, without having the nice(r) handwriting I have today, but with some ambition.
 
 ## The goal
 
-Fooling around with type was always something on my bucket list. I'm impressed on what you can do with enough skill and tools like indesign or publisher. 
+Fooling around with type was always something on my bucket list. I'm impressed on what you can do with enough skill and tools like inesign or publisher and some fonts as a base. 
 
-Reading on typography I decided to design something myself and quickly rediscovered [Fontforge](https://fontforge.org/) that I read about years ago. Fontforge is seemingly not an easy program. But it's free to use and can generate impressive fonts - I decided to give it a go. 
+Reading on typography I decided to design something myself and quickly rediscovered [Fontforge](https://fontforge.org/) that I read about some time ago. Fontforge is not an easy to use program. Lots of functions are burried within menues and behind arcane names. But it's free to use, can generate impressive fonts and has enough online help. I decided to give it a go. 
 
-As creating fonts did appear tricky I quickly decided to start with handwriting (after trying to design some variations of the letter "n"). Handwriting seemed way simpler (compared to geomtrically designing all letters of an alphabet, not to what I thought to be the amount of work, that you have to put into a typeface like Frutiger, Open Sans or Verdana).
+As designing entire fonts did appear tricky (after trying to design some variations of the letter "n") I quickly decided to start with handwriting. Handwriting seemed simpler (compared to geomtrically designing all letters of an alphabet, not to what I thought to be the amount of work, that you have to put into a typeface like Frutiger, Open Sans or Verdana).
 
 ## Process & Learnings
 
-To digitize your handwriting, you first need to create some sample-text. This was harder than I thought. The letters of my handwriting tend to change shape depending on their place on the page, the letters they are next to or connected the, the pen I use, the amount of text written, my mood among other things. 
+To digitize your handwriting, one first needs to create some sample-text. Having the "correct" sample text was harder than I thought. The letters of my handwriting tend to change shape depending on their place on the page, the letters they are next to or connected to the, the pen I use, the amount of text written, my mood among other things. 
 
 > It turns out, my handwriting is full of ligatures 
 
-Also some of the letters are just not readable if I don't concentrate, and if I concentrate and take it slow, the letter does not look like my handwriting - only my hand knows what my handwriting should look like. 
+Also some of the letters are just not readable, if I don't concentrate, and if I concentrate and take it slow, the letter does not look like my handwriting - only my hand knows what my real handwriting looks like. 
 
-After experimenting a bit, I had to approach this more systematically. To create a usable base and it helps to add some rules to a piece of paper. I started writing out the alphabet in upper case and lower case. I then proceeded with some text to make sure, that the individual letters at least looked similar to the way I normally write. 
+After experimenting a bit, I decided to approach this more systematically. To create a usable base and it helps to add some rules to a piece of paper. I started writing out the alphabet in upper case and lower case. I then proceeded with some text to make sure, that the individual letters at least looked similar to the way I normally write. 
 
-I started up fontforge and followed the basic tutorial to create a font. Turns out, that a normal font has a lot of letters and other glyphs - way more than what I thought to be the case. Following the grid, I started to add additional things to my base-document. 
+I started up fontforge and followed the basic tutorial to create a font. Turns out, that an entire font has a lot of letters and other glyphs - way more than what I thought to be the case. Following the grid, I started to add additional things to my base-document. 
 
-It helps if you did a lot of math - else you have probably not all the signs in your repertoire. I had to (re)invent at least some sings that I rarely used before (like a multitude of brackets, &# and so on).
+It helps if you do a lot of math - else you probably don't use all the signs in your daily repertoire - hence you'd not have your own style for some of the glyphs. I at least had to (re)invent at least some sings that I rarely used before (like a multitude of brackets, &# and so on).
 
-> I belive, it helps, if you did a lot of mathematics in your education - just for all these strange signs, that you encounter in a typeface
+> It probably helps, if you did a lot of mathematics in your education - just for all these strange signs, that you encounter in a typeface
 
-After taking a picture and importing everything into affinity designer I copied the pictures of the individual letters into fontforge and traced every single one of them. The tools in fontforge are not a lot of fun or maybe I'm just spoilt with tools from graphical design software. 
+After taking a picture and importing everything into affinity designer I copied the pictures of the individual letters into fontforge and traced all of them individually. The tools in fontforge are not that easy to use or maybe, I'm just spoilt with tools from graphical design software. 
 
 Next learnings: some letters were to big, letters didn't all have the same line-width (a soft-tip-pen does not generate identical line-weights also errors while tracing), ascenders and descenders were to big on single letters and didn't look pleasing in combination. 
 
@@ -50,10 +50,10 @@ In the end the typeface has more than 150 letters or signs and can apparently be
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
 <div style="display:flex; flex-direction:column">
-<p style="font-family:'primera_regular';font-size:1em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'primera_regular';font-size:1.1em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.1em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'primera_regular';font-size:1.3em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.3em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'primera_regular';font-size:1.6em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.6em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'primera_regular';font-size:1em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
+<p style="font-family:'primera_regular';font-size:1.1em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.1em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
+<p style="font-family:'primera_regular';font-size:1.3em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.3em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
+<p style="font-family:'primera_regular';font-size:1.6em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.6em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
 </div>
 
 Obviously, the font has a lot of issues, but I like the outcome, especially the little sun, that I use now and then in digital products. 
