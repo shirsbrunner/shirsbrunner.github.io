@@ -275,7 +275,8 @@ nav li a:hover {
 }
 
 .button{ /*-- we need this --*/
-      background-color: white;
+      /*background-color: white;*/
+      background-color:rgba(155, 20, 20, 0.2);
       border: 1px solid black;
       border-radius: 3px; 
       color: black;
@@ -336,7 +337,7 @@ nav li a:hover {
   font-size: 0.7rem;
   text-decoration: none; 
   display:inline-block; 
-  background-color:rgba(155, 20, 20, 0.2);
+ /*   background-color:rgba(155, 20, 20, 0.2);*/
   color: black;
   padding: 0.4em 0.8em 0.3em; 
   border-radius: 0.2em; 
@@ -348,8 +349,10 @@ nav li a:hover {
   content:" >"
 }
 .post-tag:hover{
-  background-color: white;
-  color:black;
+  /*background-color: white;
+  color:black;*/
+  background-color: #666666;
+  color: white; 
   border: 1px solid black; 
 }
 

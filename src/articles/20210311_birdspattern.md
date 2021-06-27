@@ -27,7 +27,7 @@ In the end, calculating an angle for the streams of animals given the angle and 
 
 ## Results
 
-I ordered two meters of fabric, enough for some small shirts and a skirt for kids made by Sabine Kaipainen ([images of the shirts and skirt](https://sabinekaipainen.ch/2020/08/14/girls-dress-size-98cm-and-boys-shirt-size-128cm/). 
+I ordered two meters of fabric, enough for some small shirts and a skirt for kids made by Sabine Kaipainen ([images of the shirts and skirt](https://sabinekaipainen.ch/2020/08/14/girls-dress-size-98cm-and-boys-shirt-size-128cm/)). 
 
 The following picture shows the pattern printed on cotton popeline.
 
