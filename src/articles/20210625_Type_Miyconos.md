@@ -73,6 +73,7 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
 <div class='Entryicon'><p>Skull</p></div>
 <div class='Entryicon'><p>Tiki</p></div>
 <div class='Entryicon'><p>Monkey</p></div>
+<div class='Entryicon'><p>Beholder</p></div>
 <div class='Entryicon'><p>Flower</p></div>
 <div class='Entryicon'><p>Rudder</p></div>
 <div class='Entryicon'><p>Eye</p></div>
