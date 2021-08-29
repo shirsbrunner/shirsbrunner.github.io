@@ -31,10 +31,16 @@ In the end the typeface has more than 170 letters or signs and can apparently be
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
 <div class="text_sample">
-<p style="font-family:'segunda';font-weight:bold;font-size:0.9em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color: transparent">0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:bold;font-size:1em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color: transparent">1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:bold;font-size:1.2em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color: transparent">1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:bold;font-size:1.4em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color: transparent">1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:bold;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:bold;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:bold;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:bold;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+<div class="text_sample_inverted">
+<p style="font-family:'segunda';font-weight:bold;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:bold;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:bold;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:bold;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
 </div>
 
 There are still some issues to be fixed, but the "my baby-effect" is strong. 

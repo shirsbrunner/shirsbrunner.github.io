@@ -232,6 +232,26 @@ article h2::before{
   margin-bottom: 1em; 
 }
 
+.text_sample mark{
+  color:rgb(155, 20, 20);
+  background-color:transparent;
+}
+
+.text_sample_inverted{
+  padding: 0.5rem; 
+  display:flex;
+  flex-direction: column;
+  background-color:rgba(0,0,0,0.80); 
+  color:  rgb(249,248,248);
+  /*border-left: 10px solid rgba(155, 20, 20, 0.2);*/
+  margin-bottom: 1em; 
+}
+
+.text_sample_inverted mark{
+  color: rgb(225,185,185);
+  background-color:transparent;
+}
+
 .time{ /*-- we need this in the article metrics and article preview --*/
   /*font-family: space mono;*/
   font-family: 'segunda';
