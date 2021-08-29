@@ -28,10 +28,13 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
   flex-basis: 1em; 
   font-variant-ligatures: common-ligatures; 
   text-rendering: optimizeLegibility;
+}
 
+.Entryicon p{
+  margin: 0em; 
 }
 </style>
-<div style="display:flex; flex-wrap:wrap; justify-content:flex-start">
+<div class="text_sample" style="display:flex; flex-wrap:wrap; justify-content:flex-start; flex-direction: row; margin:0em">
 <div class='Entryicon'><p>File</p></div>
 <div class='Entryicon'><p>Magnify</p></div>
 <div class='Entryicon'><p>Search</p></div>

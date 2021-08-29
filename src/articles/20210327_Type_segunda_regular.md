@@ -20,13 +20,13 @@ Is it pretty? Maybe not on this screen. I'm pretty sure, that checking the fontf
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
-<div style="display:flex; flex-direction:column">
-<p style="font-family:'segunda';font-weight:normal;font-size:0.9em;color: rgba(0,0,0,0.87)"> <mark style="color:rgb(155, 20, 20); background-color:white">0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:normal;font-size:1em;color: rgba(0,0,0,0.87)"> <mark style="color:rgb(155, 20, 20); background-color:white">1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:normal;font-size:1.2em;color: rgba(0,0,0,0.87)"> <mark style="color:rgb(155, 20, 20); background-color:white">1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:normal;font-size:1.4em;color: rgba(0,0,0,0.87)"> <mark style="color:rgb(155, 20, 20); background-color:white">1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<div class="text_sample">
+<p style="font-family:'segunda';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color:transparent">0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:normal;font-size:1em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color:transparent">1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:normal;font-size:1.2em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color:transparent">1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'segunda';font-weight:normal;font-size:1.4em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color:transparent">1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
 </div>
 
-## Try it!
+## The current state is not the final state
 
 This is only a first draft - I have to update the width of the letters to account for different apperture, change and add ligatures - stay tuned for updates now and then. 
