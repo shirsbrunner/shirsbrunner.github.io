@@ -56,7 +56,16 @@ main{ /*-- do we need to adjust this? --*/
 
 /*-- own webfonts --*/
 @font-face {
-  font-family: 'segundaregular';
+  font-family: 'segunda';
+  src: url('/fonts/segunda-bold-webfont.woff2') format('woff2'),
+       url('/fonts/segunda-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'segunda';
   src: url('/fonts/segunda-regular-webfont.woff2') format('woff2'),
        url('/fonts/segunda-regular-webfont.woff') format('woff');
   font-weight: normal;
@@ -191,7 +200,8 @@ article {/*-- the box containing the article preview --*/
   max-width: 500px;
 }
 article h2::before{
-  font-family: 'segundaregular';
+  font-family: 'segunda';
+  font-weight:bold;
   color:rgb(155, 20, 20); 
   content: "··· ";
 }
@@ -205,7 +215,8 @@ article h2::before{
   padding: 0.5rem 16px;*/
   margin: 0.5em 0px;
   /*font-family: space mono;*/
-  font-family: 'segundaregular';
+  font-family: 'segunda';
+  font-weight:bold;
   font-size: 0.8rem;
   line-height: 1rem;
   color: #666666;
@@ -213,7 +224,8 @@ article h2::before{
 
 .time{ /*-- we need this in the article metrics and article preview --*/
   /*font-family: space mono;*/
-  font-family: 'segundaregular';
+  font-family: 'segunda';
+  font-weight:bold;
   font-size: 0.8rem;
   /*line-height: 1rem;*/
   color: #666666;
@@ -333,7 +345,8 @@ nav li a:hover {
   flex-wrap: wrap;
 }
 .post-tag{
-  font-family:'segundaregular'; 
+  font-family:'segunda';
+  font-weight:bold; 
   font-size: 0.7rem;
   text-decoration: none; 
   display:inline-block; 
@@ -378,7 +391,8 @@ footer{
   color: white; 
 }
 .footer_text{
-  font-family: 'segundaregular';
+  font-family: 'segunda';
+  font-weight:bold;
   font-size: 0.8rem;
   color: #666666;
   text-align: center;
@@ -404,5 +418,6 @@ hr{ /*a horizontal rule*/
   margin: 2em 0;
   padding: 0 1em;
   line-height:1rem; 
-  font-family: 'segundaregular';
+  font-family: 'segunda';
+  font-weight:bold;
 }
