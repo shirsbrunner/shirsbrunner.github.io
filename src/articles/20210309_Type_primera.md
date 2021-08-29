@@ -49,11 +49,11 @@ In the end the typeface has more than 150 letters or signs and can apparently be
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
-<div style="display:flex; flex-direction:column">
-<p style="font-family:'primera_regular';font-size:1em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-<p style="font-family:'primera_regular';font-size:1.1em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.1em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-<p style="font-family:'primera_regular';font-size:1.3em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.3em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-<p style="font-family:'primera_regular';font-size:1.6em"> <mark style="color:rgb(155, 20, 20); background-color:white">1.6em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
+<div class="text_sample">
+<p style="font-family:'primera_regular';font-size:1em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color:transparent">1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
+<p style="font-family:'primera_regular';font-size:1.1em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color:transparent">1.1em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
+<p style="font-family:'primera_regular';font-size:1.3em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color:transparent">1.3em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
+<p style="font-family:'primera_regular';font-size:1.6em; margin: 0.5em"> <mark style="color:rgb(155, 20, 20); background-color:transparent">1.6em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
 </div>
 
 Obviously, the font has a lot of issues, but I like the outcome, especially the little sun, that I use now and then in digital products. 
