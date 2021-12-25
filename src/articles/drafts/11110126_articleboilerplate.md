@@ -12,6 +12,7 @@ tags:
   - cookingskills
   - typeface
   - typography
+  - gadgets
 ---
 
 ## Title
