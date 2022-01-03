@@ -406,7 +406,7 @@ footer{
 }
 .bot_nav{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
 }
 .bot_nav a{
