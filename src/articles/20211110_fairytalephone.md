@@ -73,10 +73,11 @@ Due to christmas not being postponed, the shipped version is an alpha version. I
 - Pick up the story, where it was left
 - Add some rewind/forward functionality to skip
 - Maybe give an option to add an additional headset for a second listener. 
-- Organize more fairytales
-- Streamline the voice-interaction
+- Organize more fairytales (ongoing)
+- Streamline the voice-interaction (ongoing)
 - Try to fix issues where someone turns the rotary dial while the phone is not yet waiting for input. 
 - Make a copy of that SD-Card so that I can reinitialize if someone just kills the phone and eliminiates the file-system
+- Try to find a fix to the "kids-problem" where, strange enough, a little kid can't just turn the rotary dial as it is supposed to... (give it 2-3 years)
 - Lots more...
 
 ## Sources
