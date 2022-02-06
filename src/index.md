@@ -9,9 +9,7 @@ eleventyNavigation:
 ---
 
 ## Hi there
-Thanks for visiting my former eleventy test, now little log of things I do in my free time. I'll probably keep it (at least for a while) and plan to fill it with things "design" that I sometimes do (and maybe see) and feel like sharing. 
-
-Feel free to drop me a line if you have questions or suggestions. 
+Thanks for visiting my little log of things I do in my free time. What started as an experiment will probably be kept (at least for a while) and will be filled with things "design" that I sometimes do (and maybe see) and feel like sharing. 
 
 Cheers, Simon
 
