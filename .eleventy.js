@@ -1,7 +1,10 @@
 // 11ty configuration
 const
   dev  = global.dev  = (process.env.ELEVENTY_ENV === 'development'),
-  now = new Date();
+  now = new Date(),
+  UpgradeHelper = require("@11ty/eleventy-upgrade-help"); /* NEW */
+
+module.exports = function(eleventyConfig) {eleventyConfig.addPlugin(UpgradeHelper);};
 
 module.exports = config => {
 
