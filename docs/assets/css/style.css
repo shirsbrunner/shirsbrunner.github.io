@@ -1,15 +1,32 @@
-:root{
+ :root{
   --red: rgb(155, 20, 20); 
   --lightRed: rgba(155,20,20,0.2);
   --darkGrey: rgba(0,0,0,0.87); 
   --backgroundColor: #fff; 
-  --fontColor: black; 
   --textsampleWhite: rgb(249,248,248);
   --sampleBackLight: rgb(249,248,248); /*while this is the same as textsampleWhite - it might need to be inverted differently*/
   --sampleBackDark: rgba(0,0,0,0.80); 
   --textSampleMarkInverted: rgb(225,185,185); 
   --middleGrey: #666666; 
 }
+
+@media (prefers-color-scheme: dark) {
+  :root{ /*fear of the darkmode, alpha does not work very well here*/
+    --red: rgb(203,66,66); /*check this to white and dark background wcag*/
+    --lightRed: rgb(203,66,66);
+    --darkGrey: rgb(249,248,248); 
+    --backgroundColor: #333; 
+    --textsampleWhite: #333;
+    --sampleBackLight: #333; /*while this is the same as textsampleWhite - it might need to be inverted differently*/
+    --sampleBackDark: rgb(249,248,248); 
+    --textSampleMarkInverted: rgb(155,20,20); 
+    --middleGrey: #999999; 
+    /* needs override for the link-styles*/
+    /* also for the blog-icons*/
+  }
+}
+
+
 
 html{
   overflow-y: scroll;
@@ -423,8 +440,8 @@ footer{
   text-decoration: none;
 }
 .bot_nav a:hover{
-  background-color: var(--middleGrey);
-  color: var(background-color); 
+  background-color: var(--darkGrey);
+  color: var(--backgroundColor); 
 }
 .footer_text{
   font-family: 'segunda';
