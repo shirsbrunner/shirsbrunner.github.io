@@ -1,5 +1,19 @@
+:root{
+  --red: rgb(155, 20, 20); 
+  --lightRed: rgba(155,20,20,0.2);
+  --darkGrey: rgba(0,0,0,0.87); 
+  --backgroundColor: #fff; 
+  --fontColor: black; 
+  --textsampleWhite: rgb(249,248,248);
+  --sampleBackLight: rgb(249,248,248); /*while this is the same as textsampleWhite - it might need to be inverted differently*/
+  --sampleBackDark: rgba(0,0,0,0.80); 
+  --textSampleMarkInverted: rgb(225,185,185); 
+  --middleGrey: #666666; 
+}
+
 html{
   overflow-y: scroll;
+  background-color: var(--backgroundColor);
 }
 
 /*-- structure --*/
@@ -7,9 +21,8 @@ body {
     font-family:montserrat; /*- body-font -*/
     font-size: 11px/1.5em;
     max-width: 1024px;
-    /*box-shadow: 5px 5px 0 0 black; /*-- this will have to go--*/
     margin: 0px auto;
-    color: rgba(0,0,0,0.87);
+    color: var(--darkGrey);
 
 }
 
@@ -18,7 +31,7 @@ header{
   top:0;
   max-width:1024px;
   width:100%;
-  background-color: #fff; 
+  background-color: var(--backgroundColor); 
 }
 
 
@@ -102,33 +115,26 @@ main{ /*-- do we need to adjust this? --*/
 
 /*- fonts for titles and things*/
 .big_text{
-  font-family: Archivo Black;
+  font-family: "Archivo Black"; /*make no mistake - this is not a color*/
   letter-spacing: -0.11em;
   font-style: normal;
   font-weight: normal;
   font-size: 3rem; /*-- needs to be adjusted for dynamic type --*/
   line-height: 3rem; /*-- needs to be adjusted for dynamic type --*/
-  /*display: flex;
-  align-items: flex-end;*/
+
 
   margin-top: 3.5rem; 
   margin-bottom:0px;
-  /*margin-left: -0.1em;*/
   text-transform: uppercase;
   overflow-wrap: break-word;
 }
 
 .big_text::first-letter{
-  color:rgb(155, 20, 20);
+  color:var(--red);
 }
 
 h1, h2 {
   font-family:'Baskervville';
-  /*font-family:'primera_regular';*/
-  /*font-family:'segundaregular';
-  font-family:primera_regular;
-  color: #333333;*/ 
-  /*line-height: 160%;*/
   font-style: normal;
   font-weight: normal;
   margin-bottom: 0.5em; 
@@ -143,7 +149,7 @@ h2{
 }
 
 h2 a, h2 a:visited, h2 a:active { 
-  color: rgba(0,0,0,0.87);
+  color: var(--darkGrey);
   text-decoration: none; 
 }
 h2 a:hover{
@@ -173,7 +179,7 @@ p {
 
 blockquote { /*-- not the metrics block-quote --*/
   /*background: #f9f9f9;*/
-  border-left: 10px solid rgba(155, 20, 20, 0.2);
+  border-left: 10px solid var(--lightRed);
   margin: 1.5em 0em;
   padding: 0.25em 10px;
   /*font-family: space mono;*/
@@ -181,7 +187,7 @@ blockquote { /*-- not the metrics block-quote --*/
   /*letter-spacing: 0.1em;*/
   font-size: 1em;
   line-height: 1em;
-  color: rgba(0,0,0,0.87);
+  color: var(--darkGrey);
 }
 blockquote p {
   display: inline;
@@ -202,7 +208,7 @@ article {/*-- the box containing the article preview --*/
 article h2::before{
   font-family: 'segunda';
   font-weight:bold;
-  color:rgb(155, 20, 20); 
+  color:var(--red); 
   content: "··· ";
 }
 
@@ -219,21 +225,21 @@ article h2::before{
   font-weight:bold;
   font-size: 0.8rem;
   line-height: 1rem;
-  color: #666666;
+  color: var(--middleGrey);
 }
 
 .text_sample{
   padding: 0.5rem; 
   display:flex;
   flex-direction: column;
-  background-color: rgb(249,248,248); 
-  color: rgba(0,0,0,0.87);
+  background-color: var(--sampleBackLight); 
+  color: var(--darkGrey);
   /*border-left: 10px solid rgba(155, 20, 20, 0.2);*/
   margin-bottom: 1em; 
 }
 
 .text_sample mark{
-  color:rgb(155, 20, 20);
+  color:var(--red);
   background-color:transparent;
 }
 
@@ -241,14 +247,14 @@ article h2::before{
   padding: 0.5rem; 
   display:flex;
   flex-direction: column;
-  background-color:rgba(0,0,0,0.80); 
-  color:  rgb(249,248,248);
+  background-color:var(--sampleBackDark); 
+  color:  var(--textsampleWhite);
   /*border-left: 10px solid rgba(155, 20, 20, 0.2);*/
   margin-bottom: 1em; 
 }
 
 .text_sample_inverted mark{
-  color: rgb(225,185,185);
+  color: var(--textSampleMarkInverted);
   background-color:transparent;
 }
 
@@ -258,7 +264,7 @@ article h2::before{
   font-weight:bold;
   font-size: 0.8rem;
   /*line-height: 1rem;*/
-  color: #666666;
+  color: var(--middleGrey);
   margin: 0px 0.8em 0.8em 0px;
    
 }
@@ -283,7 +289,7 @@ article h2::before{
 }
 .nav_top {
   font-family: Montserrat, sans-serif;
-  border-bottom: 1px dotted rgba(0,0,0,0.87);
+  border-bottom: 1px dotted var(--darkGrey);
   display: flex;
   justify-content: space-between;
 }
@@ -292,36 +298,36 @@ article h2::before{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--backgroundColor);
 }
 .nav_top li {
   float: left;
 }
 .nav_top li a {
   display: block;
-  color: #333;
+  color: var(--darkGrey);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 nav li a:hover {
-  background-color: #666666;
-  color: white; 
+  background-color: var(--darkGrey);
+  color: var(--backgroundColor); 
 }
 .active {
   display: block;
-  color: white;
+  color: var(--backgroundColor);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: rgba(0,0,0,0.87);
+  background-color: var(--darkGrey);
 }
 
 .button{ /*-- we need this --*/
-      background-color:rgba(155, 20, 20, 0.2);
-      border: 1px solid rgba(0,0,0,0.87);
+      background-color:var(--lightRed);
+      border: 1px solid var(--darkGrey);
       border-radius: 3px; 
-      color: rgba(0,0,0,0.87);
+      color: var(--darkGrey);
       padding: 8px 32px;
       text-align: center;
       text-decoration: none;
@@ -335,12 +341,12 @@ nav li a:hover {
   margin: 4px 0px;
 }
 .b_small:hover { /*-- we need this --*/
-  background-color: #666666;
-  color: white; 
+  background-color: var(--middleGrey);
+  color: var(--backgroundColor); 
 }
 
 .post_nav{
-  border-top: 1px dotted rgba(0,0,0,0.87); 
+  border-top: 1px dotted var(--darkGrey); 
   margin-top: 32px; 
   padding-top: 8px;
   font-family: Montserrat, sans-serif;
@@ -359,7 +365,7 @@ nav li a:hover {
   height: 40px;
   align-items: center;
   text-decoration:none;
-  color:rgba(0,0,0,0.87); 
+  color:var(--darkGrey); 
 }
 
 .post_link:hover{
@@ -380,20 +386,20 @@ nav li a:hover {
   font-size: 0.7rem;
   text-decoration: none; 
   display:inline-block; 
-  color: rgba(0,0,0,0.87);
+  color: var(--darkGrey);
   padding: 0.4em 0.8em 0.3em; 
   border-radius: 0.2em; 
   cursor: pointer; 
   margin: 0px 0.8em 0.8em 0px; 
-  border: 1px solid rgba(0,0,0,0.87);
+  border: 1px solid var(--darkGrey);
 }
 .post-tag::after{
   content:" >"
 }
 .post-tag:hover{
-  background-color: #666666;
-  color: white; 
-  border: 1px solid rgba(0,0,0,0.87); 
+  background-color: var(--middleGrey);
+  color: var(--backgroundColor); 
+  border: 1px solid var(--darkGrey); 
 }
 
 /*-- things at the bottom of the page --*/
@@ -402,7 +408,7 @@ footer{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border-top: 1px dotted rgba(0,0,0,0.87)
+  border-top: 1px dotted var(--darkGrey); 
 }
 .bot_nav{
   display: flex;
@@ -411,20 +417,20 @@ footer{
 }
 .bot_nav a{
   display: block;
-  color: rgba(0,0,0,0.87); 
+  color: var(--darkGrey); 
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 .bot_nav a:hover{
-  background-color: #666;
-  color: white; 
+  background-color: var(--middleGrey);
+  color: var(background-color); 
 }
 .footer_text{
   font-family: 'segunda';
   font-weight:bold;
   font-size: 0.8rem;
-  color: #666666;
+  color: var(--middleGrey);
   text-align: center;
 }
 
@@ -438,13 +444,13 @@ hr{ /*a horizontal rule*/
   /*display: block;*/
   height: 1px;
   border: 0;
-  border-top: 1px solid rgba(155, 20, 20, 0.2);
+  border-top: 1px solid var(--lightRed);
   margin: 2em 0;
   padding: 0;
   flex-grow: 1;
 }
 .divider p{
-  color: rgba(155, 20, 20, 1);
+  color: var(--red);
   margin: 2em 0;
   padding: 0 1em;
   line-height:1rem; 
