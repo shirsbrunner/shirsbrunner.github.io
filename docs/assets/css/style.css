@@ -12,12 +12,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root{ /*fear of the darkmode, alpha does not work very well here*/
-    --red: rgb(203,66,66); /*check this to white and dark background wcag*/
-    --lightRed: rgb(203,66,66);
+    --red: rgb(200,50,50); /*check this to white and dark background wcag*/
+    --lightRed: rgb(200,50,50);
     --darkGrey: rgb(249,248,248); 
-    --backgroundColor: #333; 
-    --textsampleWhite: #333;
-    --sampleBackLight: #333; /*while this is the same as textsampleWhite - it might need to be inverted differently*/
+    --backgroundColor: #1f1b24; 
+    --textsampleWhite: #333; /*check this for contrast*/
+    --sampleBackLight: #1f1b24; /*while this is the same as textsampleWhite - it might need to be inverted differently*/
     --sampleBackDark: rgb(249,248,248); 
     --textSampleMarkInverted: rgb(155,20,20); 
     --middleGrey: #999999; 
