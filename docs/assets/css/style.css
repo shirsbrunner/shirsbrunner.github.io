@@ -24,7 +24,18 @@
     /* needs override for the link-styles*/
     /* also for the blog-icons*/
   }
+  .control_icon{
+    filter: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);
+  }
+  a:link{
+    color: var(--darkGrey)
+  }
+  a:visited, a:hover, a:active{
+    color: var(--red)
+  }
+  
 }
+
 
 
 
