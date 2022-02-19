@@ -27,11 +27,11 @@
   .control_icon{
     filter: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);
   }
-  a:link{
-    color: var(--darkGrey)
+  a:not(.button, .post-tag):link{
+    color: var(--darkGrey);
   }
-  a:visited, a:hover, a:active{
-    color: var(--red)
+  a:not(.button, .post-tag):visited, a:not(.button, .post-tag):hover, a:not(.button, .post-tag):active{
+    color: var(--red);
   }
   
 }
