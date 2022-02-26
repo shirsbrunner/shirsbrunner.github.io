@@ -2,8 +2,11 @@
 
 {% block content %}
 
-  <p class="big_text">{{ title }}</p>
-  <h1 class="subtitle"> {{subtitle}} </h1>
+  <h1>
+    <span class="big_text">{{ title }}</span>
+    <br>
+    <span class="subtitle"> {{subtitle}}</span> 
+  </h1>
   <div class="content_container">
     <div class="page_content">
       {{ content | safe }} 

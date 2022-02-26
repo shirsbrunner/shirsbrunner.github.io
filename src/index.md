@@ -1,6 +1,6 @@
 ---
-title: Designing things
-subtitle: shirsbrunner
+title: designing things
+subtitle: Tinkering with stuff
 description: Testpage generated with @11ty
 layout: start.njk
 eleventyNavigation:

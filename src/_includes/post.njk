@@ -2,8 +2,12 @@
 
 {% block content %}
 
-  <p class="big_text">article</p>
-  <h1 class="subtitle"> {{ title }} </h1>
+
+  <h1>
+    <span class="big_text">article</span>
+    <br>
+    <span class="subtitle"> {{title}}</span> 
+  </h1>
 
       <div class="article_metrics">
         {% if date %}<p class="time"><time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
@@ -29,14 +33,14 @@
         {% set nextPost = collections.post | getNextCollectionItem(page) %}
         {% if nextPost %}
           <div class="post_link_element" id="next_post">
-            <a class="post_link" href="{{ nextPost.url }}"><img class="control_icon" src="/images/structural/Previous.svg" alt="next post" width="40" height="40">{{ nextPost.data.title }}</a>
+            <a class="post_link" href="{{ nextPost.url }}"><img src="/images/structural/Previous.svg" alt="next post" width="40" height="40">{{ nextPost.data.title }}</a>
           </div>
         {% endif %} 
         <div class="post_link_element"> </div>
         {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
         {% if previousPost %}
           <div class="post_link_element" id="previous_post"> 
-            <a class="post_link" href="{{ previousPost.url }}">{{ previousPost.data.title }}<img class="control_icon" src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+            <a class="post_link" href="{{ previousPost.url }}">{{ previousPost.data.title }}<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
           </div>
         {% endif %}
       </div>

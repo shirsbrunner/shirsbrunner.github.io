@@ -1,4 +1,4 @@
- :root{
+:root{
   --red: rgb(155, 20, 20); 
   --lightRed: rgba(155,20,20,0.2);
   --darkGrey: rgba(0,0,0,0.87); 
@@ -8,10 +8,28 @@
   --sampleBackDark: rgba(0,0,0,0.80); 
   --textSampleMarkInverted: rgb(225,185,185); 
   --middleGrey: #666666; 
+  --buttonRed: var(--lightRed); 
+  --buttonText: var(--darkGrey);
+  --controlIcon: ;
+}
+:root.dark{ /*copy from below :root, misses the additional classes.... for dark...*/ 
+  --red: rgb(200,50,50); 
+  --lightRed: rgb(200,50,50);
+  --darkGrey: rgb(249,248,248); 
+  --backgroundColor: #1f1b24; 
+  --textsampleWhite: #333; 
+  --sampleBackLight: #1f1b24; 
+  --sampleBackDark: rgb(249,248,248); 
+  --textSampleMarkInverted: rgb(155,20,20); 
+  --middleGrey: #999999; 
+  --buttonRed: var(--lightRed); 
+  --buttonText: var(--darkGrey);
+  --controlIcon: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);
 }
 
+
 @media (prefers-color-scheme: dark) {
-  :root{ /*fear of the darkmode, alpha does not work very well here*/
+  :root{
     --red: rgb(200,50,50); /*check this to white and dark background wcag*/
     --lightRed: rgb(200,50,50);
     --darkGrey: rgb(249,248,248); 
@@ -21,18 +39,49 @@
     --sampleBackDark: rgb(249,248,248); 
     --textSampleMarkInverted: rgb(155,20,20); 
     --middleGrey: #999999; 
-    /* needs override for the link-styles*/
-    /* also for the blog-icons*/
+    --buttonRed: var(--lightRed); 
+    --buttonText: var(--darkGrey);
+    --controlIcon: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);
   }
-  .control_icon{
-    filter: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);
+
+  :root.light{ /*copy from above :root*/
+    --red: rgb(155, 20, 20); 
+    --lightRed: rgba(155,20,20,0.2);
+    --darkGrey: rgba(0,0,0,0.87); 
+    --backgroundColor: #fff; 
+    --textsampleWhite: rgb(249,248,248);
+    --sampleBackLight: rgb(249,248,248);
+    --sampleBackDark: rgba(0,0,0,0.80); 
+    --textSampleMarkInverted: rgb(225,185,185); 
+    --middleGrey: #666666; 
+    --buttonRed: var(--lightRed); 
+    --buttonText: var(--darkGrey);
+    --controlIcon: ;
   }
+
+
+  /**
   a:not(.button, .post-tag):link{
     color: var(--darkGrey);
   }
   a:not(.button, .post-tag):visited, a:not(.button, .post-tag):hover, a:not(.button, .post-tag):active{
     color: var(--red);
   }
+  
+  a:link{
+    color: var(--darkGrey);
+  }
+  a:visited, a:hover, a:active{
+    color: var(--red);
+  }
+
+  a:link.button a:link.post-tag{
+    color: var(--buttonText);
+  }
+  a:visited.button, a:hover.button, a:active.button{
+    color: var(--buttonText);
+  }
+  **/
   
 }
 
@@ -157,7 +206,7 @@ main{ /*-- do we need to adjust this? --*/
   overflow-wrap: break-word;
 }
 
-.big_text::first-letter{
+h1::first-letter{
   color:var(--red);
 }
 
@@ -176,6 +225,7 @@ h2{
   font-size:164%;
 }
 
+/*text-links for article headers*/
 h2 a, h2 a:visited, h2 a:active { 
   color: var(--darkGrey);
   text-decoration: none; 
@@ -184,13 +234,17 @@ h2 a:hover{
   text-decoration: underline; 
 }
 
+/*other links*/
+
+
+
 .subtitle{
   font-family: Baskervville;
   /*font-family: 'segundaregular';
   color: #666666;*/
   font-style: normal;
   font-weight: normal;
-  font-size: 218%; 
+  /*font-size: 218%;*/ 
   /*line-height: 160%; /*-- needs to be adjusted for dynamic type --*/
   margin: 0px; /*-- needs to be adjusted for dynamic type --*/
   margin-bottom: 1rem;
@@ -352,10 +406,10 @@ nav li a:hover {
 }
 
 .button{ /*-- we need this --*/
-      background-color:var(--lightRed);
+      background-color:var(--buttonRed);
       border: 1px solid var(--darkGrey);
       border-radius: 3px; 
-      color: var(--darkGrey);
+      color: var(--buttonText);
       padding: 8px 32px;
       text-align: center;
       text-decoration: none;
@@ -402,6 +456,7 @@ nav li a:hover {
 
 .post_link img{ /*-- this is for the little arrows within a blog nav--*/ 
   margin: 0 0.25rem;
+  filter: var(--controlIcon); /*changes the colour of arrows used as controllers in darkmode*/
 }
 
 .tag_group{
