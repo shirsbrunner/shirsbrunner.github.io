@@ -437,6 +437,10 @@ nav li a:hover {
   filter: var(--controlIcon); /*changes the colour of arrows used as controllers in darkmode*/
 }
 
+a img.control_icon{
+  filter: var(--controlIcon); /*changes the colour of arrows used as controllers in darkmode*/
+}
+
 .tag_group{
   display:flex; 
   flex-wrap: wrap;
@@ -532,7 +536,7 @@ hr{ /*a horizontal rule*/
   flex-grow: 1;
 }
 .divider p{
-  color: var(--red);
+  color: var(--darkGrey);
   margin: 2em 0;
   padding: 0 1em;
   line-height:1rem; 
