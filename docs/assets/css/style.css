@@ -472,7 +472,7 @@ footer{
 }
 .bot_nav{
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 .bot_nav a{
@@ -492,7 +492,26 @@ footer{
   font-size: 0.8rem;
   color: var(--middleGrey);
   text-align: center;
+  margin:0px 8px;
 }
+/*the darkmode-toggle button*/
+button.dmbtntoggler {
+  background-color:var(--buttonRed);
+  border: 1px solid var(--darkGrey);
+  border-radius: 3px; 
+  color: var(--buttonText);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button.dmbtntoggler:hover{
+  color: var(--backgroundColor);
+  background-color: var(--middleGrey);
+}
+
 
 .divider{
   display:flex; 
