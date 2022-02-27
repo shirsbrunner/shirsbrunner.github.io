@@ -5,9 +5,11 @@ const currentTheme = localStorage.getItem("theme"); //checks for previously save
 if (currentTheme == "dark"){
   //toggle the dark theme
   document.documentElement.classList.toggle("dark");
+  document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "Sun";
 } else if (currentTheme == "light") {
   //toggle light
   document.documentElement.classList.toggle("light");
+  document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "Moon";
 }
 
 // Listen for a click on the button 
@@ -31,6 +33,15 @@ DM_BTN.addEventListener("click", function() {
       var theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
       console.log(theme);
     }
+     /*toggle the icon*/ 
+    if(theme == "dark"){
+      document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "Sun";
+    } else {
+      document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "Moon";
+    }
+
     //save the current seting
     localStorage.setItem("theme", theme);
+
+
   });
