@@ -57,33 +57,10 @@
     --buttonRed: var(--lightRed); 
     --buttonText: var(--darkGrey);
     --controlIcon: ;
-  }
-
-
-  /**
-  a:not(.button, .post-tag):link{
-    color: var(--darkGrey);
-  }
-  a:not(.button, .post-tag):visited, a:not(.button, .post-tag):hover, a:not(.button, .post-tag):active{
-    color: var(--red);
-  }
-  
-  a:link{
-    color: var(--darkGrey);
-  }
-  a:visited, a:hover, a:active{
-    color: var(--red);
-  }
-
-  a:link.button a:link.post-tag{
-    color: var(--buttonText);
-  }
-  a:visited.button, a:hover.button, a:active.button{
-    color: var(--buttonText);
-  }
-  **/
-  
+  }  
 }
+
+
 
 
 html{
@@ -223,6 +200,14 @@ h2{
   font-size:164%;
 }
 
+/*basic links*/
+a:link{
+  color: var(--darkGrey);
+}
+a:visited, a:hover, a:active{
+  color: var(--red);
+}
+
 /*text-links for article headers*/
 h2 a, h2 a:visited, h2 a:active { 
   color: var(--darkGrey);
@@ -232,9 +217,23 @@ h2 a:hover{
   text-decoration: underline; 
 }
 
-/*other links*/
+/*links for tag buttons*/
+a.post-tag:link, a.post-tag:visited{
+  color: var(--darkGrey);
+}
+a.post-tag:hover, a.post-tag:active{
+  color: var(--backgroundColor);
+  background-color: var(--middleGrey);
+}
 
-
+/*colours for readme-buttons*/
+a.b_small:link, a.b_small:visited{
+  color: var(--buttonText);
+}
+a.b_small:hover, a.b_small:active{
+  color: var(--backgroundColor);
+  background-color: var(--middleGrey);
+}
 
 .subtitle{
   font-family: Baskervville;
@@ -246,6 +245,7 @@ h2 a:hover{
   /*line-height: 160%; /*-- needs to be adjusted for dynamic type --*/
   margin: 0px; /*-- needs to be adjusted for dynamic type --*/
   margin-bottom: 1rem;
+  
 }
 
 p {
@@ -261,9 +261,7 @@ blockquote { /*-- not the metrics block-quote --*/
   border-left: 10px solid var(--lightRed);
   margin: 1.5em 0em;
   padding: 0.25em 10px;
-  /*font-family: space mono;*/
   font-family: 'montserrat';
-  /*letter-spacing: 0.1em;*/
   font-size: 1em;
   line-height: 1em;
   color: var(--darkGrey);
@@ -272,9 +270,6 @@ blockquote p {
   display: inline;
 }
 
-/*.pagelist { /* this is the list of blogs in a preview
-
-}*/
 article {/*-- the box containing the article preview --*/
   margin: 24px 0px 48px 0px; /* maybe adjust to dynamic sizing */ 
 }
@@ -293,13 +288,7 @@ article h2::before{
 
 
 .article_metrics{ /*-- we need this in the article view for detailed metrics --*/
-  /*background: #f9f9f9;*/
-  /*border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 2px 2px 0 0 black;
-  padding: 0.5rem 16px;*/
   margin: 0.5em 0px;
-  /*font-family: space mono;*/
   font-family: 'segunda';
   font-weight:bold;
   font-size: 0.8rem;
@@ -313,7 +302,6 @@ article h2::before{
   flex-direction: column;
   background-color: var(--sampleBackLight); 
   color: var(--darkGrey);
-  /*border-left: 10px solid rgba(155, 20, 20, 0.2);*/
   margin-bottom: 1em; 
 }
 
@@ -328,7 +316,6 @@ article h2::before{
   flex-direction: column;
   background-color:var(--sampleBackDark); 
   color:  var(--textsampleWhite);
-  /*border-left: 10px solid rgba(155, 20, 20, 0.2);*/
   margin-bottom: 1em; 
 }
 
@@ -338,11 +325,9 @@ article h2::before{
 }
 
 .time{ /*-- we need this in the article metrics and article preview --*/
-  /*font-family: space mono;*/
   font-family: 'segunda';
   font-weight:bold;
   font-size: 0.8rem;
-  /*line-height: 1rem;*/
   color: var(--middleGrey);
   margin: 0px 0.8em 0.8em 0px;
    
@@ -415,13 +400,10 @@ nav li a:hover {
       cursor: pointer;
 }
 .b_small{ /*-- we need this --*/
+  /*colours managed under link styles*/
   padding: 5px 16px;
   font-size: 0.9em; 
   margin: 4px 0px;
-}
-.b_small:hover { /*-- we need this --*/
-  background-color: var(--middleGrey);
-  color: var(--backgroundColor); 
 }
 
 .post_nav{
@@ -430,7 +412,6 @@ nav li a:hover {
   padding-top: 8px;
   font-family: Montserrat, sans-serif;
   display: flex;
-  /*text-align: center;*/
   align-items: center;
   justify-content: space-between;
 }
@@ -477,8 +458,7 @@ nav li a:hover {
   content:" >"
 }
 .post-tag:hover{
-  background-color: var(--middleGrey);
-  color: var(--backgroundColor); 
+  /*colours managed under links*/ 
   border: 1px solid var(--darkGrey); 
 }
 
