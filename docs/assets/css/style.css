@@ -514,9 +514,12 @@ button.dmbtntoggler {
   cursor: pointer;
   font-family: 'miyconos';
 }
-button.dmbtntoggler:hover{
-  color: var(--backgroundColor);
-  background-color: var(--middleGrey);
+
+@media (hover: hover) {
+  button.dmbtntoggler:hover{
+    color: var(--backgroundColor);
+    background-color: var(--middleGrey);
+  }
 }
 
 
