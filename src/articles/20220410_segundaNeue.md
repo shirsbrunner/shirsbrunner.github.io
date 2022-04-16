@@ -19,12 +19,13 @@ Segunda Regular has multiple issues with spacing, and lots of issues are only ad
 
 Issues where visible, but my grasp on the subject was lacking. After reading multiple books on typography and typedesign, I could identify approaches to solve some of the issues. Sources to get you started: 
 - "Thinking with type" by Ellen Lupton
-- "The stroke" by Gerrit Noordzij, "designing Type" by Karren Cheng
+- "The stroke" by Gerrit Noordzij
+- "Designing Type" by Karren Cheng
 - "Shaping text" by Jan Middendorp
 - "Helvetica", a Film by Gary Hustwit for a nice discussion of the famous typeface
 - there is also a lot of info on the page [design with fontforge](http://designwithfontforge.com) 
 
-Reading educates, and I learnt about the importance of the white space between the letters, of it's relation to the black of the letter and the resulting rhythm. While there are multiple approaches to spacing letters, the easiest one appears to be the rule of "three at a time" (see this [article on ohnotype](https://ohnotype.co/blog/spacing)). 
+Reading educates, and I learnt about the importance of the white space between the letters, of it's relation to the black strocke of the letter and the resulting rhythm. While there are multiple approaches to spacing letters, a simple one appears to be the rule of "three at a time" (see this [article on ohnotype](https://ohnotype.co/blog/spacing)). 
 
 > When looking at any set of letters, always only look at three adjacent ones, if the one in the middle visually appears exactly in the middle, these three letters are correctly spaced. Then shift your focus one letter to the right and repeat. 
 
