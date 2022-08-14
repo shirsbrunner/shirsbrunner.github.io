@@ -9,7 +9,7 @@ eleventyNavigation:
 ---
 
 ## Hello again
-I am a UX-designer working for ELCA during the working hours, but I often can't let go of design topics during the rest of the day. 
+I am a UX-designer working for Puzzle ITC during the working hours. I often can't take my hands off of design topics during the rest of the day. 
 
 I believe that design has a profound impact on peoples lives and that good design can make a difference, not only in looks but even more so in interaction. 
 
@@ -17,9 +17,7 @@ I'm currently more focused at doing the X than the I of everything related to U.
 
 I have a background in marketing, media science, computer science, marketing, media research, business consulting, user experience and accessibility.
 
-When I'm not working I like to hit the playground, cook, build little kids LEGO dreams, visit friends and family, travel to near and far away places where I try to take lots of pictures with a DSLR, look after our plants at home, read a lot of books, make mustard, design mainly digital things like this page (made with [eleventy](https://www.11ty.dev/)) or fonts only I will most probably ever use (in fontforge) or draw brand-images to put on other things or design invitations, stickers or layout books for myself (all in affinity products), have something printed for real, drink real espresso and enjoy the sun among other things. 
+When I'm not working I like to hit the playground, cook, build little kids LEGO dreams, visit friends and family, travel to near and far away places where I try to take lots of pictures with a DSLR, look after our plants at home, read a lot of books, make mustard, design mainly digital things like this page (made with [eleventy](https://www.11ty.dev/)) or fonts only I will most probably ever use (in fontforge) or draw brand-images to put on other things or design invitations, stickers or layout books for myself, have something printed for real, drink espresso and enjoy the sun among other things. 
 
-## Why is this in English
-If you know me or you read what I've written on this page, you also know that English is not my first language. I'm pretty sure, that this page is full of errors, be it spelling, grammar or anything else a native speaker might have learnt in school.
-
-However, whenever I programm anything, my mind tends to switch to English - I don't know why. Given enough temporal distance, I might change this into the prosaic wonder (similarly full of errors) it might be, given it would be in the language, I normally speak. I also promise to add more pictures. 
+## Things to look out for
+I promise to add more pictures. 
