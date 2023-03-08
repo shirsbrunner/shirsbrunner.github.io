@@ -27,6 +27,18 @@ In the end I added all the glyphs again, the hardest part was inventing the numb
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
+<style>
+@font-face {
+  font-family: 'tresetrangeregular';
+  src: url('tresetrange-regular-webfont.woff2') format('woff2'),
+       url('tresetrange-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+</style>
+
+
 <div class="text_sample">
 <p style="font-family:'tresetrangeregular';font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
 <p style="font-family:'tresetrangeregular';font-size:1.1em; margin: 0.5em"> <mark>1.1em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>

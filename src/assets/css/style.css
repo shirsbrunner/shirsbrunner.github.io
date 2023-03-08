@@ -139,24 +139,6 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 @font-face {
-  font-family: 'neuesegunda';
-  src: url('/fonts/neuesegunda-regular.woff2') format('woff2'),
-       url('/fonts/neuesegunda-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'tresetrangeregular';
-  src: url('/fonts/tresetrange-regular-webfont.woff2') format('woff2'),
-       url('/fonts/tresetrange-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
   font-family: 'miyconos';
   src: url('/fonts/miyconos-webfont.woff2') format('woff2'),
        url('/fonts/miyconos-webfont.woff') format('woff');

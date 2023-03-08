@@ -29,6 +29,16 @@ At this point I also eventually deviated from creating multiple font weights fro
 In the end the typeface has more than 170 letters or signs and can apparently be used in a multitude of languages from Albanian to Zulu (if I can trust font squirrel). The typeface is used in this page for technical things, copyright-notice, tags and decorations. Initially I wanted to used it as the font for titles, however, after trying it out, I decided to go with what I initially designed this page (Mono Black).
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
+<style>
+@font-face {
+  font-family: 'segunda';
+  src: url('segunda-bold-webfont.woff2') format('woff2'),
+       url('segunda-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+</style>
 
 <div class="text_sample">
 <p style="font-family:'segunda';font-weight:bold;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>

@@ -42,6 +42,17 @@ Is it really better or am I only looking at the things that I have fixed? Time w
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
+<style>
+@font-face {
+  font-family: 'neuesegunda';
+  src: url('/fonts/neuesegunda-regular.woff2') format('woff2'),
+       url('/fonts/neuesegunda-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+</style>
+
 <div class="text_sample">
 <p style="font-family:'neuesegunda';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
 <p style="font-family:'neuesegunda';font-weight:normal;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
