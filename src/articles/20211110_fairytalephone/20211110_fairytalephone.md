@@ -10,7 +10,7 @@ tags:
 
 After attending a talk from [Vasilis](https://vasilis.nl/) at the front conference in Zürich his "nerd-projects" caught my eyes. In one of the projects he was using an old rotary phone to select playlists on spotify. Reading up on the subject, the idea of the fairytale-phone was born - using an old rotary phone to tell stories to our 3.5 years old kid. While kids love you telling them books, ours wants to listen to the same story again and again and again... enter the digital version of the storyteller. 
 
-![photo of a rotary phone used as a digital storyteller](/images/posts/phone_final_product_1000.jpg "this, little kids, is a rotary phone")
+![photo of a rotary phone used as a digital storyteller](phone_final_product_1000.jpg "this, little kids, is a rotary phone")
 
 While it's a wild guess, that the kid will like the phone, I'm pretty sure, that I'll find a way to reuse the phone, if it's not a success. However there is a catch - this seemed a rather ambitious project that ~~might be crossing the~~ was at the border of my abilities.
 
@@ -48,7 +48,7 @@ I assume the following things, that will have to stand the --test of kid-- at th
 - Finding a suitable rotary phone - a "really old" one - the newer ones cheat with the rotary input making everything more complex (done, it's a grey model Modell 70 NS. The phone has a lot of additional circuits inside, that have apparently never been used. The phone itself was rather dirty but easy to disassemble and clean - apart from the handset-cable that needed a bit more time) 
 - Understanding the workings of a rotary phone, realizing that it's more complex than the examples and not everything can be used as intended (done - looking at you, bell. The bell within the phone needs a lot of power to ring, something the Pi can't provide, also the bell uses a lot of space. Not only the bell but that electromagnet, the resistors and all the part's I don't even know the name of)
 
-![photo the insides of a rotary phone](/images/posts/phone_ancient_technology_1000.jpg "image of a rotary phone without the cover")
+![photo the insides of a rotary phone](phone_ancient_technology_1000.jpg "image of a rotary phone without the cover")
 
 - Connect the rotary phone dial to the pi (Understanding the mechanical switches was easier than I initially thought, since the Modell 70 NS has everything in the open and clearly visible. There are two circuits to hook up, one counting the numbers and one opening and closing the rotary switch. With the help of the internet, it was easily possible to hook this up to the )
 - Reading out the values dialed (this works with a combination of scripts - see sources below)
@@ -56,7 +56,7 @@ I assume the following things, that will have to stand the --test of kid-- at th
 - Making sure, it's not killing everybody that touches the thing (well, it's encased and there is not enough power on the raspbi itself)
 - Putting everything into the box (at the end, I had to remove basically everything but the rotary dial and the hand-set-toggle-thing, to make space for the pi)
 
-![photo the pi not fitting inside the rotary phone](/images/posts/phone_upgraded_1000.jpg "rotary phones are limited in space")
+![photo the pi not fitting inside the rotary phone](phone_upgraded_1000.jpg "rotary phones are limited in space")
 
 - Wrapping everything up as a nice present (Done, last-minutish finished, we only put some gift ribbons around it!)
 - Teaching a kid, who can neither count nor read numbers, how to manipulate technology, that has been out of use for like 30 years, to select a tale to be told on its own (ongoing)

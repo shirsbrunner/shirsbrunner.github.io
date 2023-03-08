@@ -9,7 +9,7 @@ eleventyNavigation:
 ---
 
 ## Hi there
-Thanks for visiting my little log of experiments & things "design" that I sometimes do (and maybe see) and feel like sharing. 
+Thanks for visiting this little log of experiments & things mainly related to "design" that I feel like sharing. 
 
 Cheers, Simon
 

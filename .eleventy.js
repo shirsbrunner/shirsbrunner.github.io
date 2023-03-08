@@ -26,7 +26,7 @@ module.exports = config => {
   config.addCollection('post', collection =>
 
     collection
-      .getFilteredByGlob('./src/articles/*.md')
+      .getFilteredByGlob('./src/articles/**/*.md')
       .filter(p => dev || (!p.data.draft && p.date <= now))
 
   );
@@ -67,16 +67,20 @@ module.exports = config => {
     return [...tagSet].sort((a, b) => a.localeCompare(b));
   });
 
-  /* --- CSS-Stuff --- */
+  /* --- CSS-Stuff - adding everything in assets --- */
   config.addPassthroughCopy('src/assets');
   
-  /*--- images ---*/
+  /*--- images - adding everything in images-folder ---*/
   config.addPassthroughCopy('src/images');
 
-  /*--- fonts ---*/
+  /*--- images - adding images from a blog-entry folder. 
+  This allows a file of the described file-ending to pass---*/
+  config.addPassthroughCopy('./src/articles/**/*.jpg')
+
+  /*--- fonts - adding all fonts ---*/
   config.addPassthroughCopy('src/fonts');
 
-  // 11ty defaults
+  // 11ty defaults - where to take files and where to put them
   return {
 
     dir: {
