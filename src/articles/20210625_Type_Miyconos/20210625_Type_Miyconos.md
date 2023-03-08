@@ -20,6 +20,16 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
 ## The outcome
 
 <style>
+
+@font-face {
+  font-family: 'miyconos';
+  src: url('miyconos-webfont.woff2') format('woff2'),
+       url('miyconos-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .Entryicon{
   font-family:'miyconos';
   font-size:2em;

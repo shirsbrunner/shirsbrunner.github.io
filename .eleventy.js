@@ -77,8 +77,12 @@ module.exports = config => {
   This allows a file of the described file-ending to pass---*/
   config.addPassthroughCopy('./src/articles/**/*.jpg')
 
-  /*--- fonts - adding all fonts ---*/
+  /*--- fonts - adding global fonts ---*/
   config.addPassthroughCopy('src/fonts');
+  /*--- fonts - adding local fonts in blogposts ---*/
+  config.addPassthroughCopy('./src/articles/**/*.woff');
+  config.addPassthroughCopy('./src/articles/**/*.woff2');
+
 
   // 11ty defaults - where to take files and where to put them
   return {
