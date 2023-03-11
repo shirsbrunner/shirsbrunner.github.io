@@ -2,6 +2,7 @@
 title: Creating a second typeface
 description: After a simple digital version of my handwriting, I tried to create a typeface that can be used in other digital products
 date: 2021-03-13
+evolution: 2
 tags:
   - typeface
   - typography

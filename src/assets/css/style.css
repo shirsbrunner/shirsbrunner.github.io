@@ -261,12 +261,21 @@ article {/*-- the box containing the article preview --*/
   justify-content: space-between;*/
   max-width: 500px;
 }
+
+.headericon{
+  font-family: 'miyconos';
+  font-size: 1em;
+  color:var(--red)
+}
+
+/*--
 article h2::before{
   font-family: 'segunda';
   font-weight:bold;
   color:var(--red); 
   content: "··· ";
 }
+--*/
 
 
 .article_metrics{ /*-- we need this in the article view for detailed metrics --*/

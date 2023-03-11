@@ -2,6 +2,7 @@
 title: This is the subtitle-Texts
 description: This is in the preview
 date: 2021-03-13
+evolution: 1 2 3 (pick one)
 tags:
   - textiles
   - pattern

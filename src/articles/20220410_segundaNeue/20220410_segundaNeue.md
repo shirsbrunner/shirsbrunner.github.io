@@ -2,6 +2,7 @@
 title: Segunda a second time
 description: Sidebearings, Kerning and Glyphs revisited
 date: 2022-04-10
+evolution: 2
 tags:
   - typeface
   - typography

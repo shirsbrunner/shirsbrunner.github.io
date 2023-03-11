@@ -2,6 +2,7 @@
 title: The 11ty-experiment
 description: Building a static page that can be easily updated
 date: 2021-03-10
+evolution: 1
 tags:
   - 11nty
   - html

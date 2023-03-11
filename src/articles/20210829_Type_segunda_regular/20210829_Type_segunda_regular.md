@@ -2,6 +2,7 @@
 title: Bold is not really regular
 description: It's a family - in addition to the old regular now called "bold" there is now also a regular fontface in a didone style
 date: 2021-08-29
+evolution: 2
 tags:
   - typeface
   - typography

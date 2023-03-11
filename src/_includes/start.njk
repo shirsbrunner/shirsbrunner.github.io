@@ -16,7 +16,19 @@
     {%- for post in postslist -%}
         <article> {#cant use the shorthand, because of the "latest article..."#}
 
-          <h2><a href="{{ post.url }}">Latest article: {{ post.data.title }}</a></h2>
+          <h2>
+               <span class="headericon">
+              {# this adds the state-icon #}
+              {% if post.data.evolution == 1 %}
+                dotcircle
+              {% elif post.data.evolution == 2 %}
+                enso
+              {% else %}
+                spiral
+              {% endif %}
+              </span>
+              {# this adds the title-link #}    
+              <a href="{{ post.url }}">Latest article: {{ post.data.title }}</a></h2>
           <div class="tag_group">
           {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
           
