@@ -45,7 +45,7 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
   margin: 0em; 
 }
 </style>
-<div class="text_sample" style="display:flex; flex-wrap:wrap; justify-content:flex-start; flex-direction: row; margin:0em">
+<div class="text_sample" style="display:flex; flex-wrap:wrap; justify-content:center; flex-direction: row; margin:0em">
   <div class='Entryicon'><p>file</p></div>
   <div class='Entryicon'><p>magnify</p></div>
   <div class='Entryicon'><p>search</p></div>

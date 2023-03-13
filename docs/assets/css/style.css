@@ -89,7 +89,7 @@ header{
 
 
 main{ /*-- do we need to adjust this? --*/
-  margin-bottom: 32px;
+  /*-- margin-bottom: 32px; --*/
   height: auto; 
   overflow:auto;
   padding:8px;
@@ -322,6 +322,7 @@ article h2::before{
   padding: 0.5rem; 
   display:flex;
   flex-direction: column;
+  word-break: break-word;
   background-color: var(--sampleBackLight); 
   color: var(--darkGrey);
   margin-bottom: 1em; 
@@ -336,6 +337,7 @@ article h2::before{
   padding: 0.5rem; 
   display:flex;
   flex-direction: column;
+  word-break: break-word;
   background-color:var(--sampleBackDark); 
   color:  var(--textsampleWhite);
   margin-bottom: 1em; 
@@ -446,7 +448,7 @@ nav li a:hover {
 
 .post_link { /*-- this is for the little arrows within a blog nav--*/
   display: flex;
-  height: 40px;
+  /*--height: 40px;--*/
   align-items: center;
   text-decoration:none;
   color:var(--darkGrey); 
