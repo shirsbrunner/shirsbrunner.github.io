@@ -71,6 +71,7 @@ html{
 /*-- structure --*/
 body {
     font-family:montserrat; /*- body-font -*/
+    font-weight: 400;
     font-size: 11px/1.5em;
     max-width: 1024px;
     margin: 0px auto;
@@ -129,6 +130,35 @@ main{ /*-- do we need to adjust this? --*/
 
 }
 
+
+
+@font-face {
+  font-family: 'Baskervville';
+  src: url('/fonts/Baskervville-Regular.woff2') format('woff2'),
+       url('/fonts/Baskervville-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/Montserrat-Black.woff2') format('woff2'),
+       url('/fonts/Montserrat-Black.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+       url('/fonts/Montserrat-Rgular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+
+}
+
 @font-face {
   font-family: 'segunda';
   src: url('/fonts/segunda-regular-webfont.woff2') format('woff2'),
@@ -149,10 +179,10 @@ main{ /*-- do we need to adjust this? --*/
 
 /*- fonts for titles and things*/
 .big_text{
-  font-family: "Archivo Black"; /*make no mistake - this is not a color*/
-  letter-spacing: -0.11em;
+  font-family: "montserrat"; /*make no mistake - this is not a color*/
+  letter-spacing: -0.06em;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 3rem; /*-- needs to be adjusted for dynamic type --*/
   line-height: 3rem; /*-- needs to be adjusted for dynamic type --*/
 
@@ -244,6 +274,7 @@ blockquote { /*-- not the metrics block-quote --*/
   margin: 1.5em 0em;
   padding: 0.25em 10px;
   font-family: 'montserrat';
+  font-weight: 400;
   font-size: 1em;
   line-height: 1em;
   color: var(--darkGrey);
@@ -343,7 +374,8 @@ article h2::before{
   float:left;  
 }
 .nav_top {
-  font-family: Montserrat, sans-serif;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
   border-bottom: 1px dotted var(--darkGrey);
   display: flex;
   justify-content: space-between;
@@ -401,7 +433,8 @@ nav li a:hover {
   border-top: 1px dotted var(--darkGrey); 
   margin-top: 32px; 
   padding-top: 8px;
-  font-family: Montserrat, sans-serif;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -459,7 +492,8 @@ a img.control_icon{
 
 /*-- things at the bottom of the page --*/
 footer{
-  font-family: Montserrat, sans-serif;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   overflow: hidden;
