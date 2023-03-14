@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circle time</title>
+  <meta name="description" content="Another typeface with a geometric base">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black:400" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" 
+      type="image/png" 
+      href="/images/structural/favicon.png"> 
+</head>
+<body>
+
+
+<header>
+  
+  <nav class="nav_top">
+    <a href="/">
+    <img class="logo" src="/images/structural/Logo_48.png" alt="Logo of the page showing the Hirschlbrummbaer" width="48" height="48">
+    </a>
+    <ul><li><a href="/">home</a></li><li><a href="/articles/">blog</a></li><li><a href="/about/">about</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+
+
+
+  <h1>
+    <span class="big_text">article</span>
+    <br>
+      <span class="headericon">
+      
+      
+         dotcircle
+      
+      </span>
+          
+    <span class="subtitle"> Circle time</span> 
+  </h1>
+
+      <div class="article_metrics">
+        <p class="time"><time datetime="2023-03-14">14 March, 2023</time></p>
+        <p class="words">1,140 words, 6-minute read</p>
+      </div>
+      <div class="tag_group">
+        
+          
+          <a href="/tags/typography/" class="post-tag">typography</a>
+        
+      </div>
+
+
+  <div class="content_container">
+    <div class="page_content">
+
+
+
+
+      <h2>Making something pretty for once?</h2>
+<p>While my initial typefaces were of a rather edgy design, most type used in print or the web uses round forms now and then. After digitizing handwriting I continued with edgy design because it seemed easier to base it on a simple grid system in designer.</p>
+<p>While the initial typefaces did not find a lot of use in everyday life, I've been looking to design something &quot;prettier&quot; (read: more similar to typefaces for everyday use). Using my previous templates I started to build up letters and shapes in Affinity Designer. Having artboards and grids set up led to an easy, quick start.</p>
+<h2>Based on circles</h2>
+<p>Instead of using a square for the foundation of the typeface, I decided to use a circle. Using a circle-based grid allows for the easy generation of most of the lower case letters. However when designing the upper case letters, I realised, that basing everything on circles leads to huge differences in the width of the letters (Example: comparing the capital O and the capital I). While there is room for creativity, it is up to the designer to decide on what end of the spectrum most of the other letters end up.</p>
+<p>In addition, in the first iteration, the contrast between lower and upper case was to big and letters were overall to small (to allow for ample descenders and space for accents). In a second iteration I changed the ratio between lower and upper case using measurements on other fonts.</p>
+<p>It took a third iteration to end up with a design that was readable in &quot;normal&quot; sizes and had a more pleasant rhythm between upper and lower case. Surely all iterations are part of the learning curve.</p>
+<h2>Fontforge on a mac</h2>
+<p>In addition to multiple changes in the base file with subsequent copying and processing in fontforge, I switched from a windows pc to a mac in summer 2022. I initially used fontforge on the mac, however issues with the rendering of the GUI (invisible checkboxes) made creating typefaces tedious since kerning the typeface was just not possible anymore.</p>
+<p>I decided to try out <a href="https://glyphsapp.com/">Glyphs Mini</a> (Cheap, nice, can apparently do most of the relevant things, the &quot;big&quot; app can do). Let me say, that the transition from fontforge was not easy:</p>
+<ul>
+<li>Downloading a trial version of both apps (Glyphs 3 and Glyphs mini)</li>
+<li>Exporting UFO-files from fontforge into Glyphs 3</li>
+<li>Transforming and renaming glyphs and cleaning up the data</li>
+<li>Save as Glyphs 2 File and reimport everything into Glyphs mini</li>
+<li>Rename Ligatures, accents, some of the glyphs</li>
+<li>Finally be able to work on the typeface again</li>
+</ul>
+<p>Still, I don't look back. Glyph Mini is a very nice piece of software considering the price and I will eventually upgrade to the bigger version for more control and better support of fancy type features (also kerning smallcaps).</p>
+<h2>Yeah, yeah, show me the typeface...</h2>
+<p>The following paragraph shows the outcome with some &quot;cupcake ipsum&quot; text:</p>
+<style>
+@font-face {
+  font-family: 'grancirculos';
+  src: url('GranCirculos-Regular.woff2') format('woff2'),
+       url('GranCirculos-Regular.woff') format('woff');
+
+       src/articles/20230314_circletime/GranCirculos-Regular.woff
+  font-weight: normal;
+  font-style: normal;
+}
+</style>
+<div class="text_sample">
+<p style="font-family:'grancirculos';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'grancirculos';font-weight:normal;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'grancirculos';font-weight:normal;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'grancirculos';font-weight:normal;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+<div class="text_sample_inverted">
+<p style="font-family:'grancirculos';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'grancirculos';font-weight:normal;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'grancirculos';font-weight:normal;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'grancirculos';font-weight:normal;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+<p>I like the soft character of the typeface.</p>
+<h2>Things to improve</h2>
+<ul>
+<li>I'll probably have to look at the kerning or the sidebearings or a combination of both again and again and again.</li>
+<li>Certain letters might need some additional character.</li>
+<li>On letters like b,n the intersection between bowl and stem can be improved.</li>
+<li>There are other small things like the width of vertical / horizontal segments that still puzzle me without sticking to best practice.</li>
+<li><a href="https://en.wikipedia.org/wiki/Overshoot_(typography)">Overshoot</a> - I'm pretty sure there are issues with certain letters due to stretching without adapting curvature of lettershapes.</li>
+<li>probably the x-height of the f-ligatures (ff, fi, fl ffi...)</li>
+</ul>
+<h2>Learnings</h2>
+<ul>
+<li>Apparently the &quot;round typeface&quot; is something everyone tries to do once in their career</li>
+<li>Balanced contrast between wide an narrow letters is tricky</li>
+<li>Kerning is harder with round shapes</li>
+<li>Kerning is way easier in Glyphs than in fontforge</li>
+<li>Switching from fontforge to Glyphs is a pain (Kerning, Ligatures, Metrics, all lost in translation)</li>
+<li>Designing directly in Glyphs is way easier than in fontforge. The need for a design-software like affinity designer disappears.</li>
+<li>Look up the  about the ideal thickness of strokes in relation to glyph-height again, before designing the next typeface (or make it a variable font)</li>
+</ul>
+
+
+      <div class="post_nav">
+        
+         
+        <div class="post_link_element"> </div>
+        
+        
+          <div class="post_link_element" id="previous_post"> 
+            <a class="post_link" href="/articles/20220410_segundaNeue/">Segunda a second time<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+<footer class="bot_nav">
+    <a  href="/about/privacy">privacy info</a>
+    <p class="footer_text">written content & images © Simon Hirsbrunner 2023</p>
+    <button class="dmbtntoggler" title="darkmode-toggler">sun</button>
+</footer>
+
+</body>
+   <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+</html>
+
