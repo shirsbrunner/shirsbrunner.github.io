@@ -152,8 +152,8 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'montserrat';
-  src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
-       url('/fonts/Montserrat-Rgular.woff') format('woff');
+  src: url('/fonts/GranCirculos-Regular.woff2') format('woff2'),
+       url('/fonts/GranCirculos-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 
