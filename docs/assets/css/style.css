@@ -123,8 +123,8 @@ main{ /*-- do we need to adjust this? --*/
 /*-- own webfonts --*/
 @font-face {
   font-family: 'segunda';
-  src: url('/fonts/neuesegunda-regular.woff2') format('woff2'),
-       url('/fonts/neuesegunda-regular.woff') format('woff');
+  src: url('/fonts/segunda-bold-webfont.woff2') format('woff2'),
+       url('/fonts/segunda-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 
@@ -201,15 +201,16 @@ h1, h2 {
   font-family:'PrimeraNueva';
   font-style: normal;
   font-weight: normal;
-  margin-bottom: 0.25em; 
 }
 
 h1{
-  font-size:250%;
+  font-size:300%;
+  margin-bottom: 0.2em; 
 }
 
 h2{
-  font-size:200%;
+  font-size:250%;
+  margin-bottom: 0.1em; 
 }
 
 /*basic links*/
@@ -231,7 +232,7 @@ h2 a:hover{
 
 /*links for tag buttons*/
 a.post-tag:link, a.post-tag:visited{
-  color: var(--darkGrey);
+  color: var(--middleGrey);
 }
 a.post-tag:hover, a.post-tag:active{
   color: var(--red);
@@ -478,7 +479,7 @@ a img.control_icon{
   font-size: 0.8rem;
   text-decoration: none; 
   display:inline-block; 
-  color: var(--darkGrey);
+  color: var(--middleGrey);
   padding: 0em 0.8em 0em 0em; 
   /*border-radius: 0.2em; */
   cursor: pointer; 
@@ -489,7 +490,12 @@ a img.control_icon{
 }
 .post-tag::after{
   content:" >";
-  color: var(--darkGrey);
+  color: var(--middleGrey);
+}
+
+.post-tag:hover::after{
+  content:" >";
+  color: var(--red);
 }
 
 /*-- things at the bottom of the page --*/
