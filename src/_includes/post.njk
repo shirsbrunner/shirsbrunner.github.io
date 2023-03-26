@@ -24,7 +24,7 @@
         {% if date %}<p class="time"><time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
         <p class="words">{{ content | wordcount | readtime }}</p>
       </div>
-      <div class="tag_group">
+      <div class="tag_group"><span class="time">tags: </span>
         {% for tag in tags | filterTagList %}
           {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
           <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>

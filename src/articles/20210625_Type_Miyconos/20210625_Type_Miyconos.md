@@ -113,7 +113,7 @@ Among other things in no special order
 - Icons can be shown using the Unicode-Values. If the ligature is not showing, make sure it is in the font. Fontsquirrel, that I use to create the webfonts, actually removes the Private Use Area unless you tell it not to. To find out this fact while creating the samples above cost me some hours... As soon as you correct this (during creation go to "Expert" and click "no subsetting", keep the rest) icons will show up.
 - With ligature-lookups conflicts are possible. If there is a ligature called ABC and a different one called ABCD conflicts might only show the shorter one. I am not really sure about the precedence of one case over the other, but I suggest making non conflicting names. 
 
-## Update 2023.03.11
+## Update 2023-03-11
 
 With a move to glyphs mini and a recent update to the page, the icon-font has also been updated. 
 

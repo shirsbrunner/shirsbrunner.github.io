@@ -53,8 +53,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 <style>
 @font-face {
   font-family: 'primera_regular';
-  src: url('primera_regular-webfont.woff2') format('woff2'),
-       url('primera_regular-webfont.woff') format('woff');
+  src: url('PrimeraNueva-Regular_post.woff2') format('woff2'),
+       url('PrimeraNueva-Regular_post.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -81,3 +81,8 @@ Obviously, the font has a lot of issues, but I like the outcome, especially the 
 It's great to have your handwriting digitized and you can learn a lot in the process. 
 
 There are a lot of approaches that are way simpler than what I did with fontforge. Give it a go. 
+
+## Update 2023-03-24
+
+With the past move to glyphs, I decided to update this typeface. I have been changing some metrics (mainly decenders) of certain glyphs like j and g. Furthermore I have been adjusting sidebearings and kerning. It's been to the point, where I feel like using it on the page. 
+The type specimen above shows the updated typeface. 
