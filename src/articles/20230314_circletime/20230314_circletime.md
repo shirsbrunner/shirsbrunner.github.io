@@ -2,7 +2,7 @@
 title: Circle time
 description: Another typeface with a geometric base
 date: 2023-03-14
-evolution: 1
+evolution: 2
 tags:
   - typography
 ---
@@ -81,3 +81,6 @@ I like the soft character of the typeface.
 - Switching from fontforge to Glyphs is a pain (Kerning, Ligatures, Metrics, all lost in translation)
 - Designing directly in Glyphs is way easier than in fontforge. The need for a design-software like affinity designer disappears.
 - Look up the  about the ideal thickness of strokes in relation to glyph-height again, before designing the next typeface (or make it a variable font)
+
+## Update 2023-03-26
+I adjusted the f and the corresponding ligatures, f now overshoots cap height. Also the r started to bug me and i shortened the [arm](https://typedrawers.com/discussion/3186/what-do-you-call-this-part-of-an-r) of the letter. Also updates to kerning.  
