@@ -60,8 +60,16 @@
   }  
 }
 
+/* Sticky-Footer-Stuff*/
+body{ min-height: 100vh; margin:0; }
 
+/*header{ min-height:48px; }*/
+/*footer{ min-height:48px; }*/
 
+/* The article fills all the space between header & footer */
+body{ display:flex; flex-direction:column; }
+main{ flex:1; margin-bottom:2em;}
+/*end of sticky footer-stuff*/
 
 html{
   overflow-y: scroll;
@@ -115,7 +123,8 @@ main{ /*-- do we need to adjust this? --*/
 
 .page_content ul{
   line-height: 160%;
-  margin:0.8em 0px;  
+  margin:0.8em 0px;
+  color: var(--middleGrey);  
 }
 
 /*-- end of structure *--/
