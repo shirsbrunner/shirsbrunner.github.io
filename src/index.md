@@ -9,7 +9,7 @@ eleventyNavigation:
 ---
 
 ## Nice to have you here
-Welcome to a log of "experiments" in the field of typography, tech, and patterns.
+Welcome to a log of "experiments" in the field of typography, tech, patterns and so on.
 
 Cheers, Simon
 

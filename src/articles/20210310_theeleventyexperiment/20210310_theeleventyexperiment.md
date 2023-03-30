@@ -51,7 +51,7 @@ This is by no means a final list. You'll need more things, but this will help yo
 ... is this page. There are some things that I want to change, also there are some things I already changed since I initially wrote this: 
 - Tags for articles (DONE)
 - Do more with images
-- Add more complex blocks to markdown (you can directly add html)
-- Make outgoing links open in a new tab
+- Add more complex blocks to markdown (you can directly add html - DONE see the typeface pages)
+- Make outgoing links open in a new tab (well... accessibility...)
 - Sticky header (DONE)
 - ...

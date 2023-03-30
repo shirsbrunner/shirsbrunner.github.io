@@ -124,7 +124,7 @@ main{ /*-- do we need to adjust this? --*/
 .page_content ul{
   line-height: 160%;
   margin:0.8em 0px;
-  color: var(--middleGrey);  
+  color: var(--darkGrey);  
 }
 
 /*-- end of structure *--/
@@ -206,7 +206,7 @@ h1::first-letter{
   color:var(--red);
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family:'PrimeraNueva';
   font-style: normal;
   font-weight: normal;
@@ -221,6 +221,12 @@ h2{
   font-size:250%;
   margin-bottom: 0.1em; 
 }
+
+h3{
+  font-size:200%;
+  margin-bottom: 0.1em; 
+}
+
 
 /*basic links*/
 a:link{
@@ -241,7 +247,7 @@ h2 a:hover{
 
 /*links for tag buttons*/
 a.post-tag:link, a.post-tag:visited{
-  color: var(--middleGrey);
+  color: var(--darkGrey);
 }
 a.post-tag:hover, a.post-tag:active{
   color: var(--red);
