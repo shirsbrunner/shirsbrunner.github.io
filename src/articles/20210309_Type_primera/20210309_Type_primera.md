@@ -84,5 +84,6 @@ There are a lot of approaches that are way simpler than what I did with fontforg
 
 ## Update 2023-03-24
 
-With the past move to glyphs, I decided to update this typeface. I have been changing some metrics (mainly decenders) of certain glyphs like j and g. Furthermore I have been adjusting sidebearings and kerning. It's been to the point, where I feel like using it on the page. 
-The type specimen above shows the updated typeface. 
+With the past move to glyphs, I decided to update this typeface. I have been changing some metrics (mainly decenders) of certain glyphs like j and g. Furthermore I have been adjusting sidebearings and kerning. The type specimen above shows the updated typeface. 
+
+It's come to the point, where I feel like using it on the page. 
