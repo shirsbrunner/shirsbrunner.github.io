@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>it looks like some strange tech-chart</title>
+  <meta name="description" content="An squared font that works in a grid">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black:400" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" 
+      type="image/png" 
+      href="/images/structural/favicon.png"> 
+</head>
+<body>
+
+
+<header>
+  
+  <nav class="nav_top">
+    <a href="/">
+    <img class="logo" src="/images/structural/Logo_48.png" alt="Logo of the page showing the Hirschlbrummbaer" width="48" height="48">
+    </a>
+    <ul><li><a href="/">home</a></li><li><a href="/articles/">blog</a></li><li><a href="/about/">about</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+
+
+
+  <h1>
+    <span class="big_text">article</span>
+    <br>
+      <span class="headericon">
+      
+      
+         dotcircle
+      
+      </span>
+          
+    <span class="subtitle"> it looks like some strange tech-chart</span> 
+  </h1>
+
+      <div class="article_metrics">
+        <p class="time"><time datetime="2023-04-01">1 April, 2023</time></p>
+        <p class="words">1,030 words, 6-minute read</p>
+      </div>
+      <div class="tag_group"><span class="time">tags: </span>
+        
+          
+          <a href="/tags/typeface/" class="post-tag">typeface</a>
+        
+      </div>
+
+
+  <div class="content_container">
+    <div class="page_content">
+
+
+
+
+      <h2>Currently more of an idea</h2>
+<p>I've been trying to come up with an idea for a typeface that works in all directions - similar to japanese writing. The issue with our alphabet is the irregularity of shapes with decenders, acenders, lower case, upper case and so on.</p>
+<blockquote>
+<p>While square or circular frames solve the problem they have issues with the rhythm or density of black and white.</p>
+</blockquote>
+<p>After visiting the Haettenschweiler-Exhibition at the ZHdK and some inspiration regarding typefaces I decided to start another approach. Disclaimer: this is a rather quick and unfinished one... (lots of glyphs are missing, there are some strange artifacts in the vertical examples)</p>
+<h2>Learnings</h2>
+<ul>
+<li>space, punctuation and so on all need a square shape - sometimes, this makes text tricky to read. maybe it would be feasible to create ligatures with punctuation and space to not have double whitespace at the end of every paragraph</li>
+<li>readability is really hard with the approach taken</li>
+<li>adding new elements to a constructed approach makes it hard to remain consistent - the same also applies to the whitespace-glyphs that appear way more elegant than the blocky letters.</li>
+<li>this can be caps-only (because lower case would have the same size as upper case)</li>
+<li>kerning begone - everything has the same shape</li>
+<li>It's probably not possible to create this in glyphs mini (or maybe it is since I don't need vertical kerning or spacing)</li>
+<li>now... how to turn the draft 90° to show the vertical text? Solution CSS: &quot;writing-mode: vertical-lr; text-orientation: upright;&quot;</li>
+</ul>
+<h2>Results of the draft</h2>
+<p>The following paragraph shows the outcome with some &quot;cupcake ipsum&quot; text:</p>
+<style>
+@font-face {
+  font-family: 'MonoCube';
+  src: url('MonoCube-Regular.woff2') format('woff2'),
+       url('MonoCube-Regular.woff') format('woff');
+
+       src/articles/20230314_circletime/GranCirculos-Regular.woff
+  font-weight: normal;
+  font-style: normal;
+}
+
+</style>
+<div class="text_sample">
+<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+<div class="text_sample_inverted">
+<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+<p>And vertical upright</p>
+<div class="text_sample" style="writing-mode: vertical-lr; text-orientation: upright;">
+<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+<div class="text_sample_inverted" style="writing-mode: vertical-lr; text-orientation: upright;">
+<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+<h2>Also...</h2>
+<p>I think this has some amazing potential.
+Would pages consisting only of vertical text be horizontally scrolling? And would you scroll japanese from right to left?</p>
+
+
+      <div class="post_nav">
+        
+         
+        <div class="post_link_element"> </div>
+        
+        
+          <div class="post_link_element" id="previous_post"> 
+            <a class="post_link" href="/articles/20230314_circletime/">Circle time<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+<footer class="bot_nav">
+    <a  href="/about/privacy">privacy info</a>
+    <p class="footer_text">written content & images © Simon Hirsbrunner 2023</p>
+    <button class="dmbtntoggler" title="darkmode-toggler">sun</button>
+</footer>
+
+</body>
+   <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+</html>
+

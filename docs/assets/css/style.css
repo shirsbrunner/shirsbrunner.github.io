@@ -193,7 +193,7 @@ main{ /*-- do we need to adjust this? --*/
   font-style: normal;
   font-weight: bold;
   font-size: 3rem; /*-- needs to be adjusted for dynamic type --*/
-  line-height: 3rem; /*-- needs to be adjusted for dynamic type --*/
+  line-height: 1rem; /*-- needs to be adjusted for dynamic type --*/
 
 
   margin-top: 3.5rem; 
