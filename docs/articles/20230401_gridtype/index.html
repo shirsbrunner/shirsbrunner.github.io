@@ -44,7 +44,7 @@
 
       <div class="article_metrics">
         <p class="time"><time datetime="2023-04-01">1 April, 2023</time></p>
-        <p class="words">1,290 words, 7-minute read</p>
+        <p class="words">1,400 words, 7-minute read</p>
       </div>
       <div class="tag_group"><span class="time">tags: </span>
         
@@ -77,6 +77,7 @@
 <li>now... how to turn the draft 90° to show the vertical text? Solution CSS: &quot;writing-mode: vertical-lr; text-orientation: upright;&quot; - however, this does not look good in firefox (better in chrome though - however, then spacings are off...). <a href="https://helpx.adobe.com/in/fonts/using/open-type-syntax.html">Adobe</a> lists some issues with the open type stuff (See &quot;Note: about vertical features&quot;). this issue seems to be related to the problems with placing the &quot;space&quot;-glyphs. Update: this seems to be an issue with &quot;text-orientation:upright;&quot; - Regarding vertical writing modes see <a href="https://www.w3.org/TR/css-writing-modes-3/#vertical-modes">W3C-Spec</a> and <a href="https://www.w3.org/TR/css-writing-modes-3/#intro-text-layout">this on the same page</a> probably answers the question: bi-orientational fonts - but, how to set a font as bi-orientational?</li>
 <li>There is indeed a &quot;dropleft&quot; for japanese (and probably a &quot;dropright&quot; for mongolilan) as seen in <a href="https://www.w3.org/TR/css-writing-modes-3/#block-flow">W3C-Spec</a></li>
 <li>Another <a href="https://fantasai.inkedblade.net/style/discuss/vertical-text/paper">paper as html-page</a> with a nice writeup of the topic and what could be improved for the organization of online layouts for different scripts with additional information in unicode</li>
+<li>It's really hard to make an uniform wall of text, where content breaks wherever possible ignoring everything that is added to browser logic (including the merging of white-space using css: &quot;white-space:break-spaces&quot;). This also includes breaking words in any place (using css &quot;word-break: break-all&quot;), between whitespace, between word and whitespace (appears to be working with &quot;white-space:break-spaces&quot;), between word and punctuation (css: &quot;line-break: anywhere&quot;). In fact it needs all three (?) to actually break everything. Now... if this was just possible in a desktop-publishing software...</li>
 </ul>
 <h2>Questions</h2>
 <ul>
@@ -93,6 +94,9 @@
        src/articles/20230314_circletime/GranCirculos-Regular.woff
   font-weight: normal;
   font-style: normal;
+  word-break: break-all;
+  white-space: break-spaces;
+  line-break: anywhere;
 }
 
 </style>
