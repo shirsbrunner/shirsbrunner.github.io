@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The times they are a-changin&#39;</title>
+  <meta name="description" content="exploring service workers">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black:400" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" 
+      type="image/png" 
+      href="/images/structural/favicon.png"> 
+</head>
+<body>
+
+
+<header>
+  
+  <nav class="nav_top">
+    <a href="/">
+    <img class="logo" src="/images/structural/Logo_48.png" alt="Logo of the page showing the Hirschlbrummbaer" width="48" height="48">
+    </a>
+    <ul><li><a href="/">home</a></li><li><a href="/articles/">blog</a></li><li><a href="/about/">about</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+
+
+
+  <h1>
+    <span class="big_text">article</span>
+    <br>
+      <span class="headericon">
+      
+      
+         dotcircle
+      
+      </span>
+          
+    <span class="subtitle"> The times they are a-changin&#39;</span> 
+  </h1>
+
+      <div class="article_metrics">
+        <p class="time"><time datetime="2023-09-03">3 September, 2023</time></p>
+        <p class="words">300 words, 2-minute read</p>
+      </div>
+      <div class="tag_group"><span class="time">tags: </span>
+        
+          
+          <a href="/tags/html/" class="post-tag">html</a>
+        
+          
+          <a href="/tags/css/" class="post-tag">css</a>
+        
+      </div>
+
+
+  <div class="content_container">
+    <div class="page_content">
+
+
+
+
+      <h2>The passing of time</h2>
+<p>Calculations of time related things is rather complex. For initial reference consider [Wikipedia](https://en.wikipedia.org/wiki/Equation_of_time. Do you need it when programming a special clock for a website? Maybe...</p>
+<h2>Progressive Web apps</h2>
+<p>The main goal behind this little project: learning about PWAs or progressive web apps. PWAs have been around for some years now. A PWA is an app like experience, something that can be installed using a browser or an appstore and works on all plattforms using web technology. Disclaimer: I'm not an expert, but a lot of things seem straightforward. Check the following ressources:</p>
+<ul>
+<li><a href="https://rowdy.codes/talks/20230901-front-conference-zurich/">nice explanation</a></li>
+</ul>
+<p>The main advantage: PWAs can work offline too if all relevant data is put into a cache. A service-worker cann be programmed to intercept the call to the server and serve data from its cache instead.
+Additionally, PWAs can access sensors on the device, allowing for nice additions to the users experience (endless popups, camera...).</p>
+<h2>Learnings</h2>
+<ul>
+<li>PWAs use the concept of service workers to work offline</li>
+<li>You can only ever install a PWA once - if it's not working, it's probably installed (or you use firefox on a mac)</li>
+<li>To do so, it needs to be served using https (localhost is always considered https)</li>
+<li>When simulating time, it's important not to run into endless recursion (doh)</li>
+<li>Also calculated time is not as accurate as system time (for obvious reasons)</li>
+<li>Learning about PWAs might be a good thing for designers in the web space</li>
+</ul>
+
+
+      <div class="post_nav">
+        
+         
+        <div class="post_link_element"> </div>
+        
+        
+          <div class="post_link_element" id="previous_post"> 
+            <a class="post_link" href="/articles/20230501_slicer/">Cut it, move it, stick it, read it<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+<footer class="bot_nav">
+    <a  href="/about/privacy">privacy info</a>
+    <p class="footer_text">written content & images © Simon Hirsbrunner 2023</p>
+    <button class="dmbtntoggler" title="darkmode-toggler">sun</button>
+</footer>
+
+</body>
+   <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+</html>
+
