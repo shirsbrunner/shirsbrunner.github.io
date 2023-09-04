@@ -23,3 +23,5 @@ Text
 ![the final product ready to give away, with branding finalized](/images/posts/Senf1000.jpg "Mouse-Over-Text")
 
 More text
+
+start me with npx eleventy --serve
