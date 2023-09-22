@@ -22,6 +22,7 @@
 
       <div class="article_metrics">
         {% if date %}<p class="time"><time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
+        {% if updateDate %}<p class="time">Updated on: <time datetime="{{ updateDate | dateymd }}">{{ updateDate | datefriendly }}</time></p>{% endif %}
         <p class="words">{{ content | wordcount | readtime }}</p>
       </div>
       <div class="tag_group"><span class="time">tags: </span>

@@ -2,6 +2,7 @@
 title: The 11ty-experiment
 description: Building a static page that can be easily updated
 date: 2021-03-10
+updateDate: 2023-09-22
 evolution: 1
 tags:
   - 11nty
@@ -35,7 +36,6 @@ As a UX-Designer, I normally draw a lot of things before commiting to prototypes
 I had to take a step back to think about content, an design everything from scratch (this time fooling around in Figma), before coming back and adjusting things to match the design. 
 
 
-
 ## Ressources that might help you get started
 This is by no means a final list. You'll need more things, but this will help you get started. 
 
@@ -55,3 +55,7 @@ This is by no means a final list. You'll need more things, but this will help yo
 - Make outgoing links open in a new tab (well... accessibility...)
 - Sticky header (DONE)
 - ...
+
+## Small update Sept 2023
+Entries can now be updated and a corresponding date can be added. 
+A collection of posts is sorted by date updated before initial date. The mechanism was initially alien to me, but rather due to the arrow-functions than the logic itself. 

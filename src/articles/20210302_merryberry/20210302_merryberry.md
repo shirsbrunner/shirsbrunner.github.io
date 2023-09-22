@@ -2,6 +2,7 @@
 title: Repetitive berry patterns
 description: Creating a repetitive berry pattern in krita for textile printing on a light batist for a summer scarf
 date: 2021-03-23
+updateDate: 2021-03-23
 evolution: 3
 tags:
   - textiles
