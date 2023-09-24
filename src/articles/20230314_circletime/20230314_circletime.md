@@ -2,6 +2,7 @@
 title: Circle time
 description: Another typeface with a geometric base
 date: 2023-03-14
+updateDate: 2023-03-26
 evolution: 2
 tags:
   - typography

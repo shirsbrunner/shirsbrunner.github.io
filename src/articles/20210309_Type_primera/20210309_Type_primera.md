@@ -2,6 +2,7 @@
 title: Fooling around with fontforge
 description: Digitizing your handwriting might be more fun than you think (if you also have strange ideas of "fun")
 date: 2021-03-09
+updateDate: 2023-03-24
 evolution: 2
 tags:
   - typeface

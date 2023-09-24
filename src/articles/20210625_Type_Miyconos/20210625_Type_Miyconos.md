@@ -2,6 +2,7 @@
 title: Icons & Ligatures - Creating an icon font
 description: There are icon fonts available, but you can make your own and learn about ligatures among other things
 date: 2021-06-25
+updateDate: 2023-03-11
 evolution: 2
 tags:
   - typeface
