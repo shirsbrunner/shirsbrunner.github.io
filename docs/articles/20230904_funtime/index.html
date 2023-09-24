@@ -44,8 +44,8 @@
 
       <div class="article_metrics">
         <p class="time"><time datetime="2023-09-03">3 September, 2023</time></p>
-        
-        <p class="words">320 words, 2-minute read</p>
+        <p class="time">Updated on: <time datetime="2023-09-24">24 September, 2023</time></p>
+        <p class="words">510 words, 3-minute read</p>
       </div>
       <div class="tag_group"><span class="time">tags: </span>
         
@@ -73,6 +73,12 @@
 </ul>
 <p>The main advantage: PWAs can work offline too, if all relevant data is put into a cache. A service-worker can be programmed, to collect the relevant data, intercept the call to the server and serve data from its cache instead.
 Additionally, PWAs have additional rights and can access sensors on the device, allowing for nice additions to the users experience (endless popups, camera...).</p>
+<h2>Playing around with time - current progress</h2>
+<p>Briefly, I try to program a clock, that shows a special time based on an absurd idea. This involves mostly moving minutes and hours, as well as making seconds longer or shorter.</p>
+<p>It's easy to display the systemtime in a webapp, but it is harder to push out time with an offset or squishing time locally.
+While starting at a given time, moving a bit into the past and making seconds take longer seems easy using some javascript. However time runs out of sync pretty fast, while I'm not looking at it (i.e. browsing the web in a different tab). Especially loading a page somewhere has an impact on the calculated time.</p>
+<p>Initially I was thinking about synching clocks every odd minute. However even at around 1000 secs, there is a noticeable gap.
+Current strategy: assuming it is less problematic getting current time every second and moving it around a bit. The issue with stretching time is however not yet solved (and probably way harder to calculate for the general case).</p>
 <h2>Learnings</h2>
 <ul>
 <li>PWAs use the concept of service workers to work offline</li>
@@ -86,16 +92,12 @@ Additionally, PWAs have additional rights and can access sensors on the device, 
 
       <div class="post_nav">
         
-        
-          <div class="post_link_element" id="next_post">
-            <a class="post_link" href="/articles/20210310_theeleventyexperiment/"><img src="/images/structural/Previous.svg" alt="next post" width="40" height="40">The 11ty-experiment</a>
-          </div>
          
         <div class="post_link_element"> </div>
         
         
           <div class="post_link_element" id="previous_post"> 
-            <a class="post_link" href="/articles/20230501_slicer/">Cut it, move it, stick it, read it<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+            <a class="post_link" href="/articles/20210310_theeleventyexperiment/">The 11ty-experiment<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
           </div>
         
       </div>
