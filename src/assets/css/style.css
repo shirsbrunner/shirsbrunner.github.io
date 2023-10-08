@@ -394,7 +394,7 @@ article h2::before{
 .nav_top {
   font-family: CourrierPrimeRegular, sans-serif;
   font-weight: 400;
-  border-bottom: 1px dotted var(--darkGrey);
+  /* border-bottom: 1px dotted var(--darkGrey); */
   display: flex;
   justify-content: space-between;
 }
