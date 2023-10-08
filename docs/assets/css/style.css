@@ -389,12 +389,12 @@ article h2::before{
 .logo{/*-- the logo at the upper left--*/
   width:48px; /* you can use % */
   height: auto;
-  float:left;  
+  float:left;
 }
 .nav_top {
   font-family: CourrierPrimeRegular, sans-serif;
   font-weight: 400;
-  /* border-bottom: 1px dotted var(--darkGrey); */
+  border-bottom: 0.5px solid var(--middleGrey);
   display: flex;
   justify-content: space-between;
 }
@@ -448,7 +448,7 @@ nav li a:hover {
 }
 
 .post_nav{
-  border-top: 1px dotted var(--darkGrey); 
+  border-top: 0.5px solid var(--middleGrey);
   margin-top: 32px; 
   padding-top: 8px;
   font-family: CourrierPrimeRegular, sans-serif;
@@ -520,7 +520,7 @@ footer{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border-top: 1px dotted var(--darkGrey); 
+  border-top: 0.5px solid var(--middleGrey); 
 }
 .bot_nav{
   display: flex;
