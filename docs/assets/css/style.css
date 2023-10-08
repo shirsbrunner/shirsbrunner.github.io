@@ -457,10 +457,16 @@ nav li a:hover {
   align-items: center;
   justify-content: space-between;
 }
+
 .post_link_element{
   display:flex;
   cursor: pointer;
 }
+
+#previous_post .post_link{
+  text-align:right;
+}
+
 
 .post_link { /*-- this is for the little arrows within a blog nav--*/
   display: flex;
