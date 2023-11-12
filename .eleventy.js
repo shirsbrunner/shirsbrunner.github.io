@@ -97,9 +97,10 @@ module.exports = config => {
   /*-- the following moves from a to b using {a:b} --*/
   config.addPassthroughCopy({'./src/images/structural/icon.svg' : './icon.svg'});
   config.addPassthroughCopy({'./src/images/structural/favicon.ico' : './favicon.ico'});
+  config.addPassthroughCopy('./src/manifest.webmanifest'); //mainly used for fonts
 
-  config.addPassthroughCopy('./src/manifest.webmanifest');
-
+  /*-- CNAME-file-Copy --*/ 
+  config.addPassthroughCopy({'./src/assets/CNAME/CNAME' : './CNAME'});
   // 11ty defaults - where to take files and where to put them
   return {
 
