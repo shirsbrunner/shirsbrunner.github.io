@@ -47,8 +47,8 @@
 
       <div class="article_metrics">
         <p class="time"><time datetime="2023-04-01">1 April, 2023</time></p>
-        
-        <p class="words">1,400 words, 7-minute read</p>
+        <p class="time">Updated on: <time datetime="2023-11-12">12 November, 2023</time></p>
+        <p class="words">1,550 words, 8-minute read</p>
       </div>
       <div class="tag_group"><span class="time">tags: </span>
         
@@ -131,21 +131,20 @@
 </div>
 <h2>Also...</h2>
 <p>I think this has some amazing potential.
-Would pages consisting only of vertical text be horizontally scrolling? And would you scroll japanese from right to left?</p>
+Would pages consisting only of vertical text be horizontally scrolling? Most probably yes.</p>
+<h2>Investigating some things november 2023</h2>
+<p>An additional issue is currently visible on this page. Sometimes, flexbox for the writing-mode:vertical-lr and text-orientation:upright containers is not working properly. This is based on the fact, that, similar to the dropdowns, flexbox behaviour changes if writing-mode changes. See the <a href="https://www.w3.org/TR/css-flexbox-1/#flex-flow-property">w3.org-flexbox documentation</a> for details (it's a bit further down). Currently, I'm not sure on how to handle this.</p>
+<p>Furthermore firefox (not chrome / safari) seems to be doing something strange to the space character in the vertical-lr/upright text. While an empty space is placed, where the character would be, the character itself is shifted a bit. I'm not sure, if this is related to the typeface or a browser text rendering issue.</p>
 
 
       <div class="post_nav">
         
-        
-          <div class="post_link_element" id="next_post">
-            <a class="post_link" href="/articles/20230501_slicer/"><img src="/images/structural/Previous.svg" alt="next post" width="40" height="40">Cut it, move it, stick it, read it</a>
-          </div>
          
         <div class="post_link_element"> </div>
         
         
           <div class="post_link_element" id="previous_post"> 
-            <a class="post_link" href="/articles/20210313_mustard/">Mustard, tasty, tasty mustard<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+            <a class="post_link" href="/articles/20230904_funtime/">The times they are a-changin&#39;<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
           </div>
         
       </div>

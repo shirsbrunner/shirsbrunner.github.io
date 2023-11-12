@@ -350,7 +350,7 @@ article h2::before{
 }
 
 .text_sample_inverted{
-  padding: 0.5rem; 
+  padding: 0.5rem;
   display:flex;
   flex-direction: column;
   word-break: break-word;
