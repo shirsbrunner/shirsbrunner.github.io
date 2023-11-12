@@ -92,7 +92,10 @@ module.exports = config => {
   /*--- fonts - adding local fonts in blogposts ---*/
   config.addPassthroughCopy('./src/articles/**/*.woff');
   config.addPassthroughCopy('./src/articles/**/*.woff2');
-
+  
+  /*-- favicons --*/
+  config.addPassthroughCopy('./src/icon.svg');
+  config.addPassthroughCopy('./src/favicon.ico');
 
   // 11ty defaults - where to take files and where to put them
   return {
