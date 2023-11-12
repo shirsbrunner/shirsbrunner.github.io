@@ -19,11 +19,11 @@ DM_BTN.addEventListener("click", function() {
     if (prefersDarkScheme.matches) {
       // ...then apply the .light-theme class to override those styles
       //put media to light-theme? 
-      console.log("now switching to light?")
+      //console.log("now switching to light?")
       document.documentElement.classList.toggle("light");
       //but use dark-mode if light mode is already set
       var theme = document.documentElement.classList.contains("light") ? "light" : "dark";
-      console.log(theme);
+      //console.log(theme);
       // Otherwise...
 
     } else {
@@ -31,7 +31,7 @@ DM_BTN.addEventListener("click", function() {
       console.log("now switching to dark?")
       document.documentElement.classList.toggle("dark");
       var theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
-      console.log(theme);
+      //console.log(theme);
     }
      /*toggle the icon*/ 
     if(theme == "dark"){
