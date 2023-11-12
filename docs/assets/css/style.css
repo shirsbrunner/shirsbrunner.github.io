@@ -382,7 +382,7 @@ article h2::before{
 .bubble_icon{ /*-- the icon for social things like twitter --*/ 
   height: 40px;
   width: auto; 
-  margin-right: 1rem; 
+  margin-right: 1.1em; 
 }
 
 /*-- the nav, all things nav --*/
@@ -460,7 +460,6 @@ nav li a:hover {
 
 .post_link_element{
   display:flex;
-  cursor: pointer;
 }
 
 #previous_post .post_link{

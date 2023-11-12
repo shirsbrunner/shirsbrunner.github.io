@@ -5,6 +5,7 @@ date: 2023-11-11
 evolution: 1
 tags:
   - light
+draft: true
 ---
 
 ## Akari
