@@ -1,8 +1,8 @@
 ---
 title: Let there be light
-description: Building a japanese paper lamp 
-date: 2023-11-11
-evolution: 1
+description: Building a paper lamp 
+date: 2023-11-27
+evolution: 2
 tags:
   - light
 draft: true
@@ -35,7 +35,7 @@ For this lamp I bought thin rattan (each around 1.5-2 meters long). Rattan has t
 Hopefully, the tension on the rattan is big enough to give a stable lamp. 
 For attachment to the lamp a piece of wire has been added (on top and bottom). 
 
-Where necessary, two pieces of rattan have to be pieced together. Unfortunately, the Sokui was disolving the paper initially bought - therefore I switched to using super glue for the joints.
+Where necessary, two pieces of rattan have to be pieced together. Unfortunately, the Sokui was disolving the paper initially bought - therefore I switched to using super glue for the joints. Different videos use string to wrap around the different parts. Also for a high-quality outcome, one of the sources shows flattening both sides before glueing. Obviously, this depends on the material used for the skeleton (i.e. the profile or cross-section).
 
 ### Paper
 The paper normally used for the lamps is called Washi paper - made from mulberry threes. Unfortunately, I couldn't initially get the paper and bought a paper similar in appearance that didn't tolerate wetness very well. It disolved when trying glue rattan together or when trying to attach it to the frame.
@@ -54,4 +54,12 @@ Sokui is a rice glue used in different crafts in Japan. It can be used to stick 
 The glue is made out of rice starch. Different types of rice yield different outcomes. An initial batch using Carnaroli was less successful, Basmati was easier to work with (finer grains). One of the sources was especially mentioning sushi rice for its sticky quality. Better tasting rice yields better outcomes (well... not sure about this one).
 
 Recipe: boil rice until soft, mash, pulp, strain through a sieve and use it within a week. Can be stored in the fridge but not frozen. 
+
+## Potential improvements...
+I think, I'll try to make another lamp in the future. When I do, I'll
+- Not make it secretly, but let it dry in the open and not move it around while it's still wet. 
+- Go for better base. Wood or maybe reinforcing the cardboard with wheatpaste and newspaper should work wonders.
+- Glue the rattan into one piece before wrapping it around the structure
+- Get better paper - aim for a more sturdy variant. 
+- Try to cut it more even - currently it has fuzzy borders - something, that looks cool too, just not as polished...
  
