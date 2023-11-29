@@ -86,6 +86,8 @@ module.exports = config => {
   /*--- images - adding images from a blog-entry folder. 
   This allows a file of the described file-ending to pass---*/
   config.addPassthroughCopy('./src/articles/**/*.jpg')
+  config.addPassthroughCopy('./src/articles/**/*.png')
+
 
   /*--- fonts - adding global fonts ---*/
   config.addPassthroughCopy('src/fonts');
