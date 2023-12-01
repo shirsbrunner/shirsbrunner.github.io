@@ -31,6 +31,7 @@ In the project, the base was built from cardboard. For size I tried to match the
 ![Base for the lamp](1_Base.png "cardboard spines attached to a bottom and top disc")
 
 Note, that since cardboard is not as sturdy as wood, there was some folding of the base under tension leading to some little distortion in the final lamp. 
+
 ![Warping base](3_Base_is_warping.png "detail showing cardboard spines warped under pressure")
 
 ### Skeleton
