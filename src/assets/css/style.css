@@ -228,7 +228,8 @@ h2{
 
 h3{
   font-size:200%;
-  margin-bottom: 0.1em; 
+  margin-bottom: 0.1em;
+  color:var(--red);
 }
 
 

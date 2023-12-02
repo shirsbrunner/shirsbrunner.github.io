@@ -8,7 +8,7 @@ tags:
 ---
 
 ## Akari
-If you've ever been in Japan, you might have noticed thousands of paper lanterns in entrances to little shops, sushi places, ramen restaurants and also in the street during festivals. Paper lanterns have a tradition of over 300 years. In different places, different lamps are assembled. Gifu paper lamps are famous, producers have a long tradition. The lamps give off a nice warm light, the paper screen works very well as a diffusor. 
+If you've ever been in Japan, you might have noticed thousands of paper lanterns in entrances to little shops, sushi places, ramen restaurants and also in the street during festivals. Paper lanterns have a tradition of over 300 years. In different places, different lamps are assembled. Gifu paper lamps are famous, producers are in business for a very long time. The lamps give off a nice warm light, with the paper screen working very well as a diffusor. 
 
 The trade of lamp making has been in the spotlight in the west, ever since Isao Noguchi reused the process to create his Akari light sculptures. Reusing old forms, but also introducing different shapes, his goal was to bring a piece of his design in every household in the world. 
 
