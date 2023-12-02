@@ -13,35 +13,35 @@
   --controlIcon: ;
 }
 :root.dark{ /*copy from below :root, misses the additional classes.... for dark...*/ 
-  --red: rgb(200,50,50); 
-  --lightRed: rgb(200,50,50);
+  --red: rgb(255,127,80); 
+  --lightRed: rgb(255,127,80);
   --darkGrey: rgb(249,248,248); 
   --backgroundColor: #1f1b24; 
   --textsampleWhite: #333; 
   --sampleBackLight: #1f1b24; 
   --sampleBackDark: rgb(249,248,248); 
-  --textSampleMarkInverted: rgb(155,20,20); 
+  --textSampleMarkInverted: rgb(155, 20, 20);  
   --middleGrey: #999999; 
   --buttonRed: var(--lightRed); 
-  --buttonText: var(--darkGrey);
-  --controlIcon: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);
+  --buttonText: var(--textsampleWhite);
+  --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root{
-    --red: rgb(200,50,50); /*check this to white and dark background wcag*/
-    --lightRed: rgb(200,50,50);
+    --red: rgb(255,127,80); 
+    --lightRed: rgb(255,127,80);
     --darkGrey: rgb(249,248,248); 
     --backgroundColor: #1f1b24; 
     --textsampleWhite: #333; /*check this for contrast*/
     --sampleBackLight: #1f1b24; /*while this is the same as textsampleWhite - it might need to be inverted differently*/
     --sampleBackDark: rgb(249,248,248); 
-    --textSampleMarkInverted: rgb(155,20,20); 
+    --textSampleMarkInverted: rgb(155, 20, 20);  
     --middleGrey: #999999; 
     --buttonRed: var(--lightRed); 
-    --buttonText: var(--darkGrey);
-    --controlIcon: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);
+    --buttonText: var(--textsampleWhite);
+    --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
   }
 
   :root.light{ /*copy from above :root*/
