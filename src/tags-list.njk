@@ -1,16 +1,16 @@
 ---
 permalink: /tags/
 layout: page.njk
-title: Articles by Tag
-subtitle: Content, content, content
+title: Tags
+subtitle: Content, content, content - by topic
 ---
-<h2>Discover articles by topic</h2>
-<p> The following list contains all tags used in the articles on the page. Click to see the list of posts </p>
+<p>Browse <a href="/articles">log by date of update</a> instead</p>
+<p> The following list contains all tags used in all articles on the page. Click on a tag to see the list of corresponding posts </p>
 <div class="tag_group">
 <ul>
 {% for tag in collections.tagList | filterTagList %}
   {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-  <li><a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a></li>
+  <li><a href="{{ tagUrl | url }}">{{ tag }}</a></li>
 {% endfor %}
 </ul>
 </div>
