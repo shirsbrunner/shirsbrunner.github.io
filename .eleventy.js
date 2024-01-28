@@ -80,6 +80,9 @@ module.exports = config => {
   /* --- CSS-Stuff - adding everything in assets --- */
   config.addPassthroughCopy('src/assets');
   
+  /* --- CSS-Stuff - adding everything in webApps --- */
+  config.addPassthroughCopy('src/webApps');
+
   /*--- images - adding everything in images-folder ---*/
   config.addPassthroughCopy('src/images');
 
