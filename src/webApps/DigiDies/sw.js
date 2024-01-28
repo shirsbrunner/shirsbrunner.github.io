@@ -26,7 +26,7 @@ const assetsToCache = [ //stuff it should cache
 
 self.addEventListener('install', ( event ) => {
     self.skipWaiting(); // skip waiting - should automate activation
-    event.waitUntil(  
+    event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
               return cache.addAll(assetsToCache);
         })
