@@ -1,0 +1,281 @@
+/* ------------
+Colours and fonts
+Note: all colours only work on black...
+------------ */
+:root{
+    --lightblue: #94CEFE;
+    --darkblue:#94CEFE;
+    --accent: #D29524; /*former: aqua*/
+    --background: #011C25;
+    --inputBack: rgba(148, 206, 254, 0.125);
+  }
+
+@font-face {
+    font-family: 'miyconos';
+    src:  url('fonts/Miyconos-Regular.woff2') format('woff2'),
+          url('fonts/Miyconos-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'segunda';
+    src:  url('fonts/Segunda-Bold.woff2') format('woff2'),
+          url('fonts/Segunda-Bold.woff') format('woff');
+}
+
+/* currently effs up the whole layout...
+HTML{
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+*/
+
+body {
+    height:64px; 
+    font-family:'segunda';
+    background-image: url("images/Background-Image.png");
+    background-color: var(--background);
+    color:var(--darkblue);
+    /*font-size:2em;*/
+    max-width: 576px;
+    margin:0 auto;
+    padding:0px 16px
+}
+
+h1 {
+    padding-top:0.0625em; 
+    font-size:2em; 
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size:1.25em; 
+    text-transform: uppercase;
+}
+
+
+
+.hidden {
+    display:none;     
+}
+
+.dotted {
+    border-top: 1px solid var(--lightblue);
+}
+
+.borderContainer {
+    border-style:solid;
+    border-width:1px;
+    padding:0.7rem 1rem 1rem; 
+    border-color: var(--lightblue);
+    border-radius: 4px;
+}
+
+.iconize {
+    font-family:'miyconos' !important;
+}
+
+.historyItem {
+    font-family:'segunda';
+    font-size:0.75rem;
+    color:var(--accent);
+}
+
+/* ------------
+layout
+------------ */
+.sameRow {
+    display:flex; 
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center; 
+}
+
+.sameRowCondense {
+    display:flex; 
+    flex-direction:row;
+    align-items:center;
+    gap:0.25em;
+}
+
+/* ------------
+Stuff with the dice - Buttons built dynamically
+------------ */
+
+.diceRollerArea {
+    display: flex; /* or inline-flex */
+    flex-wrap: wrap;
+    margin:16px 0px; 
+}
+
+.singleDice{
+    color: var(--accent);
+    background-color:var(--background);
+    margin:8px 8px;
+    width:64px;
+    height:64px; 
+    padding:0;
+
+    font-family:'segunda';
+    font-size:1.5em;
+
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+    justify-content:center; 
+    cursor: pointer;
+
+    border-width:1px;
+    border-style:solid; 
+    border-color: var(--lightblue);
+    border-radius: 0 25%; 
+}
+
+/* Hide the browser's default radio button */
+.singleDice input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.singleDice:hover {
+    color:var(--background); 
+    background-color: var(--lightblue);
+    border-color: var(--darkblue);
+    background-size: 300%;
+    background-position-x: 100%;
+}
+
+/* Button pressed*/
+.singleDice:active {
+    background-color: var(--lightblue);
+    border-color: var(--darkblue);
+    border-style:inset;
+}
+
+.diceFaceCountBatch { /*the batch that shows the face value of the circle*/
+    font-size: 0.75rem;
+    align-self: flex-start;
+    margin-left:0.25rem;
+}
+
+.dicerSpacer { /*element to "easily" center the dice*/
+    min-height:1rem; 
+}
+
+/* ------------
+Input-Styling
+------------ */
+
+
+input { /*also used to be select*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid var(--lightblue);
+    background-color: var(--inputBack);
+    color: var(--lightblue);
+    border-radius: 0.25rem;
+    padding: 0.6rem 0.75rem 0.4rem;
+    margin: 0;
+    box-sizing: border-box;
+    font: 0.75rem / 1.25 'segunda';
+    display: block;
+    box-sizing: border-box;
+    width:60px;
+}
+/*removing the arrows from input-type*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Source, removing the arrow: https://fabriceleven.com/design/clever-way-to-change-the-drop-down-selector-arrow-icon/*/
+.selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* Add some styling */    
+    width: 100%;
+    max-width: 320px;
+    float: right;
+    padding: 0.6rem 0.75rem 0.4rem;
+    margin: 0;
+    font: 0.75rem / 1.25 'segunda';
+    color: var(--lightblue);
+    border-radius: 0.25rem;
+    background-color: var(--inputBack);
+    border: 2px solid var(--lightblue);
+    -ms-word-break: normal;
+    word-break: normal;
+    display: block;
+    box-sizing: border-box;
+}
+
+/*To remove button from IE11, thank you Matt */
+select::-ms-expand {
+    display: none;
+}
+
+.selectdiv {
+    position: relative;
+    float: left;
+    min-width: 120px;
+}
+
+.selectdiv:after {
+    content: '<>';
+    font: 0.75rem 'segunda';
+    color: var(--lightblue);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+    
+    top: 0.5rem;
+    padding: 0 0 2px;
+    border-bottom: 2px solid var(--lightblue);
+    /*left line */
+    
+    position: absolute;
+    pointer-events: none;
+  }
+
+.button {
+    font-size:0.75em; 
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    
+    border-width:1px; 
+    border-style:solid;
+    color:var(--darkblue);
+    font-family:'segunda';
+    background-color: var(--background);
+    border-radius: 0% 0.5em;
+    border-color: var(--lightblue);
+    /*eight:40px;*/
+    padding: 0.75em 0.75em; 
+}
+
+.button:hover {
+    color:var(--background); 
+    background-color: var(--lightblue);
+    border-color: var(--darkblue);
+}
+
+.button:active {
+    color:var(--background); 
+    background-color: var(--lightblue);
+    border-color: var(--darkblue);
+    border-style:inset;
+}
+

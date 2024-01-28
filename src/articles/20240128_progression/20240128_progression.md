@@ -16,7 +16,7 @@ Since my first attempt at programming a PWA was hindered by the fact, that build
 
 I'm sure, an app for this usecase exists somewhere (remember, there is nothing new under the sun). Still, it's an easy enough usecase for everything related to webdevelopment, PWAs and so on. Feel free to use and install it. Suggestions? Send me a message...
 
-The app can be found HERE (this opens on a new page for PWA reasons)
+The app can be found [here](/webApps/DigiDies/index.html).
 
 ## Futuristic GUI
 Thoughts to be added...

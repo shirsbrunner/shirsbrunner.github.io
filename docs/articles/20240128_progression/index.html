@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alea Iacta Est</title>
+  <meta name="description" content="Building a simpler PWA">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black:400" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <!--<link rel="icon" 
+      type="image/png" 
+      href="/images/structural/favicon.png"> -->
+</head>
+<body>
+
+
+<header>
+  
+  <nav class="nav_top">
+    <a href="/">
+    <img class="logo" src="/images/structural/Logo_48.png" alt="Logo of the page showing the Hirschlbrummbaer" style="width:48px; height:48px">
+    </a>
+    <ul><li><a href="/">home</a></li><li><a href="/articles/">log</a></li><li><a href="/about/">about</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+
+
+
+  <h1>
+    <span class="big_text">entry</span>
+    <br>
+      <span class="headericon">
+      
+      
+         dotcircle
+      
+      </span>
+          
+    <span class="subtitle"> Alea Iacta Est</span> 
+  </h1>
+
+      <div class="article_metrics">
+        <p class="time"><time datetime="2024-01-28">28 January, 2024</time></p>
+        
+        <p class="words">610 words, 4-minute read</p>
+      </div>
+      <div class="tag_group"><span class="time">tags: </span>
+        
+          
+          <a href="/tags/html/" class="post-tag">html</a>
+        
+          
+          <a href="/tags/css/" class="post-tag">css</a>
+        
+      </div>
+
+
+  <div class="content_container">
+    <div class="page_content">
+
+
+
+
+      <h2>Let's roll</h2>
+<p>Will apps always dominate the different ecosystems? Probably not. While the internet might as well be replaced somewhen in the future, it appears to be replacing app-stores for some years now, only hindered by lock-ins from the different vendors (mainly apple). PWA's or progressive webapps seem to be an obvious thing. Easily updated, distributed anywhere on the web, no need for an appstore or compliance. Obviously, there is some benefit app stores bring, but still, PWAs seem to open a lot of doors. As a designer I didn't really understand all the PWA things. We tend to be plattform agnostic, the design works everywhere. However, PWAs service workers bring additional benefits to websites and webapps, that are not to be overlooked (or let in the hand of devs only).</p>
+<p>Since my first attempt at programming a PWA was hindered by the fact, that building a &quot;different&quot; clock is harder than it seems (business or science behind time, not technology), this attempt is a dice rolling app. The kid is currently at an age, where games are more and more important. Boardgames or similar are sometimes more fun than something digital (and parents love analog things way more than digital stuff). But where do you roll in a train? Enter digital dice.</p>
+<p>I'm sure, an app for this usecase exists somewhere (remember, there is nothing new under the sun). Still, it's an easy enough usecase for everything related to webdevelopment, PWAs and so on. Feel free to use and install it. Suggestions? Send me a message...</p>
+<p>The app can be found <a href="/webApps/DigiDies/index.html">here</a>.</p>
+<h2>Futuristic GUI</h2>
+<p>Thoughts to be added...</p>
+<h2>Notes Learnings &amp; Sources</h2>
+<ul>
+<li>If you can't install it, it's probably installed and can only be installed once. The browser will hide the icon and not show it again. This cost me an evening of debugging.</li>
+<li>Form inputs are harder than I thought... at least for me, and dropdowns should really be better styleable in pure html / css without fancy hacks. Sorry devs for requests in the past.</li>
+<li>It's fun to add / define elements to be added to the screen. I'm always amazed on how features grow from easy to super complex when programming. Stuff that is hard to describe initially takes form - Prototyping and defining directly in the medium is a lot of fun</li>
+<li>You can burn a lot of time, if IDs are not correct... Radiobuttons don't select on clicks and so on...</li>
+<li>Installing PWAs to mobile phones is impossible without deployment (or fancy setups) as the webserver in question needs https. While http is super simple to achieve, https seems not.</li>
+</ul>
+<p>The basic PWA and Service worker is based on info on these sites (regarding PWA / Service workers)</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Secure_connection">Mozilla dev intro to PWA</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers">Mozilla regarding service workers</a></li>
+<li><a href="https://web.dev/learn/pwa/service-workers/">Web.dev regarding service workers</a></li>
+</ul>
+<h2>Todos</h2>
+<ul>
+<li>check if it works</li>
+<li>check if the service worker does it's thing</li>
+<li>should the service worker cache the current dice setup</li>
+<li>the log is not yet clear</li>
+</ul>
+
+
+      <div class="post_nav">
+        
+         
+        <div class="post_link_element"> </div>
+        
+        
+          <div class="post_link_element" id="previous_post"> 
+            <a class="post_link" href="/articles/20231111_lettherebelight/">Let there be light<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+<footer class="bot_nav">
+    <a  href="/about/privacy">privacy info</a>
+    <p class="footer_text">written content & images © Simon Hirsbrunner 2024</p>
+    <button class="dmbtntoggler" title="darkmode-toggler">sun</button>
+</footer>
+
+</body>
+   <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+</html>
+

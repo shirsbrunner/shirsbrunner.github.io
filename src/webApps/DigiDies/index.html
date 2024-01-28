@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"/> -->
+    <title>DCounter</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="manifest" href="manifest.json"/>
+    <script src="app.js" defer></script> <!-- this starts the app-script, that subscribes the worker -->
+  </head>
+  <body>
+  <div class="sameRow">
+    <h1>DigiDies</h1>
+    <a href="pages/learnings.html" class="button">?</a>
+  </div>
+    <!--<hr class="dotted">-->
+    <!-- <h2>This is the App</h2> -->
+        <div id="sizeSelector" class="borderContainer">
+          <label id="preset_label" for="presetDiceSize">Select dice:</label> <!--attach correctly!-->
+          <div class="sameRowCondense">
+            <div class="selectdiv">
+              <select id="presetDiceSize" aria-labelledby="preset_label" onchange="getProgressive(value)">
+                  <option disabled selected value> select option </option>
+                  <option value="6">6 sides</option>
+                  <option value="10">10 sides</option>
+                  <option value="12">12 sides</option>
+                  <option value="other">Custom</option>
+              </select>
+            </div>
+              <label id="custom_label" for="manualDiceSize" class="hidden">from 1 to 9999</label>
+              <input type="number" id="manualDiceSize" class="hidden" aria-labelledby="custom_label" min="1" max="9999"> 
+            <button class="button" onclick="buttonBuildDice()">Add dice!</button>
+          </div>
+        </div>
+        <!-- <hr class="dotted"> -->
+        <div class="sameRow">
+          <h2>Let's Roll</h2>
+          <div class="rollerButtonArea" id="rollerButton">
+            <button id="RollAllButton" class="button" class="hidden" onclick="rollAllDice()">Roll all dice!</button>        
+          </div>
+        </div>
+        <div class="diceRollerArea" id="target">
+          <!-- this is where the dynamic stuff happens-->
+        </div>
+        <div id="cancelator" class="hidden">
+          <button onclick="resetAll()" class="button">Remove all!</button>
+        </div>
+        <hr class="dotted">
+        <h2>History</h2>
+        <div id="history_lines">This should eventuall show history-elements</div>
+  </body>
+</html>

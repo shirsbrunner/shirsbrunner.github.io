@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"/> -->
+    <title>DCounter - Additional Info</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="manifest" href="../manifest.json"/>
+    <!--apparently, subsites don't need the service worker -->
+  </head>
+  <body>
+    <a href="../index.html">back to dice</a>
+    <h1>help me understand</h1>
+    <h2>Info-stuff</h2>
+      <p>This will be a simple webapp to roll dice of different sizes</p>
+      <p>Basic functions: roll one dice, keep track of past rolls (to prevent cheating), empty past rolls, select dice size (amount of faces) 
+      </p>
+    <h2>Notes </h2>
+      <h3>webserver</h3>
+        <p>start server with 'npx http-server' - stop with command + c</p>
+        <p>https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Secure_connection</p>
+      <h3>still needs some service-workers - else not installable:</h3>
+        <ul>
+          <li>https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers</li>
+          <li>https://web.dev/learn/pwa/service-workers/</li>
+          <li> currently the service-worker does nothing - could save all necessary data locally</li>
+        </ul>
+      <h3>Form input...</h3>
+        <p>how to create something out of the form input? - the length of the list basically</p>
+        <p>using on change-event can trigger js and send the corresponding value (could also use a text field for more flexibility)</p>
+        <p>can use append (see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/append">append</a>)</p>
+        <p>how to organise the radio-buttons in a flex-grid?</p>
+        <p>you can burn so much time, if your IDs are not right or duplicate and the radiobuttons dont select on label-clicks...</p>
+    <h2>Learnigns (to be added to an article later)</h2>
+    <ul>
+      <li>If it's already installed, you can't install it again... - the browser will hide the corresponding icon (chrome at least) and wont show it again</li>
+    </ul>
+  </body>
+</html>
