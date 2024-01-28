@@ -2,7 +2,7 @@
 // but... what does it need to do? 
 // https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Service_workers
 
-const VERSION = "v1"; //update this to increase version
+const VERSION = "v1.0"; //update this to increase version
 const CACHE_NAME = `DigiDice-${VERSION}`; //name of the cache, increases with version
 const assetsToCache = [ //stuff it should cache
     '.',
@@ -11,6 +11,10 @@ const assetsToCache = [ //stuff it should cache
     'pages/learnings.html',
     'images/',
     'images/Background-Image.png',
+    'images/LogoD-192x192.png',
+    'images/LogoD-384x384.png',
+    'images/LogoD-512x512.png',
+    'images/LogoD-1024x1024.png',
     'app.js',
     'fonts/',
     'fonts/Miyconos-Regular.woff',
