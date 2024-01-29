@@ -3,7 +3,8 @@
     "name": "DigitalDiceApp",
     "short_name": "DigiDice",
     "description": "An app for rolling dice with a phone",
-    "start_url": ".",
+    "start_url": "./",
+
     "background_color": "#2f3d58",
     "theme_color": "#2f3d58",
     "orientation": "any",
