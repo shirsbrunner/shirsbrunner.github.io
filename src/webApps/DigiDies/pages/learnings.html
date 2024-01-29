@@ -11,30 +11,24 @@
   </head>
   <body>
     <a href="../index.html">back to dice</a>
-    <h1>help me understand</h1>
-    <h2>Info-stuff</h2>
-      <p>This will be a simple webapp to roll dice of different sizes</p>
-      <p>Basic functions: roll one dice, keep track of past rolls (to prevent cheating), empty past rolls, select dice size (amount of faces) 
-      </p>
-    <h2>Notes </h2>
-      <h3>webserver</h3>
-        <p>start server with 'npx http-server' - stop with command + c</p>
-        <p>https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Secure_connection</p>
-      <h3>still needs some service-workers - else not installable:</h3>
+    <h1>Quick help</h1>
+      <h2>What it does</h2>
+      <p>This is a simple pwa to roll dice of different sizes</p>
+      <p>Features include
         <ul>
-          <li>https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers</li>
-          <li>https://web.dev/learn/pwa/service-workers/</li>
-          <li> currently the service-worker does nothing - could save all necessary data locally</li>
+          <li>Create dice from presets</li>
+          <li>Create dice from input</li>
+          <li>Roll one or multiple dice</li>
+          <li>See a list of past rolls to prevent cheating</li>
         </ul>
-      <h3>Form input...</h3>
-        <p>how to create something out of the form input? - the length of the list basically</p>
-        <p>using on change-event can trigger js and send the corresponding value (could also use a text field for more flexibility)</p>
-        <p>can use append (see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/append">append</a>)</p>
-        <p>how to organise the radio-buttons in a flex-grid?</p>
-        <p>you can burn so much time, if your IDs are not right or duplicate and the radiobuttons dont select on label-clicks...</p>
-    <h2>Learnigns (to be added to an article later)</h2>
-    <ul>
-      <li>If it's already installed, you can't install it again... - the browser will hide the corresponding icon (chrome at least) and wont show it again</li>
-    </ul>
+      </p>
+      <p>Missing: A11Y features, styling contrast for links - stay tuned for future updates.</p>
+    <h2>PWA intro</h2>
+      <p>DigiDies was built to learn more about PWAs.</p>
+      <p>A PWA is a progressive web app - basically a programm running in the Browser. A PWA can be installed from different browsers and used offline.</p>
+      <p>Service workers ensure that it works offline, caching things. If done correctly, they should automatically update things as soon as there is web access</p>
+      <p>Uninstall it like any web app</p>
+    <h2>Questions</h2>
+      <p>Drop me a line: <a href="https://artisandelux.ch">artisandelux</a></p>
   </body>
 </html>

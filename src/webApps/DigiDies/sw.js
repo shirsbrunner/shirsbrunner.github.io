@@ -9,14 +9,14 @@ const assetsToCache = [ //stuff it should cache
     'index.html',
     //'pages/',
     'pages/learnings.html',
-    //'/images/',
+    //'images/',
     'images/Background-Image.png',
     'images/LogoD-192x192.png',
     'images/LogoD-384x384.png',
     'images/LogoD-512x512.png',
     'images/LogoD-1024x1024.png',
     'app.js',
-    //'/fonts/',
+    //'fonts/',
     'fonts/Miyconos-Regular.woff',
     'fonts/Miyconos-Regular.woff2',
     'fonts/Segunda-Bold.woff',
@@ -26,7 +26,7 @@ const assetsToCache = [ //stuff it should cache
 
 self.addEventListener('install', ( event ) => {
     self.skipWaiting(); // skip waiting - should automate activation
-    event.waitUntil(
+    event.waitUntil(  
         caches.open(CACHE_NAME).then((cache) => {
               return cache.addAll(assetsToCache);
         })

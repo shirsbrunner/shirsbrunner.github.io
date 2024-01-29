@@ -19,7 +19,7 @@ I'm sure, an app for this usecase exists somewhere (remember, there is nothing n
 The app can be found [here](/webApps/DigiDies/index.html).
 
 ## Futuristic GUI
-Thoughts to be added...
+Thoughts to be added in a later update...
 
 ## Notes Learnings & Sources
 - If you can't install it, it's probably installed and can only be installed once. The browser will hide the icon and not show it again. This cost me an evening of debugging.
