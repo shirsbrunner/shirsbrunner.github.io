@@ -52,8 +52,6 @@ h2 {
     text-transform: uppercase;
 }
 
-
-
 .hidden {
     display:none;     
 }
@@ -74,9 +72,13 @@ h2 {
     font-family:'miyconos' !important;
 }
 
-.historyItem {
+.historyLine {
     font-family:'segunda';
     font-size:0.75rem;
+    color:var(--lightblue);
+}
+
+.historyItem {
     color:var(--accent);
 }
 
@@ -165,7 +167,6 @@ Stuff with the dice - Buttons built dynamically
 /* ------------
 Input-Styling
 ------------ */
-
 
 input { /*also used to be select*/
     -webkit-appearance: none;

@@ -91,13 +91,8 @@ function rollAllDice(){
     rollDice(allTheDice.item(i).id, true);
   }
 
-  // get all dice and write the line to id="history_lines"
-
-  var historyLines = document.getElementById("history_lines");
-  let historyItem = document.createElement("div");
-  historyItem.className ="historyItem";
-  historyItem.innerHTML= Date.now()+": all Updated";
-  historyLines.insertBefore(historyItem, historyLines.firstChild);
+  /*document rolls*/
+  documentRolls(true);
 }
 
 /* Roll a single dice; dice: ID of the dice, rollAll: binary true/false */
@@ -127,19 +122,47 @@ function rollDice(dice, rollAll){
   );
   diceOutcome.getElementsByClassName("rollOutcomeElement")[0].innerHTML = outcome;
 
-  /* single documentation */
+  /* single roll documentation*/
   if(!rollAll){
-    var historyLines = document.getElementById("history_lines");
-    let historyItem = document.createElement("div");
-    historyItem.className ="historyItem";
-    historyItem.innerHTML= Date.now()+": single Updated";
-    historyLines.insertBefore(historyItem, historyLines.firstChild);
+    documentRolls(false, dice);
   }
 
 }
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max)+1;
+}
+
+/*responsible for the historyEntry. If all rolled: rollAll = true, singleDiceID: optional parameter*/
+function documentRolls(rollAll, singleDiceID="notadice"){
+  var historyLines = document.getElementById("history_lines");
+  let historyItem = document.createElement("div");
+  historyItem.className ="historyLine";
+
+  var updateString = ""; 
+
+  if(rollAll){
+    // get all dice and read the Outcome-Element (i.e. the indication)
+    var allTheDice = document.getElementsByClassName("singleDice");
+    for (var i = 0; i < allTheDice.length; i++) {
+      updateString += (" | "+ "<span class='historyItem'>"+allTheDice.item(i).getElementsByClassName("rollOutcomeElement")[0].innerHTML+"</span>"); 
+    }
+  } 
+  else {
+    // get all the dice, but only colour the current dice (singleDiceID) orange
+    var allTheDice = document.getElementsByClassName("singleDice");
+    for (var i = 0; i < allTheDice.length; i++) {
+      if (allTheDice.item(i).id === singleDiceID){ //colour the element
+        updateString += (" | "+ "<span class='historyItem'>"+allTheDice.item(i).getElementsByClassName("rollOutcomeElement")[0].innerHTML+"</span>"); 
+      }
+      else { //don't colour the element
+        updateString += (" | "+allTheDice.item(i).getElementsByClassName("rollOutcomeElement")[0].innerHTML); 
+      }
+    }
+  }
+
+  historyItem.innerHTML= Date.now()+": "+ updateString;
+  historyLines.insertBefore(historyItem, historyLines.firstChild);
 }
 
 /*progressive disclosure for the input-field*/
