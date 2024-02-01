@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alea Iacta Est</title>
+  <title>Alea iacta est</title>
   <meta name="description" content="Building a simpler PWA">
   <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black:400" rel="stylesheet"> -->
   <link rel="stylesheet" href="/assets/css/style.css" />
@@ -38,17 +38,17 @@
       <span class="headericon">
       
       
-         dotcircle
+         enso
       
       </span>
           
-    <span class="subtitle"> Alea Iacta Est</span> 
+    <span class="subtitle"> Alea iacta est</span> 
   </h1>
 
       <div class="article_metrics">
         <p class="time"><time datetime="2024-01-28">28 January, 2024</time></p>
         
-        <p class="words">610 words, 4-minute read</p>
+        <p class="words">1,030 words, 6-minute read</p>
       </div>
       <div class="tag_group"><span class="time">tags: </span>
         
@@ -68,19 +68,40 @@
 
 
       <h2>Let's roll</h2>
-<p>Will apps always dominate the different ecosystems? Probably not. While the internet might as well be replaced somewhen in the future, it appears to be replacing app-stores for some years now, only hindered by lock-ins from the different vendors (mainly apple). PWA's or progressive webapps seem to be an obvious thing. Easily updated, distributed anywhere on the web, no need for an appstore or compliance. Obviously, there is some benefit app stores bring, but still, PWAs seem to open a lot of doors. As a designer I didn't really understand all the PWA things. We tend to be plattform agnostic, the design works everywhere. However, PWAs service workers bring additional benefits to websites and webapps, that are not to be overlooked (or let in the hand of devs only).</p>
-<p>Since my first attempt at programming a PWA was hindered by the fact, that building a &quot;different&quot; clock is harder than it seems (business or science behind time, not technology), this attempt is a dice rolling app. The kid is currently at an age, where games are more and more important. Boardgames or similar are sometimes more fun than something digital (and parents love analog things way more than digital stuff). But where do you roll in a train? Enter digital dice.</p>
-<p>I'm sure, an app for this usecase exists somewhere (remember, there is nothing new under the sun). Still, it's an easy enough usecase for everything related to webdevelopment, PWAs and so on. Feel free to use and install it. Suggestions? Send me a message...</p>
-<p>The app can be found <a href="/webApps/DigiDies/">here</a>.</p>
+<p>Will apps always dominate the mobile and tablet ecosystems? Probably not. App stores are still the main distribution vector for applications on mobile, but the open internet (i.e., websites) might as well be replacing stores somewhen in the future.</p>
+<p>Appstores cater to native apps. While these have to be programmed for each mobile platform and pass a multitude of tests and compliance hurdles, not to speak of a fee to be paid to the appstore owner by the publisher, a PWA or progressive web app can be served, installed and easily updated directly from any website (well, also from app stores, but there is still all the hurdles to pass...).</p>
+<p>Sometimes hindered by lock-ins from the different vendors (mainly apple), PWA's can have the same access to sensors and apis on a device, native apps currently have. PWA's seem to be an obvious thing. Obviously, there is some benefit app stores bring - like a discussion on the app itself, some ratings, compliance. Still, PWAs seem to open a lot of doors.</p>
+<p>As a designer I didn't really understand all the technology and benefits behind a PWA. Designers tend to be plattform agnostic, the design works everywhere. However, PWAs service workers bring benefits to websites and webapps. I've been mentioning sensor access (like a location information). Another very important thing is also caching of data and delivering an offline experience. These benefits are not to be overlooked (or let solely in the hand of devs).</p>
+<p>Since my first attempt at programming a PWA was hindered by the fact, that building a &quot;different&quot; clock is harder than it seems (the business part - i.e., the science behind time, not the technology of a PWA), this second attempt is a &quot;simple&quot; dice rolling app.</p>
+<p>The kid is currently at an age, where games are more and more important. Boardgames or card games are sometimes more fun than something digital (and parents prefer analog things for their kids). But how do you roll dice in a train? Enter digital dice.</p>
+<p>I'm sure, an app for rolling dice exists somewhere (remember: there is nothing new under the sun). Still, it's an easy enough usecase for everything related to web development, PWAs, service workers and so on. Feel free to use and install it. Suggestions? Send me a message...</p>
+<h2>Install me</h2>
+<p>The digidice app can be found <a href="/webApps/DigiDies/">here</a> (... time to build a call to action)</p>
 <h2>Futuristic GUI</h2>
-<p>Thoughts to be added in a later update...</p>
-<h2>Notes Learnings &amp; Sources</h2>
+<p>What makes an interesting GUI design? Initially I was going for something in pixelstyle. But after watching the baymax-movie with the kid for at least 4 times and noticing a lot of futuristic computer screens, I decided to make it a bit more modern.</p>
+<p>What makes a GUI look futuristic? Most interfaces are:</p>
+<ul>
+<li>in darkmode</li>
+<li>have blueish colours for fonts</li>
+<li>use warmer colours for important information</li>
+<li>have containers or buttons with fancy asymetric shapes</li>
+<li>have small text with lots of infos that are mainly for decoration</li>
+<li>use fonts with a lot of edges, still something pixelated, or monospace fonts for smaller things</li>
+<li>tend to make no sense at all</li>
+<li>are touchscreens</li>
+<li>have some background images and transparency (hud-like, sometimes an overlay on the realworld)</li>
+<li>use a lot of graphical elements</li>
+</ul>
+<p>Can I show a picture? Legally, I don't know, but watch baymax once or trice!</p>
+<p>I tried to incorporate a lot of these ideas into the digidice app - let me know, if I missed something important.</p>
+<h2>Notes, learnings &amp; sources</h2>
 <ul>
 <li>If you can't install it, it's probably installed and can only be installed once. The browser will hide the icon and not show it again. This cost me an evening of debugging.</li>
 <li>Form inputs are harder than I thought... at least for me, and dropdowns should really be better styleable in pure html / css without fancy hacks. Sorry devs for requests in the past.</li>
 <li>It's fun to add / define elements to be added to the screen. I'm always amazed on how features grow from easy to super complex when programming. Stuff that is hard to describe initially takes form - Prototyping and defining directly in the medium is a lot of fun</li>
 <li>You can burn a lot of time, if IDs are not correct... Radiobuttons don't select on clicks and so on...</li>
 <li>Installing PWAs to mobile phones is impossible without deployment (or fancy setups) as the webserver in question needs https. While http is super simple to achieve, https seems not.</li>
+<li>having an outdated folder, &quot;webapps&quot; besides the new folder &quot;webApps&quot; counts for endless hours of 404 fun - time to make a custom 404 page btw.</li>
 </ul>
 <p>The basic PWA and Service worker is based on info on these sites (regarding PWA / Service workers)</p>
 <ul>
@@ -91,9 +112,12 @@
 <h2>Todos</h2>
 <ul>
 <li>check if it works</li>
-<li>check if the service worker does it's thing</li>
-<li>should the service worker cache the current dice setup</li>
-<li>the log is not yet clear</li>
+<li>check if the service worker does it's thing (clicking on the info button is still killing everything)</li>
+<li>links are not ideal yet on the dark background</li>
+<li>should the service worker cache the current dice setup - probably yes.</li>
+<li>enter to submit the dice building form</li>
+<li>timestamps should be better readable (and using something monospace)</li>
+<li>sound... imagine this also made a sound when rolling :)</li>
 </ul>
 
 
