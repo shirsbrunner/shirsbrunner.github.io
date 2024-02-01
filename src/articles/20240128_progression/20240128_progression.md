@@ -24,10 +24,12 @@ The kid is currently at an age, where games are more and more important. Boardga
 
 I'm sure, an app for rolling dice exists somewhere (remember: there is nothing new under the sun). Still, it's an easy enough usecase for everything related to web development, PWAs, service workers and so on. Feel free to use and install it. Suggestions? Send me a message...
 
-## Install me
-The digidice app can be found [here](/webApps/DigiDies/) (... time to build a call to action)
+## Install me!
+After clicking the following link, you can use the dice app online (try it out) and (if you like it) install it using an install action in the browser from the address-bar or a menu, depending on browser. This will generate an app on your computer or mobile phone, should work on a lot of devices and should also be available offline. 
 
-## Futuristic GUI
+> The digidice app can be found [here](/webApps/DigiDies/) (... time to build a real call to action). 
+
+## Futuristic user interfaces
 What makes an interesting GUI design? Initially I was going for something in pixelstyle. But after watching the baymax-movie with the kid for at least 4 times and noticing a lot of futuristic computer screens, I decided to make it a bit more modern.
 
 What makes a GUI look futuristic? Most interfaces are: 
