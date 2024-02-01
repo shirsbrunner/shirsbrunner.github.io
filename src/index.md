@@ -8,8 +8,8 @@ eleventyNavigation:
   order: 100
 ---
 
-## Nice to have you here
-Welcome to a log of "experiments" in the field of typography, tech, patterns and so on.
+## Well, hello
+Welcome my log of "experiments" in typography, design, programming, tech, patterns and other things.
 
 Cheers, Simon
 
