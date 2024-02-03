@@ -62,10 +62,8 @@ The basic PWA and Service worker is based on info on these sites (regarding PWA 
 - [Web.dev regarding service workers](https://web.dev/learn/pwa/service-workers/)
 
 ## Todos
-- check if it works
 - check if the service worker does it's thing (clicking on the info button is still killing everything)
 - links are not ideal yet on the dark background
 - should the service worker cache the current dice setup - probably yes. 
 - enter to submit the dice building form
-- timestamps should be better readable (and using something monospace)
 - sound... imagine this also made a sound when rolling :)
