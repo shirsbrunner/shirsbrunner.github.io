@@ -22,6 +22,12 @@ Note: all colours only work on black...
           url('fonts/Segunda-Bold.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'slicer';
+    src:  url('fonts/Slicer-Regular.woff2') format('woff2'),
+          url('fonts/Slicer-Regular.woff') format('woff');
+}
+
 /* currently effs up the whole layout...
 HTML{
     font-size: 1rem;
@@ -72,6 +78,10 @@ h2 {
     font-family:'miyconos' !important;
 }
 
+.alien {
+    font-family:'slicer' !important;
+}
+
 .historyLine {
     font-family:'segunda';
     font-size:0.75rem;
@@ -90,6 +100,7 @@ layout
     flex-direction:row;
     justify-content:space-between;
     align-items:center; 
+    flex-wrap:wrap;
 }
 
 .sameRowCondense {
@@ -107,6 +118,7 @@ Stuff with the dice - Buttons built dynamically
     display: flex; /* or inline-flex */
     flex-wrap: wrap;
     margin:16px 0px; 
+    justify-content: center;
 }
 
 .singleDice{

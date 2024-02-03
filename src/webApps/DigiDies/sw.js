@@ -8,7 +8,7 @@ const assetsToCache = [ //stuff it should cache
     '.',
     'index.html',
     //'pages/',
-    'pages/learnings.html',
+    'pages/info.html',
     //'images/',
     'images/Background-Image.png',
     'images/LogoD-192x192.png',
@@ -21,6 +21,8 @@ const assetsToCache = [ //stuff it should cache
     'fonts/Miyconos-Regular.woff2',
     'fonts/Segunda-Bold.woff',
     'fonts/Segunda-Bold.woff2',
+    'fonts/Slicer-Regular.woff',
+    'fonts/Slicer-Regular.woff2',    
     'style.css'
 ]
 
@@ -59,7 +61,7 @@ self.addEventListener("fetch", (event) => {
       const allowedPages = [
         //'/specific-page1.html', //add more if necessary
         //'/specific-page2.html',
-        'pages/learnings.html'];
+        'pages/info.html'];
 
       event.respondWith(
         caches.match(event.request)

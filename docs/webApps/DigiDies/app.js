@@ -39,8 +39,10 @@ function buttonBuildDice(){
 /* this actually creates the dice */
 function createDice(diceSize){
   /*toggleHide("sizeSelector");*/
+  showID("diceArea");
   showID("cancelator");
   showID("RollAllButton");
+  
 
   diceFaceCount = Number(diceSize);
   const target = document.getElementById("target"); //gets the target-ID element
@@ -92,6 +94,7 @@ function rollAllDice(){
   }
 
   /*document rolls*/
+  showID("rollLog");
   documentRolls(true);
 }
 
@@ -124,6 +127,7 @@ function rollDice(dice, rollAll){
 
   /* single roll documentation*/
   if(!rollAll){
+    showID("rollLog");
     documentRolls(false, dice);
   }
 
@@ -161,8 +165,19 @@ function documentRolls(rollAll, singleDiceID="notadice"){
     }
   }
 
-  historyItem.innerHTML= Date.now()+": "+ updateString;
+  historyItem.innerHTML= "<span class='alien'>"+ getHumanTime(Date.now())+"</span>" +": "+ updateString;
   historyLines.insertBefore(historyItem, historyLines.firstChild);
+
+  //remove last if more than 10
+  removeLastLogEntry();
+}
+
+/*
+Convert unix time to something readable
+based on https://stackoverflow.com/questions/40927938/extract-time-from-timestamp-in-js
+*/
+function getHumanTime(timestamp){
+  return new Date(timestamp).toLocaleTimeString(); 
 }
 
 /*progressive disclosure for the input-field*/
@@ -199,7 +214,21 @@ function resetAll(){
   /*toggleHide("sizeSelector");*/
   toggleHide("RollAllButton");
   toggleHide("cancelator");
+  //remove dice and area
   while (target.hasChildNodes()) { //this should remove all nodes from the target before adding a new list
     target.removeChild(target.firstChild);
+  }
+  toggleHide("diceArea")
+}
+
+/*
+remove child nodes from the log entry, based on this: 
+https://stackoverflow.com/questions/11776570/javascript-child-node-count
+*/
+function removeLastLogEntry(){
+  var temp = document.getElementById('history_lines');
+  if (temp.children.length > 10){
+    //window.alert(temp.children.length);
+    temp.removeChild(temp.lastElementChild)
   }
 }
