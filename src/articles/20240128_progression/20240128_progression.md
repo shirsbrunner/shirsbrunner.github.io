@@ -63,7 +63,6 @@ The basic PWA and Service worker is based on info on these sites (regarding PWA 
 
 ## Todos
 - check if the service worker does it's thing (clicking on the info button is still killing everything)
-- links are not ideal yet on the dark background
 - should the service worker cache the current dice setup - probably yes. 
-- enter to submit the dice building form
+- accept enter to submit the dice building form
 - sound... imagine this also made a sound when rolling :)
