@@ -4,7 +4,7 @@ Note: all colours only work on black...
 ------------ */
 :root{
     --lightblue: #94CEFE;
-    --darkblue:#94CEFE;
+    --darkblue:#66B3F2;
     --accent: #D29524; /*former: aqua*/
     --background: #011C25;
     --inputBack: rgba(148, 206, 254, 0.125);
@@ -47,15 +47,21 @@ body {
     padding:0px 16px
 }
 
+h1, h2 {
+    text-transform: uppercase;
+    color: var(--lightblue);
+}
+
 h1 {
     padding-top:0.0625em; 
     font-size:2em; 
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 h2 {
     font-size:1.25em; 
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+    margin-top: 1.25em;
 }
 
 .hidden {
@@ -85,7 +91,7 @@ h2 {
 .historyLine {
     font-family:'segunda';
     font-size:0.75rem;
-    color:var(--lightblue);
+    color:var(--darkblue);
 }
 
 .historyItem {
@@ -106,8 +112,13 @@ layout
 .sameRowCondense {
     display:flex; 
     flex-direction:row;
-    align-items:center;
+    align-items:end;
     gap:0.25em;
+}
+
+.formColumn {
+    display:flex;
+    flex-direction:column;
 }
 
 /* ------------
@@ -172,8 +183,12 @@ Stuff with the dice - Buttons built dynamically
     margin-left:0.25rem;
 }
 
-.dicerSpacer { /*element to "easily" center the dice*/
-    min-height:1rem; 
+.dicerBot { /*element to "easily" center the dice*/
+    min-height:1rem;
+    font-size:0.75rem;
+    align-self: flex-end; 
+    margin-right:0.25rem;
+    font-family: 'miyconos';
 }
 
 /* ------------
@@ -263,6 +278,7 @@ select::-ms-expand {
   }
 
 .button {
+    all:unset;
     font-size:0.75em; 
     box-sizing: border-box;
     display: inline-block;
@@ -292,3 +308,22 @@ select::-ms-expand {
     border-style:inset;
 }
 
+ /* unvisited link */
+ a:link {
+    color: var(--accent);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--lightblue);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--darkblue);
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--darkblue);
+  } 

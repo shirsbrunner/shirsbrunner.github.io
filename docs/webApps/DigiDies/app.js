@@ -26,6 +26,7 @@ https://stackoverflow.com/questions/11894875/using-wildcards-in-getelementsbycla
 function buttonBuildDice(){
   var selectDiceSize = document.getElementById('presetDiceSize').value; 
   var manualDiceSize = document.getElementById('manualDiceSize').value;
+  var iconize = document.getElementById('diceIcon').value;
 
   if (selectDiceSize === "other"){
     var destinationDiceSize = manualDiceSize; 
@@ -33,11 +34,18 @@ function buttonBuildDice(){
   else {
     var destinationDiceSize = selectDiceSize; 
   }
-  createDice(destinationDiceSize);
+
+  if (iconize === "none") {
+    var selectedIcon = "";
+  } else {
+    var selectedIcon = iconize;
+  }
+
+  createDice(destinationDiceSize, selectedIcon);
 }
 
 /* this actually creates the dice */
-function createDice(diceSize){
+function createDice(diceSize, selectedIcon){
   /*toggleHide("sizeSelector");*/
   showID("diceArea");
   showID("cancelator");
@@ -70,14 +78,14 @@ function createDice(diceSize){
   rollOutcomeElement.innerHTML="click";
 
   //bottom spacer
-  let dicerSpacer = document.createElement("div");
-  dicerSpacer.className ="dicerSpacer";
-  dicerSpacer.innerHTML=" ";
+  let dicerBot = document.createElement("div");
+  dicerBot.className ="dicerBot";
+  dicerBot.innerHTML=selectedIcon;
 
   //Attach stuff to the button
   diceOutcome.appendChild(diceFaceCountBatch);
   diceOutcome.appendChild(rollOutcomeElement);
-  diceOutcome.appendChild(dicerSpacer);
+  diceOutcome.appendChild(dicerBot);
 
   target.appendChild(diceOutcome);   //attach the dice
 }

@@ -12,25 +12,47 @@
   </head>
   <body>
   <div class="sameRow">
-    <h1>DigiDies</h1>
+    <h1>DigiDice</h1>
     <a href="pages/info.html" class="button">?</a>
   </div>
     <!--<hr class="dotted">-->
     <!-- <h2>This is the App</h2> -->
         <div id="sizeSelector" class="borderContainer">
-          <label id="preset_label" for="presetDiceSize">Select dice:</label> <!--attach correctly!-->
+          
             <div class="sameRowCondense">
-              <div class="selectdiv">
-                <select id="presetDiceSize" aria-labelledby="preset_label" onchange="getProgressive(value)">
-                    <option disabled selected value> select option </option>
-                    <option value="6">6 sides</option>
-                    <option value="10">10 sides</option>
-                    <option value="12">12 sides</option>
-                    <option value="other">Custom</option>
-                </select>
+              <div class="formColumn">
+                <label id="preset_label" for="presetDiceSize">Select dice:</label> <!--attach correctly!-->
+                <div class="selectdiv">
+                  <select id="presetDiceSize" aria-labelledby="preset_label" onchange="getProgressive(value)">
+                      <option disabled selected value> select option </option>
+                      <option value="6">6 sides</option>
+                      <option value="10">10 sides</option>
+                      <option value="12">12 sides</option>
+                      <option value="other">Custom</option>
+                  </select>
+                </div>
               </div>
+              <div class="formColumn">
                 <label id="custom_label" for="manualDiceSize" class="hidden">from 1 to 9999</label>
-                <input type="number" id="manualDiceSize" class="hidden" aria-labelledby="custom_label" min="1" max="9999">               
+                <input type="number" id="manualDiceSize" class="hidden" aria-labelledby="custom_label" min="1" max="9999">
+              </div>
+              <div class="formColumn">
+                <label id="icon_label" for="diceIcon">Iconize</label>
+                <div class="selectdiv">
+                  <select id="diceIcon" aria-labelledby="icon_label">
+                      <option selected value="none">None</option>
+                      <option value="star">Star</option>
+                      <option value="sun">Sun</option>
+                      <option value="fish">Fish</option>
+                      <option value="oneup">Mushroom</option>
+                      <option value="flash">Flash</option>  
+                      <option value="smile">Smiley</option>                      
+                      <option value="flower">Flower</option>                      
+                      <option value="moon">Moon</option>
+                      <option value="peace">Peace</option>                      
+                  </select>                
+                </div>
+              </div>              
               <button class="button" onclick="buttonBuildDice()">Add dice!</button>
             </div> 
         </div>
