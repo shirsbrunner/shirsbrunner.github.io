@@ -13,7 +13,7 @@
   <body>
   <div class="sameRow">
     <h1>DigiDice</h1>
-    <a href="pages/info.html" class="button">?</a>
+    <!--<a href="pages/info.html" class="button">?</a>-->
   </div>
     <!--<hr class="dotted">-->
     <!-- <h2>This is the App</h2> -->
@@ -21,10 +21,10 @@
           
             <div class="sameRowCondense">
               <div class="formColumn">
-                <label id="preset_label" for="presetDiceSize">Select dice:</label> <!--attach correctly!-->
+                <label id="preset_label" for="presetDiceSize">Select dice size</label> <!--attach correctly!-->
                 <div class="selectdiv">
                   <select id="presetDiceSize" aria-labelledby="preset_label" onchange="getProgressive(value)">
-                      <option disabled selected value> select option </option>
+                      <option disabled selected value>select option</option>
                       <option value="6">6 sides</option>
                       <option value="10">10 sides</option>
                       <option value="12">12 sides</option>
@@ -32,9 +32,9 @@
                   </select>
                 </div>
               </div>
-              <div class="formColumn">
-                <label id="custom_label" for="manualDiceSize" class="hidden">from 1 to 9999</label>
-                <input type="number" id="manualDiceSize" class="hidden" aria-labelledby="custom_label" min="1" max="9999">
+              <div class="formColumn, hidden" id="manualSizeContainer">
+                <label id="custom_label" for="manualDiceSize">1-9999</label>
+                <input type="number" id="manualDiceSize" aria-labelledby="custom_label" min="1" max="9999">
               </div>
               <div class="formColumn">
                 <label id="icon_label" for="diceIcon">Iconize</label>
@@ -75,6 +75,30 @@
           <hr class="dotted">
           <h2>Roll History</h2>
           <div id="history_lines"></div>
+        </div>
+        <!-- info-corner starts here -->
+        <hr class="dotted">
+        <button id="showInfo" class="button borderless" onclick="toggleHide('infoCorner')">Toggle info</button>
+        <div id="infoCorner" class="hidden">
+          <h2>What the app does</h2>
+          <p>It's a simple pwa to roll dice of different sizes</p>
+          <p>Features include
+            <ul>
+              <li>Create dice from presets</li>
+              <li>Create dice from input</li>
+              <li>Roll one or multiple dice</li>
+              <li>See a list of past rolls to prevent cheating</li>
+              <li>Add an icon to your dice</li>
+            </ul>
+          </p>
+          <p>Missing: A11Y check, deleting / undo a single dice, stay tuned for future updates.</p>
+        <h2>PWA intro</h2>
+          <p>DigiDies was built to learn more about PWAs.</p>
+          <p>A PWA is a progressive web app - basically a programm running in the Browser. A PWA can be installed from different browsers and used offline.</p>
+          <p>Service workers ensure that it works offline, caching things. If done correctly, they should automatically update things as soon as there is web access</p>
+          <p>Uninstall it like any web app</p>
+        <h2>Questions?</h2>
+          <p>Drop me a line: <a href="https://artisandelux.ch">artisandelux</a></p>
         </div>
   </body>
 </html>

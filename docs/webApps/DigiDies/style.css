@@ -69,6 +69,7 @@ h2 {
 }
 
 .dotted {
+    border:none; 
     border-top: 1px solid var(--lightblue);
 }
 
@@ -114,6 +115,7 @@ layout
     flex-direction:row;
     align-items:end;
     gap:0.25em;
+    flex-wrap:wrap; 
 }
 
 .formColumn {
@@ -283,6 +285,7 @@ select::-ms-expand {
     box-sizing: border-box;
     display: inline-block;
     text-decoration: none;
+    white-space: nowrap;
     
     border-width:1px; 
     border-style:solid;
@@ -292,7 +295,19 @@ select::-ms-expand {
     border-radius: 0% 0.5em;
     border-color: var(--lightblue);
     /*eight:40px;*/
-    padding: 0.75em 0.75em; 
+    padding: 0.75em 0.75em;
+    cursor:pointer; 
+}
+
+.borderless {
+    border:none !important;
+    padding: 0.75em 0em !important;
+    background-color:transparent !important; 
+    color:var(--darkblue) !important; 
+}
+
+.borderless.button:hover {
+    color:var(--accent)!important;
 }
 
 .button:hover {

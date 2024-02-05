@@ -191,9 +191,9 @@ function getHumanTime(timestamp){
 /*progressive disclosure for the input-field*/
 function getProgressive(selection) { 
   if (selection === "other") {
-    showID("manualDiceSize")
+    showID("manualSizeContainer")
   } else {
-    hideID("manualDiceSize");
+    hideID("manualSizeContainer");
   }
 }
 
