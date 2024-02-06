@@ -1,6 +1,6 @@
 ---
 title: designing things
-subtitle: Experimenting with stuff
+subtitle: Experiments with stuff
 description: Testpage generated with @11ty
 layout: start.njk
 eleventyNavigation:
