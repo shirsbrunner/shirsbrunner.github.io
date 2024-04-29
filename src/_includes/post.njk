@@ -24,6 +24,15 @@
         {% if date %}<p class="time"><time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
         {% if updateDate %}<p class="time">Updated on: <time datetime="{{ updateDate | dateymd }}">{{ updateDate | datefriendly }}</time></p>{% endif %}
         <p class="words">{{ content | wordcount | readtime }}</p>
+        <p class="time">State:       
+            {% if evolution == 1 %}
+              More of an Idea
+            {% elif evolution == 2 %}
+              Advanced
+            {% else %}
+              Probably final
+            {% endif %}
+        </p>
       </div>
       <div class="tag_group"><span class="time">tags: </span>
         {% for tag in tags | filterTagList %}

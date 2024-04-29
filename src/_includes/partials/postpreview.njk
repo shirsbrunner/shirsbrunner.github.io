@@ -18,6 +18,17 @@
       {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
       {% if post.data.updateDate %}<p class="time">Updated on: <time datetime="{{ post.data.updateDate | dateymd }}">{{ post.data.updateDate | datefriendly }}</time></p>{% endif %}
       <span class="time">|</span>
+      <p class="time">State:       
+            {% if post.data.evolution == 1 %}
+              More of an Idea
+            {% elif post.data.evolution == 2 %}
+              Advanced
+            {% else %}
+              Probably final
+            {% endif %}
+        </p>
+        <span class="time">|</span>
+
       <span class="time">tags: </span>
       {% for tag in post.data.tags | filterTagList %}
         {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
