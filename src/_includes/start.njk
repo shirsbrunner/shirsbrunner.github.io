@@ -17,15 +17,16 @@
         <article> {#cant use the shorthand, because of the "latest article..."#}
 
           <h2>
-               <span class="headericon">
+               <span class="headericon" data-icon="
               {# this adds the state-icon #}
-              {% if post.data.evolution == 1 %}
-                dotcircle
-              {% elif post.data.evolution == 2 %}
-                enso
-              {% else %}
-                spiral
-              {% endif %}
+                {% if post.data.evolution == 1 %}
+                  dotcircle
+                {% elif post.data.evolution == 2 %}
+                  enso
+                {% else %}
+                  spiral
+                {% endif %}
+              ">
               </span>
               {# this adds the title-link #}    
               <a href="{{ post.url }}">Latest: {{ post.data.title }}</a></h2>

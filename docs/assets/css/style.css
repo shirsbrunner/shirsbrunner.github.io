@@ -315,8 +315,12 @@ article {/*-- the box containing the article preview --*/
 }
 
 .headericon{
-  font-family: 'miyconos';
   font-size: 0.75em;
+}
+
+[data-icon]::before { /*-- Size orientation on parent object. currently only on .headericon--*/
+  font-family: 'miyconos';
+  content: attr(data-icon);
   color:var(--red)
 }
 

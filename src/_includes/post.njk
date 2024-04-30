@@ -6,15 +6,13 @@
   <h1>
     <span class="big_text">entry</span>
     <br>
-      <span class="headericon">
-      {# this adds the state-icon #}
-      {% if evolution == 1 %}
-         dotcircle
-      {% elif evolution == 2 %}
-         enso
-      {% else %}
-         spiral
-      {% endif %}
+      <span class="headericon" data-icon="
+        {# this adds the state-icon #}
+        {% if evolution == 1 %} dotcircle
+        {% elif evolution == 2 %} enso
+        {% else %} spiral
+        {% endif %}
+        ">
       </span>
       {# this adds the title-link #}    
     <span class="subtitle"> {{title}}</span> 
