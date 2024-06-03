@@ -69,7 +69,7 @@ While there is lots of work still to do (and I'm not yet happy with at all with 
 </div>
 
 ## Todos
-- Can't believe I forgot the ampersand
-- What additional signs do I want to add? Do I need other number forms? 
+- What additional signs do I want to add? Do I need other number forms?
+- Ligatures!!!
 - Kerning, Spacing, Adjustment of forms
 - Variable fonts - this could be super pretty using rounder forms, woodprint-like 
