@@ -13,7 +13,7 @@
 <nav class="post_nav">
   
   {% if pagination.href.previous %}
-    <div>
+    <div class="post_preview_nav_container">
       {% if page.url != pagination.href.first %}
         <a href="{{ pagination.href.first }}"><img class="control_icon" src="/images/structural/First.svg" alt="first page" width="40" height="40"></a>
       {% endif %}
@@ -22,7 +22,7 @@
   {% endif %}
   <div></div>
   {% if pagination.href.next %}
-    <div>
+    <div class="post_preview_nav_container">
       <a href="{{ pagination.href.next }}"><img class="control_icon" src="/images/structural/Next.svg" alt="next page" width="40" height="40"></a>
       {% if page.url != pagination.href.last %}
         <a href="{{ pagination.href.last }}"><img class="control_icon" src="/images/structural/Last.svg" alt="last page" width="40" height="40"></a>

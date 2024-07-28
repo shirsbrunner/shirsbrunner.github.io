@@ -97,7 +97,7 @@ main{ /*-- do we need to adjust this? --*/
   /*-- margin-bottom: 32px; --*/
   height: auto; 
   overflow:auto;
-  padding:8px;
+  padding:0px var(--space-s-2xs);
   margin-top: 4em;
 }
 
@@ -107,7 +107,7 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 .page_content{
-  margin-top: 1em; /*-- needs to be adjusted for dynamic type --*/
+  /*margin-top: 1em; /*-- needs to be adjusted for dynamic type --*/
   flex: 0 1 690px; /*flexbox shorthand for grow, shrink, initial width, or max width. No need for min-Width as flexbox controls it*/
   max-width: 690px;
 }
@@ -215,12 +215,14 @@ h1, h2, h3 {
 
 h1{
   font-size: var(--step-4); /*300%*/
+  padding-top: var(--space-l);
   margin-bottom: 0.2em; 
 }
 
 h2{
   font-size: var(--step-3);/*250%*/
-  margin-bottom: 0.1em; 
+  margin: var(--space-l) 0 var(--space-2xs); /*top-sides-bottom*/
+  /*margin-bottom: 0.1em;*/
 }
 
 h3{
@@ -302,7 +304,7 @@ blockquote p {
 }
 
 article {/*-- the box containing the article preview --*/
-  margin: 24px 0px 48px 0px; /* maybe adjust to dynamic sizing */ 
+  margin: 0px 0px var(--space-l) 0px; /* maybe adjust to dynamic sizing */ 
 }
 .article_preview_nav{ /*-- the nav in the preview articles --*/
   display:flex;
@@ -320,16 +322,6 @@ article {/*-- the box containing the article preview --*/
   content: attr(data-icon);
   color:var(--red)
 }
-
-/*--
-article h2::before{
-  font-family: 'segunda';
-  font-weight:bold;
-  color:var(--red); 
-  content: "··· ";
-}
---*/
-
 
 .article_metrics{ /*-- we need this in the article view for detailed metrics --*/
   margin: 0.5em 0px;
@@ -462,6 +454,10 @@ nav li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.post_preview_nav_container { /*container for the nav elements on the post-list-pages*/
+  display:flex; 
 }
 
 .post_link_element{
