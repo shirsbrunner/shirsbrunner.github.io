@@ -537,13 +537,16 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding:var(--space-3xs) var(--space-s-2xs);
+
 }
 .bot_nav a{
   display: block;
   color: var(--darkGrey); 
   text-align: center;
-  padding: 14px 16px;
+  padding: calc(var(--step--1)*1.1) var(--step-0) calc(var(--step--1)*0.9);/*14px 16px;*/
   text-decoration: none;
+  border-radius:99px; 
 }
 .bot_nav a:hover{
   background-color: var(--darkGrey);
@@ -565,11 +568,10 @@ button.dmbtntoggler {
   color: var(--buttonText);
   min-height: 40px;
   min-width: 40px; 
-  /*padding: 8px 16px;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 8px;
+  /*margin: 4px 8px;*/
   cursor: pointer;
   font-family: 'miyconos';
 }
