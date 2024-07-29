@@ -392,36 +392,40 @@ article {/*-- the box containing the article preview --*/
 .nav_top {
   font-family: CourrierPrimeRegular, sans-serif;
   font-weight: 400;
-  border-bottom: 0.5px solid var(--middleGrey);
+  border-bottom: 0.5px solid var(--middleGrey); /*change this into a scroll-shadow maybe - or make the buttons smaller*/
   display: flex;
   justify-content: space-between;
+  align-items:center;
 }
 .nav_top ul{
   list-style-type: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: var(--backgroundColor);
 }
-.nav_top li {
+.nav_top li { /*all li*/
   float: left;
+  margin: 0px var(--space-3xs); 
 }
-.nav_top li a {
+
+.nav_top li a { /*non selected list elements*/
   display: block;
   color: var(--darkGrey);
   text-align: center;
-  padding: 14px 16px;
+  padding: calc(var(--step--1)*1.1) var(--step-0) calc(var(--step--1)*0.9);/*14px 16px;*/
   text-decoration: none;
 }
-nav li a:hover {
+nav ul li a:hover { /*non selected hovered list elements*/
   background-color: var(--darkGrey);
-  color: var(--backgroundColor); 
+  color: var(--backgroundColor);
+  border-radius: 99px;  
 }
-.active {
+.active { /*the active list elements (that are not a link)*/
   display: block;
   color: var(--backgroundColor);
   text-align: center;
-  padding: 14px 16px;
+  padding: calc(var(--step--1)*1.1) var(--step-0) calc(var(--step--1)*0.9);/*14px 16px;*/
+  border-radius: 99px; 
   text-decoration: none;
   background-color: var(--darkGrey);
 }
