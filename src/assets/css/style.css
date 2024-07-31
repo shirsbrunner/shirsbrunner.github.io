@@ -367,7 +367,7 @@ article {/*-- the box containing the article preview --*/
   font-weight:bold;
   font-size: var(--step--1); /*0.8rem*/
   color: var(--middleGrey);
-  margin: 0px 0.8em 0em 0px;
+  margin: 0px var(--step--1) 0em 0px; /*margin: 0px 0.8em 0em 0px;*/
    
 }
 .words { /*-- we need this in the blog-metrics--*/
