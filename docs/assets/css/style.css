@@ -412,7 +412,7 @@ article {/*-- the box containing the article preview --*/
   display: block;
   color: var(--darkGrey);
   text-align: center;
-  padding: calc(var(--step--1)*1.1) var(--step-0) calc(var(--step--1)*0.9);/*14px 16px;*/
+  padding: calc(var(--space-xs)*1.1) var(--space-s) calc(var(--space-xs)*0.9);
   text-decoration: none;
 }
 nav ul li a:hover { /*non selected hovered list elements*/
@@ -424,7 +424,8 @@ nav ul li a:hover { /*non selected hovered list elements*/
   display: block;
   color: var(--backgroundColor);
   text-align: center;
-  padding: calc(var(--step--1)*1.1) var(--step-0) calc(var(--step--1)*0.9);/*14px 16px;*/
+  padding: calc(var(--space-xs)*1.1) var(--space-s) calc(var(--space-xs)*0.9);
+
   border-radius: 99px; 
   text-decoration: none;
   background-color: var(--darkGrey);
