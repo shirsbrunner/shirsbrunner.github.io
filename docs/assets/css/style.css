@@ -293,7 +293,8 @@ a.b_small:hover, a.b_small:active{
 
 p {
   line-height: 160%;
-  margin:0px 0px 0.75em 0px;  
+  margin:0px 0px var(--space-xs) 0px; 
+  /*margin:0px 0px 0.75em 0px; */
 }
 
 /*--- end of fonts for titles and things ---*/
@@ -315,7 +316,10 @@ blockquote p {
 }
 
 article {/*-- the box containing the article preview --*/
-  margin: 0px 0px var(--space-l) 0px; /* maybe adjust to dynamic sizing */ 
+  margin: 0px 0px var(--space-xl) 0px; /* maybe adjust to dynamic sizing */ 
+}
+article p {
+  margin:0px 0px var(--space-3xs) 0px; 
 }
 .article_preview_nav{ /*-- the nav in the preview articles --*/
   display:flex;
@@ -325,14 +329,14 @@ article {/*-- the box containing the article preview --*/
 }
 
 .headericon{ /*the enso and whatnot - this can stay relative to the basic font-size*/
-  font-size: 0.75em;
+  font-size: 1em; 
 }
 
 [data-icon]::before { /*-- Size orientation on parent object. currently only on .headericon--*/
   font-family: 'miyconos';
   content: attr(data-icon);
   color:var(--red);
-  font-size: var(--step-3);  
+  font-size: 1em; /*var(--step-2); */
 }
 
 .article_metrics{ /*-- we need this in the article view for detailed metrics --*/
@@ -511,6 +515,7 @@ a img.control_icon{
   display:flex; 
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: var(--space-3xs);
 }
 .post-tag{
   font-family:'segunda';
