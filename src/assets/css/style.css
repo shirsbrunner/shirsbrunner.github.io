@@ -288,7 +288,7 @@ a.b_small:hover, a.b_small:active{
   /*line-height: 160%; /*-- needs to be adjusted for dynamic type --*/
   margin: 0px; /*-- needs to be adjusted for dynamic type --*/
   margin-bottom: 1rem;
-  
+  letter-spacing: -0.06rem;
 }
 
 p {
