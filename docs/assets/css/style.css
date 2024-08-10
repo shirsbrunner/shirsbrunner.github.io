@@ -319,7 +319,7 @@ article {/*-- the box containing the article preview --*/
   margin: 0px 0px var(--space-xl) 0px; /* maybe adjust to dynamic sizing */ 
 }
 article p {
-  margin:0px 0px var(--space-3xs) 0px; 
+  margin:0px 0px var(--space-3xs) 0px;
 }
 .article_preview_nav{ /*-- the nav in the preview articles --*/
   display:flex;
