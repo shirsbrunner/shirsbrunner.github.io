@@ -1,0 +1,291 @@
+/* ------------
+Colours and fonts
+Note: all colours only work on black...
+------------ */
+:root{
+    --lightblue: #94CEFE;
+    --darkblue:#66B3F2;
+    --accent: #D29524; /*former: aqua*/
+    --background: #011C25;
+    --inputBack: rgba(148, 206, 254, 0.125);
+  }
+
+@font-face {
+    font-family: 'digiwatch';
+    src:  url('fonts/AD-Digiwatch-Regular.woff2') format('woff2'),
+          url('fonts/AD-Digiwatch-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'circulos';
+    src:  url('fonts/GranCirculos-Regular.woff2') format('woff2'),
+          url('fonts/GranCirculos-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'slicer';
+    src:  url('fonts/Slicer-Regular.woff2') format('woff2'),
+          url('fonts/Slicer-Regular.woff') format('woff');
+}
+
+/* enter utopia
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.333,576,18,1.414,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --step--1: clamp(0.7502rem, 0.6934rem + 0.2839vw, 0.7956rem);
+    --step-0: clamp(1rem, 0.8438rem + 0.7813vw, 1.125rem);
+    --step-1: clamp(1.333rem, 1.0108rem + 1.6109vw, 1.5908rem);
+    --step-2: clamp(1.7769rem, 1.1863rem + 2.9527vw, 2.2493rem);
+    --step-3: clamp(2.3686rem, 1.3537rem + 5.0747vw, 3.1805rem);
+    --step-4: clamp(3.1573rem, 1.4824rem + 8.3747vw, 4.4973rem);
+    --step-5: clamp(4.2087rem, 1.5207rem + 13.4402vw, 6.3592rem);
+    --step-6: clamp(5.6102rem, 1.3832rem + 21.1351vw, 8.9918rem);
+  }
+  
+body {
+    height:64px; 
+    font-family:'circulos';
+    background-image: url("images/Background-Image.png");
+    background-color: var(--background);
+    color:var(--darkblue);
+    max-width: 576px;
+    margin:0 auto;
+    padding:0px 16px
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    color: var(--lightblue);
+}
+
+h1 {
+    padding-top:0.0625em; 
+    font-size:var(--step-2); 
+}
+
+h2 {
+    font-size:var(--step-1); 
+    margin-top: 1.25em;
+}
+
+
+.countingArea {
+    display:flex; 
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+#cashValue {
+    font-family:'digiwatch';
+    font-Size:var(--step-6);
+    color:var(--accent);
+}
+
+label{
+    font-size:var(--step--1);
+}
+
+.hidden {
+    display:none;     
+}
+
+.dotted {
+    border:none; 
+    border-top: 1px solid var(--lightblue);
+}
+
+.borderContainer {
+    border-style:solid;
+    border-width:1px;
+    padding:0.7rem 1rem 1rem; 
+    border-color: var(--lightblue);
+    border-radius: 4px;
+}
+
+.alien {
+    font-family:'slicer' !important;
+}
+
+.historyLine {
+    font-family:'circulos';
+    font-size:var(--step--1);
+    color:var(--darkblue);
+}
+
+.historyItem {
+    color:var(--accent);
+}
+
+/* ------------
+layout
+------------ */
+.sameRow {
+    display:flex; 
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:end; /*center; */
+    gap:0.5em 0.25em; 
+    flex-wrap:wrap;
+}
+
+.sameRowCondense {
+    display:flex; 
+    flex-direction:row;
+    align-items:end;
+    gap:0.5em 0.25em;
+    flex-wrap:wrap; 
+}
+
+.formColumn {
+    display:flex;
+    flex-direction:column;
+}
+
+/* ------------
+Input-Styling
+------------ */
+
+input { /*also used to be select*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid var(--lightblue);
+    background-color: var(--inputBack);
+    color: var(--lightblue);
+    border-radius: 0.25rem;
+    padding: 0.6rem 0.75rem 0.4rem;
+    margin: 0;
+    box-sizing: border-box;
+    font: var(--step--1) / 1.25 'circulos';
+    display: block;
+    box-sizing: border-box;
+    width:60px;
+}
+/*removing the arrows from input-type*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Source, removing the arrow: https://fabriceleven.com/design/clever-way-to-change-the-drop-down-selector-arrow-icon/*/
+.selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* Add some styling */    
+    width: 100%;
+    max-width: 320px;
+    float: right;
+    padding: 0.6rem 0.75rem 0.4rem;
+    margin: 0;
+    font: var(--step--1) / 1.25 'circulos';
+    color: var(--lightblue);
+    border-radius: 0.25rem;
+    background-color: var(--inputBack);
+    border: 2px solid var(--lightblue);
+    -ms-word-break: normal;
+    word-break: normal;
+    display: block;
+    box-sizing: border-box;
+}
+
+/*To remove button from IE11, thank you Matt */
+select::-ms-expand {
+    display: none;
+}
+
+.selectdiv {
+    position: relative;
+    float: left;
+    min-width: 120px;
+}
+
+.selectdiv:after {
+    content: '<>';
+    font: var(--step--1) 'circulos';
+    color: var(--lightblue);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+    
+    top: 0.5rem;
+    padding: 0 0 2px;
+    border-bottom: 2px solid var(--lightblue);
+    /*left line */
+    
+    position: absolute;
+    pointer-events: none;
+  }
+
+.button {
+    all:unset;
+    font-size:var(--step--1);
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    
+    border-width:1px; 
+    border-style:solid;
+    color:var(--darkblue);
+    font-family:'circulos';
+    background-color: var(--background);
+    border-radius: 0% 0.5em;
+    border-color: var(--lightblue);
+    padding: 0.75em 0.75em;
+    cursor:pointer; 
+}
+
+.borderless {
+    border:none !important;
+    padding: 0.75em 0em !important;
+    background-color:transparent !important; 
+    color:var(--darkblue) !important; 
+}
+
+.borderless.button:hover {
+    color:var(--accent)!important;
+}
+
+.button:hover {
+    color:var(--background); 
+    background-color: var(--lightblue);
+    border-color: var(--darkblue);
+}
+
+.button:active {
+    color:var(--background); 
+    background-color: var(--lightblue);
+    border-color: var(--darkblue);
+    border-style:inset;
+}
+
+ /* unvisited link */
+ a:link {
+    color: var(--accent);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--lightblue);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--darkblue);
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--darkblue);
+  } 

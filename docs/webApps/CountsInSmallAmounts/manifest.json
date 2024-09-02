@@ -1,0 +1,35 @@
+{
+    "lang": "en-us",
+    "name": "CountsInSmallAmountsApp",
+    "short_name": "CashCounter",
+    "description": "An app to count the cost of time",
+    "scope": "/",
+    "start_url": ".",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./images/LogoD-512x512.png",
+            "sizes": "512x512",
+            "purpose": "maskable",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/LogoD-1024x1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/LogoD-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/LogoD-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
