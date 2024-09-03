@@ -27,6 +27,7 @@ var initialTime; //when did the counter start - unix timestamp?
 var spentCash = 0.0; //how much is spent after a break? 
 var timeIsRunning = false; //is the counter running?
 var updateIntervall = 1.5; // how often should the counter update in seconds (more or less)
+var timerHelper = null; //the timer, so that it can be stopped or started...
 
 /*
 function on the button
@@ -114,24 +115,26 @@ function cashIsSpent(){
   // loop running every "intervall" seconds
   //intervall = update cadence in seconds - i.e. intervall=3, update every 3 seconds
   //should perform updateCounter() every some seconds
-  if(timeIsRunning==true){
     var tempPrice = calculateNow();
     writeCounter(tempPrice);
-    setTimeout(cashIsSpent, 1000 * intervall); //this get's the correct time all seconds and displays it accordingly
-  }
+    timerHelper = setTimeout(cashIsSpent, 1000 * intervall); //this get's the correct time all seconds and displays it accordingly
+}
+//disables the timer (needed for bookkeeping)
+function stopCashCounter(){
+  clearTimeout(timerHelper);
+  timerHelper = null; 
 }
 
 // function to pause the counter with the existing value and new starting time
 function pauseCounter(){
-  if(timeIsRunning==true){ //only break during play...
-    timeIsRunning = false; // stop counting
-    
+
+    stopCashCounter();
     // NOTE: This is wrong, should be the real spent cash, not the thing shown in the GUI ;) but it is near
     spentCash = calculateNow();  // store the current cash value in a variable: update "spentCash"
     writeCounter(spentCash); //show the exact value when pressing break
     // change the pause button to a play button triggering "restartCounter()"
-    toggleHide("pauseator"); //well, this will lead to focus loss - maybe we can later put focus on the playaganator?
-    toggleHide("playaganator");
+    hideID("pauseator"); //well, this will lead to focus loss - maybe we can later put focus on the playaganator?
+    showID("playaganator");
     /*
     console.log("*** pause started ***")
     console.log("hourlyRate: " + hourlyRate);
@@ -141,30 +144,32 @@ function pauseCounter(){
     console.log("initial Time: " + initialTime);
     */
     documentCount(Date.now(), spentCash, "Break" );
-  }
 }
 
 // function to restart the counter
 function restartCounter(){
-    if(timeIsRunning==false){ //only restart if paused - well, if not running actually.
     initialTime = Date.now(); //set starting-Time = now
-    timeIsRunning = true; //restart time
-    cashIsSpent();//restart the loop
+    cashIsSpent(); //restart the loop
     //add a timestamp-start-entry to the log
-    toggleHide("pauseator"); //well, this will lead to focus loss - maybe we can later put focus on the playaganator?
-    toggleHide("playaganator");
-  }
+    showID("pauseator"); //well, this will lead to focus loss - maybe we can later put focus on the playaganator?
+    hideID("playaganator");
 }
 
 // function to remove the counter
 function resetCounter(){
-  timeIsRunning = false; //stop time
-  //make an entry of the last meeting - bascally so we can't cheat that much
-  spentCash = calculateNow();  // store the current cash value in a variable: update "spentCash"
-  documentCount(Date.now(), spentCash, "Let's meet again later!" ); //needs to be before the reset
+  if(timerHelper != null){
+    stopCashCounter(); //stop the timer
+    //make an entry of the last meeting - bascally so we can't cheat that much
+    spentCash = calculateNow();  // store the current cash value in a variable: update "spentCash"
+    documentCount(Date.now(), spentCash, "Let's meet again later!" ); //needs to be before the reset
+  } else {
+    //it's already stopped and spent count is already calculated
+    documentCount(Date.now(), spentCash, "Let's meet again later!" ); //needs to be before the reset
+  }
+  //resetting everything
   spentCash = 0; //nothing is spent now
-  //redraw at 0
-  writeCounter(0);
+  writeCounter(0);  //redraw at 0
+  
 
   /*
   console.log("*** cleanup done ***")
