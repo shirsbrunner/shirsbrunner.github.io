@@ -334,6 +334,7 @@ article p {
 
 [data-icon]::before { /*-- Size orientation on parent object. currently only on .headericon--*/
   font-family: 'miyconos';
+  /*font-variant-ligatures: common-ligatures;*/
   content: attr(data-icon);
   color:var(--red);
   font-size: 1em; /*var(--step-2); */
