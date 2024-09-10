@@ -1,7 +1,8 @@
 
 // Registering Service Worker
+// regarding scope: https://stackoverflow.com/questions/47486756/can-i-have-multiple-pwas-on-the-same-domain-under-different-url-paths
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js');
+    navigator.serviceWorker.register('./sw.js', {scope: '../DigiDies/'});
   }
 
 
