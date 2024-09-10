@@ -4,7 +4,7 @@
 
 if ('serviceWorker' in navigator) {
     //navigator.serviceWorker.register('./sw.js');
-    navigator.serviceWorker.register('./sw.js', {scope: './CounstInSmallAmounts/'});
+    navigator.serviceWorker.register('./sw.js', {scope: '../CountsInSmallAmounts/'});
   }
 
 
