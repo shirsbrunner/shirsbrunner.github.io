@@ -7,6 +7,7 @@ const CACHE_NAME = `CountsInSmallAmounts-${VERSION}`; //name of the cache, incre
 const assetsToCache = [ //stuff it should cache
     '.',
     'index.html',
+    'manifest.json',
     //'pages/',
     //'pages/info.html',
     //'images/',
