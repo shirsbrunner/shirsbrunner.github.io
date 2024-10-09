@@ -1,0 +1,323 @@
+/* ------------
+Colours and fonts
+Note: all colours only work on black...
+------------ */
+:root{
+    --lightblue: #94CEFE;
+    --darkblue:#66B3F2;
+    --mutedblue: #66b3f246; /*transparent version of darkblue*/
+    --accent: #D29524; /*former: aqua*/
+    --background: #011C25;
+    --inputBack: rgba(148, 206, 254, 0.125);
+  }
+
+@font-face {
+    font-family: 'circulos';
+    src:  url('fonts/GranCirculos-Regular.woff2') format('woff2'),
+          url('fonts/GranCirculos-Regular.woff') format('woff');
+}
+
+/* enter utopia
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.333,1024,28,1.414,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --step--1: clamp(0.7502rem, 0.5286rem + 1.1078vw, 1.2376rem);
+    --step-0: clamp(1rem, 0.6591rem + 1.7045vw, 1.75rem);
+    --step-1: clamp(1.333rem, 0.8141rem + 2.5943vw, 2.4745rem);
+    --step-2: clamp(1.7769rem, 0.9941rem + 3.9138vw, 3.4989rem);
+    --step-3: clamp(2.3686rem, 1.1964rem + 5.8612vw, 4.9475rem);
+    --step-4: clamp(3.1573rem, 1.4126rem + 8.7237vw, 6.9958rem);
+    --step-5: clamp(4.2087rem, 1.6254rem + 12.9166vw, 9.892rem);
+    --step-6: clamp(5.6102rem, 1.8025rem + 19.0388vw, 13.9873rem);
+  }
+
+/* @link https://utopia.fyi/space/calculator?c=320,16,1.333,1024,28,1.414,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --space-3xs: clamp(0.25rem, 0.1648rem + 0.4261vw, 0.4375rem);
+    --space-2xs: clamp(0.5rem, 0.3295rem + 0.8523vw, 0.875rem);
+    --space-xs: clamp(0.75rem, 0.4943rem + 1.2784vw, 1.3125rem);
+    --space-s: clamp(1rem, 0.6591rem + 1.7045vw, 1.75rem);
+    --space-m: clamp(1.5rem, 0.9886rem + 2.5568vw, 2.625rem);
+    --space-l: clamp(2rem, 1.3182rem + 3.4091vw, 3.5rem);
+    --space-xl: clamp(3rem, 1.9773rem + 5.1136vw, 5.25rem);
+    --space-2xl: clamp(4rem, 2.6364rem + 6.8182vw, 7rem);
+    --space-3xl: clamp(6rem, 3.9545rem + 10.2273vw, 10.5rem);
+  
+    /* One-up pairs */
+    --space-3xs-2xs: clamp(0.25rem, -0.0341rem + 1.4205vw, 0.875rem);
+    --space-2xs-xs: clamp(0.5rem, 0.1307rem + 1.8466vw, 1.3125rem);
+    --space-xs-s: clamp(0.75rem, 0.2955rem + 2.2727vw, 1.75rem);
+    --space-s-m: clamp(1rem, 0.2614rem + 3.6932vw, 2.625rem);
+    --space-m-l: clamp(1.5rem, 0.5909rem + 4.5455vw, 3.5rem);
+    --space-l-xl: clamp(2rem, 0.5227rem + 7.3864vw, 5.25rem);
+    --space-xl-2xl: clamp(3rem, 1.1818rem + 9.0909vw, 7rem);
+    --space-2xl-3xl: clamp(4rem, 1.0455rem + 14.7727vw, 10.5rem);
+}
+  
+body {
+    height:64px; 
+    font-family:'circulos';
+    /*background-image: url("images/Background-Image.png");*/
+    background-color: var(--background);
+    color:var(--darkblue);
+    max-width: 1024px;
+    margin:0 auto;
+    padding:var(--space-l) var(--space-s-m) var(--space-m) var(--space-s-m);
+    font-size:var(--step-0);
+    display:flex; 
+    flex-direction: column;
+    min-height:100vh;
+}
+
+.content{
+    flex:1;
+    margin-top:var(--space-l-xl);
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    color: var(--lightblue);
+}
+
+h1 {
+    padding-top:0.0625em; 
+    font-size:var(--step-2); 
+}
+
+h2 {
+    font-size:var(--step-1); 
+    margin-top: 1.25em;
+}
+
+* { /*all text*/
+    color:var(--lightblue); 
+}
+
+.cardText{
+    font-size:var(--step-1); 
+}
+
+.hidden {
+    display:none;     
+}
+
+.dotted {
+    border:none; 
+    border-top: 1px solid var(--lightblue);
+}
+
+.borderContainer {
+    border-style:solid;
+    border-width:1px;
+    padding:0.7rem 1rem 1rem; /*make this utopia*/
+    border-color: var(--accent);
+    border-radius: 4px;
+}
+/*
+.alien {
+    font-family:'slicer' !important;
+}
+*/
+
+/* ------------
+layout
+------------ */
+.sameRow {
+    display:flex; 
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:end; /*center; */
+    gap:0.5em 0.25em; 
+    flex-wrap:wrap;
+}
+
+.sameRowCondense {
+    display:flex; 
+    flex-direction:row;
+    align-items:end;
+    gap:0.5em 0.25em;
+    flex-wrap:wrap; 
+}
+
+.button {
+    all:unset;
+    font-size:var(--step--1);
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    
+    border-width:1px; 
+    border-style:solid;
+    color:var(--darkblue);
+    font-family:'circulos';
+    background-color: var(--background);
+    border-radius: 0% 0.5em;
+    border-color: var(--lightblue);
+    padding: 0.75em 0.75em;
+    cursor:pointer; 
+}
+
+.borderless {
+    border:none !important;
+    padding: 0.75em 0em;
+    background-color:transparent !important; 
+    color:var(--darkblue) !important; 
+}
+.cardButton {
+    padding: 0em !important;
+}
+
+.borderless.button:hover {
+    color:var(--accent)!important;
+}
+
+.button:hover {
+    color:var(--background); 
+    background-color: var(--lightblue);
+    border-color: var(--darkblue);
+}
+
+.button:active {
+    color:var(--background); 
+    background-color: var(--lightblue);
+    border-color: var(--darkblue);
+    border-style:inset;
+}
+
+/* ------------
+Everything related to the breakout-button
+https://piccalil.li/blog/create-a-semantic-break-out-button-to-make-an-entire-element-clickable/#heading-creating-the-breakout-button-component
+------------ */
+.theCard{
+    position:relative;
+    min-height:75%;
+    display:flex; 
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.breakout-button{
+    /*font: inherit;*/
+    /*font-weight: 600;*/
+    padding: 0.6rem 2rem;
+    background: transparent;
+    color: currentColor;
+    border: 1px solid;
+    transition: background 100ms ease;
+    position: static;
+}
+
+.breakout-button,
+.breakout-button::before {
+  cursor: pointer;
+}
+
+.breakout-button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.breakout-button:focus {
+    outline: none;
+}
+  
+.breakout-button:hover {
+    background: #333333;
+}
+
+.breakout-button:focus::before {
+    border-radius: 4px;
+    outline: 1px solid var(--accent);
+    outline-offset: 0.4rem;
+}
+
+body:has(.breakout-button:focus) .mutable {
+    border-color:var(--mutedblue);
+    color:var(--mutedblue) !important;
+  }
+
+body:has(.breakout-button:hover) .mutable {
+    border-color:var(--mutedblue);
+    color:var(--mutedblue) !important;
+  }
+
+/* ------------
+All things regarding the dialog
+------------ */
+  
+dialog{
+    margin:20px auto; 
+    border-radius: 8px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+    padding: 1.6rem 0;
+    overflow: hidden;
+    background-color: var(--background);
+
+    border-style:solid;
+    border-width:1px;
+    border-color: var(--accent);
+}
+
+dialog > .dialogContainer {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: start;
+}
+
+.dialogContent {
+    overflow:auto;
+    max-height:70vh;
+    padding: 0.5rem 1.6rem;   
+}
+
+dialog > .dialogContainer > header {
+    border-bottom: 0.5px solid var(--accent);
+    padding: 0 1.6rem;  
+}
+
+.buttonList {
+    border-top: 0.5px solid var(--accent);
+    padding: 0 1.6rem;    
+}
+
+::backdrop {
+    /*found on css-tricks*/
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 1px,
+        rgba(0, 0, 0, 0.3) 1px,
+        rgba(0, 0, 0, 0.3) 20px
+      );
+      backdrop-filter: blur(3px);
+  }
+  
+
+
+ /* unvisited link */
+ a:link {
+    color: var(--accent);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--lightblue);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--darkblue);
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--darkblue);
+  } 
