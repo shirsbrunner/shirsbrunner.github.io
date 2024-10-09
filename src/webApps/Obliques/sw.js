@@ -2,7 +2,7 @@
 // but... what does it need to do? 
 // https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Service_workers
 
-const VERSION = "v0.1"; //update this to increase version
+const VERSION = "v0.2"; //update this to increase version
 const CACHE_NAME = `Obliques-${VERSION}`; //name of the cache, increases with version
 const assetsToCache = [ //stuff it should cache
     '.',
@@ -10,20 +10,17 @@ const assetsToCache = [ //stuff it should cache
     //'pages/',
     //'pages/info.html',
     //'images/',
-    'images/Background-Image.png',
-    'images/LogoD-192x192.png',
-    'images/LogoD-384x384.png',
-    'images/LogoD-512x512.png',
-    'images/LogoD-1024x1024.png',
+    'images/LogoO-192x192.png',
+    'images/LogoO-384x384.png',
+    'images/LogoO-512x512.png',
+    'images/LogoO-1024x1024.png',
     'app.js',
     //'fonts/',
-    'fonts/AD-Digiwatch-Regular.woff',
-    'fonts/AD-Digiwatch-Regular.woff2',
     'fonts/GranCirculos-Regular.woff',
-    'fonts/GranCirculos-Regular.woff2',
-    'fonts/Slicer-Regular.woff',
-    'fonts/Slicer-Regular.woff2',    
-    'style.css'
+    'fonts/GranCirculos-Regular.woff2',  
+    'style.css', 
+    'reset.css', 
+    'dataFiles/data.json'
 ]
 
 self.addEventListener('install', ( event ) => {
