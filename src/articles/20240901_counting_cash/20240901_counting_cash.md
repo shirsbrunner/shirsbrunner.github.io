@@ -16,7 +16,7 @@ How much time do you spend in meetings? How many people do you meet with? How mu
 ## PWA (again)
 Based on the "rolling dice" PWA, building another one was way simple thing this time. I could dedicate some more time to styling things (mainly typographic). 
 
-> For starters: The app can be found [here](/webApps/CountsInSmallAmounts/)
+> For starters: [The app can be found here](/webApps/CountsInSmallAmounts/)
 
 ### What it does(n't do)
 
