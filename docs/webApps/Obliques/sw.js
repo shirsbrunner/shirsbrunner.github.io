@@ -7,6 +7,7 @@ const CACHE_NAME = `Obliques-${VERSION}`; //name of the cache, increases with ve
 const assetsToCache = [ //stuff it should cache
     '.',
     'index.html',
+    'manifest.json',
     //'pages/',
     //'pages/info.html',
     //'images/',
