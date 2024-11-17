@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 300
 pagination:
   data: collections.typefaces
-  alias: pagelist
+  alias: typelist
   reverse: true
   size: 5
 ---

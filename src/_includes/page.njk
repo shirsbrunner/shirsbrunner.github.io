@@ -22,8 +22,12 @@
   <div class="content_container">
     <div class="page_content">
       {{ content | safe }} 
+      {# postlist and pagelist are alias for the lists defined in frontmatter of the collection making up the page #}
       {% if pagelist %}
         {% include "partials/pagelist.njk" %}
+      {% endif %}
+      {% if typelist %}
+        {% include "partials/typelist.njk" %}
       {% endif %}
     </div>
   </div>
