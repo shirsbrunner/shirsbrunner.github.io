@@ -2,7 +2,8 @@
 title: Typetester
 subtitle: It's alive
 description: Things to consider
-layout: typetester.njk
+layout: typespecimen.njk
+typographic_url: tobedefined
 eleventyNavigation:
   key: typetester
   order: 800

@@ -40,6 +40,24 @@ module.exports = config => {
           isNaN(a.data.updateDate) ? 0 : a.data.updateDate) 
         )
   );
+
+  // typeface-collection (in src/typetester)
+  config.addCollection('typefaces', collection =>
+    collection
+      .getFilteredByGlob('./src/typetester/**/*.md')
+      .filter(p => dev || (!p.data.draft && p.date <= now)) //need to change this filter to move updated content to the front
+      .sort((b,a) => 
+        // this assigns a pair b,a (change to a,b if reverse sorting) the following function
+        // the function picks the bigger of the updateDate and data.date and sorts accordingly
+        Math.max(
+          isNaN(b.data.date) ? 0 : b.data.date, 
+          isNaN(b.data.updateDate) ? 0 : b.data.updateDate) 
+          - 
+        Math.max(
+          isNaN(a.data.date) ? 0 : a.data.date, 
+          isNaN(a.data.updateDate) ? 0 : a.data.updateDate) 
+        )
+  );
   
   // Get the first `n` elements of a collection.
   config.addFilter("head", (array, n) => {
