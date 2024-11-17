@@ -7,7 +7,7 @@ eleventyNavigation:
   key: log
   order: 200
 pagination:
-  data: collections.post
+  data: collections.posts
   alias: pagelist
   reverse: true
   size: 5

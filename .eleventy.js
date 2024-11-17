@@ -23,7 +23,7 @@ module.exports = config => {
 
   /* --- collections ---*/
   // post collection (in src/articles)
-  config.addCollection('post', collection =>
+  config.addCollection('posts', collection =>
 
     collection
       .getFilteredByGlob('./src/articles/**/*.md')

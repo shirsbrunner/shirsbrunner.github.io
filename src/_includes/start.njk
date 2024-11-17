@@ -12,7 +12,7 @@
       {{ content | safe }} 
       {% include "partials/divider.njk" %}
     {# shows the latest article - could probs be easier... #}
-    {% set postslist = collections.post | head(-1) %}
+    {% set postslist = collections.posts | head(-1) %}
     {%- for post in postslist -%}
         <article> {#cant use the shorthand, because of the "latest article..."#}
 
