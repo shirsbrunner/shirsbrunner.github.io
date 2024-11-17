@@ -9,12 +9,20 @@
     <br>
     <span class="subtitle"> {{subtitle}}</span> 
   </h1>
-    <div class="content_container">
-    <div class="page_content">
+    <div class="type_container">
+    <div class="type_content">
       
+      <script type="text/javascript">
+        window.onload = function() {
+          document.getElementById("type-sample").focus();
+        };
+      </script>
+
+
       <!-- this is the typetester -->
-      <div class="typetester" contenteditable="true">
-        Testodroms
+      <div class="typetesterfield" id="type-sample" contenteditable="true">
+        {#this shows the initial text in initTypeSpecimen#}
+        {{ initTypeSpecimen }}
       </div>
 
       <!-- this is the content from the type-file - could describe the fonts a bit or something -->

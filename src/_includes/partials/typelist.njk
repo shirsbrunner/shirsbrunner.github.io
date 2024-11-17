@@ -1,9 +1,11 @@
+{# This is a list of typespecimens - i.e., the page under "type"#}
+
 {% if typelist %}
-<p>Browse <a href="/tags">article tags</a> instead</p>
+
 <div class="pagelist">
 
   {%- for post in typelist -%}
-    {% include "partials/postpreview.njk" %}
+    {% include "partials/typepreview.njk" %}
   {%- endfor -%}
   <p>testodroms</p>
 </div>

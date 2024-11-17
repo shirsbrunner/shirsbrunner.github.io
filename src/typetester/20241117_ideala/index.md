@@ -1,9 +1,10 @@
 ---
-title: ideala
+title: IDEALA
 subtitle: Handy for heavy metal
 description: A typeface for rock fans
 layout: typespecimen.njk
-typographic_url: tobedefined
+initTypeSpecimen: Try me! 
+typographicUrl: tobedefined
 ---
 
 ## WIP

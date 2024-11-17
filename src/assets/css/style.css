@@ -626,3 +626,25 @@ hr{ /*a horizontal rule*/
   font-family: 'segunda';
   font-weight:bold;
 }
+
+/* Stuff for typetesting */
+.type_container{
+  display: flex;
+}
+
+.type_content{
+  margin-top: var(--space-s);
+  width:100%;
+}
+
+.typetesterfield {
+  font-size: var(--step-5); /*0.8rem*/
+  padding: var(--space-xs);
+  border: 1px solid var(--middleGrey);
+  text-align:center; 
+}
+
+.typetesterfield:focus {
+  background-color: var(--textSampleMarkInverted);
+  outline:none; 
+} 
