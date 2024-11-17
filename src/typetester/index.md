@@ -1,16 +1,14 @@
 ---
-title: Typetester
-subtitle: It's alive
-description: Things to consider
-layout: typespecimen.njk
-typographic_url: tobedefined
+title: Type
+subtitle: Making things look like glyphs
+description: A list of typefaces
+layout: page.njk
 eleventyNavigation:
-  key: typetester
-  order: 800
+  key: type
+  order: 300
+pagination:
+  data: collections.typefaces
+  alias: pagelist
+  reverse: true
+  size: 5
 ---
-
-## WIP
-This is a WIP for a typetester for the different typefaces
-
-## Things to look out for
-Maybe a future landing-page, Changes to font sizes, a little text and a link to the original blog
