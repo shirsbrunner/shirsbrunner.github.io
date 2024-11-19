@@ -18,9 +18,17 @@
         };
       </script>
 
-
+      <style>
+        @font-face {
+          font-family: 'tt-{{ fontname }}';
+          src: url('/fonts/article/{{ fontname }}.woff2') format('woff2'),
+          url('/fonts/article/{{ fontname }}.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }  
+      </style>
       <!-- this is the typetester -->
-      <div class="typetesterfield" id="type-sample" contenteditable="true" style="font-family: '{{ typographicUrl }}';">
+      <div class="typetesterfield" id="type-sample" contenteditable="true" style="font-family: 'tt-{{ fontname }}';">
         {#this shows the initial text in initTypeSpecimen#}
         {{ initTypeSpecimen }}
       </div>

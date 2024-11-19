@@ -1,10 +1,10 @@
 ---
-title: Basic Test
-subtitle: Handy for heavy tests
-description: A typeface for builders
+title: Digiwatch
+subtitle: Easy numbers
+description: A typeface for digital clock enthusiasts
 layout: typespecimen.njk
-initTypeSpecimen: This is it, the proof!
-typographicUrl: asdf
+initTypeSpecimen: 23:56
+fontname: AD-Digiwatch-Regular
 ---
 
 ## WIP

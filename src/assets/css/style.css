@@ -134,8 +134,8 @@ main{ /*-- do we need to adjust this? --*/
 /*-- own webfonts --*/
 @font-face {
   font-family: 'segunda';
-  src: url('/fonts/segunda-bold-webfont.woff2') format('woff2'),
-       url('/fonts/segunda-bold-webfont.woff') format('woff');
+  src: url('/fonts/structural/segunda-bold-webfont.woff2') format('woff2'),
+       url('/fonts/structural/segunda-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 
@@ -145,8 +145,8 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'PrimeraNueva';
-  src: url('/fonts/PrimeraNueva-Regular.woff2') format('woff2'),
-       url('/fonts/PrimeraNueva-Regular.woff') format('woff');
+  src: url('/fonts/structural/PrimeraNueva-Regular.woff2') format('woff2'),
+       url('/fonts/structural/PrimeraNueva-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -154,8 +154,8 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'montserrat';
-  src: url('/fonts/Montserrat-Black.woff2') format('woff2'),
-       url('/fonts/Montserrat-Black.woff') format('woff');
+  src: url('/fonts/structural/Montserrat-Black.woff2') format('woff2'),
+       url('/fonts/structural/Montserrat-Black.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 
@@ -163,8 +163,8 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'CourrierPrimeRegular';
-  src: url('/fonts/CourierPrimeSource-Regular.woff2') format('woff2'),
-       url('/fonts/CourierPrimeSource-Regular.woff') format('woff');
+  src: url('/fonts/structural/CourierPrimeSource-Regular.woff2') format('woff2'),
+       url('/fonts/structural/CourierPrimeSource-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 
@@ -172,8 +172,8 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'segunda';
-  src: url('/fonts/segunda-regular-webfont.woff2') format('woff2'),
-       url('/fonts/segunda-regular-webfont.woff') format('woff');
+  src: url('/fonts/structural/segunda-regular-webfont.woff2') format('woff2'),
+       url('/fonts/structural/segunda-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -181,8 +181,8 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'grancirculos';
-  src: url('/fonts/GranCirculos-Regular-Webfont.woff2') format('woff2'),
-       url('/fonts/GranCirculos-Regular-Webfont.woff') format('woff');
+  src: url('/fonts/structural/GranCirculos-Regular-Webfont.woff2') format('woff2'),
+       url('/fonts/structural/GranCirculos-Regular-Webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -190,8 +190,8 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'miyconos';
-  src: url('/fonts/miyconos-webfont.woff2') format('woff2'),
-       url('/fonts/miyconos-webfont.woff') format('woff');
+  src: url('/fonts/structural/miyconos-webfont.woff2') format('woff2'),
+       url('/fonts/structural/miyconos-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
