@@ -3,12 +3,12 @@ title: Digiwatch
 subtitle: Easy numbers
 description: A typeface for digital clock enthusiasts
 layout: typespecimen.njk
-initTypeSpecimen: 23:56
+initTypeSpecimen: '23:56'
 fontname: AD-Digiwatch-Regular
 ---
 
-## WIP
-This is a WIP for a typetester for the different typefaces
+## Typeface-Info
+Based on an 7 segment display of watches and calculators, this only allows the letter E, Numbers from 1-9, the period and the colon. 
 
 ## Things to look out for
-Maybe a future landing-page, Changes to font sizes, a little text and a link to the original blog
+Well, there could be more letters

@@ -47,8 +47,8 @@ While there is lots of work still to do (and I'm not yet happy with at all with 
 <style>
 @font-face {
   font-family: 'Ideala';
-  src: url('Ideala-Regular.woff2') format('woff2'),
-       url('Ideala-Regular.woff') format('woff');
+  src: url('/fonts/article/Ideala-Regular.woff2') format('woff2'),
+       url('/fonts/article/Ideala-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
