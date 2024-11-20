@@ -46,8 +46,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 <style>
 @font-face {
   font-family: 'neuesegunda';
-  src: url('neuesegunda-regular.woff2') format('woff2'),
-       url('neuesegunda-regular.woff') format('woff');
+  src: url('/fonts/article/neuesegunda-regular.woff2') format('woff2'),
+       url('/fonts/article/neuesegunda-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 

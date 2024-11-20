@@ -42,8 +42,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 <style>
 @font-face {
   font-family: 'grancirculos';
-  src: url('GranCirculos-Post.woff2') format('woff2'),
-       url('GranCirculos-Post.woff') format('woff');
+  src: url('/fonts/article/GranCirculos-Post.woff2') format('woff2'),
+       url('/fonts/article/GranCirculos-Post.woff') format('woff');
 
        src/articles/20230314_circletime/GranCirculos-Regular.woff
   font-weight: normal;

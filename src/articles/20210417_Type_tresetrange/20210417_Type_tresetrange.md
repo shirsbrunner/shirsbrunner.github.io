@@ -31,8 +31,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 <style>
 @font-face {
   font-family: 'tresetrangeregular';
-  src: url('tresetrange-regular-webfont.woff2') format('woff2'),
-       url('tresetrange-regular-webfont.woff') format('woff');
+  src: url('/fonts/article/tresetrange-regular-webfont.woff2') format('woff2'),
+       url('/fonts/article/tresetrange-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
