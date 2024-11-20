@@ -54,8 +54,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 <style>
 @font-face {
   font-family: 'primera_regular';
-  src: url('PrimeraNueva-Regular_post.woff2') format('woff2'),
-       url('PrimeraNueva-Regular_post.woff') format('woff');
+  src: url('/fonts/article/PrimeraNueva-Regular_post.woff2') format('woff2'),
+       url('/fonts/article/PrimeraNueva-Regular_post.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 

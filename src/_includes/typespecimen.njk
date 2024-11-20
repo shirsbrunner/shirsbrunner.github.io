@@ -35,6 +35,24 @@
 
       <!-- this is the content from the type-file - could describe the fonts a bit or something -->
       {{ content | safe }} 
+
+      <!-- the navigation -->
+      <div class="post_nav">
+        {% set nextPost = collections.typefaces | getNextCollectionItem(page) %}
+        {% if nextPost %}
+          <div class="post_link_element" id="next_post">
+            <a class="post_link" href="{{ nextPost.url }}"><img src="/images/structural/Previous.svg" alt="next post" width="40" height="40">{{ nextPost.data.title }}</a>
+          </div>
+        {% endif %} 
+        <div class="post_link_element"> </div>
+        {% set previousPost = collections.typefaces | getPreviousCollectionItem(page) %}
+        {% if previousPost %}
+          <div class="post_link_element" id="previous_post"> 
+            <a class="post_link" href="{{ previousPost.url }}">{{ previousPost.data.title }}<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+          </div>
+        {% endif %}
+      </div>
+
     </div>
   </div>
 
