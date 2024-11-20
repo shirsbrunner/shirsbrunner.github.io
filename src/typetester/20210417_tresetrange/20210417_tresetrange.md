@@ -3,7 +3,7 @@ title: Aliens
 subtitle: It's readable if you squint
 description: A quick font for a different project
 layout: typespecimen.njk
-initTypeSpecimen: I am from orion!
+initTypeSpecimen: I'm from orion!
 fontname: tresetrange-regular-webfont
 ---
 
