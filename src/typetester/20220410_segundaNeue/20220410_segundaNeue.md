@@ -2,6 +2,7 @@
 title: Segunda Neue
 subtitle: Square, but with more contrast
 description: Letters from squares
+date: 2022-04-10
 layout: typespecimen.njk
 initTypeSpecimen: Blocks of concrete
 fontname: neuesegunda-regular

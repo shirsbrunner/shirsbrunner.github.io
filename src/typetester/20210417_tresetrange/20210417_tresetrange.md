@@ -2,6 +2,7 @@
 title: Tresetrange
 subtitle: It's readable if you squint
 description: A quick alien font for a different project
+date: 2021-04-17
 layout: typespecimen.njk
 initTypeSpecimen: I'm from orion!
 fontname: tresetrange-regular-webfont

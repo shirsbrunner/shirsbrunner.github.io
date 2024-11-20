@@ -2,6 +2,7 @@
 title: Digiwatch
 subtitle: Easy numbers
 description: A typeface for digital clock enthusiasts
+date: 2024-09-01
 layout: typespecimen.njk
 initTypeSpecimen: '23:56'
 fontname: AD-Digiwatch-Regular
