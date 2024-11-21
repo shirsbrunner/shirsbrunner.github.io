@@ -2,7 +2,7 @@
 title: The 11ty-experiment
 description: Building a static page that can be easily updated
 date: 2021-03-10
-updateDate: 2023-09-22
+updateDate: 2024-11-21
 evolution: 2
 tags:
   - 11nty
@@ -59,3 +59,6 @@ This is by no means a final list. You'll need more things, but this will help yo
 ## Small update Sept 2023
 Entries can now be updated and a corresponding date can be added. 
 A collection of posts is sorted by date updated before initial date. The mechanism was initially alien to me, but rather due to the arrow-functions than the logic itself. 
+
+## Update Nov 2024
+The page now has a very basic type-tester (That will need some additional work). I'm not really sure on how to best organize things – assuming, I can do two different pages from one template (or from one folder with two templates and two texts so that shared ressources like webfont-files are still organized neatly). Not sure on how to do that yet. Also, the nav is now too big for the 320 mobile view. 
