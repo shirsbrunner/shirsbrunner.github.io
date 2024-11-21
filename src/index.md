@@ -3,9 +3,7 @@ title: designing things
 subtitle: Experiments with stuff
 description: Testpage generated with @11ty
 layout: start.njk
-eleventyNavigation:
-  key: home
-  order: 100
+
 ---
 
 ## Well, hello
