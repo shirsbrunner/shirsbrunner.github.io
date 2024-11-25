@@ -1,10 +1,10 @@
 ---
 title: Digiwatch
 subtitle: Easy numbers
-description: A typeface for digital clock enthusiasts
+description: For your own personal digital watch
 date: 2024-09-01
 layout: typespecimen.njk
-initTypeSpecimen: '23:56'
+initTypeSpecimen: 'E1.23456789:00'
 fontname: AD-Digiwatch-Regular
 ---
 

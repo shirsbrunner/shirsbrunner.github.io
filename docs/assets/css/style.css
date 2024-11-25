@@ -648,3 +648,7 @@ hr{ /*a horizontal rule*/
   background-color: var(--textSampleMarkInverted);
   outline:none; 
 } 
+
+.textpreviewsample{
+  font-size: var(--step-3);
+}
