@@ -13,11 +13,10 @@
   <article>
 
 
-    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-    <div class="textpreviewsample" style="font-family: 'tt-{{ post.data.fontname }}';">{{ post.data.initTypeSpecimen }}</div>
+    <h2 class="textpreviewsample" style="font-family: 'tt-{{ post.data.fontname }}';"><a href="{{ post.url }}">{{ post.data.initTypeSpecimen }}</a></h2>
     <p>{{ post.data.description }}</p>
     <div class="article_preview_nav">
-      <a class="button b_small" href="{{ post.url }}">show details</a>
+      <a class="button b_small" href="{{ post.url }}">more about {{ post.data.title }}</a>
     </div>
 
 

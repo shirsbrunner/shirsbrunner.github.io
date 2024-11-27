@@ -1,7 +1,7 @@
 ---
 title: Digiwatch
 subtitle: Easy numbers
-description: For your own personal digital watch
+description: Type for your own personal digital watch
 date: 2024-09-01
 layout: typespecimen.njk
 initTypeSpecimen: 'E1.23456789:00'
