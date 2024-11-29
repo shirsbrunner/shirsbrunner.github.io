@@ -315,6 +315,18 @@ blockquote p {
   display: inline;
 }
 
+.cta { /*--call to action within an article--*/
+  padding: var(--space-m);
+  width: 100%; 
+  margin: var(--space-s) 0; 
+  border: 0.5px solid var(--red);
+  border-radius: var(--space-xs); 
+}
+
+.cta p { /*-- the inner thing to a cta --*/
+  margin: 0; 
+}
+
 article {/*-- the box containing the article preview --*/
   margin: 0px 0px var(--space-xl) 0px; /* maybe adjust to dynamic sizing */ 
 }
