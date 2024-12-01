@@ -320,7 +320,8 @@ blockquote p {
   width: 100%; 
   margin: var(--space-s) 0; 
   border: 0.5px solid var(--red);
-  border-radius: var(--space-xs); 
+  border-radius: var(--space-xs);
+  /*--background-color:var(--buttonRed); - not accessible...--*/
 }
 
 .cta p { /*-- the inner thing to a cta --*/
