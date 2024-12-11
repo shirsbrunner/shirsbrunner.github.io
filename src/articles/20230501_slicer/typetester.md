@@ -1,0 +1,15 @@
+---
+title: Slicer
+subtitle: Shifting perspective
+description: Based on a foto
+date: 2023-05-01
+layout: typespecimen.njk
+initTypeSpecimen: trust your eyes
+fontname: Slicer-Regular
+---
+
+## Typeface-Info
+Based on a foto with misaligned top and bottom part, cut in the middle. Fascinating, what the brain can decipher. Could be used for fancy shirts. 
+
+## Things to look out for
+It's missing a lot of complex signs, that don't work well with the mechanism. 

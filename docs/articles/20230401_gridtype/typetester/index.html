@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MonoCube</title>
+  <meta name="description" content="Intended for print">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black:400" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/utopia.css" />  
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <!--<link rel="icon" 
+      type="image/png" 
+      href="/images/structural/favicon.png"> -->
+</head>
+<body>
+
+
+<header>
+  
+  <nav class="nav_top">
+    <a href="/">
+    <img class="logo" src="/images/structural/Logo_48.png" alt="Logo of the page showing the Hirschlbrummbaer" style="width:48px; height:48px">
+    </a>
+    <ul><li><a href="/articles/">log</a></li><li><a href="/typetester/">type</a></li><li><a href="/about/">about</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+
+
+  <h1>
+    <span class="big_text">MonoCube</span>
+    <br>
+    <span class="subtitle"> Unreadable in two directions</span> 
+  </h1>
+    <div class="type_container">
+    <div class="type_content">
+      
+      <script type="text/javascript">
+        window.onload = function() {
+          document.getElementById("type-sample").focus();
+        };
+      </script>
+
+      <style>
+        @font-face {
+          font-family: 'tt-MonoCube-Regular';
+          src: url('/fonts/article/MonoCube-Regular.woff2') format('woff2'),
+          url('/fonts/article/MonoCube-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }  
+      </style>
+      <!-- this is the typetester -->
+      <div class="typetesterfield" id="type-sample" contenteditable="true" style="font-family: 'tt-MonoCube-Regular';">
+        
+        The dog? A bot!
+      </div>
+
+      <!-- this is the content from the type-file - could describe the fonts a bit or something -->
+      <h2>Typeface-Info</h2>
+<p>Can be used both vertically and horizontally. Whitespace, punctuation, everything is a dedicated glyph – like in other typefaces, but it's very visible here. I use this for icons, backgrounds and initially made it to print something on fabric.</p>
+<h2>Things to look out for</h2>
+<p>Vertical text still does not work on firefox very well, maybe I'd have to open a bug for this once.</p>
+ 
+
+      <!-- the navigation -->
+      <div class="post_nav">
+        
+        
+          <div class="post_link_element" id="next_post">
+            <a class="post_link" href="/articles/20230501_slicer/typetester/"><img src="/images/structural/Previous.svg" alt="next post" width="40" height="40">Slicer</a>
+          </div>
+         
+        <div class="post_link_element"> </div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+
+</main>
+
+
+
+<footer class="bot_nav">
+    <a  href="/about/privacy">privacy info</a>
+    <p class="footer_text">written content & images © Simon Hirsbrunner 2024</p>
+    <button class="dmbtntoggler" title="darkmode-toggler">sun</button>
+</footer>
+
+</body>
+   <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+</html>
+

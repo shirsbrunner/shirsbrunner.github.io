@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>It looks like some strange tech-chart</title>
+  <meta name="description" content="A squared font that works in a grid">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black:400" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/utopia.css" />  
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <!--<link rel="icon" 
+      type="image/png" 
+      href="/images/structural/favicon.png"> -->
+</head>
+<body>
+
+
+<header>
+  
+  <nav class="nav_top">
+    <a href="/">
+    <img class="logo" src="/images/structural/Logo_48.png" alt="Logo of the page showing the Hirschlbrummbaer" style="width:48px; height:48px">
+    </a>
+    <ul><li><a href="/articles/">log</a></li><li><a href="/typetester/">type</a></li><li><a href="/about/">about</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+
+
+
+  <h1>
+    <span class="big_text">entry</span>
+    <br>
+      <span class="headericon" data-icon="
+        
+         dotcircle
+        
+        ">
+      </span>
+          
+    <span class="subtitle"> It looks like some strange tech-chart</span> 
+  </h1>
+
+      <div class="article_metrics">
+        <p class="time"><time datetime="2023-04-01">1 April, 2023</time></p>
+        <p class="time">Updated on: <time datetime="2023-11-12">12 November, 2023</time></p>
+        <p class="words">1,620 words</p>
+        <p class="time">State:       
+            
+              More of an Idea
+            
+        </p>
+      </div>
+      <div class="tag_group"><span class="time">tags: </span>
+        
+          
+          <a href="/tags/typeface/" class="post-tag">typeface</a>
+        
+      </div>
+
+
+  <div class="content_container">
+    <div class="page_content">
+
+
+
+
+      <h2>Currently more of an idea</h2>
+<p>I've been trying to come up with an idea for a typeface that works in all directions - similar to japanese writing. The issue with our alphabet is the irregularity of shapes with decenders, acenders, lower case, upper case and so on.</p>
+<blockquote>
+<p>While square or circular frames solve the problem they have issues with the rhythm or density of black and white.</p>
+</blockquote>
+<p>After visiting the Haettenschweiler-Exhibition at the ZHdK and some inspiration regarding typefaces I decided to start another approach. Disclaimer: this is a rather quick and unfinished one... (lots of glyphs are missing, there are some strange artifacts in the vertical examples - however these seem to be firefox only - the vertical text looks better in chrome or safari)</p>
+<h2>Learnings</h2>
+<ul>
+<li>space, punctuation and so on all need a square shape - sometimes, this makes text tricky to read. maybe it would be feasible to create ligatures with punctuation and space to not have double whitespace at the end of every paragraph</li>
+<li>readability is really hard with the approach taken</li>
+<li>adding new elements to a constructed approach makes it hard to remain consistent - the same also applies to the whitespace-glyphs that appear way more elegant than the blocky letters.</li>
+<li>this can be caps-only (because lower case would have the same size as upper case)</li>
+<li>kerning begone - everything has the same shape</li>
+<li>It's probably not possible to create this in glyphs mini (or maybe it is since I don't need vertical kerning or spacing)?</li>
+<li>now... how to turn the draft 90° to show the vertical text? Solution CSS: &quot;writing-mode: vertical-lr; text-orientation: upright;&quot; - however, this does not look good in firefox (better in chrome though - however, then spacings are off...). <a href="https://helpx.adobe.com/in/fonts/using/open-type-syntax.html">Adobe</a> lists some issues with the open type stuff (See &quot;Note: about vertical features&quot;). this issue seems to be related to the problems with placing the &quot;space&quot;-glyphs. Update: this seems to be an issue with &quot;text-orientation:upright;&quot; - Regarding vertical writing modes see <a href="https://www.w3.org/TR/css-writing-modes-3/#vertical-modes">W3C-Spec</a> and <a href="https://www.w3.org/TR/css-writing-modes-3/#intro-text-layout">this on the same page</a> probably answers the question: bi-orientational fonts - but, how to set a font as bi-orientational?</li>
+<li>There is indeed a &quot;dropleft&quot; for japanese (and probably a &quot;dropright&quot; for mongolilan) as seen in <a href="https://www.w3.org/TR/css-writing-modes-3/#block-flow">W3C-Spec</a></li>
+<li>Another <a href="https://fantasai.inkedblade.net/style/discuss/vertical-text/paper">paper as html-page</a> with a nice writeup of the topic and what could be improved for the organization of online layouts for different scripts with additional information in unicode</li>
+<li>It's really hard to make an uniform wall of text, where content breaks wherever possible ignoring everything that is added to browser logic (including the merging of white-space using css: &quot;white-space:break-spaces&quot;). This also includes breaking words in any place (using css &quot;word-break: break-all&quot;), between whitespace, between word and whitespace (appears to be working with &quot;white-space:break-spaces&quot;), between word and punctuation (css: &quot;line-break: anywhere&quot;). In fact it needs all three (?) to actually break everything. Now... if this was just possible in a desktop-publishing software...</li>
+</ul>
+<h2>Questions</h2>
+<ul>
+<li>should special characters like &amp; or # be considered letters, whitespace or something else? What about / or %?</li>
+</ul>
+<h2>Results of the draft</h2>
+<p>The following paragraph shows the outcome with some &quot;cupcake ipsum&quot; text:</p>
+<style>
+@font-face {
+  font-family: 'MonoCube';
+  src: url('/fonts/article/MonoCube-Regular.woff2') format('woff2'),
+       url('/fonts/article/MonoCube-Regular.woff') format('woff');
+
+       src/articles/20230314_circletime/GranCirculos-Regular.woff
+  font-weight: normal;
+  font-style: normal;
+  word-break: break-all;
+  white-space: break-spaces;
+  line-break: anywhere;
+}
+
+</style>
+<div class="text_sample">
+<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+<div class="text_sample_inverted">
+<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
+</div>
+<p>And vertical upright</p>
+<div class="text_sample" style="flex-direction:row;flex-wrap:wrap;">
+<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;"><mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;"><mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;"><mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;"><mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
+</div>
+<div class="text_sample_inverted" style="flex-direction:row;flex-wrap:wrap;">
+<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%;writing-mode: vertical-lr; text-orientation: upright;"><mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%;writing-mode: vertical-lr; text-orientation: upright;"><mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%;writing-mode: vertical-lr; text-orientation: upright;"><mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
+<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%;writing-mode: vertical-lr; text-orientation: upright;"><mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
+</div>
+<h2>Also...</h2>
+<p>I think this has some amazing potential.
+Would pages consisting only of vertical text be horizontally scrolling? Most probably yes.</p>
+<h2>Investigating some things november 2023</h2>
+<p>An additional issue is currently visible on this page. Sometimes, flexbox for the writing-mode:vertical-lr and text-orientation:upright containers is not working properly. This is based on the fact, that, similar to the dropdowns, flexbox behaviour changes if writing-mode changes (on the container). See the <a href="https://www.w3.org/TR/css-flexbox-1/#flex-flow-property">w3.org-flexbox documentation</a> for details (it's a bit further down). Currently, I'm not sure on how to handle this. Also - somehow, firefox reacts with reorganizing the flexcontainer when opening inspect mode...</p>
+<p>Furthermore firefox (not chrome / safari) seems to be doing something strange to the space character in the vertical-lr/upright text. While an empty space is placed, where the character would be, the character itself is shifted a bit. I'm not sure, if this is related to the typeface or a browser text rendering issue.</p>
+
+
+      <div class="post_nav">
+        
+        
+          <div class="post_link_element" id="next_post">
+            <a class="post_link" href="/articles/20231111_lettherebelight/article/"><img src="/images/structural/Previous.svg" alt="next post" width="40" height="40">Let there be light</a>
+          </div>
+         
+        <div class="post_link_element"> </div>
+        
+        
+          <div class="post_link_element" id="previous_post"> 
+            <a class="post_link" href="/articles/20230904_funtime/article/">The times they are a-changin&#39;<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+<footer class="bot_nav">
+    <a  href="/about/privacy">privacy info</a>
+    <p class="footer_text">written content & images © Simon Hirsbrunner 2024</p>
+    <button class="dmbtntoggler" title="darkmode-toggler">sun</button>
+</footer>
+
+</body>
+   <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+</html>
+

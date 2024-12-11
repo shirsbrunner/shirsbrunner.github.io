@@ -1,7 +1,7 @@
 ---
 title: Cut it, move it, stick it, read it
 description: Experiment in sliced typography
-date: 2023-04-01
+date: 2023-05-01
 evolution: 1
 tags:
   - typeface

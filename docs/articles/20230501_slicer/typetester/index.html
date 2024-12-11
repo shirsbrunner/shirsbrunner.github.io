@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slicer</title>
+  <meta name="description" content="Based on a foto">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black:400" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/utopia.css" />  
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <!--<link rel="icon" 
+      type="image/png" 
+      href="/images/structural/favicon.png"> -->
+</head>
+<body>
+
+
+<header>
+  
+  <nav class="nav_top">
+    <a href="/">
+    <img class="logo" src="/images/structural/Logo_48.png" alt="Logo of the page showing the Hirschlbrummbaer" style="width:48px; height:48px">
+    </a>
+    <ul><li><a href="/articles/">log</a></li><li><a href="/typetester/">type</a></li><li><a href="/about/">about</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+
+
+  <h1>
+    <span class="big_text">Slicer</span>
+    <br>
+    <span class="subtitle"> Shifting perspective</span> 
+  </h1>
+    <div class="type_container">
+    <div class="type_content">
+      
+      <script type="text/javascript">
+        window.onload = function() {
+          document.getElementById("type-sample").focus();
+        };
+      </script>
+
+      <style>
+        @font-face {
+          font-family: 'tt-Slicer-Regular';
+          src: url('/fonts/article/Slicer-Regular.woff2') format('woff2'),
+          url('/fonts/article/Slicer-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }  
+      </style>
+      <!-- this is the typetester -->
+      <div class="typetesterfield" id="type-sample" contenteditable="true" style="font-family: 'tt-Slicer-Regular';">
+        
+        trust your eyes
+      </div>
+
+      <!-- this is the content from the type-file - could describe the fonts a bit or something -->
+      <h2>Typeface-Info</h2>
+<p>Based on a foto with misaligned top and bottom part, cut in the middle. Fascinating, what the brain can decipher. Could be used for fancy shirts.</p>
+<h2>Things to look out for</h2>
+<p>It's missing a lot of complex signs, that don't work well with the mechanism.</p>
+ 
+
+      <!-- the navigation -->
+      <div class="post_nav">
+        
+         
+        <div class="post_link_element"> </div>
+        
+        
+          <div class="post_link_element" id="previous_post"> 
+            <a class="post_link" href="/articles/20230401_gridtype/typetester/">MonoCube<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+          </div>
+        
+      </div>
+
+    </div>
+  </div>
+
+
+</main>
+
+
+
+<footer class="bot_nav">
+    <a  href="/about/privacy">privacy info</a>
+    <p class="footer_text">written content & images © Simon Hirsbrunner 2024</p>
+    <button class="dmbtntoggler" title="darkmode-toggler">sun</button>
+</footer>
+
+</body>
+   <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+</html>
+
