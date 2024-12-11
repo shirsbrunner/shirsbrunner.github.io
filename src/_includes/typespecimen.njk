@@ -21,8 +21,8 @@
       <style>
         @font-face {
           font-family: 'tt-{{ fontname }}';
-          src: url('/fonts/article/{{ fontname }}.woff2') format('woff2'),
-          url('/fonts/article/{{ fontname }}.woff') format('woff');
+          src: url('../{{ fontname }}.woff2') format('woff2'), {# used to have /fonts/article/#}
+          url('../{{ fontname }}.woff') format('woff'); {# used to have /fonts/article/#}
         font-weight: normal;
         font-style: normal;
         }  

@@ -3,8 +3,8 @@
     <style>
         @font-face {
           font-family: 'tt-{{ post.data.fontname }}';
-          src: url('/fonts/article/{{ post.data.fontname }}.woff2') format('woff2'),
-          url('/fonts/article/{{ post.data.fontname }}.woff') format('woff');
+          src: url('{{ post.data.fontname }}.woff2') format('woff2'), {#used to have /fonts/article/#}
+          url('{{ post.data.fontname }}.woff') format('woff'); {#used to have /fonts/article/#}
         font-weight: normal;
         font-style: normal;
         }  
