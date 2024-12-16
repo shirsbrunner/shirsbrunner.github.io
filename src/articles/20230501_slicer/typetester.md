@@ -5,6 +5,7 @@ description: Based on a foto
 date: 2023-05-01
 layout: typespecimen.njk
 initTypeSpecimen: trust your eyes
+urlbase: '/articles/20230501_slicer/'
 fontname: Slicer-Regular
 ---
 

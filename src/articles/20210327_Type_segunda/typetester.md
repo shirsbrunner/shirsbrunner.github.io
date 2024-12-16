@@ -5,6 +5,7 @@ description: The first typeface that was not my handwriting
 date: 2021-03-27
 layout: typespecimen.njk
 initTypeSpecimen: Pixels are friends!
+urlbase: '/articles/20210327_Type_segunda/'
 fontname: segunda-bold-webfont
 ---
 

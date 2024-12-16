@@ -4,8 +4,8 @@
         @font-face {
           font-family: 'tt-{{ post.data.fontname }}';
           {#URL should be /articles/article-Folder-that's-different-for-every-article/ and then the post.data.fontname#}
-          src: url('{{post.url}}{{ post.data.fontname }}.woff2') format('woff2'), {#used to have /fonts/article/#}
-          url('{{ post.data.fontname }}.woff') format('woff'); {#used to have /fonts/article/#}
+          src: url('{{post.data.urlbase}}{{ post.data.fontname }}.woff2') format('woff2'), {#used to have /fonts/article/#}
+          url('{{post.data.urlbase}}{{ post.data.fontname }}.woff') format('woff'); {#used to have /fonts/article/#}
         font-weight: normal;
         font-style: normal;
         }  

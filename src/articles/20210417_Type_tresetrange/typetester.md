@@ -5,6 +5,7 @@ description: A quick alien font for a different project
 date: 2021-04-17
 layout: typespecimen.njk
 initTypeSpecimen: I'm from orion!
+urlbase: '/articles/20210417_Type_tresetrange/'
 fontname: tresetrange-regular-webfont
 ---
 

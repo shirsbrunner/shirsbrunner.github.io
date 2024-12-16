@@ -5,7 +5,7 @@ description: Experiments with a first typeface
 date: 2021-03-09
 layout: typespecimen.njk
 initTypeSpecimen: This is my thing $
-urlbase: /articles/
+urlbase: '/articles/20210309_Type_primera/'
 fontname: PrimeraNueva-Regular_post
 ---
 

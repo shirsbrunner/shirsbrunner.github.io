@@ -4,7 +4,8 @@ subtitle: Handy for heavy metal
 description: A typeface for rock fans
 date: 2024-11-17
 layout: typespecimen.njk
-initTypeSpecimen: Glowing roses!
+initTypeSpecimen: Dragongold!
+urlbase: '/articles/20240602_Intro_dark_arts/'
 fontname: Ideala-Regular
 ---
 

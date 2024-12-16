@@ -5,6 +5,7 @@ description: Letters from squares
 date: 2022-04-10
 layout: typespecimen.njk
 initTypeSpecimen: Blocks of concrete
+urlbase: '/articles/20220410_segundaNeue/'
 fontname: neuesegunda-regular
 ---
 

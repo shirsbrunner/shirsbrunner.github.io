@@ -5,6 +5,7 @@ description: Easy and round
 date: 2023-03-14
 layout: typespecimen.njk
 initTypeSpecimen: CIRCLE TIME!
+urlbase: '/articles/20230314_circletime/'
 fontname: GranCirculos-Post
 ---
 

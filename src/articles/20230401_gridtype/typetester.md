@@ -5,6 +5,7 @@ description: Intended for print
 date: 2023-04-01
 layout: typespecimen.njk
 initTypeSpecimen: The dog? A bot!
+urlbase: '/articles/20230401_gridtype/'
 fontname: MonoCube-Regular
 ---
 
