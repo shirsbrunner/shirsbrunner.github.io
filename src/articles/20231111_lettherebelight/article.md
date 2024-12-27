@@ -72,7 +72,7 @@ The base can then be folded using a folding stick or similar - this ruffles the 
 
 The outcome is a lamp, as expected, it's a bit squished to one side. Also, the paper had to be fixed around the lamp - maybe I should also have ripped the pieces of paper I used to fix the holes. Then again, it gives off a nice light and serves it's purpose.
 
-![Final lamp assembled](9_It_s_a_lamp.png "A lamp giving off light in a dark room")
+![Final lamp assembled](./../9_It_s_a_lamp.png "A lamp giving off light in a dark room")
 
 
 ## Potential improvements...
