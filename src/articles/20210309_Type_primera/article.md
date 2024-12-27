@@ -4,6 +4,7 @@ description: Digitizing your handwriting might be more fun than you think (if yo
 date: 2021-03-09
 updateDate: 2023-03-24
 evolution: 2
+sampletext: Testodroms is superbons
 tags:
   - typeface
   - typography
@@ -76,6 +77,11 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 </div>
 
 Obviously, the font has a lot of issues, but I like the outcome, especially the little sun, that I use now and then in digital products. 
+
+## TESTODROMS
+
+{%include 'partials/textsample.njk' %}
+Not working yet...
 
 ## Try it!
 
