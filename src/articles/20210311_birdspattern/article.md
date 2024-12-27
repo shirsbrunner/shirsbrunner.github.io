@@ -14,7 +14,7 @@ With today's communication-opportunities, we can take part in the creative devel
 
 When I received a picture of the following painting (by Ray Kaipainen, 6 years old, detail) I had to think of [marimekko-patterns](https://www.marimekko.com/eu_en/printed-fabrics/all-items) on fabrics destined for children's clothing. 
 
-![these are birds on a kids drawing](Bird_pattern_base1000.jpg "these are birds on a kids drawing")
+![these are birds on a kids drawing](./../Bird_pattern_base1000.jpg "these are birds on a kids drawing")
 
 While I was initially thinking of the migration of Gnu's, I was quickly corrected, that the animals in question were actually birds.
 
@@ -32,4 +32,4 @@ I ordered two meters of fabric, enough for some small shirts and a skirt for kid
 
 The following picture shows the pattern printed on cotton popeline.
 
-![bird-pattern on cotton](Bird_pattern1000.jpg "bird-pattern on cotton")
+![bird-pattern on cotton](./../Bird_pattern1000.jpg "bird-pattern on cotton")
