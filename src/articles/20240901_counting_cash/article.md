@@ -46,8 +46,8 @@ For this counter, I made a new typeface - a very simple copy of the 8-segment nu
 <style>
 @font-face {
   font-family: 'digiwatch';
-  src: url('/fonts/article/AD-Digiwatch-Regular.woff2') format('woff2'),
-       url('/fonts/article/AD-Digiwatch-Regular.woff') format('woff');
+  src: url('/articles/20240901_counting_cash/AD-Digiwatch-Regular.woff2') format('woff2'),
+       url('/articles/20240901_counting_cash/AD-Digiwatch-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

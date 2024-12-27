@@ -18,8 +18,8 @@ While this looks as strange as it sounds, I'm amazed, that it is still readable.
 <style>
 @font-face {
   font-family: 'Slicer';
-  src: url('/fonts/article/Slicer-Regular.woff2') format('woff2'),
-       url('/fonts/article/Slicer-Regular.woff') format('woff');
+  src: url('/articles/20230501_slicer/Slicer-Regular.woff2') format('woff2'),
+       url('/articles/20230501_slicer/Slicer-Regular.woff') format('woff');
 
        src/articles/20230314_circletime/GranCirculos-Regular.woff
   font-weight: normal;

@@ -24,8 +24,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 <style>
 @font-face {
   font-family: 'segunda';
-  src: url('segunda-regular-webfont.woff2') format('woff2'),
-       url('segunda-regular-webfont.woff') format('woff');
+  src: url('/articles/20210829_Type_segunda_regular/segunda-regular-webfont.woff2') format('woff2'),
+       url('/articles/20210829_Type_segunda_regular/segunda-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 

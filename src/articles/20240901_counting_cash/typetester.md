@@ -5,7 +5,7 @@ description: Type for your own personal digital watch
 date: 2024-09-01
 layout: typespecimen.njk
 initTypeSpecimen: 'E1.23456789:00'
-urlbase: '/articles/20230904_funtime/'
+urlbase: '/articles/20240901_counting_cash/'
 fontname: AD-Digiwatch-Regular
 ---
 

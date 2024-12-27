@@ -33,8 +33,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 <style>
 @font-face {
   font-family: 'segunda';
-  src: url('/fonts/article/segunda-bold-webfont.woff2') format('woff2'),
-       url('/fonts/article/segunda-bold-webfont.woff') format('woff');
+  src: url('/articles/20210327_Type_segunda/segunda-bold-webfont.woff2') format('woff2'),
+       url('/articles/20210327_Type_segunda/segunda-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 
