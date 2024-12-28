@@ -3,6 +3,9 @@ title: Segunda a second time
 description: Sidebearings, Kerning and Glyphs revisited
 date: 2022-04-10
 evolution: 2
+urlbase: '/articles/20220410_segundaNeue/'
+fontname: neuesegunda-regular
+sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:
   - typeface
   - typography
@@ -43,28 +46,6 @@ Is it really better or am I only looking at the things that I have fixed? Time w
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
-<style>
-@font-face {
-  font-family: 'neuesegunda';
-  src: url('/articles/20220410_segundaNeue/neuesegunda-regular.woff2') format('woff2'),
-       url('/articles/20220410_segundaNeue/neuesegunda-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-</style>
-
-<div class="text_sample">
-<p style="font-family:'neuesegunda';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'neuesegunda';font-weight:normal;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'neuesegunda';font-weight:normal;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'neuesegunda';font-weight:normal;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
-<div class="text_sample_inverted">
-<p style="font-family:'neuesegunda';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'neuesegunda';font-weight:normal;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'neuesegunda';font-weight:normal;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'neuesegunda';font-weight:normal;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
+{%include 'partials/textsample.njk' %}
 
 I'll probably update these again, incrementally (on this page, as there is always a missing kerning class) or radically (in a new article), and eventually it will wreak havoc on all the article-pages using the typefaces...

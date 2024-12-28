@@ -1,0 +1,73 @@
+<!-- inline textsample for articles for fonts that work in all directions like monocube-->
+
+<style>
+@font-face {
+  font-family: 'sampleFont';
+  src: url('{{urlbase}}{{fontname}}.woff2') format('woff2'),
+       url('{{urlbase}}{{fontname}}.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.everbreak { 
+	line-break: anywhere;
+	word-break: break-all;
+	white-space: break-spaces;
+  font-variant-ligatures: normal;
+}
+</style>
+
+"Normal" orientation
+
+<div class="text_sample">
+<p class="type_normal everbreak" style="font-family:'sampleFont'; line-height: 87%; margin: 0.5rem">{{sampletext}} </p>
+<p class="type_medium everbreak" style="font-family:'sampleFont'; line-height: 87%; margin: 0.5rem">{{sampletext}} </p>
+<p class="type_big everbreak" style="font-family:'sampleFont'; line-height: 87%; margin: 0.5rem">{{sampletext}} </p>
+</div>
+<div class="text_sample_inverted">
+<p class="type_normal everbreak" style="font-family:'sampleFont'; line-height: 87%; margin: 0.5rem">{{sampletext}} </p>
+<p class="type_medium everbreak" style="font-family:'sampleFont'; line-height: 87%; margin: 0.5rem">{{sampletext}} </p>
+<p class="type_big everbreak" style="font-family:'sampleFont'; line-height: 87%; margin: 0.5rem">{{sampletext}} </p>
+</div>
+
+<!--
+Vertical upright orientation
+
+<div class="text_sample" style="flex-direction:row;flex-wrap:wrap">
+<p class="type_normal everbreak" style="font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;">{{sampletext}} </p>
+<p class="type_medium everbreak" style="font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;">{{sampletext}} </p>
+<p class="type_big everbreak" style="font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;">{{sampletext}} </p>
+</div>
+<div class="text_sample_inverted" style="flex-direction:row;flex-wrap:wrap;">
+<p class="type_normal everbreak" style="font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;">{{sampletext}} </p>
+<p class="type_medium everbreak" style="font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;">{{sampletext}} </p>
+<p class="type_big everbreak" style="font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;">{{sampletext}} </p>
+</div>
+-->
+
+<!--
+New-Setup - Vertical 2
+
+<div class="text_sample" style="display:flex; flex-direction:row;">
+  <div class="turner" style=" flex-basis:100%;">
+    <p class="type_normal everbreak" style="flex: 1; border-style:solid; writing-mode:vertical-lr;font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+  </div>
+  <div class="turner" style="flex-basis:100%;">
+    <p class="type_medium everbreak" style="flex: 1; border-style:solid; writing-mode:vertical-lr;font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+  </div>
+  <div class="turner" style="flex-basis:100%;">
+    <p class="type_big everbreak" style="flex: 1; border-style:solid; writing-mode:vertical-lr;font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+  </div>
+</div>
+-->
+
+Newer-Setup - Vertical 3
+<!-- might need a calculation for the "height" of the element = 1/3 the container minus the padding... 
+could also use container-queries-->
+<div class="text_sample" style= "">
+  <div class="turner" style="writing-mode:vertical-lr;display:flex; flex-direction:column; flex-wrap:wrap; border-style:dotted;">
+    <p class="type_normal everbreak" style="height:30vh;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+    <p class="type_medium everbreak" style="height:30vh;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+    <p class="type_big everbreak" style="height:30vh;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+  </div>
+</div>

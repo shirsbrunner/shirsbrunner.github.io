@@ -4,6 +4,9 @@ description: A squared font that works in a grid
 date: 2023-04-01
 updateDate: 2023-11-12
 evolution: 1
+urlbase: '/articles/20230401_gridtype/'
+fontname: MonoCube-Regular
+sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah cotton candy. "ç(){}1234567890?.
 tags:
   - typeface
 ---
@@ -35,51 +38,7 @@ After visiting the Haettenschweiler-Exhibition at the ZHdK and some inspiration 
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
-<style>
-@font-face {
-  font-family: 'MonoCube';
-  src: url('/articles/20230401_gridtype/MonoCube-Regular.woff2') format('woff2'),
-       url('/articles/20230401_gridtype/MonoCube-Regular.woff') format('woff');
-
-       src/articles/20230314_circletime/GranCirculos-Regular.woff
-  font-weight: normal;
-  font-style: normal;
-  word-break: break-all;
-  white-space: break-spaces;
-  line-break: anywhere;
-}
-
-</style>
-
-<div class="text_sample">
-<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
-<div class="text_sample_inverted">
-<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
-
-
-
-And vertical upright
-
-<div class="text_sample" style="flex-direction:row;flex-wrap:wrap;">
-<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;"><mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;"><mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;"><mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%; writing-mode: vertical-lr; text-orientation: upright;"><mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
-</div>
-<div class="text_sample_inverted" style="flex-direction:row;flex-wrap:wrap;">
-<p style="font-family:'MonoCube';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%;writing-mode: vertical-lr; text-orientation: upright;"><mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%;writing-mode: vertical-lr; text-orientation: upright;"><mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%;writing-mode: vertical-lr; text-orientation: upright;"><mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
-<p style="font-family:'MonoCube';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%;writing-mode: vertical-lr; text-orientation: upright;"><mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.</p>
-</div>
+{%include 'partials/textsample_monoblock.njk' %}
 
 ## Also...
 I think this has some amazing potential. 

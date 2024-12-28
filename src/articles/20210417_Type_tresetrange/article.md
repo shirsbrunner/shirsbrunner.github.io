@@ -3,6 +3,9 @@ title: Strange things are happening
 description: Creating a font you can('t) just barely read as a base for another project
 date: 2021-04-17
 evolution: 2
+urlbase: '/articles/20210417_Type_tresetrange/'
+fontname: tresetrange-regular-webfont
+sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:
   - typeface
   - typography
@@ -28,29 +31,6 @@ In the end I added all the glyphs again, the hardest part was inventing the numb
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
-<style>
-@font-face {
-  font-family: 'tresetrangeregular';
-  src: url('/articles/20210417_Type_tresetrange/tresetrange-regular-webfont.woff2') format('woff2'),
-       url('/articles/20210417_Type_tresetrange/tresetrange-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-</style>
-
-
-<div class="text_sample">
-<p style="font-family:'tresetrangeregular';font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-<p style="font-family:'tresetrangeregular';font-size:1.1em; margin: 0.5em"> <mark>1.1em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-<p style="font-family:'tresetrangeregular';font-size:1.3em; margin: 0.5em"> <mark>1.3em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-<p style="font-family:'tresetrangeregular';font-size:1.6em; margin: 0.5em"> <mark>1.6em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-</div>
-<div class="text_sample_inverted">
-<p style="font-family:'tresetrangeregular';font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-<p style="font-family:'tresetrangeregular';font-size:1.1em; margin: 0.5em"> <mark>1.1em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-<p style="font-family:'tresetrangeregular';font-size:1.3em; margin: 0.5em"> <mark>1.3em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-<p style="font-family:'tresetrangeregular';font-size:1.6em; margin: 0.5em"> <mark>1.6em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?. </p>
-</div>
+{%include 'partials/textsample.njk' %}
 
 Obviously, this might not be usable for anything but art, jokes or the alien-text of your choice. Still it is interesting, that I can still make out words (not numbers) just by looking at text (try to find Muffin and Love). 

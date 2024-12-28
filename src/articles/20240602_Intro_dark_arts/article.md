@@ -3,6 +3,9 @@ title: Introduction to the Dark Arts
 description: Not so blackletter
 date: 2024-06-02
 evolution: 1
+urlbase: '/articles/20240602_Intro_dark_arts/'
+fontname: Ideala-Regular
+sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. ç&1234567890?.
 tags:
   - typeface
   - typography
@@ -44,29 +47,7 @@ I'm pretty sure, there is even more.
 
 While there is lots of work still to do (and I'm not yet happy with at all with a lot of the letters), see the samples below for a start.  
 
-<style>
-@font-face {
-  font-family: 'Ideala';
-  src: url('/articles/20240602_Intro_dark_arts/Ideala-Regular.woff2') format('woff2'),
-       url('/articles/20240602_Intro_dark_arts/Ideala-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-</style>
-
-<div class="text_sample">
-<p style="font-family:'Ideala';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'Ideala';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'Ideala';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'Ideala';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
-<div class="text_sample_inverted">
-<p style="font-family:'Ideala';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'Ideala';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'Ideala';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'Ideala';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
+{%include 'partials/textsample.njk' %}
 
 ## Todos
 - What additional signs do I want to add? Do I need other number forms?

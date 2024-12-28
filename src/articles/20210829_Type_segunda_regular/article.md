@@ -3,6 +3,9 @@ title: Bold is not really regular
 description: It's a family - in addition to the old regular now called "bold" there is now also a regular fontface in a didone style
 date: 2021-08-29
 evolution: 2
+urlbase: '/articles/20210829_Type_segunda_regular/'
+fontname: segunda-regular-webfont
+sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:
   - typeface
   - typography
@@ -21,29 +24,7 @@ Is it pretty? Maybe not on this screen. I'm pretty sure, that checking the fontf
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
-<style>
-@font-face {
-  font-family: 'segunda';
-  src: url('/articles/20210829_Type_segunda_regular/segunda-regular-webfont.woff2') format('woff2'),
-       url('/articles/20210829_Type_segunda_regular/segunda-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-</style>
-
-<div class="text_sample">
-<p style="font-family:'segunda';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:normal;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:normal;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:normal;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
-<div class="text_sample_inverted">
-<p style="font-family:'segunda';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:normal;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:normal;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'segunda';font-weight:normal;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
+{%include 'partials/textsample.njk' %}
 
 ## The current state is not the final state
 

@@ -81,7 +81,6 @@ body {
     max-width: 1024px;
     margin: 0px auto;
     color: var(--darkGrey);
-
 }
 
 header{
@@ -138,19 +137,17 @@ main{ /*-- do we need to adjust this? --*/
        url('/fonts/structural/segunda-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-
 }
 
-
-
+/*
 @font-face {
   font-family: 'PrimeraNueva';
   src: url('/fonts/structural/PrimeraNueva-Regular.woff2') format('woff2'),
        url('/fonts/structural/PrimeraNueva-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
+*/
 
 @font-face {
   font-family: 'montserrat';
@@ -170,14 +167,15 @@ main{ /*-- do we need to adjust this? --*/
 
 }
 
+/*
 @font-face {
   font-family: 'segunda';
   src: url('/fonts/structural/segunda-regular-webfont.woff2') format('woff2'),
        url('/fonts/structural/segunda-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
+*/
 
 @font-face {
   font-family: 'grancirculos';
@@ -194,7 +192,19 @@ main{ /*-- do we need to adjust this? --*/
        url('/fonts/structural/miyconos-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
 
+/* Utopia-Classes, for typesamples*/
+.type_normal{
+  font-size: var(--step-0);
+}
+
+.type_medium{
+  font-size: var(--step-1);
+}
+
+.type_big{
+  font-size: var(--step-2);
 }
 
 /*- fonts for titles and things*/
@@ -372,11 +382,6 @@ article p {
   margin-bottom: 1em; 
 }
 
-.text_sample mark{
-  color:var(--red);
-  background-color:transparent;
-}
-
 .text_sample_inverted{
   padding: 0.5rem;
   display:flex;
@@ -385,11 +390,6 @@ article p {
   background-color:var(--sampleBackDark); 
   color:  var(--textsampleWhite);
   margin-bottom: 1em; 
-}
-
-.text_sample_inverted mark{
-  color: var(--textSampleMarkInverted);
-  background-color:transparent;
 }
 
 .time{ /*-- we need this in the article metrics and article preview --*/

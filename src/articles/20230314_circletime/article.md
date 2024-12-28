@@ -4,6 +4,9 @@ description: Another typeface with a geometric base
 date: 2023-03-14
 updateDate: 2023-03-26
 evolution: 2
+urlbase: '/articles/20230314_circletime/'
+fontname: GranCirculos-Post
+sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:
   - typography
 ---
@@ -39,30 +42,7 @@ Still, I don't look back. Glyph Mini is a very nice piece of software considerin
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
-<style>
-@font-face {
-  font-family: 'grancirculos';
-  src: url('/articles/20230314_circletime/GranCirculos-Post.woff2') format('woff2'),
-       url('/articles/20230314_circletime/GranCirculos-Post.woff') format('woff');
-
-       src/articles/20230314_circletime/GranCirculos-Regular.woff
-  font-weight: normal;
-  font-style: normal;
-}
-</style>
-
-<div class="text_sample">
-<p style="font-family:'grancirculos';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'grancirculos';font-weight:normal;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'grancirculos';font-weight:normal;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'grancirculos';font-weight:normal;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
-<div class="text_sample_inverted">
-<p style="font-family:'grancirculos';font-weight:normal;font-size:0.9em; margin: 0.5em"> <mark>0.9em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'grancirculos';font-weight:normal;font-size:1em; margin: 0.5em"> <mark>1.0em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'grancirculos';font-weight:normal;font-size:1.2em; margin: 0.5em"> <mark>1.2em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-<p style="font-family:'grancirculos';font-weight:normal;font-size:1.4em; margin: 0.5em"> <mark>1.4em:</mark> Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?. </p>
-</div>
+{%include 'partials/textsample.njk' %}
 
 I like the soft character of the typeface. 
 

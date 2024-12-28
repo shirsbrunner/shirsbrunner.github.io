@@ -3,6 +3,9 @@ title: Paying attention to time
 description: Measuring the flow of cost and value
 date: 2024-09-01
 evolution: 2
+urlbase: '/articles/20240901_counting_cash/'
+fontname: AD-Digiwatch-Regular
+sampletext: 0.123456789 09:22
 tags:
   - html
   - css
@@ -43,29 +46,7 @@ I've been playing around with utopias steps and scales (as the PWA needs vastly 
 
 For this counter, I made a new typeface - a very simple copy of the 8-segment numbers of calculators and digital watches. Currently, there is nothing but numbers, period and colon (see below). This is a very easy typeface to make. Currently, there is a lot of whitespace around the glyphs. It still has a descender (that I might eventually remove) and as it is an equal spaced font, there is the same space above... also the display below should read "em" next to the initial numbers, but well...
 
-<style>
-@font-face {
-  font-family: 'digiwatch';
-  src: url('/articles/20240901_counting_cash/AD-Digiwatch-Regular.woff2') format('woff2'),
-       url('/articles/20240901_counting_cash/AD-Digiwatch-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-</style>
-
-<div class="text_sample">
-<p style="font-family:'digiwatch';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>EM 0.9:</mark> 0.123456789 09:22 </p>
-<p style="font-family:'digiwatch';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>EM 1.0:</mark> 0.123456789 09:22 </p>
-<p style="font-family:'digiwatch';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>EM 1.2:</mark> 0.123456789 09:22 </p>
-<p style="font-family:'digiwatch';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>EM 1.4:</mark> 0.123456789 09:22 </p>
-</div>
-<div class="text_sample_inverted">
-<p style="font-family:'digiwatch';font-weight:normal;font-size:0.9em; margin: 0.5em;line-height: 87%"> <mark>EM 0.9:</mark> 0.123456789 09:22 </p>
-<p style="font-family:'digiwatch';font-weight:normal;font-size:1em; margin: 0.5em;line-height: 87%"> <mark>EM 1.0:</mark> 0.123456789 09:22 </p>
-<p style="font-family:'digiwatch';font-weight:normal;font-size:1.2em; margin: 0.5em;line-height: 87%"> <mark>EM 1.2:</mark> 0.123456789 09:22 </p>
-<p style="font-family:'digiwatch';font-weight:normal;font-size:1.4em; margin: 0.5em;line-height: 87%"> <mark>EM 1.4:</mark> 0.123456789 09:22 </p>
-</div>
+{%include 'partials/textsample.njk' %}
 
 The main typeface is my other typeface circulos, also used on the PWA - for currencies, I added an Euro sign.
 
