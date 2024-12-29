@@ -40,6 +40,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 
 {%include 'partials/textsample_monoblock.njk' %}
 
+{%include 'partials/typographic-link.njk' %}
+
 ## Also...
 I think this has some amazing potential. 
 Would pages consisting only of vertical text be horizontally scrolling? Most probably yes.

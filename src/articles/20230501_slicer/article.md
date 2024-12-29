@@ -20,6 +20,8 @@ While this looks as strange as it sounds, I'm amazed, that it is still readable.
 
 {%include 'partials/textsample.njk' %}
 
+{%include 'partials/typographic-link.njk' %}
+
 ## Things
 - Still needs special characters. However the easy reading works mainly with text...
 - Diacritics are now distanced from the letters

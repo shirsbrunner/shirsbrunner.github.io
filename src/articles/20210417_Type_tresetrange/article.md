@@ -33,4 +33,6 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 
 {%include 'partials/textsample.njk' %}
 
+{%include 'partials/typographic-link.njk' %}
+
 Obviously, this might not be usable for anything but art, jokes or the alien-text of your choice. Still it is interesting, that I can still make out words (not numbers) just by looking at text (try to find Muffin and Love). 

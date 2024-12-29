@@ -48,6 +48,8 @@ For this counter, I made a new typeface - a very simple copy of the 8-segment nu
 
 {%include 'partials/textsample.njk' %}
 
+{%include 'partials/typographic-link.njk' %}
+
 The main typeface is my other typeface circulos, also used on the PWA - for currencies, I added an Euro sign.
 
 ## Sadly, the app is still sorely lacking in 

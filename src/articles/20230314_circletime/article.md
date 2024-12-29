@@ -44,6 +44,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 
 {%include 'partials/textsample.njk' %}
 
+{%include 'partials/typographic-link.njk' %}
+
 I like the soft character of the typeface. 
 
 ## Things to improve

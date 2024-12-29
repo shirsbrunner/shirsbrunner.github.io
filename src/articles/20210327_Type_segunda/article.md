@@ -36,6 +36,8 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 
 {%include 'partials/textsample.njk' %}
 
+{%include 'partials/typographic-link.njk' %}
+
 There are still some issues to be fixed, but the "my baby-effect" is strong. 
 
 ## Try it!

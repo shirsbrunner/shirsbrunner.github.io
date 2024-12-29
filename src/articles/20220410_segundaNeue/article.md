@@ -48,4 +48,6 @@ The following paragraph shows the outcome with some "cupcake ipsum" text:
 
 {%include 'partials/textsample.njk' %}
 
+{%include 'partials/typographic-link.njk' %}
+
 I'll probably update these again, incrementally (on this page, as there is always a missing kerning class) or radically (in a new article), and eventually it will wreak havoc on all the article-pages using the typefaces...

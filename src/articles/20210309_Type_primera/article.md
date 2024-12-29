@@ -50,15 +50,15 @@ Furthermore I learnt about kerning. We "kern" automatically when writing by hand
 
 After some iterations I considered the typeface to be good enough - or even better, considering the fact that I only intended to try out fontforge before starting seriously. 
 
-In the end the typeface has more than 150 letters or signs and can apparently be used in a multitude of languages (if I can trust font squirrel). The typeface is currently not used in this page (as too much type tends to be tricky and handwriting is rather hard to read, but who knows, in the future...).
+In the end the typeface has more than 150 letters or signs and can apparently be used in a multitude of languages (if I can trust font squirrel). The typeface is currently not used in this page (as too much type tends to be tricky and handwriting is rather hard to read, but who knows, in the future...). Obviously, the typeface has some issues, but I like the outcome, especially the little sun, that I use now and then in digital products. 
 
 The following paragraph shows the outcome with some "cupcake ipsum" text: 
 
 {%include 'partials/textsample.njk' %}
 
-Obviously, the font has a lot of issues, but I like the outcome, especially the little sun, that I use now and then in digital products. 
+{%include 'partials/typographic-link.njk' %}
 
-## Try it!
+## Do it yourself!
 
 It's great to have your handwriting digitized and you can learn a lot in the process. 
 

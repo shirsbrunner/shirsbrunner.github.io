@@ -49,6 +49,8 @@ While there is lots of work still to do (and I'm not yet happy with at all with 
 
 {%include 'partials/textsample.njk' %}
 
+{%include 'partials/typographic-link.njk' %}
+
 ## Todos
 - What additional signs do I want to add? Do I need other number forms?
 - Ligatures!!!
