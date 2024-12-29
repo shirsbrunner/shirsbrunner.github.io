@@ -2,10 +2,11 @@
 title: Paying attention to time
 description: Measuring the flow of cost and value
 date: 2024-09-01
+updateDate: 2024-12-29
 evolution: 2
 urlbase: '/articles/20240901_counting_cash/'
 fontname: AD-Digiwatch-Regular
-sampletext: 0.123456789 09:22
+sampletext: Error at 0.123456789 09:22 - Goto line 22 and Lorem Ipsum
 tags:
   - html
   - css
@@ -57,3 +58,7 @@ This is not finished or really polished yet..
 - The PWA does nothing more than make it installable. But it could record the starting time, in case your phone has a shutdown, or your browser.
 - The install-buttons for the PWAs are a hassle with testing scope, I hope I got it right this time. 
 - Accessibility: I'm currently only hiding and showing things - someone in need of assisting technology will probably have a hard time finding out, what is going on (yet to be tested with a screen reader though).
+
+## Dez 2024: Update to the typeface
+This now has "all" the letters of the alphabet in sometimes upper and lowercase including some special signs.
+Characters are based on the 7-Segment specification and adjusted here and there (sometimes using the Siekoo Character). Where only one of upper/lower-case was available, the available one fills both for easier typing. 

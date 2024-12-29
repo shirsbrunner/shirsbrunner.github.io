@@ -2,6 +2,7 @@
 title: This is the subtitle-Texts
 description: This is in the preview
 date: 2021-03-13
+updateDate: 2023-03-24
 evolution: 1 2 3 (pick one, 1 lowest, 3 highest)
 urlbase: '/articles/20240901_counting_cash/' - typesample only, the folder name including "articles" 
 fontname: AD-Digiwatch-Regular - typesample only, the name of the type
