@@ -8,7 +8,7 @@ urlbase: '/articles/20230401_gridtype/'
 fontname: MonoCube-Regular
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah cotton candy. "ç(){}1234567890?.
 tags:
-  - typeface
+  - typography
 ---
 
 ## Currently more of an idea

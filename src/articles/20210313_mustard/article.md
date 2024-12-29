@@ -6,7 +6,7 @@ updateDate: 2023-03-30
 evolution: 3
 tags:
   - mustard
-  - cookingskills
+  - cooking
 ---
 
 ## You can feel it in the nose

@@ -7,7 +7,6 @@ urlbase: '/articles/20210829_Type_segunda_regular/'
 fontname: segunda-regular-webfont
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:
-  - typeface
   - typography
 ---
 

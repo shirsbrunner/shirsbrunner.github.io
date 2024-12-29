@@ -14,8 +14,7 @@ tags:
   - html
   - css
   - mustard
-  - cookingskills
-  - typeface
+  - cooking
   - typography
   - gadgets
   - light

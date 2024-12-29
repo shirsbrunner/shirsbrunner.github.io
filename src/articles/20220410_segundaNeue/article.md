@@ -7,7 +7,6 @@ urlbase: '/articles/20220410_segundaNeue/'
 fontname: neuesegunda-regular
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:
-  - typeface
   - typography
 ---
 

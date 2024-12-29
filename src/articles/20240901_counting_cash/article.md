@@ -10,7 +10,7 @@ sampletext: Error at 0.123456789 09:22 - Goto line 22 and Lorem Ipsum
 tags:
   - html
   - css
-  - typeface
+  - typography
 ---
 
 ## Everything counts in large amounts

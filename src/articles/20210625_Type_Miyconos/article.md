@@ -5,7 +5,6 @@ date: 2021-06-25
 updateDate: 2023-03-11
 evolution: 2
 tags:
-  - typeface
   - typography
 ---
 

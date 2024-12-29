@@ -7,7 +7,7 @@ urlbase: '/articles/20230501_slicer/'
 fontname: Slicer-Regular
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah cotton candy. ç1234567890?.
 tags:
-  - typeface
+  - typography
 ---
 
 ## Divide by two and add again
