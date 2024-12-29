@@ -5,16 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Segunda</title>
   <meta name="description" content="The first typeface that was not my handwriting">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black:400" rel="stylesheet"> -->
   <link rel="stylesheet" href="/assets/css/reset.css" />
   <link rel="stylesheet" href="/assets/css/utopia.css" />  
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <!--<link rel="icon" 
-      type="image/png" 
-      href="/images/structural/favicon.png"> -->
 </head>
 <body>
 
@@ -57,9 +53,16 @@
         }  
       </style>
       <!-- this is the typetester -->
-      <div class="typetesterfield" id="type-sample" contenteditable="true" style="font-family: 'tt-segunda-bold-webfont';">
+      <div class="typetesterfield typeSize3" id="type-sample" contenteditable="true" style="font-family: 'tt-segunda-bold-webfont';">
         
         Pixels are friends!
+      </div>
+      <!-- fontsize selection -->
+      <div class="fontsizeContainer">
+        <label for="fontsizeSelector">Font size: </label> 
+          <input type="range" class="rangeInput" id="fontsizeSelector" name="fontsizeSelector" list="markers" min="-1" max="5" value="3"/>
+
+
       </div>
 
       <!-- this is the content from the type-file - could describe the fonts a bit or something -->
@@ -102,5 +105,7 @@
 
 </body>
    <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+    
+   <script type="text/javascript" src="/assets/js/fontsizeSlider.js"></script>
 </html>
 
