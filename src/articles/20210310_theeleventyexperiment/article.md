@@ -2,7 +2,7 @@
 title: The 11ty-experiment
 description: Building a static page that can be easily updated
 date: 2021-03-10
-updateDate: 2024-11-21
+updateDate: 2024-12-30
 evolution: 2
 tags:
   - 11nty
@@ -62,3 +62,6 @@ A collection of posts is sorted by date updated before initial date. The mechani
 
 ## Update Nov 2024
 The page now has a very basic type-tester (That will need some additional work). I'm not really sure on how to best organize things – assuming, I can do two different pages from one template (or from one folder with two templates and two texts so that shared ressources like webfont-files are still organized neatly). Not sure on how to do that yet. Also, the nav is now too big for the 320 mobile view. 
+
+## Update Dez 2024
+Now on eleventy 3.0. Typesamples are now a partial and thus very easy to update or change. I feel like I missed a lot by not using partials before (and coding every single one of them on the corresponding page, the updates...). This might lead to changing the type-testers again (or at least linking them to the corresponding article). 
