@@ -2,7 +2,7 @@
 title: It looks like some strange tech-chart
 description: A squared font that works in a grid
 date: 2023-04-01
-updateDate: 2023-11-12
+updateDate: 2024-12-29
 evolution: 1
 urlbase: '/articles/20230401_gridtype/'
 fontname: MonoCube-Regular
@@ -48,3 +48,7 @@ Would pages consisting only of vertical text be horizontally scrolling? Most pro
 An additional issue is currently visible on this page. Sometimes, flexbox for the writing-mode:vertical-lr and text-orientation:upright containers is not working properly. This is based on the fact, that, similar to the dropdowns, flexbox behaviour changes if writing-mode changes (on the container). See the [w3.org-flexbox documentation](https://www.w3.org/TR/css-flexbox-1/#flex-flow-property) for details (it's a bit further down). Currently, I'm not sure on how to handle this. Also - somehow, firefox reacts with reorganizing the flexcontainer when opening inspect mode...
 
 Furthermore firefox (not chrome / safari) seems to be doing something strange to the space character in the vertical-lr/upright text. While an empty space is placed, where the character would be, the character itself is shifted a bit. I'm not sure, if this is related to the typeface or a browser text rendering issue. 
+
+## Small update december 2024
+This now has a different sample-text (among with all other articles for typography). I decided to change the vertical-text example to just one. "writing-mode: vertical-lr", flexbox and multiple columns next to eachother just don't seem to work for the purpose, when mixing different writing modes in a page. I might have been close with block-size and inline-size (where it's possible to limit the height of the vertical paragraph) - but I ran into another problem with flexbox. 
+The space-character-bug in firefox is still here however and chrome still adds bigger spaces between the characters with text-orientation:upright. 

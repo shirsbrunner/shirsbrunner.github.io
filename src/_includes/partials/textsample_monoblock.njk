@@ -64,10 +64,39 @@ New-Setup - Vertical 2
 Newer-Setup - Vertical 3
 <!-- might need a calculation for the "height" of the element = 1/3 the container minus the padding... 
 could also use container-queries-->
+
+<!--
 <div class="text_sample" style= "">
   <div class="turner" style="writing-mode:vertical-lr;display:flex; flex-direction:column; flex-wrap:wrap; border-style:dotted;">
-    <p class="type_normal everbreak" style="height:30vh;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
-    <p class="type_medium everbreak" style="height:30vh;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
-    <p class="type_big everbreak" style="height:30vh;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+    <p class="type_normal everbreak" style="inline-size:20rem;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+    <p class="type_medium everbreak" style="inline-size:20rem;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+    <p class="type_big everbreak" style="inline-size:20rem;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
+  </div>
+</div>
+-->
+
+NEXT-Generation
+
+<!-- setting the width on the element test block-size and inline-size-->
+<!--
+<div class="specialtext_sample" style= "">
+  <div class="turner" style="display:flex; flex-direction:row; justify-content:space-between; flex-wrap:wrap; border-style:dotted;">
+    <div class="element" style="border-style:dotted; border-color:red;">
+      <p class="type_normal everbreak" style="inline-size: 15vh; writing-mode:vertical-lr;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; ">{{sampletext}} </p>
+    </div>
+    <div class="element" style="border-style:dotted; border-color:red; ">
+      <p class="type_medium everbreak" style="inline-size: 20vh; writing-mode:vertical-lr;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; ">{{sampletext}} </p>
+    </div>
+    <div class="element" style="border-style:dotted; border-color:red;">
+      <p class="type_big everbreak" style="inline-size: 30vh; writing-mode:vertical-lr;border-style:solid; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; ">{{sampletext}} </p>
+    </div>
+  </div>
+</div>
+-->
+
+
+<div class="text_sample" style= "">
+  <div class="turner" style="display:flex; flex-direction:row; justify-content:center; flex-wrap:wrap;">
+      <p class="type_big everbreak" style="inline-size: 60vh; writing-mode:vertical-lr; font-family:'sampleFont'; margin: 0.5rem; line-height: 87%; text-orientation: upright;">{{sampletext}} </p>
   </div>
 </div>
