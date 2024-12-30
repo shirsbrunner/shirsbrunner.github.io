@@ -1,8 +1,7 @@
 /*Type*/
-/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1024,16,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1024,16,1.333,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
-  --step--2: clamp(0.5628rem, 0.7543rem + -0.2992vw, 0.6944rem);
   --step--1: clamp(0.7502rem, 0.8711rem + -0.189vw, 0.8333rem);
   --step-0: clamp(1rem, 1rem + 0vw, 1rem);
   --step-1: clamp(1.2rem, 1.1395rem + 0.3023vw, 1.333rem);
@@ -10,10 +9,12 @@
   --step-3: clamp(1.728rem, 1.4368rem + 1.4559vw, 2.3686rem);
   --step-4: clamp(2.0736rem, 1.581rem + 2.463vw, 3.1573rem);
   --step-5: clamp(2.4883rem, 1.7063rem + 3.91vw, 4.2087rem);
+  --step-6: clamp(2.986rem, 1.7931rem + 5.9642vw, 5.6102rem);
 }
 
-/*Spacing*/
+/* NOTE: use step 6 only for the typetester */
 
+/*Spacing*/
 
 /* @link https://utopia.fyi/space/calculator?c=320,14,1.2,1024,16,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-2xs&g=s,l,xl,12 */
 

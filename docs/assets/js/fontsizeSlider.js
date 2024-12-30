@@ -18,7 +18,7 @@ input.addEventListener("input", (event) => {
 // this removes all old classes
 function removeFontsizeElements() {
     console.log("remove was called");
-    class_list.remove("typeSize-1","typeSize0","typeSize1","typeSize2","typeSize3","typeSize4","typeSize5" ); //remove all strange classes
+    class_list.remove("typeSize-1","typeSize0","typeSize1","typeSize2","typeSize3","typeSize4","typeSize5","typeSize6" ); //remove all strange classes
 }
 
 // this concatenates and adds the new class

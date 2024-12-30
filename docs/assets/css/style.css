@@ -223,6 +223,10 @@ main{ /*-- do we need to adjust this? --*/
   font-size: var(--step-5);
 }
 
+.typeSize6{
+  font-size: var(--step-6);
+}
+
 /*- fonts for titles and things*/
 .big_text{
   font-family: "montserrat"; /*make no mistake - this is not a color*/
@@ -666,17 +670,25 @@ hr{ /*a horizontal rule*/
   width:100%;
 }
 
-.typetesterfield {
-  /*font-size: var(--step-5); /*0.8rem*/
-  padding: var(--space-xs);
+.typetesterContainer{ /*the parent field*/
   border: 1px solid var(--middleGrey);
-  text-align:center; 
+  display:flex; 
+  align-items: center;
+  justify-content: center; 
+  min-height: 10rem; 
 }
 
-.typetesterfield:focus {
+.typetesterContainer:focus-within { /*the parent field if the child has focus*/
   background-color: var(--textSampleMarkInverted);
-  outline:none; 
 } 
+
+.typetesterfield { /*the text-div*/
+  padding: var(--space-xs);
+  min-width:100%; 
+  text-align:center;
+  outline:none; /*removes the local focus, focus on the parent*/
+}
+
 
 .textpreviewsample{
   font-size: var(--step-5);
