@@ -6,12 +6,12 @@ date: 2024-11-17
 layout: typespecimen.njk
 initTypeSpecimen: Darkside of the moon!
 urlbase: '/articles/20250119_Type_Ultra/'
-fontname: AD-Ultra-ExtraBold
+fontname: AD-Ultra-Serif-ExtraBold
 ---
 
 ## Typeface-Info
 Work in Progress! Something to maybe sometimes replace Montserrat on this page. 
-Currently looks like Impact
+No longer looks like Impact and has some serif appeal now (all over the place, but hey :D )
 
 ## Things to look out for
-Less Impact more individuality. Maybe serifs, maybe a variable Font. 
+Adjustments, Kerning, Maybe a variable Font. 
