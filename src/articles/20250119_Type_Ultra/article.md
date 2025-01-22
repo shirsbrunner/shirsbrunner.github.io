@@ -1,11 +1,11 @@
 ---
 title: Extensive use of dark pixels
-description: This is in the preview
+description: A base for a display typeface
 date: 2025-01-19
 evolution: 1
 urlbase: '/articles/20250119_Type_Ultra/'
 fontname: AD-Ultra-ExtraBold
-sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah and cotton candy.?!
+sampletext: 'Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah and cotton candy.?! - #123 45 67 89.99'
 tags:
   - typography
 ---
@@ -20,7 +20,7 @@ Somehow (and this is something I noticed before), I struggle more with uppercase
 
 ## It's a first draft
 
-This is missing numbers, a some punctuation, and some special characters.
+This is missing polish, punctuation, and special characters.
 
 
 {%include 'partials/textsample.njk' %}
