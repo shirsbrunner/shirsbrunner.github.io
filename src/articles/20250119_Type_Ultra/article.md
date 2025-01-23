@@ -26,4 +26,6 @@ Also serifs ate the first kerning table...
 
 {%include 'partials/textsample.njk' %}
 
+{%include 'partials/typographic-link.njk' %}
+
 I'm not really sure about the lowercase "y", but I like the a/b/d/p/q/r shapes. 

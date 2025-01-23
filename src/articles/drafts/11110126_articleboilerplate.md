@@ -24,6 +24,14 @@ tags:
 
 Text
 
+The following gives a textsample
+{%include 'partials/textsample.njk' %}
+
+
+The following gives a textlink
+{%include 'partials/typographic-link.njk' %}
+
+
 ![the final product ready to give away, with branding finalized](/images/posts/Senf1000.jpg "Mouse-Over-Text")
 
 This: [Eleventy or 11ty](https://www.11ty.dev/) is a link

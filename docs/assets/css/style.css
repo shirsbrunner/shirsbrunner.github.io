@@ -89,6 +89,7 @@ header{
   max-width:1024px;
   width:100%;
   background-color: var(--backgroundColor); 
+  z-index:100; /*fixing issues with the all clickable cards*/
 }
 
 
