@@ -17,7 +17,7 @@
         <article> {#cant use the shorthand, because of the "latest article..."#}
 
           <h2>
-               <span class="headericon" data-icon="
+              <span class="headericon" data-icon="
               {# this adds the state-icon #}
                 {% if post.data.evolution == 1 %}
                   dotcircle
@@ -29,7 +29,7 @@
               ">
               </span>
               {# this adds the title-link #}    
-              <a href="{{ post.url }}">Latest: {{ post.data.title }}</a></h2>
+              <a href="{{ post.url }}" class="breakout-link">Latest: {{ post.data.title }}</a></h2>
           <div class="tag_group">
           {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
           {% if post.data.updateDate %}<p class="time">Updated on: <time datetime="{{ post.data.updateDate | dateymd }}">{{ post.data.updateDate | datefriendly }}</time></p>{% endif %}  
@@ -51,10 +51,11 @@
             {% endfor %}
           </div>
           <p>{{ post.data.description }}</p>
-          
+          {#
           <div class="article_preview_nav">
             <a class="button b_small" href="{{ post.url }}">read entry</a>
           </div>
+          #}
 
 
         </article>
