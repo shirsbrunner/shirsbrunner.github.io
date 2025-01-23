@@ -44,11 +44,11 @@
                 {% endif %}
               </p>
             <span class="time">|</span>
-            <span class="time">tags: </span>
+            <span class="time">topic:
             {% for tag in post.data.tags | filterTagList %}
-              {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-              <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+              {{tag }}
             {% endfor %}
+            </span>
           </div>
           <p>{{ post.data.description }}</p>
           {#
