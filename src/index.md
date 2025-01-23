@@ -7,5 +7,5 @@ layout: start.njk
 ---
 
 ## Welcome
-I'm Simon, an experience designer playing around with design, type, digital things - this is a growing (and sometimes changing) log of some things I like to do now and did in the past.
+I'm Simon, an experience designer playing around with design, type, digital things. This page is a growing (and sometimes changing) log of some things I like to do now and did in the past.
 
