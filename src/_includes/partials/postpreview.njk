@@ -1,7 +1,11 @@
 {# this is the blog-preview as shown on the pagelist #}
 
-  <article>
+  <article class="article_preview">
 
+    <div class="log_preview_image">
+      <img src="/images/structural/Placeholder-Image.png" alt="postpreview image">
+    </div>
+    <div class="preview_content flow">
     <h2>
       <span class="headericon" data-icon="
         {# this adds the state-icon #}
@@ -16,7 +20,7 @@
 
     <div class="tag_group">
       {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
-      {% if post.data.updateDate %}<p class="time">Updated on: <time datetime="{{ post.data.updateDate | dateymd }}">{{ post.data.updateDate | datefriendly }}</time></p>{% endif %}
+      {% if post.data.updateDate %}<p class="time"> Updated on: <time datetime="{{ post.data.updateDate | dateymd }}">{{ post.data.updateDate | datefriendly }}</time></p>{% endif %}
       <span class="time">|</span>
       <p class="time">State:       
             {% if post.data.evolution == 1 %}
@@ -42,6 +46,7 @@
       <a class="button b_small" href="{{ post.url }}">read entry</a>
     </div>
     #}
+    </div>
 
 
   </article>

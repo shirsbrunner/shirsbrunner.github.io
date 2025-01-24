@@ -83,6 +83,11 @@ body {
     color: var(--darkGrey);
 }
 
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
 header{
   position:fixed;
   top:0;
@@ -359,13 +364,27 @@ blockquote p {
   margin: 0; 
 }
 
-article {/*-- the box containing the article preview --*/
+.article_preview {/*-- the box containing the article preview --*/
   margin: 0px 0px var(--space-xl) 0px; /* maybe adjust to dynamic sizing */ 
   position: relative; /*needed for the breakout-link*/
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red; 
 }
-article p {
+
+.article_preview > p {
   margin:0px 0px var(--space-3xs) 0px;
 }
+
+.log_preview_image {
+  width:100px; 
+}
+
+.preview_content{
+  min-width:320px;
+  max-width: 380px; 
+}
+
 .article_preview_nav{ /*-- the nav in the preview articles --*/
   display:flex;
   /*align-items: flex-end;
@@ -430,9 +449,9 @@ article p {
   font-weight:bold;
   font-size: var(--step--1); /*0.8rem*/
   color: var(--middleGrey);
-  margin: 0px var(--step--1) 0em 0px; /*margin: 0px 0.8em 0em 0px;*/
-   
+  margin: 0px var(--step--1) 0em 0px; /*margin: 0px 0.8em 0em 0px;*/   
 }
+
 .words { /*-- we need this in the blog-metrics--*/
   margin:0px;
 }
