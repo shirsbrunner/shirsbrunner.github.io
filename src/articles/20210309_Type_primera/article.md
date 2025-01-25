@@ -5,6 +5,7 @@ date: 2021-03-09
 updateDate: 2023-03-24
 evolution: 2
 urlbase: '/articles/20210309_Type_primera/'
+previewImage: Primera-Preview.png
 fontname: PrimeraNueva-Regular_post
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$1234567890?.
 tags:

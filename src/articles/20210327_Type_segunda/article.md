@@ -4,6 +4,7 @@ description: After a simple digital version of my handwriting, I tried to create
 date: 2021-03-13
 evolution: 2
 urlbase: '/articles/20210327_Type_segunda/'
+previewImage: Segunda-Preview.png
 fontname: segunda-bold-webfont
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:

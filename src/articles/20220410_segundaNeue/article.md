@@ -4,6 +4,7 @@ description: Sidebearings, Kerning and Glyphs revisited
 date: 2022-04-10
 evolution: 2
 urlbase: '/articles/20220410_segundaNeue/'
+previewImage: Segundaneue-Preview.png
 fontname: neuesegunda-regular
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:

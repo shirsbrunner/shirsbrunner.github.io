@@ -4,6 +4,7 @@ description: Creating a font you can('t) just barely read as a base for another 
 date: 2021-04-17
 evolution: 2
 urlbase: '/articles/20210417_Type_tresetrange/'
+previewImage: Tresetrange-Preview.png
 fontname: tresetrange-regular-webfont
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:

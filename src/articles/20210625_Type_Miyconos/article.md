@@ -4,6 +4,8 @@ description: There are icon fonts available, but you can make your own and learn
 date: 2021-06-25
 updateDate: 2023-03-11
 evolution: 2
+urlbase: '/articles/20210625_Type_Miyconos/'
+previewImage: Miyconos-Preview.png
 tags:
   - typography
 ---
