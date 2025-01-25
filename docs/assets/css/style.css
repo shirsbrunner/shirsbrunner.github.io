@@ -112,10 +112,9 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 .page_content{
-  /*margin-top: 1em; /*-- needs to be adjusted for dynamic type --*/
   flex: 0 1 690px; /*flexbox shorthand for grow, shrink, initial width, or max width. No need for min-Width as flexbox controls it*/
   max-width: 690px;
-  margin-top: var(--space-s);
+  margin-top: var(--space-xl);
 }
 
 .page_content p img{ /*-- stuff for the image within an article --*/
@@ -145,16 +144,6 @@ main{ /*-- do we need to adjust this? --*/
   font-style: normal;
 }
 
-/*
-@font-face {
-  font-family: 'PrimeraNueva';
-  src: url('/fonts/structural/PrimeraNueva-Regular.woff2') format('woff2'),
-       url('/fonts/structural/PrimeraNueva-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-*/
-
 @font-face {
   font-family: 'montserrat';
   src: url('/fonts/structural/Montserrat-Black.woff2') format('woff2'),
@@ -172,16 +161,6 @@ main{ /*-- do we need to adjust this? --*/
   font-style: normal;
 
 }
-
-/*
-@font-face {
-  font-family: 'segunda';
-  src: url('/fonts/structural/segunda-regular-webfont.woff2') format('woff2'),
-       url('/fonts/structural/segunda-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-*/
 
 @font-face {
   font-family: 'grancirculos';
@@ -267,13 +246,13 @@ h1{
 
 h2{
   font-size: var(--step-2);/*250%*/
-  margin: var(--space-l) 0 var(--space-2xs); /*top-sides-bottom*/
+  /*margin: var(--space-l) 0 var(--space-2xs); /*top-sides-bottom*/
   /*margin-bottom: 0.1em;*/
 }
 
 h3{
   font-size: var(--step-1);/*200%*/
-  margin-bottom: 0.1em;
+  /*margin-bottom: 0.1em;*/
   color:var(--red);
 }
 
@@ -316,12 +295,8 @@ a.b_small:hover, a.b_small:active{
 .subtitle{
   font-family: grancirculos;
   font-size: var(--step-3);/*250%*/
-  /*font-family: 'segundaregular';
-  color: #666666;*/
   font-style: normal;
   font-weight: normal;
-  /*font-size: 218%;*/ 
-  /*line-height: 160%; /*-- needs to be adjusted for dynamic type --*/
   margin: 0px; /*-- needs to be adjusted for dynamic type --*/
   margin-bottom: 1rem;
   letter-spacing: -0.06rem;
@@ -330,14 +305,12 @@ a.b_small:hover, a.b_small:active{
 p {
   line-height: 160%;
   margin:0px 0px var(--space-xs) 0px; 
-  /*margin:0px 0px 0.75em 0px; */
 }
 
 /*--- end of fonts for titles and things ---*/
 
 
 blockquote { /*-- not the metrics block-quote --*/
-  /*background: #f9f9f9;*/
   border-left: 10px solid var(--lightRed);
   margin: 1.5em 0em;
   padding: 0.25em 10px;
@@ -347,6 +320,7 @@ blockquote { /*-- not the metrics block-quote --*/
   line-height: 1em;
   color: var(--darkGrey);
 }
+
 blockquote p {
   display: inline;
 }
@@ -354,7 +328,6 @@ blockquote p {
 .cta { /*--call to action within an article--*/
   padding: var(--space-m);
   width: 100%; 
-  margin: var(--space-s) 0; 
   border: 0.5px solid var(--red);
   border-radius: var(--space-xs);
   /*--background-color:var(--buttonRed); - not accessible...--*/
@@ -369,6 +342,7 @@ blockquote p {
   position: relative; /*needed for the breakout-link*/
   display: flex;
   flex-wrap: wrap;
+  gap: var(--space-s);
   border: 1px solid red; 
 }
 
@@ -381,14 +355,15 @@ blockquote p {
 }
 
 .preview_content{
-  min-width:320px;
-  max-width: 380px; 
+  min-width:292px; /*320-28 margin on mobile*/
+  max-width: 560px; /*max width on desktop 688, image 100, */
+  border: 1px solid blue; 
 }
 
 .article_preview_nav{ /*-- the nav in the preview articles --*/
   display:flex;
-  /*align-items: flex-end;
-  justify-content: space-between;*/
+  align-items: flex-end;
+  justify-content: space-between;
   max-width: 500px;
 }
 
