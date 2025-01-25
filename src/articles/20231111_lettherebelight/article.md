@@ -3,6 +3,8 @@ title: Let there be light
 description: Building a paper lamp 
 date: 2023-11-27
 evolution: 2
+urlbase: '/articles/20231111_lettherebelight/'
+previewImage: Akari-Preview.png
 tags:
   - light
 ---

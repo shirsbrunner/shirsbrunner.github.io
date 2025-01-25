@@ -4,6 +4,8 @@ description: Trying something new that is not a sourdough starter and does not n
 date: 2021-03-13
 updateDate: 2023-03-30
 evolution: 3
+urlbase: '/articles/20210313_mustard/'
+previewImage: Mustard-Preview.png
 tags:
   - mustard
   - cooking

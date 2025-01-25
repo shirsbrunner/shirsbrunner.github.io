@@ -356,6 +356,10 @@ blockquote p {
   flex-shrink:0;
 }
 
+.log_preview_image img {
+  border-radius:8px;
+}
+
 .preview_content{
   flex-basis:292px;
   flex-grow:1;

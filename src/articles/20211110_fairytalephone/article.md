@@ -3,6 +3,8 @@ title: Putting a rotary phone to good use
 description: Automated old-school story telling for little kids
 date: 2021-11-10
 evolution: 2
+urlbase: '/articles/20211110_fairytalephone/'
+previewImage: Phone-Preview.png
 tags:
   - gadgets
 ---

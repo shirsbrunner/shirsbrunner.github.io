@@ -3,6 +3,8 @@ title: These are actually birds
 description: Creating a repetitive pattern for printing on fabric based on a kids drawing
 date: 2021-03-11
 evolution: 3
+urlbase: '/articles/20210311_birdspattern/'
+previewImage: Birds-Preview.png
 tags:
   - textiles
   - pattern

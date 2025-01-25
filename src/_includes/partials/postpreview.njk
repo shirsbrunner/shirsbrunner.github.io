@@ -4,7 +4,7 @@
 
     <div class="log_preview_image">
       {% if post.data.previewImage %} 
-        <img src={{ post.data.previewImage }} alt="postpreview image">
+        <img src={{post.data.urlbase}}{{ post.data.previewImage }} alt="postpreview image">
       {% else %}
         <img src="/images/structural/Placeholder-Image.png" alt="postpreview image">
       {% endif %}

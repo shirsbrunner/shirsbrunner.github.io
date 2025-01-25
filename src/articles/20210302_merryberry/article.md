@@ -4,6 +4,7 @@ description: Creating a repetitive berry pattern in krita for textile printing o
 date: 2021-03-23
 updateDate: 2021-03-23
 evolution: 3
+urlbase: '/articles/20210302_merryberry/'
 previewImage: MerryBerry-Preview.png
 tags:
   - textiles
