@@ -342,6 +342,7 @@ blockquote p {
   position: relative; /*needed for the breakout-link*/
   display: flex;
   flex-wrap: wrap;
+  justify-content:center; 
   gap: var(--space-s);
   border: 1px solid red; 
 }
@@ -351,12 +352,17 @@ blockquote p {
 }
 
 .log_preview_image {
-  width:100px; 
+  flex-basis:100px;
+  flex-grow:0; 
+  flex-shrink:0;
 }
 
 .preview_content{
-  min-width:292px; /*320-28 margin on mobile*/
-  max-width: 560px; /*max width on desktop 688, image 100, */
+  flex-basis:292px;
+  /*min-width:292px; /*320-28 margin on mobile*/
+  flex-grow:1;
+  flex-shrink:1;
+  /*max-width: 560px; /*max width on desktop 688, image 100, */
   border: 1px solid blue; 
 }
 
