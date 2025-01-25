@@ -3,7 +3,11 @@
   <article class="article_preview">
 
     <div class="log_preview_image">
-      <img src="/images/structural/Placeholder-Image.png" alt="postpreview image">
+      {% if post.data.previewImage %} 
+        <img src={{ post.data.previewImage }} alt="postpreview image">
+      {% else %}
+        <img src="/images/structural/Placeholder-Image.png" alt="postpreview image">
+      {% endif %}
     </div>
     <div class="preview_content flow">
     <h2>

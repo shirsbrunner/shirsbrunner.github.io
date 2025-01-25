@@ -344,7 +344,6 @@ blockquote p {
   flex-wrap: wrap;
   justify-content:center; 
   gap: var(--space-s);
-  border: 1px solid red; 
 }
 
 .article_preview > p {
@@ -359,11 +358,8 @@ blockquote p {
 
 .preview_content{
   flex-basis:292px;
-  /*min-width:292px; /*320-28 margin on mobile*/
   flex-grow:1;
   flex-shrink:1;
-  /*max-width: 560px; /*max width on desktop 688, image 100, */
-  border: 1px solid blue; 
 }
 
 .article_preview_nav{ /*-- the nav in the preview articles --*/
