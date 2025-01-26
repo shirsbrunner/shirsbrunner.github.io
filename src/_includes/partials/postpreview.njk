@@ -23,23 +23,29 @@
     <a href="{{ post.url }}" class="breakout-link">{{ post.data.title }}</a></h2>
 
     <div class="tag_group">
-      {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
-      {% if post.data.updateDate %}<p class="time"> Updated on: <time datetime="{{ post.data.updateDate | dateymd }}">{{ post.data.updateDate | datefriendly }}</time></p>{% endif %}
-      <span class="time">|</span>
-      <p class="time">State:       
-            {% if post.data.evolution == 1 %}
-              More of an Idea
-            {% elif post.data.evolution == 2 %}
-              Advanced
-            {% else %}
-              Probably final
-            {% endif %}
-        </p>
-        <span class="time">|</span>
+      <p class ="time">
+      {% if post.data.date %}<time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time>{% endif %}
+      {% if post.data.updateDate %} and updated on: <time datetime="{{ post.data.updateDate | dateymd }}">{{ post.data.updateDate | datefriendly }}</time>{% endif %}
 
-      <span class="time">tags: 
+      {% if post.data.evolution == 1 %}
+        – this is more of an Idea
+      {% elif post.data.evolution == 2 %}
+        – this is advanced
+      {% else %}
+        – this is probably final
+      {% endif %}
+
+      – tags: 
+      {% set firstTag = true %}
       {% for tag in post.data.tags | filterTagList %}
-        {{tag }}
+        {% if firstTag %}         
+          {# first does not have a leading comma #}
+          {{tag}}
+          {% set firstTag = false %}
+        {% else %}         
+          {# rest has a comma #}
+          | {{tag}}
+        {% endif %}
       {% endfor %}
       </span>
     </div>
