@@ -337,8 +337,14 @@ blockquote p {
   margin: 0; 
 }
 
+.pagelist {
+  display:flex;
+  flex-direction:column; 
+  gap: var(--space-m); 
+}
+
 .article_preview {/*-- the box containing the article preview --*/
-  margin: 0px 0px var(--space-xl) 0px; /* maybe adjust to dynamic sizing */ 
+  margin: 0px 0px var(--space-m) 0px; /* maybe adjust to dynamic sizing */ 
   position: relative; /*needed for the breakout-link*/
   display: flex;
   flex-wrap: wrap;
@@ -452,6 +458,7 @@ blockquote p {
   height: auto;
   float:left;
 }
+
 .nav_top {
   font-family: CourrierPrimeRegular, sans-serif;
   font-weight: 400;
@@ -459,8 +466,8 @@ blockquote p {
   display: flex;
   justify-content: space-between;
   align-items:center;
-
 }
+
 .nav_top ul{
   list-style-type: none;
   margin: 0;
@@ -480,10 +487,12 @@ blockquote p {
   text-decoration: none;
   border-radius: 99px;  
 }
+
 nav ul li a:hover { /*non selected hovered list elements*/
   background-color: var(--darkGrey);
   color: var(--backgroundColor);
 }
+
 .active { /*the active list elements (that are not a link)*/
   display: block;
   color: var(--backgroundColor);
@@ -537,7 +546,6 @@ nav ul li a:hover { /*non selected hovered list elements*/
   text-align:right;
 }
 
-
 .post_link { /*-- this is for the little arrows within a blog nav--*/
   display: flex;
   /*--height: 40px;--*/
@@ -578,8 +586,8 @@ a img.control_icon{
   /*margin: 0px 0.8em 0.8em 0px; */
   /*border: 1px solid var(--darkGrey);*/
   line-height: 160%;
-
 }
+
 .post-tag::after{
   content:" >";
   color: var(--middleGrey);
@@ -653,13 +661,13 @@ hr{ /*a horizontal rule*/
   height: 1px;
   border: 0;
   border-top: 1px solid var(--lightRed);
-  margin: var(--space-m) 0;/*2em 0;*/
+  margin: var(--space-s) 0;/*2em 0;*/
   padding: 0;
   flex-grow: 1;
 }
 .divider p{
   color: var(--darkGrey);
-  margin: var(--space-m-l) 0;/*2em 0;*/
+  margin: var(--space-s) 0;/*2em 0;*/
   padding: 0 1em;
   line-height:1rem; 
   font-family: 'segunda';
@@ -700,8 +708,12 @@ hr{ /*a horizontal rule*/
   line-height:100%;
 }
 
+.typepreview {
+  padding-bottom: var(--space-m);
+}
+
 .typepreview p {
-  margin:0; 
+  margin:0;
 }
 
 .fontsizeContainer {

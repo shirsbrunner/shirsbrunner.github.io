@@ -12,7 +12,7 @@ tags:
 
 ## Oblique strategies
 
-Oblique Strategies is a set of initially 55 cards by Brian Eno and Peter Schmidt. The cards contain suggestions to break dilemmas or deadlock situations, some specific to music design, others more general. Note an official (?) set can still be bought in an online store. There are however a myriad of implementations available on the internet. 
+Oblique Strategies is a set of initially 55 cards by Brian Eno and Peter Schmidt. The cards contain suggestions to break dilemmas or deadlock situations, some specific to music design, others more general. Note, that an official (?) set can still be bought in an online store. There are however a myriad of implementations available on the internet. 
 Interested in trying out the method, I was thinking about creating my own set for ages. Some people just write the suggestions on a set of playingcards – I was more thinking on printing a set but never really finished.
 
 ## Thoughts and adapting 

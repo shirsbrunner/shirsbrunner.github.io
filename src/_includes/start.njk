@@ -11,14 +11,25 @@
     <div class="page_content flow">
       {{ content | safe }} 
       {% include "partials/divider.njk" %}
-    {# shows the latest article - could probs be easier... #}
-    {% set postslist = collections.posts | head(-1) %}
-    {%- for post in postslist -%}
-        {% include "partials/postpreview.njk" %}
-    {%- endfor -%}
+    
+      {# shows the latest article #}
+      {% set postslist = collections.posts | head(-1) %}
+        {%- for post in postslist -%}
+            {% include "partials/postpreview.njk" %}
+        {%- endfor -%}
+      
+      <a href="/articles/">To the log</a>
+      
+      {% include "partials/divider.njk" %}
 
-
-    {#{{ postslist[0].templateContent | safe }}#}
+      {# shows the latest typespecimen #}
+      {% set typelist = collections.typefaces | head(-1) %}
+        {%- for post in typelist -%}
+          {% include "partials/typepreview.njk" %}
+        {%- endfor -%}
+      
+      <a href="/type/">More type</a>
+      {#{{ postslist[0].templateContent | safe }}#}
   
 
     </div>
