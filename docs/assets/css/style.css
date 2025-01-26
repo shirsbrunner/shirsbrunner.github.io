@@ -459,6 +459,7 @@ blockquote p {
   display: flex;
   justify-content: space-between;
   align-items:center;
+
 }
 .nav_top ul{
   list-style-type: none;
@@ -477,11 +478,11 @@ blockquote p {
   text-align: center;
   padding: calc(var(--space-xs)*1.1) var(--space-s) calc(var(--space-xs)*0.9);
   text-decoration: none;
+  border-radius: 99px;  
 }
 nav ul li a:hover { /*non selected hovered list elements*/
   background-color: var(--darkGrey);
   color: var(--backgroundColor);
-  border-radius: 99px;  
 }
 .active { /*the active list elements (that are not a link)*/
   display: block;
@@ -617,14 +618,7 @@ footer{
   background-color: var(--darkGrey);
   color: var(--backgroundColor); 
 }
-.footer_text{
-  font-family: 'segunda';
-  font-weight:bold;
-  font-size: var(--step--1); /*0.8rem*/
-  color: var(--middleGrey);
-  text-align: center;
-  margin:0px 8px;
-}
+
 /*the darkmode-toggle button*/
 button.dmbtntoggler {
   background-color:var(--buttonRed);
@@ -647,7 +641,6 @@ button.dmbtntoggler {
     background-color: var(--middleGrey);
   }
 }
-
 
 .divider{
   display:flex; 
@@ -702,9 +695,13 @@ hr{ /*a horizontal rule*/
   outline:none; /*removes the local focus, focus on the parent*/
 }
 
-
 .textpreviewsample{
   font-size: var(--step-5);
+  line-height:100%;
+}
+
+.typepreview p {
+  margin:0; 
 }
 
 .fontsizeContainer {
