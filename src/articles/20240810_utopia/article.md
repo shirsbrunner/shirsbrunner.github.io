@@ -1,8 +1,10 @@
 ---
 title: Utopia
-description: Designing for the future
+description: Designing for the future – fluid typescales
 date: 2024-08-10
 evolution: 1
+urlbase: '/articles/20240810_utopia/'
+previewImage: Utopia-Preview.png
 tags:
   - html
   - css

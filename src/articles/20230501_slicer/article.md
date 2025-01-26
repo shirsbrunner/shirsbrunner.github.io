@@ -4,6 +4,7 @@ description: Experiment in sliced typography
 date: 2023-05-01
 evolution: 1
 urlbase: '/articles/20230501_slicer/'
+previewImage: Slicer-Preview.png
 fontname: Slicer-Regular
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah cotton candy. ç1234567890?.
 tags:

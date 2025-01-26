@@ -3,6 +3,8 @@ title: The perils of darkmode
 description: Darkmode - it's the new fancy thing
 date: 2022-03-13
 evolution: 3
+urlbase: '/articles/20220228_darkmode/'
+previewImage: Darkmode-Preview.png
 tags:
   - html
   - css

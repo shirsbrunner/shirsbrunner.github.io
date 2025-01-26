@@ -3,6 +3,8 @@ title: Advice in complex situations
 description: PWA for your obliques
 date: 2024-10-09
 evolution: 1
+urlbase: '/articles/20241008_obliques/'
+previewImage: Obliques-Preview.png
 tags:
   - html
   - css

@@ -3,6 +3,8 @@ title: Alea iacta est
 description: Building a simpler PWA
 date: 2024-01-28
 evolution: 2
+urlbase: '/articles/20240128_progression/'
+previewImage: Digidies-Preview.png
 tags:
   - html
   - css

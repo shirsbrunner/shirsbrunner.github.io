@@ -4,6 +4,7 @@ description: A base for a display typeface
 date: 2025-01-19
 evolution: 1
 urlbase: '/articles/20250119_Type_Ultra/'
+previewImage: Ultra-Preview.png
 fontname: AD-Ultra-Serif-ExtraBold
 sampletext: 'Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah and cotton candy.?! - #123 45 67 89.99'
 tags:

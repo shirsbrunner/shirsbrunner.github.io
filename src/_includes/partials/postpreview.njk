@@ -2,14 +2,14 @@
 
   <article class="article_preview">
 
-    <div class="log_preview_image">
+    <div class="log_preview_image" aria-hidden="true">
       {% if post.data.previewImage %} 
-        <img src={{post.data.urlbase}}{{ post.data.previewImage }} alt="postpreview image">
+        <img src={{post.data.urlbase}}{{ post.data.previewImage }} alt="">
       {% else %}
-        <img src="/images/structural/Placeholder-Image.png" alt="postpreview image">
+        <img src="/images/structural/Placeholder-Image.png" alt="">
       {% endif %}
     </div>
-    <div class="preview_content flow">
+    <div class="preview_content">
     <h2>
       <span class="headericon" data-icon="
         {# this adds the state-icon #}

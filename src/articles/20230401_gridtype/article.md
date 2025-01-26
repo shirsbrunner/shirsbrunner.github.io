@@ -5,6 +5,7 @@ date: 2023-04-01
 updateDate: 2024-12-29
 evolution: 1
 urlbase: '/articles/20230401_gridtype/'
+previewImage: Monocube-Preview.png
 fontname: MonoCube-Regular
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah cotton candy. "ç(){}1234567890?.
 tags:

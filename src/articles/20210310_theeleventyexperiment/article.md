@@ -4,6 +4,8 @@ description: Building a static page that can be easily updated
 date: 2021-03-10
 updateDate: 2024-12-30
 evolution: 2
+urlbase: '/articles/20210310_theeleventyexperiment/'
+previewImage: 11ty-Preview.png
 tags:
   - html
   - css

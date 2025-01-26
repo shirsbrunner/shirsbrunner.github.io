@@ -4,6 +4,8 @@ description: Exploring service workers
 date: 2023-09-03
 updateDate: 2023-09-24
 evolution: 1
+urlbase: '/articles/20230904_funtime/'
+previewImage: PWA-Preview.png
 tags:
   - html
   - css

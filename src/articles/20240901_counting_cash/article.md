@@ -5,6 +5,7 @@ date: 2024-09-01
 updateDate: 2024-12-29
 evolution: 2
 urlbase: '/articles/20240901_counting_cash/'
+previewImage: Digiwatch-Preview.png
 fontname: AD-Digiwatch-Regular
 sampletext: Error at 0.123456789 09:22 - Goto line 22 and Lorem Ipsum
 tags:

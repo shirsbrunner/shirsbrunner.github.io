@@ -5,6 +5,7 @@ date: 2023-03-14
 updateDate: 2023-03-26
 evolution: 2
 urlbase: '/articles/20230314_circletime/'
+previewImage: Circulos-Preview.png
 fontname: GranCirculos-Post
 sampletext: Cupcake ipsum dolor. Sit amet muffin carrot cake I love caramels brownie halvah & cotton candy. +"*ç%&/()=@#[]{}$£1234567890?.
 tags:
