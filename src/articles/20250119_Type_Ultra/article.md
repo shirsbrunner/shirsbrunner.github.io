@@ -2,6 +2,7 @@
 title: Extensive use of dark pixels
 description: A base for a display typeface
 date: 2025-01-19
+updateDate: 2025-01-24
 evolution: 1
 urlbase: '/articles/20250119_Type_Ultra/'
 previewImage: Ultra-Preview.png

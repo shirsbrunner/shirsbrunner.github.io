@@ -708,8 +708,25 @@ hr{ /*a horizontal rule*/
   line-height:100%;
 }
 
+.typepreview a {
+  position: static;
+}
+
+.typepreview a::before {
+  cursor: pointer;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .typepreview {
   padding-bottom: var(--space-m);
+  margin-top:0; 
+  position: relative;
 }
 
 .typepreview p {
