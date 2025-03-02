@@ -2,7 +2,7 @@
 title: Multiplying things
 description: What pattern to use - that's the tricky question.
 date: 2025-02-14
-evolution: 1
+evolution: 2
 urlbase: '/articles/20250214_carving_stamps/'
 previewImage: Stempel-Preview.png
 tags:
