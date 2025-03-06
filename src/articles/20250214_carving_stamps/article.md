@@ -12,11 +12,11 @@ tags:
 ## Stamps for special moments
 I've been thinking about making stamps ever since we went on a trip around the world. While traveler visas today are sometimes issued digitally or not at all (i.e., when crossing the border between Schengen countries), there are still countries and border crossings, where you need to get your passport stamped on entry and on exit. 
 
-But these are not the only stamps, that can end up in a passport. When visiting Galapagos, salt lakes full of flamingos, the easter islands, tierra del fuego and other places often visited by tourists, it was often an option, to get a fancy local stamp with a nice picture of the location.
+But these are not the only stamps, that can end up in a passport. When visiting Galapagos, salt lakes full of flamingos, the easter islands, tierra del fuego and other places often visited by tourists, we could often get a fancy stamp showing off the location.
 
-Why not make one for yourself and invent your own nation and location? After all, if they can issue a stamp, so can we... Well, it's apparently not without risk adding novelty stamps to a passport. People have been prevented from boarding flights and even had to get new passports before being able to travel further.
+Why not make a stamp for yourself and invent your own nation or location? After all, if "they" can issue a stamp, so can we... Well, it's apparently not without risk adding novelty stamps to a passport. The web tells stories about people, that have been prevented from boarding flights and even had to get a new passport, before being able to travel further.
 
-Well, stamps can still be used in books or to create patterns on fabrics, cards, parcels and everything else you can think of. It's also a lot of fun with kids. 
+Luckily, stamps can still be used in books or to create patterns on fabrics, cards, parcels and everything else you can think of. It's also a lot of fun with kids. 
 
 ## Materials for stamp making
 While there is the well known potato-stamp option, the stamps are not very durable and also don't really seem a good enough option for designs with lots of fine details. 
