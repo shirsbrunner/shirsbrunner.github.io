@@ -339,12 +339,13 @@ blockquote p {
 
 .pagelist {
   display:flex;
-  flex-direction:column; 
-  gap: var(--space-m); 
+  flex-direction:column;
+  --flow-space: var(--space-l); /*-- sets the gap for flow --*/
+  /*gap: var(--space-m); */
 }
 
 .article_preview {/*-- the box containing the article preview --*/
-  margin: 0px 0px var(--space-m) 0px; /* maybe adjust to dynamic sizing */ 
+  /*margin: 0px 0px var(--space-m) 0px; /* maybe adjust to dynamic sizing */ 
   position: relative; /*needed for the breakout-link*/
   display: flex;
   flex-wrap: wrap;
@@ -724,8 +725,8 @@ hr{ /*a horizontal rule*/
 }
 
 .typepreview {
-  padding-bottom: var(--space-m);
-  margin-top:0; 
+  /*padding-bottom: var(--space-m);*/
+  /*margin-top:0; */
   position: relative;
 }
 
