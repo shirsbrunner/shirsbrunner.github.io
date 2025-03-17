@@ -2,7 +2,7 @@
 title: Icons & Ligatures - Creating an icon font
 description: There are icon fonts available, but you can make your own and learn about ligatures among other things
 date: 2021-06-25
-updateDate: 2023-03-11
+updateDate: 2025-03-17
 evolution: 2
 urlbase: '/articles/20210625_Type_Miyconos/'
 previewImage: Miyconos-Preview.png
@@ -12,7 +12,7 @@ tags:
 
 ## Icons, icons, icons
 
-With fontawesome people are used to seeing the same icons in lots of projects. As icons are not always given the same meaning sometimes confusion is the result. There are other icon sets available, but sometimes the icons will just not match what you are trying to do. Not that I have big plans with icons, but after some at work talk about designing icons, I decided to leverage the power of fontforge, learn about ligatures and generate an icon font. The hardest part? You need some icons. Even harder: standard icons are boring to design. 
+With fontawesome, people are used to seeing the same icons in lots of projects. As icons are not always given the same meaning, sometimes confusion can be the result. There are other icon sets available on the web, but sometimes the icons will just not match what you are trying to do. Not that I have big plans with icons, but after some at-work talk about designing icons, I decided to leverage the power of fontforge, learn about ligatures and generate an icon font. The hardest part? You need some icons. Even harder: standard icons are boring to design. 
 
 > However, inspiration is hard to confine within a container that will be used at fontsize 8 and smaller
 
@@ -26,8 +26,8 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
 
 @font-face {
   font-family: 'miyconos_post';
-  src: url('/articles/20210625_Type_Miyconos/Miyconos-Regular.woff2') format('woff2'),
-       url('/articles/20210625_Type_Miyconos/Miyconos-Regular.woff') format('woff');
+  src: url('/articles/20210625_Type_Miyconos/AD-Miyconos-Regular.woff2') format('woff2'),
+       url('/articles/20210625_Type_Miyconos/AD-Miyconos-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -35,8 +35,8 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
 
 .Entryicon{
   font-family:'miyconos_post';
-  font-size:2em;
-  margin:0.25em;
+  font-size:var(--step-4);
+  /*margin:0.25em;*/
    
   flex-basis: 1em; 
   font-variant-ligatures: common-ligatures; 
@@ -49,58 +49,64 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
 </style>
 <div class="text_sample" style="display:flex; flex-wrap:wrap; justify-content:center; flex-direction: row; margin:0em">
   <div class='Entryicon'><p>file</p></div>
-  <div class='Entryicon'><p>magnify</p></div>
+  <div class='Entryicon'><p>letter</p></div>
+  <div class='Entryicon'><p>erase</p></div>
+  <div class='Entryicon'><p>pen</p></div>
+  <div class='Entryicon'><p>trash</p></div>
   <div class='Entryicon'><p>search</p></div>
-  <div class='Entryicon'><p>sun</p></div>
+  <div class='Entryicon'><p>settings</p></div>
+  <div class='Entryicon'><p>eye</p></div>
+  <div class='Entryicon'><p>fish</p></div>
+  <div class='Entryicon'><p>football</p></div>
+  <div class='Entryicon'><p>tennisball</p></div>
+  <div class='Entryicon'><p>ghost</p></div>
+  <div class='Entryicon'><p>laughing</p></div>
+  <div class='Entryicon'><p>happy</p></div>
+  <div class='Entryicon'><p>neutral</p></div>
+  <div class='Entryicon'><p>angry</p></div>
+  <div class='Entryicon'><p>dead</p></div>
+  <div class='Entryicon'><p>person</p></div>
+  <div class='Entryicon'><p>holy</p></div>
+  <div class='Entryicon'><p>satanic</p></div>
+  <div class='Entryicon'><p>hot</p></div>
+  <div class='Entryicon'><p>warm</p></div>
+  <div class='Entryicon'><p>cold</p></div>
+  <div class='Entryicon'><p>bulb</p></div>
+  <div class='Entryicon'><p>light</p></div>
+  <div class='Entryicon'><p>lock</p></div>
+  <div class='Entryicon'><p>open</p></div>
+  <div class='Entryicon'><p>key</p></div>
+  <div class='Entryicon'><p>maniculedown</p></div>
+  <div class='Entryicon'><p>maniculeleft</p></div>
+  <div class='Entryicon'><p>maniculeright</p></div>
+  <div class='Entryicon'><p>maniculeup</p></div>
+  <div class='Entryicon'><p>pentagram</p></div>
+  <div class='Entryicon'><p>star</p></div>
   <div class='Entryicon'><p>cloud</p></div>
   <div class='Entryicon'><p>rain</p></div>
   <div class='Entryicon'><p>flash</p></div>
-  <div class='Entryicon'><p>cold</p></div>
-  <div class='Entryicon'><p>warm</p></div>
-  <div class='Entryicon'><p>hot</p></div>
   <div class='Entryicon'><p>snow</p></div>
-  <div class='Entryicon'><p>star</p></div>
-  <div class='Entryicon'><p>pentagram</p></div>
-  <div class='Entryicon'><p>smile</p></div>
-  <div class='Entryicon'><p>laugh</p></div>
-  <div class='Entryicon'><p>person</p></div>
-  <div class='Entryicon'><p>happy</p></div>
-  <div class='Entryicon'><p>angry</p></div>
-  <div class='Entryicon'><p>holy</p></div>
-  <div class='Entryicon'><p>satanic</p></div>
-  <div class='Entryicon'><p>heart</p></div>
-  <div class='Entryicon'><p>peace</p></div>
-  <div class='Entryicon'><p>luck</p></div>
-  <div class='Entryicon'><p>football</p></div>
-  <div class='Entryicon'><p>espresso</p></div>
-  <div class='Entryicon'><p>letter</p></div>
-  <div class='Entryicon'><p>pen</p></div>
-  <div class='Entryicon'><p>erase</p></div>
-  <div class='Entryicon'><p>trash</p></div>
-  <div class='Entryicon'><p>bulb</p></div>
-  <div class='Entryicon'><p>light</p></div>
-  <div class='Entryicon'><p>settings</p></div>
-  <div class='Entryicon'><p>lock</p></div>
-  <div class='Entryicon'><p>key</p></div>
-  <div class='Entryicon'><p>open</p></div>
-  <div class='Entryicon'><p>oneup</p></div>
-  <div class='Entryicon'><p>invader</p></div>
-  <div class='Entryicon'><p>ghost</p></div>
+  <div class='Entryicon'><p>sun</p></div>
+  <div class='Entryicon'><p>moon</p></div>
   <div class='Entryicon'><p>skull</p></div>
   <div class='Entryicon'><p>tiki</p></div>
   <div class='Entryicon'><p>monkeyhead</p></div>
   <div class='Entryicon'><p>beholder</p></div>
-  <div class='Entryicon'><p>flower</p></div>
-  <div class='Entryicon'><p>rudder</p></div>
-  <div class='Entryicon'><p>eye</p></div>
+  <div class='Entryicon'><p>invader</p></div>
+  <div class='Entryicon'><p>oneup</p></div>
+  <div class='Entryicon'><p>luck</p></div>
+  <div class='Entryicon'><p>espresso</p></div>
   <div class='Entryicon'><p>uxally</p></div>
-  <div class='Entryicon'><p>maniculeright</p></div>
-  <div class='Entryicon'><p>maniculeup</p></div>
-  <div class='Entryicon'><p>maniculeleft</p></div>
-  <div class='Entryicon'><p>circle</p></div>
+  <div class='Entryicon'><p>rudder</p></div>
+  <div class='Entryicon'><p>flower</p></div>
+  <div class='Entryicon'><p>heart</p></div>
+  <div class='Entryicon'><p>peace</p></div>
   <div class='Entryicon'><p>dotcircle</p></div>
+  <div class='Entryicon'><p>circle</p></div>
   <div class='Entryicon'><p>enso</p></div>
   <div class='Entryicon'><p>spiral</p></div>
+  <div class='Entryicon'><p>sh</p></div>
+  
 </div>
 
 ## Lessions learned
@@ -122,3 +128,6 @@ With a move to glyphs mini and a recent update to the page, the icon-font has al
 I changed some icons and added new ones used in the adjusted design. This lead to a change in labeling for certain icons (to make labeling more neutral). While some icons initially had multiple keys, with glyphs mini this is sadly not possible without having duplication (should have gotten glyphs 3...). Also numbers don't work anymore (See the UXA11Y glyph where I had to replace the 11 with ll). 
 
 A lot of the icons still need a touch up and I have yet to check for hidden changes resulting from the move to the new design program.
+
+## Update 2025-03-17
+The icons above are now smaller in size and have slight space around. I tried to adjust the line weights and also use more similar sizes for similar shapes. Some icons are still way darker than others given the need for more details. I also removed some of the icons and added others. I hope nobody did use that set for anything special (well me) - else make sure to adjust your icons a bit. 
