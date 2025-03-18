@@ -94,6 +94,7 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
   <div class='Entryicon'><p>beholder</p></div>
   <div class='Entryicon'><p>invader</p></div>
   <div class='Entryicon'><p>oneup</p></div>
+  <div class='Entryicon'><p>robot</p></div>
   <div class='Entryicon'><p>luck</p></div>
   <div class='Entryicon'><p>espresso</p></div>
   <div class='Entryicon'><p>uxally</p></div>
