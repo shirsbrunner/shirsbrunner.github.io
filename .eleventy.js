@@ -1,19 +1,48 @@
 // 11ty configuration
 const
   dev  = global.dev  = (process.env.ELEVENTY_ENV === 'development'),
-  now = new Date() /*,/*comma only needed during upgrades*/
+  now = new Date(); /*,/*comma only needed during upgrades*/
   /*UpgradeHelper = require('@11ty/eleventy-upgrade-help');/* Only needed during upgrades */
+
+
+
 
 
 
 
 module.exports = config => {
 
+
+  /*IMAGE-STUFF*/
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
+	config.addPlugin(eleventyImageTransformPlugin, {
+		// Output formats for each image.
+		formats: ["avif", "webp", "auto"],
+
+		widths: [300, 610, "auto"],
+
+		failOnError: false,
+		htmlOptions: {
+			imgAttributes: {
+				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+				loading: "lazy",
+				decoding: "async",
+			}
+		},
+
+		sharpOptions: {
+			animated: true,
+		},
+	});
+
+
+
   /* --- PLUGINS ---*/
-  
+
   //navigation
   config.addPlugin( require('@11ty/eleventy-navigation') );
-  
+
   
   //add other plugins here...
   /*config.addPlugin(UpgradeHelper);/* Only needed during upgrades */
@@ -108,8 +137,8 @@ module.exports = config => {
 
   /*--- images - adding images from a blog-entry folder. 
   This allows a file of the described file-ending to pass---*/
-  config.addPassthroughCopy('./src/articles/**/*.jpg')
-  config.addPassthroughCopy('./src/articles/**/*.png')
+  //config.addPassthroughCopy('./src/articles/**/*.jpg')
+  //config.addPassthroughCopy('./src/articles/**/*.png')
 
 
   /*--- fonts - adding global fonts ---*/

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"/> -->
     <title>EveryThingCounts</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="manifest" href="manifest.json"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="images/LogoD-512x512.png">
-    <script src="app.js" defer></script> <!-- this starts the app-script, that subscribes the worker -->
+    <script src="app.js" defer=""></script> <!-- this starts the app-script, that subscribes the worker -->
   </head>
   <body>
   <div class="sameRow">
@@ -26,7 +26,7 @@
                   <select id="hourlyRate" aria-labelledby="preset_label" onchange="getProgressive(value)">
                       <!--<option disabled selected value>select option</option>-->
                       <option value="160">160</option>
-                      <option selected value="180">180</option>
+                      <option selected="" value="180">180</option>
                       <option value="200">200</option>
                       <option value="Custom">Custom:</option>
                   </select>
@@ -40,7 +40,7 @@
                 <label id="icon_label" for="counterCurrency">Currency</label>
                 <div class="selectdiv">
                   <select id="counterCurrency" aria-labelledby="icon_label">
-                      <option selected value="CHF">CHF</option>
+                      <option selected="" value="CHF">CHF</option>
                       <option value="€">Euro</option>
                       <option value="£">Pound</option>
                       <option value="$">Dollar</option>                    
@@ -94,7 +94,7 @@
           <h2>What the app does</h2>
           <p>It's a simple pwa to help you calculate the cost of your meetings</p>
           <p>Features include
-            <ul>
+            </p><ul>
               <li>Create a cash counter based on your inputs</li>
               <li>Hourly average rate of participants</li>
               <li>Number of participants</li>
@@ -102,7 +102,7 @@
               <li>Close / reopen the app without losing track - this is a PWA after all</li>
               <li>Fluid app - based on Utopia</li>
             </ul>
-          </p>
+          <p></p>
           <p>Missing: A11Y check, adding / removing participants during the meeting (people leaving after 5 mins)</p>
         <h2>PWA intro</h2>
           <p>A PWA is a progressive web app - basically a programm running in the Browser. A PWA can be installed from different browsers and used offline.</p>

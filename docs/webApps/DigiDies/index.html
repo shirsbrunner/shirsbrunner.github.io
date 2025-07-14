@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"/> -->
     <title>DCounter</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="manifest" href="manifest.json"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="images/LogoD-512x512.png">
-    <script src="app.js" defer></script> <!-- this starts the app-script, that subscribes the worker -->
+    <script src="app.js" defer=""></script> <!-- this starts the app-script, that subscribes the worker -->
   </head>
   <body>
   <div class="sameRow">
@@ -24,7 +24,7 @@
                 <label id="preset_label" for="presetDiceSize">Select dice size</label> <!--attach correctly!-->
                 <div class="selectdiv">
                   <select id="presetDiceSize" aria-labelledby="preset_label" onchange="getProgressive(value)">
-                      <option disabled selected value>select option</option>
+                      <option disabled="" selected="" value="">select option</option>
                       <option value="6">6 sides</option>
                       <option value="10">10 sides</option>
                       <option value="12">12 sides</option>
@@ -40,7 +40,7 @@
                 <label id="icon_label" for="diceIcon">Iconize</label>
                 <div class="selectdiv">
                   <select id="diceIcon" aria-labelledby="icon_label">
-                      <option selected value="none">None</option>
+                      <option selected="" value="none">None</option>
                       <option value="star">Star</option>
                       <option value="sun">Sun</option>
                       <option value="fish">Fish</option>
@@ -61,7 +61,7 @@
           <div class="sameRow">
             <h2>Let's Roll</h2>
             <div class="rollerButtonArea" id="rollerButton">
-              <button id="RollAllButton" class="button" class="hidden" onclick="rollAllDice()">Roll all dice!</button>        
+              <button id="RollAllButton" class="button" onclick="rollAllDice()">Roll all dice!</button>        
             </div>
           </div>
           <div class="diceRollerArea" id="target">
@@ -83,14 +83,14 @@
           <h2>What the app does</h2>
           <p>It's a simple pwa to roll dice of different sizes</p>
           <p>Features include
-            <ul>
+            </p><ul>
               <li>Create dice from presets</li>
               <li>Create dice from input</li>
               <li>Roll one or multiple dice</li>
               <li>See a list of past rolls to prevent cheating</li>
               <li>Add an icon to your dice</li>
             </ul>
-          </p>
+          <p></p>
           <p>Missing: A11Y check, deleting / undo a single dice, stay tuned for future updates.</p>
         <h2>PWA intro</h2>
           <p>DigiDies was built to learn more about PWAs.</p>

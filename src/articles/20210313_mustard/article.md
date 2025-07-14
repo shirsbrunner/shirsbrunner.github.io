@@ -23,7 +23,7 @@ Getting the ingredients was easy. So was making the mustard. I made the first ba
 
 After a creative process spanning multiple weeks, in the end the brand Hirschlbrummbär was born. In hommage to the german mustardmaker "händlmaier" and my own name.
 
-![Multiple glasses of mustard, the label states Hirschelbrummbär Qualitätssenf including an image of the Hirschelbrummbär](./../Senf1000.jpg "the final product ready to give away, with branding finalized")
+![Multiple glasses of mustard, the label states Hirschelbrummbär Qualitätssenf including an image of the Hirschelbrummbär](Senf1000.jpg "the final product ready to give away, with branding finalized")
 
 Next time, I'll go with a lighter version or try a whisky or beer-mustard.
 

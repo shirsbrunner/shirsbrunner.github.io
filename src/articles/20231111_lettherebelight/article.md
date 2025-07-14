@@ -30,16 +30,16 @@ The base defines the final shape of the lamp. It consists of two discs holding u
 
 In the project, the base was built from cardboard. For size I tried to match the shape of the existing lamp, but also fit the lamp base holding up the bulb (in my case the base of the old IKEA lamp, I was trying to rebuild). Issues with calculations (cough, cough) led to the a slightly bigger lamp than intended (something I'll correct in a followup). I went for a six ribs setup.
 
-![Base for the lamp](./../1_Base.png "cardboard spines attached to a bottom and top disc")
+![Base for the lamp](1_Base.png "cardboard spines attached to a bottom and top disc")
 
 Note, that since cardboard is not as sturdy as wood, there was some folding of the base under tension. This led to some little distortion in the final lamp. 
 
-![Warping base](./../3_Base_is_warping.png "detail showing cardboard spines warped under pressure")
+![Warping base](3_Base_is_warping.png "detail showing cardboard spines warped under pressure")
 
 ### Skeleton
 Normally bamboo is used for the skeleton (but where to get good bamboo and how to slice it?). Store bought lamps sometimes also use wire. For this lamp I bought thin rattan (each piece around 1.5-2 meters long). Rattan has to be soaked before using, else it starts to break easily, but wraps nicely when wet. The natural tension or shape of the rattan is big enough to hold up a stable lamp (I was initially afraid, it would just fold after removing the base). For attachment to the lamp a piece of wire has been added (on top and bottom). 
 
-![Base with Rattan atached](./../2_Base_with_Skeleton.png "the base of the lamp with a rattan skeleton wraped around")
+![Base with Rattan atached](2_Base_with_Skeleton.png "the base of the lamp with a rattan skeleton wraped around")
 
 Where necessary, two pieces of rattan have to be glued together. In one of the videos, this is done using paper. Unfortunately, the Sokui was disolving the first choice of paper bought - therefore I switched to using super glue for the joints. Different videos use string to wrap around both ends. Also for a high-quality outcome, one of the sources shows flattening both sides before glueing. Obviously, this depends on the material used for the skeleton (i.e. the profile or cross-section).
 
@@ -47,7 +47,7 @@ Where necessary, two pieces of rattan have to be glued together. In one of the v
 The paper normally used for the lamps is called Washi paper. It's made from mulberry threes. Unfortunately, I couldn't initially get the fitting paper but bought a paper similar in appearance that didn't tolerate wetness very well. It disolved when trying glue rattan together or when trying to attach it to the frame.
 Second try using rice paper (Danxuan). While it is a bit more stable, it tends to rip easily when wet but is strong again, when dry. 
 
-![First column of paper on the lamp](./../4_First_Piece_of-Paper.png "paper is draped over the skeleton")
+![First column of paper on the lamp](4_First_Piece_of-Paper.png "paper is draped over the skeleton")
 
 The following process led to a nice enough outcome: 
 - Adding the Sokui (See below) to the skeleton using a brush
@@ -56,7 +56,7 @@ The following process led to a nice enough outcome:
 - Cutting / ripping the edges using a razor (didn't work so well with the Danxuan paper - while it seems to be an easy task in the videos, it's tricky in reality and resulted in a mostly ripped look)
 - Letting it dry for some time
 
-![All paper done, skeleton still intact](./../6_All_Paper_Done.png "all columns of paper are attached and sealed")
+![All paper done, skeleton still intact](6_All_Paper_Done.png "all columns of paper are attached and sealed")
 
 Too late, I found a source for Washi-Paper (or Japanpapier as it's called in the store in question). The paper appears to be a bit stronger when dry (and also more expensive). To be seen if the attaching process is easier.
 
@@ -74,7 +74,7 @@ The base can then be folded using a folding stick or similar - this ruffles the 
 
 The outcome is a lamp, as expected, it's a bit squished to one side. Also, the paper had to be fixed around the lamp - maybe I should also have ripped the pieces of paper I used to fix the holes. Then again, it gives off a nice light and serves it's purpose.
 
-![Final lamp assembled](./../9_It_s_a_lamp.png "A lamp giving off light in a dark room")
+![Final lamp assembled](9_It_s_a_lamp.png "A lamp giving off light in a dark room")
 
 
 ## Potential improvements...

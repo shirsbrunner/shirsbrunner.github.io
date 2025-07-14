@@ -15,7 +15,7 @@ tags:
 
 In summer 2020, our kid started painting with big, waterbased crayons. While expressing himself hammering colour on a page, he is a great source of inspiration. One of his first drawings proved to be the base for a pattern, I ended up having printed on fabric. 
 
-![A kids drawing as inspiration to the final pattern](./../Merry_Inspiration1000.jpg "A kids drawing as inspiration to the final pattern")
+![A kids drawing as inspiration to the final pattern](Merry_Inspiration1000.jpg "A kids drawing as inspiration to the final pattern")
 
 Be warned, that I could not reach his level of expression in the final result. 
 
@@ -31,6 +31,6 @@ As Krita kept messing up the layers and berries at the corner of the pattern, th
 
 After ordering everything, waiting took more than a month, until the fabric was delivered to our doorstep. The result is a little weaker in contrast, than I had hoped,  but overall, I'm very happy with the outcome. 
 
-![Resulting fabric after printing](./../Merry_Berry1000.jpg "Resulting fabric after printing")
+![Resulting fabric after printing](Merry_Berry1000.jpg "Resulting fabric after printing")
 
 

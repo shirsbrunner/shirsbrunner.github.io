@@ -51,11 +51,11 @@ Cutting an incline supposedly results in a more durable stamp where details are 
 
 The following image shows a first attempt – a homemade stamp of the Hirschelbrummbär. The size is 4.5cm x 4.5cm, the stamp is mounted on a wooden block that can be used as a crude handle. 
 
-![A foto of the final rubber stamp on display on a wooden table. The design shows the hirschelbrummbär-logo. The handle is a block of wood.](./../Stamp.png "Hirschelbrummbär stamp")
+![A foto of the final rubber stamp on display on a wooden table. The design shows the hirschelbrummbär-logo. The handle is a block of wood.](Stamp.png "Hirschelbrummbär stamp")
 
 And the outcome. Quality varies a bit, a second "press" is lighter in colour, but more uniform and tends to have less of the slight fabric pattern. 
 
-![A foto of the print in black ink on cheap paper.](./../Result.png "The Hirschelbrummbär")
+![A foto of the print in black ink on cheap paper.](Result.png "The Hirschelbrummbär")
 
 ## Missing things
 - The printing shows a fabric pattern, maybe from the inkpad. Maybe it works better with different paper? 
