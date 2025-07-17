@@ -125,7 +125,7 @@ main{ /*-- do we need to adjust this? --*/
     display:flex; 
     /*margin-left:auto;
     margin-right:auto;*/
-    border: 1px solid red; 
+    /*border: 1px solid red; */
 }
 .page_content p picture img{ /*didnt exist before pictures*/
     width:auto;
