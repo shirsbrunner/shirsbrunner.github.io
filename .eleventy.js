@@ -17,10 +17,11 @@ module.exports = config => {
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 	config.addPlugin(eleventyImageTransformPlugin, {
+    // explanation: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images
 		// Output formats for each image.
 		formats: ["avif", "webp", "auto"],
 
-		widths: [300, 610, "auto"],
+		widths: [375, 690, "auto"], //690 is the page width, 300 on mobile? 
 
 		failOnError: false,
 		htmlOptions: {
@@ -28,6 +29,8 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
 				loading: "lazy",
 				decoding: "async",
+        sizes: "100vw", //"(width <= 400 px) 375px, 690px", //media condition and size... not sure, what's needed here
+        //note, that pixel density on screen also plays a role
 			}
 		},
 
