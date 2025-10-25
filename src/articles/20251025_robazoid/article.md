@@ -16,15 +16,17 @@ I've been making silly computer games for a long time. I still have a copy of a 
 
 Then around spring / summer 2014 the first instance of robazoid made in unity while looking for jobs. What's available on the net is [the promo-video for the appstore](https://www.youtube.com/watch?v=PA_EibAH0K8) in hindsight, the start is a bit tricky to watch - but it shows the controls. The game was designed to be very hard, after I read an article on hooking people with random gratification explaining the success of "flappy bird". 
 
-###
+Well, robazoid was removed from the appstore by google (because I could not update it anymore - unity was developing faster than I could develop the game, also versioning in unity was a pain). The same moment, google removed my developer account (I had no app anymore) – something that I don't really understand but can't make nothing against. The game is still running on my phone, but who knows for how long... As the kid likes playing robazoid, I was thinking about rebuilding robazoid. After the experience with google I wanted no gatekeepers, the new game should run anywhere and be installable without the apples and googles of this world. I also didn't want to use unity anymore due to versioning pains. 
 
-- goal: replace old robazoid game that was removed by google, sure to not use unity anymore (was changing faster than I could build a simple game) - but the game is still running on my phone, even though it can't be installed anymore. Hence no gatekeepers, the new game should run anywhere and be installable without the apples and googles of this world.
-## Pixel stuff
-- Clear to me, to do some pixel things
+## The lure of the pixels
+Ideally the thing would run on a retropie or batocera home setup, playable on the TV with any controller around. Looking for available platforms, I encountered some very nice, small environments that catered to the pixel nostalgia. Why not make something that could have run on a gameboy? It became clear that I want to make a retro game with pixel art. 
+### Pyxel
 - tried to mess with pyxel, was looking ag pico-8 (this would be best, honestly, running this on a tv in the living-room)
 - starting with drawing sprites and setting up a simple movement and text display in pyxel. drawing pixel people is something kids love to do and it looks like a small wonder to them seeing the figure move.
 - drawing sprites is easy for the kid - the bunny
 - but it turns out (when I tried to run it on the batocera) run options are limited to non raspberry pi setups
+
+### Godot
 - decided to switch to something else, looking around
 - tried godot - while this does not work with batocera either, it is way less limited in run options. 
 - luckily as always, there's the internet with tons of guidance, as godot is not easy. there are a lot of seemingly hidden things. The good: just use git on the folder, it seems to work like a charm - something I never managed to do in unity (and the main reason I lost the source for the game)
