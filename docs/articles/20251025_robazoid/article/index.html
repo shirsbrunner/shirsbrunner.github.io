@@ -46,7 +46,7 @@
       <div class="article_metrics">
         <p class="time"><time datetime="2025-10-25">25 October, 2025</time></p>
         
-        <p class="words">1,830 words</p>
+        <p class="words">2,070 words</p>
         <p class="time">State:       
             
               Advanced
@@ -72,38 +72,38 @@
 <p>Then around spring / summer 2014 the first instance of robazoid made in unity while looking for jobs. What's available on the net is <a href="https://www.youtube.com/watch?v=PA_EibAH0K8">the promo-video for the appstore</a> in hindsight, the start is a bit tricky to watch - but it shows the controls. The game was designed to be very hard, after I read an article on hooking people with random gratification explaining the success of &quot;flappy bird&quot;.</p>
 <p>Well, robazoid was removed from the appstore by google (because I could not update it anymore - unity was developing faster than I could develop the game, also versioning in unity was a pain). The same moment, google removed my developer account (I had no app anymore) – something that I don't really understand but can't make nothing against. The game is still running on my phone, but who knows for how long... As the kid likes playing robazoid, I was thinking about rebuilding robazoid. After the experience with google I wanted no gatekeepers, the new game should run anywhere and be installable without the apples and googles of this world. I also didn't want to use unity anymore due to versioning pains.</p>
 <h2>The lure of the pixels</h2>
-<p>Ideally the thing would run on a retropie or batocera home setup, playable on the TV with any controller around. Looking for available platforms, I encountered some very nice, small environments that catered to the pixel nostalgia. Why not make something that could have run on a gameboy? It became clear that I want to make a retro game with pixel art.</p>
+<p>Ideally the new game would run on a retropie or batocera home setup, playable on the TV with any controller around. Looking for available platforms, I found some very nice, small environments that catered to the pixel nostalgia. Why not make something that could have run on a gameboy? It became clear that I want to make a retro game with pixel art.</p>
 <h3>Pyxel</h3>
-<ul>
-<li>tried to mess with pyxel, was looking ag pico-8 (this would be best, honestly, running this on a tv in the living-room)</li>
-<li>starting with drawing sprites and setting up a simple movement and text display in pyxel. drawing pixel people is something kids love to do and it looks like a small wonder to them seeing the figure move.</li>
-<li>drawing sprites is easy for the kid - the bunny</li>
-<li>but it turns out (when I tried to run it on the batocera) run options are limited to non raspberry pi setups</li>
-</ul>
+<p>The first suitable candidate was the <a href="https://github.com/kitao/pyxel">pyxel engine</a>. Something like pyxel or pico-8 that it was based on looked like an easy enough choice. I started drawing sprites and setting up simple movement and text display, when the kid looked over my shoulder.</p>
+<p>Drawing stuff and also pixel people is something kids love to do. I had him draw characters on paper and added them to pyxel where I had them move using arrow keys. Seeing characters animated was a lot of fun. However, when trying to run the pilot on the raspberrypi batocera, it turend out that run options are limited to non raspberry pi setups (i.e., on other linux machines).</p>
 <h3>Godot</h3>
-<ul>
-<li>decided to switch to something else, looking around</li>
-<li>tried godot - while this does not work with batocera either, it is way less limited in run options.</li>
-<li>luckily as always, there's the internet with tons of guidance, as godot is not easy. there are a lot of seemingly hidden things. The good: just use git on the folder, it seems to work like a charm - something I never managed to do in unity (and the main reason I lost the source for the game)</li>
-</ul>
-<h2>when kids are involved</h2>
-<p>Everything is a bit harder obviously. Kids have lots of ever changing ideas. Every impression can change their desires. Similar to working with a client with no vision or planning, scope management is one of the most important parts of development.
-However, sometimes, we can just expand the product and pivot everything into something new. Instead of one playable character, after watching elsa in Frozen, we also had to add elsa - but lowing the initial character? Well, we can now switch and have a character selector at the start of the game. Initially both characters had the same moves, but that was rather boring. Now characters can be switched. While changing and implementing these things is a lot of work, it leads to better understanding in some cases and a lot of patched up code in other cases. I've been revisiting singletons, factory patterns and so on just to implement some of the functions.</p>
-<h2>little beta testers</h2>
-<p>Kids are not only good at coming up with fresh ideas, they also are splendid beta test partners. They tend to try things, that you don't do. However, they don't notice anything odd. Ice cube in a strange position? Game over on one hit? Even the game crashing is completely normal, so experienced supervision is needed.</p>
+<p>I decided to switch to something else. Looking around, I found <a href="https://godotengine.org/">godot</a>, another game engine. Godot is similar to unity, but opensource, has a big following and lots of documentation. While this does not work with batocera either (or maybe it does, as version 3.5 hat someone porting runtimes), it is way less limited in run options than unity, or pyxel.</p>
+<p>Luckily, there's a ton of things in the internet. Make no mistake, godot is not easy to use or needs a lot of getting used to. Some things are not very well organised, there are a lot of seemingly hidden things, or nested menus or special things that need to be considered. The good and that's the thing that sold me: you can just use git on the folder your game runs in. Up to now, it seems to work like a charm, all changes and links made in the editor are converted to text by the engine, everything could be done in simple text. Getting a stable git setup is something I never managed to do in unity on the free plan, and the main reason I lost the source for the robazoid.</p>
+<h2>Projects when kids are involved</h2>
+<p>Projects are a bit harder with kids. Kids have lots of ever changing ideas and those ideas and goals change quickly. Every impression can change their desires or their current top goal.</p>
+<blockquote>
+<p>Similar to working with a client with no vision or planning, scope management is one of the most important parts of development with kids.</p>
+</blockquote>
+<p>However, sometimes, and this is mainly true for our own projects, we can just expand the product and pivot everything into something new.</p>
+<h3>Making it more fun</h3>
+<p>Thus, instead of one playable character, after watching elsa in Frozen, we had to add Elsa as a main character. What about the initial character (the rabbit in the thumbnail)? Well, we can now switch and have a character selector at the start of the game.</p>
+<p>Initially both characters had the same moves and changing was aesthetics only. This was rather boring. Now characters can be switched in the game and sometimes have to be switched to reach certain things. Currently, the rabbit can shoot plasma and Elsa can create ice blocks to change the environment.</p>
+<p>While changing and implementing these things is a lot of work, it leads to more fun and better games – instead of a simple jump'n run game, the game is now some puzzle platformer. It also led to better understanding and revision of the games code architecture and programming in general (and a lot of patched up code in some cases). I've been revisiting singletons, factory patterns and so on just to implement some of the functions.</p>
+<h3>Little beta testers</h3>
+<p>Kids are not only good at coming up with fresh ideas, they also are splendid beta test partners. They tend to try things, that you don't do. However, they don't notice anything odd. Ice cube in a strange position? Game over on one hit? Everything part of the intended experience. Even the game crashing is completely normal, so experienced supervision of testers is advised.</p>
 <h2>Topics without stakeholder intervention</h2>
 <p>Kids are mainly interested in playing a game. Drawing sprites is fun, seeing these sprites in action is even more fun. But there are other things</p>
-<h3>Don't underestimate learning the game engine</h3>
+<h3>Learning the game engine</h3>
 <p>A new program is always a bit of a learning curve. Watching videos, reading tutorials helped a lot and lead to discover best practice patterns. Implementing these again took a lot of refactoring. What was an easy scene initially had to change due to the player switch or a multi level approach or enemies able to shoot things or a game over screen or a simple hud. There is a lot of ways on how to do certain things and I guess, there will be a lot more to change and rebuild again and again.</p>
-<p>What I like a lot in Godot is being able to use git for versioning on the game folder. So far it has been very easy to check different versions against each other, branch on risky refactoring and do</p>
+<p>I can't stress this enough: What I like a lot in Godot is being able to use git for versioning on the game folder. So far it has been very easy to check different versions against each other, branch on risky refactoring and do some resets when everything falls apart.</p>
 <h3>Games have a lot complexity</h3>
-<p>Strange things happen all the time - where collisions trigger multiple times or the position of a sprite is a bit off (by 0.024 pixels). These things lead to bugs and keeping track of all these is not an simple task. Furthermore</p>
+<p>Strange things happen all the time - where collisions trigger multiple times or the position of a sprite is a bit off (by 0.024 pixels) hooking the player character in place. These things lead to bugs and keeping track of all these is not an simple task.</p>
+<h3>Sprites</h3>
+<p>Part of the sprites are based on kids drawings, the rest, I do myself. I guess the look could be more polished, but I like doing everything myself instead of copying or grabbing other peoples work. It's easier in the longrun to adjust things a little bit, get a consistent look or just do things your way.</p>
+<p>I don't build programs to build ressources however. For sprites I've been checking programs and ended up on Pixelorama that is also built in the Godot-Engine. It supports simple animation and allows me to build spritesheets. There are some things I miss however - merging multiple animations frames into one spritesheet. Still, everything visual in the new game is made in Pixelorama (apart from the fonts).</p>
 <h3>Music and sound effects</h3>
-<p>The old Robazoid one never had sound effects</p>
-<ul>
-<li>MML chiptunes - part of pyxel and pico-8</li>
-<li>using garage band (as I could not export from pyxel) with YMCK magical 8 bit plugin - it's not easy without a real midi controller, but I hope I'll be able to do some things.</li>
-</ul>
+<p>The first Robazoid never had sound effects. Something I was planning to fix, but never managed to. Pyxel however had a beat machine built in (it's a lot of fun using MML music language apparently) - I suggest trying it out just for the music part alone - it's a lot of fun.</p>
+<p>Sadly I couldn't export sound out of Pyxel or interpret MML in godot. The current workaround is garage band (I use a mac) with the <a href="https://ymck.net/app/magical-8bit-plug-en">YMCK magical 8 bit plugin</a>. YMCK is also available on other platforms should I ever decide to move away from a mac again. Garage band is not easy to use without a real midi controller (piano keys), but I managed to add some simple soundeffects.</p>
 <h3>Fonts</h3>
 <p>My previous fonts did not work very well to a pixel environment (even the early ones that were quite quadratic). The reason is found in font rendering of pixels where the letters are antialiased (i.e., not sharp) due to not matching the pixel grid or not enough hinting (i.e., matching the fonts geometry to pixel grids).
 Well, it was time, to make a pixel font, a plan I had ever since I've seen a talk by Marcin Wichary (<a href="https://aresluna.org/">check out his page</a>, <a href="https://www.youtube.com/watch?v=SDI8ubVZi7w">talk about pixel fonts</a>).</p>
@@ -146,42 +146,6 @@ Well, it was time, to make a pixel font, a plan I had ever since I've seen a tal
 <li>This currently only works on my machine from Godot - export this to something more public on where it can be played.</li>
 <li>Hopefully there is some way to play this on batocera or retropie... but the internet will do as well... Godot can push to the web - so maaaaybe on this page?</li>
 </ul>
-<h2>Trash collector</h2>
-<p>Text</p>
-<p>The following gives a textsample</p>
-<!-- inline textsample for articles -->
-<style>
-@font-face {
-  font-family: 'sampleFont';
-  src: url('/articles/20251025_robazoid/AD-Pixelorama8-Regular.woff2') format('woff2'),
-       url('/articles/20251025_robazoid/AD-Pixelorama8-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-</style>
-<div class="text_sample">
-<p class="typeSize0" style="font-family:'sampleFont'; margin: 0.5rem"> 0.123456789 09:22 - Pixels are special </p>
-<p class="typeSize1" style="font-family:'sampleFont'; margin: 0.5rem"> 0.123456789 09:22 - Pixels are special </p>
-<p class="typeSize2" style="font-family:'sampleFont'; margin: 0.5rem"> 0.123456789 09:22 - Pixels are special </p>
-</div>
-<div class="text_sample_inverted">
-<p class="typeSize0" style="font-family:'sampleFont'; margin: 0.5rem"> 0.123456789 09:22 - Pixels are special </p>
-<p class="typeSize1" style="font-family:'sampleFont'; margin: 0.5rem"> 0.123456789 09:22 - Pixels are special </p>
-<p class="typeSize2" style="font-family:'sampleFont'; margin: 0.5rem"> 0.123456789 09:22 - Pixels are special </p>
-</div>
-<p>The following gives a textlink</p>
-<!-- a button to link the blog to the typetester -->
-<div class="cta">
-    <p>
-        Check it out in the <a href="/articles/20251025_robazoid//typetester">Typetester</a>
-    </p>
-</div>
-<p><img src="./../Stamp.png" alt="the final product ready to give away, with branding finalized" title="Mouse-Over-Text">
-Images: 1000px wide</p>
-<p>This: <a href="https://www.11ty.dev/">Eleventy or 11ty</a> is a link</p>
-<p>More text</p>
-<p>start me with npx eleventy --serve</p>
 
 
       <div class="post_nav">
