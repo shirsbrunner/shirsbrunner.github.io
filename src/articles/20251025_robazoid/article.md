@@ -12,6 +12,12 @@ tags:
 ---
 
 ## Making computer games
+I've been making silly computer games for a long time. I still have a copy of a jumping sheep game I made as a kid (in some game studio I don't remember the name of with sprites and art made in Paint and Photoshop). I remember multiple games and changes to games made during computer science studies (Sheeps and wolves, Ursuppe, Snakes and ladders - command line among others).
+
+Then around spring / summer 2014 the first instance of robazoid made in unity while looking for jobs. What's available on the net is [the promo-video for the appstore](https://www.youtube.com/watch?v=PA_EibAH0K8) in hindsight, the start is a bit tricky to watch - but it shows the controls. The game was designed to be very hard, after I read an article on hooking people with random gratification explaining the success of "flappy bird". 
+
+###
+
 - goal: replace old robazoid game that was removed by google, sure to not use unity anymore (was changing faster than I could build a simple game) - but the game is still running on my phone, even though it can't be installed anymore. Hence no gatekeepers, the new game should run anywhere and be installable without the apples and googles of this world.
 ## Pixel stuff
 - Clear to me, to do some pixel things
