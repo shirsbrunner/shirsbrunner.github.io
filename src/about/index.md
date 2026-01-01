@@ -13,7 +13,7 @@ I am a digital designer, working for [we are cube³](https://wearecube.ch), the 
 
 I believe that design has a profound impact on peoples lives and that good design can make a difference, not only in looks but even more so in interaction. That said, I like things to be open and freely accessible and prefer a better thing to a prettier one.
 
-I'm currently more focused at doing the "X" than the "I" of everything related to U. That said, I feel at home in the whole user centred design process and like to stretch in all directions. In addition, I try to increase accessibility in the things I touch.
+I'm currently more focused at doing the "X" than the "I" of everything related to U. That said, I feel at home in the whole user centred design process and like to stretch in all directions. In addition, I try to increase accessibility in the things I touch ([accessibility statement](./accessibility/)).
 
 I have some degrees in marketing, media science, computer science and have worked in a lot of fields including media research, business consulting, user experience and accessibility. I've also been cutting grass in the mountains using a scythe ages ago, distributed newspapers in the morning hours or worked on a supermarket checkout. 
 
