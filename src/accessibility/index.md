@@ -2,10 +2,7 @@
 title: Accessibility statement
 subtitle: For everyone
 description: Based on WCAG 2.2
-eleventyNavigation: 
-  key: accessibility
-  parent: about
-  order: 930
+layout: infopages.njk
 ---
 
 _Date of publication: 1.1.2026_

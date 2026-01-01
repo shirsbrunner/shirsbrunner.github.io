@@ -2,10 +2,7 @@
 title: Privacy info
 subtitle: Serious things
 description: We keep your details private.
-eleventyNavigation: 
-  key: privacy
-  parent: about
-  order: 920
+layout: infopages.njk
 ---
 
 ## This page is not tracking anything (that I'd be aware of)
