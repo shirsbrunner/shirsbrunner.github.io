@@ -8,6 +8,8 @@ eleventyNavigation:
   order: 930
 ---
 
+_Date of publication: 1.1.2026_
+
 ## Current status
 This website intends to meet all level A and AA success criteria of WCAG 2.2.
 There should no be bigger issues present. However there are some issues that I need to fix:
