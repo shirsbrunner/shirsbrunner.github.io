@@ -15,5 +15,5 @@ Disclaimer: I'm not a lawyer. But I believe there is nothing to say here - I col
 - This page is served from Github. I don't think that there is something, but you never know: [Github privacy statement](https://docs.github.com/en/github/site-policy/github-privacy-statement)
 
 
-So, if you find something, let me know and I'll try to fix this.
+So, if you find something, let me know and I'll try to fix it.
 
