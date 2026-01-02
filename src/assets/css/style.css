@@ -456,7 +456,9 @@ blockquote p {
 /*-- the nav, all things nav --*/
 .logo{/*-- the logo at the upper left--*/
   width:48px; /* you can use % */
-  height: auto;
+  min-width:48px; 
+  min-height:48px;
+  /*height: auto;*/
   float:left;
 }
 
