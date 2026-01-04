@@ -21,7 +21,3 @@ When I'm not working I like to cook, build little kids LEGO dreams or cardboard 
 
 ## Things to look out for
 Where are the pictures...?
-
-## Regarding content
-This was once supposed to be some sort of work portfolio – it turned into a a log of personal projects.
-I believe this goes without saying: please ask me, before copying or selling things you find on this website. 
