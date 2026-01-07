@@ -1,0 +1,36 @@
+{
+    "lang": "en-us",
+    "name": "Dimensionalizer",
+    "short_name": "Dimensionalizer",
+    "description": "An app made to measure screens",
+    "scope": "./",
+    "start_url": "./",
+    "id": "/webApps/Dimensionalizer/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./images/LogoM-512x512.png",
+            "sizes": "512x512",
+            "purpose": "maskable",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/LogoM-1024x1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/LogoM-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/LogoM-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,8 +1,8 @@
 ---
 title: Custom tooling
-description: Things to just use make other things
+description: Things to help make other things
 date: 2026-01-07
-evolution: 1
+evolution: 2
 previewImage: UsefullThings-Preview.png
 urlbase: '/articles/20260107_usefull_things/'
 tags:
@@ -30,7 +30,7 @@ Keep on rolling? [Get the dice here](/webApps/DigiDies/)
 
 </div>
 
-## Dimensionalizer
+## NEW: Dimensionalizer
 Measuring the dimensions of a digital screen. Quick app because my prefered service for these things disappeared into the void. Sometimes I need a client to send me a screenshot with the dimensions of their browser window for reference. This only has the bare minimum (as most other things like pixel density or user agent string ar either not necessary or don't work in the relevant browsers). 
 <div class="cta">
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"/> -->
+    <title>Dimensionalizer</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="icon" type="image/png" href="images/LogoO-512x512.png">
+    <script src="app.js" defer></script> <!-- this starts the app-script, that subscribes the worker -->
+  </head>
+  <body>
+  <div class="sameRow">
+    <h1 class="mutable">Dimensionalizer</h1> <!--probably we will not show this - or maybe on a splash screen-->
+    <!-- starting from here, we need to add things: 
+     - A button for clicking
+     - Some loading indication (that could count up, who knows)
+     - Different phaser versions
+     -->
+  </div>
+  <div class="content">
+    <div class="borderContainer">
+      <div id="outputTarget" class="destinationText">
+        Sadly, this does not work without javascript
+      </div>
+      <!--<button id="cardTrigger" class="breakout-button button borderless cardButton" onclick="initialize()">Click me for sizing</button>-->
+    </div>
+  </div>
+  <div class="footer">
+    <!-- info-corner starts here -->
+    <hr class="dotted mutable">
+    <button id="showInfo" class="button borderless mutable">Toggle info</button>
+      <dialog id="infoCorner" autofocus>
+        <div class="dialogContainer">
+          <header>
+            <h1>Info</h1>
+          </header>
+          <div class="dialogContent">
+            <h2>What the app does</h2>
+            <p>It's a simple pwa that shows the dimensions of the browser window</p>
+            <p>Features include
+              <ul>
+                <li>Calculate browser dimensions and area</li>
+                <li>Updates on resize</li>
+                <li>Fluid app, based on Utopia</li>
+                <li>Relevant data only (who needs the user-agent-string...)</li>
+              </ul>
+            </p>
+            <p>Missing: this could always be improved</p>
+            <h2>PWA intro</h2>
+              <p>A PWA is a progressive web app - basically a programm running in the Browser. A PWA can be installed from different browsers and used offline.</p>
+              <p>Service workers ensure that it works offline, caching things. If done correctly, they should automatically update things as soon as there is web access</p>
+              <p>Uninstall it like any other app</p>
+            <h2>Questions?</h2>
+              <p>Drop me a line: <a href="https://artisandelux.ch">artisandelux</a></p>
+          </div>
+          <div class="buttonList">
+            <button id="closeInfo" class="button borderless">close</button>
+          </div>
+        </div>  
+      </dialog>
+    </div>
+  </body>
+</html>
