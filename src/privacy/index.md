@@ -2,7 +2,8 @@
 title: Privacy info
 subtitle: Serious things
 description: We keep your details private.
-date: 2026-01-11
+date: 2021-03-28
+updateDate: 2023-03-26
 layout: infopages.njk
 ---
 
