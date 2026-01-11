@@ -3,6 +3,7 @@ title: About Simon
 subtitle: Designer by day, mad hatter in the evening
 description: What I do all day long.
 layout: about.njk
+updateDate: 2026-01-01
 eleventyNavigation:
   key: about
   order: 900

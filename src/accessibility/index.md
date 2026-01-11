@@ -2,10 +2,9 @@
 title: Accessibility statement
 subtitle: For everyone
 description: Based on WCAG 2.2
+date: 2026-01-01
 layout: infopages.njk
 ---
-
-_Date of publication: 1.1.2026_
 
 ## Current status
 This website intends to meet all level A and AA success criteria of WCAG 2.2.
