@@ -2,7 +2,7 @@
 // but... what does it need to do? 
 // https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Service_workers
 
-const VERSION = "v0.4"; //update this to increase version
+const VERSION = "v0.5"; //update this to increase version
 const CACHE_NAME = `Obliques-${VERSION}`; //name of the cache, increases with version
 const assetsToCache = [ //stuff it should cache
     '.',
