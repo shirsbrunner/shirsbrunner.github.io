@@ -3,6 +3,7 @@
 // start dev-server with npx http-server
 
 if ('serviceWorker' in navigator) {
+    //todo: write the service-worker
     navigator.serviceWorker.register('./sw.js');
   }
 
@@ -20,18 +21,15 @@ var outputTarget = document.getElementById("outputTarget") //the ID to write the
 // variables to be shown
 var screenInnerWidth;
 var screenInnerHeight;
+var screenRatioString; //string to represent the screen Ratio of the device
+
 //var userAgentString = navigator.userAgent; //this needs to be done only once - but the info is not really necessary
 //var screenPixelRatio; // seems not to work with safaris zoom - so maybe... calculate? maybe: https://www.reddit.com/r/webdev/comments/1dsb31s/windowdevicepixelratio_in_safari_vs_others/
-var screenWidth = window.screen.width;
-var screenHeight = window.screen.height;
-var ratio = gcd(screenWidth, screenHeight);
-var yourScreenRatio = `Current monitor's aspect: ${screenWidth/ratio}:${screenHeight/ratio}`;
-
 
 // initial trigger, also triggers on resize
 function initialize(){
-  console.log(screenWidth);
-  console.log(screenHeight);
+  //console.log(screenWidth);
+  //console.log(screenHeight);
   updateDimensions(); 
   setOutput(); 
 }
@@ -45,11 +43,20 @@ function setOutput(){
   outputTarget.innerHTML = `<div class ="small">Available browser space:<br></div>
   Width × Height: ${screenInnerWidth} × ${screenInnerHeight} <br>
   <div class = "small"> That's ${(screenInnerWidth*screenInnerHeight).toLocaleString()} pixels overall! <br>
-  ${yourScreenRatio}
+  ${screenRatioString}
   </div>`
   /*`Width: ${screenInnerWidth}px <br>
   Height: ${screenInnerHeight}px <br>
   PixelRatio: ${screenPixelRatio} (not on Safari)`*/;
+}
+
+// calculate the Ratio-String
+function calcRatioString(){
+  var screenWidth = window.screen.width;
+  var screenHeight = window.screen.height;  
+  var ratio = gcd(screenWidth, screenHeight);
+  var yourScreenRatio = `Current monitor's aspect: ${screenWidth/ratio}:${screenHeight/ratio}`;
+  return yourScreenRatio;
 }
 
 //organize all data to be displayed on the screen
@@ -57,6 +64,7 @@ function setOutput(){
 function updateDimensions(){
   screenInnerWidth = rootNode.clientWidth;
   screenInnerHeight = rootNode.clientHeight;
+  screenRatioString = calcRatioString();
   //screenPixelRatio = window.devicePixelRatio;
 }
 
