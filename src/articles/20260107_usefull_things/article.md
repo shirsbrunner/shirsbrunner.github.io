@@ -45,8 +45,3 @@ Stuck and speaking swiss german? This translates oblique strategies into Mundart
 You speak Mundart? [Get some advice here](/webApps/Obliques/)
 
 </div>
-
-
-
-
-start me with npx eleventy --serve
