@@ -2,14 +2,18 @@
 
 {% block content %}
 
-  <h1>
-    <span class="big_text">{{ title }}</span>
-    <br>
-    <span class="subtitle"> {{subtitle}}</span> 
-  </h1>
+  <div class="hero_container">
+    <h1>
+      <span class="start_hero">{{ title }}</span>
+      {#<br>
+      <span class="subtitle"> {{subtitle}}</span> #}
+    </h1>
+    
+    {#The following is the text container#}
+    {{ content | safe }} 
+  </div>
   <div class="content_container">
     <div class="page_content flow">
-      {{ content | safe }} 
       {% include "partials/divider.njk" %}
     
       {# shows the latest article #}

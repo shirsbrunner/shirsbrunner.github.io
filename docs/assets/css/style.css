@@ -213,6 +213,43 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 /*- fonts for titles and things*/
+
+.start_hero{
+  font-family: "montserrat"; /*make no mistake - this is not a color*/
+  letter-spacing: -0.06em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--step-5);/*3rem; /*-- needs to be adjusted for dynamic type --*/
+  line-height: 1.25 rem; /*-- needs to be adjusted for dynamic type --*/
+
+
+  margin-top: 3.5rem;
+  margin-bottom:0px;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.hero_container{
+  position:relative;  
+}
+
+.hero_container::before{
+  content: "sun";
+  font-size:var(--step-6);
+  font-family:"miyconos";
+  
+  position:absolute;
+  top: 0;
+  left: -50;
+  width: 30%;
+  height: 100%;
+  border: 1px solid red;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+}
+
 .big_text{
   font-family: "montserrat"; /*make no mistake - this is not a color*/
   letter-spacing: -0.06em;

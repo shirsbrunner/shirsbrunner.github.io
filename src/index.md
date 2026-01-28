@@ -1,5 +1,5 @@
 ---
-title: designing things
+title: Stuff, notes, snippets, usefull things
 subtitle: Playing around with stuff
 description: Testpage generated with @11ty
 layout: start.njk
