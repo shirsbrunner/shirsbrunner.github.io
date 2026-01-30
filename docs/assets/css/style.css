@@ -100,8 +100,8 @@ header{
 
 main{ /*-- do we need to adjust this? --*/
   /*-- margin-bottom: 32px; --*/
-  height: auto; 
-  overflow:auto;
+  /*height: anchor-size; /*this clears the margin...*/
+  /*overflow:auto;*/
   padding:0px var(--space-s-2xs);
   margin-top: var(--space-2xl) ;/*4em;*/
 }
@@ -230,20 +230,23 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 .hero_container{
-  position:relative;  
+  position:relative; 
+  overflow: visible;
 }
 
 .hero_container::before{
   content: "sun";
-  font-size:var(--step-6);
+  font-size:calc(2*var(--step-6));
   font-family:"miyconos";
+  color: var(--textSampleMarkInverted);
+  /*background-color: aquamarine;*/
   
   position:absolute;
-  top: 0;
-  left: -50;
-  width: 30%;
+  /*top: 0;*/
+  left: -240px;
+  /*width: 40px;*/
   height: 100%;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   display:flex;
   flex-direction:row;
   align-items: center;
