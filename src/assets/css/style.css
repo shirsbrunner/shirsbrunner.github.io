@@ -234,8 +234,8 @@ main{ /*-- do we need to adjust this? --*/
   overflow: visible;
 }
 
-.hero_container::before{
-  content: "sun";
+.header_deco{
+  z-index: -99;
   font-size:calc(2*var(--step-6));
   font-family:"miyconos";
   color: var(--textSampleMarkInverted);
