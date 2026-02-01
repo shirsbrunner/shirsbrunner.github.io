@@ -6,7 +6,7 @@
   --textsampleWhite: rgb(249,248,248);
   --sampleBackLight: rgb(249,248,248); /*while this is the same as textsampleWhite - it might need to be inverted differently*/
   --sampleBackDark: rgba(0,0,0,0.80); 
-  --textSampleMarkInverted: rgb(225,185,185); 
+  --textSampleMarkInverted: rgb(225,185,185); /*255,185,186*/
   --middleGrey: #666666; 
   --buttonRed: var(--lightRed); 
   --buttonText: var(--darkGrey);
@@ -20,7 +20,7 @@
   --textsampleWhite: #333; 
   --sampleBackLight: #1f1b24; 
   --sampleBackDark: rgb(249,248,248); 
-  --textSampleMarkInverted: rgb(155, 20, 20);  
+  --textSampleMarkInverted: rgb(138, 55, 25);  /*155, 20, 20
   --middleGrey: #999999; 
   --buttonRed: var(--lightRed); 
   --buttonText: var(--textsampleWhite);
@@ -37,7 +37,7 @@
     --textsampleWhite: #333; /*check this for contrast*/
     --sampleBackLight: #1f1b24; /*while this is the same as textsampleWhite - it might need to be inverted differently*/
     --sampleBackDark: rgb(249,248,248); 
-    --textSampleMarkInverted: rgb(155, 20, 20);  
+    --textSampleMarkInverted: rgb(138, 55, 25);  
     --middleGrey: #999999; 
     --buttonRed: var(--lightRed); 
     --buttonText: var(--textsampleWhite);
