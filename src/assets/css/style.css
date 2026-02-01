@@ -541,7 +541,7 @@ blockquote p {
   text-align: center;
   padding: calc(var(--space-xs)*1.1) var(--space-s) calc(var(--space-xs)*0.9);
   text-decoration: none;
-  border-radius: 99px;  
+  border-radius: var(--space-xs);/*99px;*/
 }
 
 nav ul li a:hover { /*non selected hovered list elements*/
@@ -555,7 +555,7 @@ nav ul li a:hover { /*non selected hovered list elements*/
   text-align: center;
   padding: calc(var(--space-xs)*1.1) var(--space-s) calc(var(--space-xs)*0.9);
 
-  border-radius: 99px; 
+  border-radius: var(--space-xs); /*99px*/ 
   text-decoration: none;
   background-color: var(--darkGrey);
 }
