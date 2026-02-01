@@ -18,6 +18,11 @@ module.exports = config => {
   //add other plugins here...
   /*config.addPlugin(UpgradeHelper);/* Only needed during upgrades */
 
+  /* local server-options*/
+  config.setServerOptions({
+    showAllHosts: true, 
+  });
+
   /* --- SHORTCODES --- */
 
   // page navigation
