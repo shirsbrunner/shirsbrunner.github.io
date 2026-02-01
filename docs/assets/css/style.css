@@ -240,7 +240,7 @@ main{ /*-- do we need to adjust this? --*/
 
 .header_deco{
   z-index: -99;
-  font-size:calc(2*var(--step-6));
+  font-size:calc(1.75*var(--step-6));
   font-family:"miyconos";
   color: var(--textSampleMarkInverted);
   position:absolute;
