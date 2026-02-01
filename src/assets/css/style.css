@@ -64,13 +64,8 @@
   }  
 }
 
-/* Sticky-Footer-Stuff*/
-body{ min-height: 100vh; margin:0; }
 
-/* The article fills all the space between header & footer */
-body{ display:flex; flex-direction:column; }
-main{ flex:1; margin-bottom:2em;}
-/*end of sticky footer-stuff*/
+
 
 html{
   overflow-y: scroll;
@@ -79,6 +74,12 @@ html{
 
 /*-- structure --*/
 body {
+    /* Sticky-Footer-Stuff*/
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column; /* The article fills all the space between header & footer*/
+    /* end of Sticky-Footer-Stuff*/
+
     font-family:CourrierPrimeRegular; /*- body-font -*/
     font-weight: 400;
     font-size: var(--step-0);
@@ -86,7 +87,6 @@ body {
     margin: 0px auto;
     color: var(--darkGrey);
 }
-
 
 .flow > * + * {
   margin-block-start: var(--flow-space, 1em);
@@ -101,11 +101,12 @@ header{
   z-index:100; /*fixing issues with the all clickable cards*/
 }
 
-
-main{ /*-- do we need to adjust this? --*/
-  /*-- margin-bottom: 32px; --*/
-  /*height: anchor-size; /*this clears the margin...*/
-  /*overflow:auto;*/
+main{ /*-- do we need to adjust this? --*/  
+  /*Sticky footer things*/
+  flex:1;
+  margin-bottom:2em;
+  /*end of Sticky footer things*/
+  
   padding:0px var(--space-s-2xs);
   margin-top: var(--space-2xl) ;/*4em;*/
 }
