@@ -239,14 +239,9 @@ main{ /*-- do we need to adjust this? --*/
   font-size:calc(2*var(--step-6));
   font-family:"miyconos";
   color: var(--textSampleMarkInverted);
-  /*background-color: aquamarine;*/
-  
   position:absolute;
-  /*top: 0;*/
   left: -240px;
-  /*width: 40px;*/
   height: 100%;
-  /*border: 1px solid red;*/
   display:flex;
   flex-direction:row;
   align-items: center;
@@ -254,18 +249,20 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 .big_text{
-  font-family: "montserrat"; /*make no mistake - this is not a color*/
+  font-family: "montserrat";
   letter-spacing: -0.06em;
   font-style: normal;
   font-weight: bold;
-  font-size: var(--step-4);/*3rem; /*-- needs to be adjusted for dynamic type --*/
+  font-size: var(--step-4);
   line-height: 0.6rem; /*-- needs to be adjusted for dynamic type --*/
-
-
   margin-top: 3.5rem;
   margin-bottom:0px;
   text-transform: uppercase;
   overflow-wrap: break-word;
+}
+
+.textWidthLimit{
+  max-width:690px; 
 }
 
 h1::first-letter{

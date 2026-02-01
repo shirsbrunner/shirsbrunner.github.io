@@ -3,7 +3,9 @@
 {% block content %}
 
   <div class="hero_container">
-    <span class="header_deco" aria-hidden="true">sun</span>
+    {% if decoration %}
+      <span class="header_deco" aria-hidden="true">{{ decoration }}</span>
+    {% endif %}
     <h1>
       <span class="start_hero">{{ title }}</span>
       {#<br>
@@ -11,7 +13,9 @@
     </h1>
     
     {#The following is the text container#}
-    {{ content | safe }} 
+    <div class ="textWidthLimit">
+      {{ content | safe }} 
+    </div>
   </div>
   <div class="content_container">
     <div class="page_content flow">
