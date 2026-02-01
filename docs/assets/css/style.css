@@ -11,6 +11,7 @@
   --buttonRed: var(--lightRed); 
   --buttonText: var(--darkGrey);
   --controlIcon: ;
+  --discoColors:#fff; /*white for the light on day*/
 }
 :root.dark{ /*copy from below :root, misses the additional classes.... for dark...*/ 
   --red: rgb(255,127,80); 
@@ -20,11 +21,12 @@
   --textsampleWhite: #333; 
   --sampleBackLight: #1f1b24; 
   --sampleBackDark: rgb(249,248,248); 
-  --textSampleMarkInverted: rgb(138, 55, 25);  /*155, 20, 20
+  --textSampleMarkInverted: rgb(138, 55, 25);  /*155, 20, 20*/
   --middleGrey: #999999; 
   --buttonRed: var(--lightRed); 
   --buttonText: var(--textsampleWhite);
   --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
+  --discoColors:var(--lightRed); /*white for the light on day*/
 }
 
 
@@ -42,6 +44,7 @@
     --buttonRed: var(--lightRed); 
     --buttonText: var(--textsampleWhite);
     --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
+    --discoColors:var(--lightRed); /*white for the light on day*/
   }
 
   :root.light{ /*copy from above :root*/
@@ -57,6 +60,7 @@
     --buttonRed: var(--lightRed); 
     --buttonText: var(--darkGrey);
     --controlIcon: ;
+    --discoColors:#fff; /*white for the light on day*/
   }  
 }
 
@@ -246,6 +250,16 @@ main{ /*-- do we need to adjust this? --*/
   flex-direction:row;
   align-items: center;
   justify-content: center;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px var(--discoColors),
+    0 0 82px var(--discoColors)/*,
+    0 0 92px var(--discoColors)/*,
+    0 0 102px var(--discoColors)/*,
+    0 0 151px var(--discoColors)*/
+    ;
 }
 
 .big_text{
