@@ -657,19 +657,20 @@ a img.control_icon{
 
 /*-- things at the bottom of the page --*/
 footer{
-  font-family: CourrierPrimeRegular, sans-serif;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   overflow: hidden;
   border-top: 0.5px solid var(--middleGrey); 
+  background-color:aliceblue; 
 }
+
 .bot_nav{
+  font-family: CourrierPrimeRegular, sans-serif;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding:var(--space-3xs) var(--space-s-2xs);
-
 }
 
 /*the darkmode-toggle button*/

@@ -17,7 +17,7 @@
 
 <div class="header_container">
   <header>
-    <nav class="nav_top">
+    <nav class="nav_top" aria-label="Main Navigation">
       <a href="/">
       <img class="logo" src="/images/structural/Logo_48.png" alt="Link to home, Logo showing the Hirschlbrummbaer">
       </a>
@@ -47,14 +47,11 @@
     </div>
   </div>
   <div class="content_container">
+
     <div class="page_content flow">
-      
-<div class="divider" aria-hidden="true">
-    <hr/>
-    <p> ··· </p>
-    <hr/>
-</div>
-    
+          
+      <div class="pagelist flow">
+      <h2>Latest log entries</h2>
       
       
 
@@ -112,15 +109,58 @@
     </div>
 
 
-  </article><a href="/articles/">More from the log</a>
-      
-      
-<div class="divider" aria-hidden="true">
-    <hr/>
-    <p> ··· </p>
-    <hr/>
-</div>
+  </article>
 
+  <article class="article_preview">
+
+    <div class="log_preview_image" aria-hidden="true">
+       
+        <img src=/articles/20251025_robazoid/Robazoid-Preview.png alt="">
+      
+    </div>
+    <div class="preview_content">
+    <h2>
+      <span class="headericon" data-icon="
+        
+         enso
+        
+        ">
+      </span>
+          
+    <a href="/articles/20251025_robazoid/article/" class="breakout-link">Pixel Things</a></h2>
+
+    <div class="tag_group">
+      <p class ="time">
+      <time datetime="2025-10-25">25 October, 2025</time>
+      
+
+      
+        – this is advanced
+      
+
+      – tags: 
+      
+      
+                 
+          
+          typography
+          
+        
+      
+      </span>
+    </div>
+    <p>Adventures in Game Design. After around 10 years, Robazoid is disappearing from the digital world – time to make a new game.</p>
+    
+    
+    </div>
+
+
+  </article></div>
+      <a href="/articles/">More log</a>
+
+      
+      <div class="pagelist flow">
+      <h2>Latest type things</h2>
       
       
 
@@ -142,7 +182,28 @@
     <p>Pixelorama8 – A typeface to match pixelation</p>
 
 
-  </article><a href="/articles_typetester/">More type</a>
+  </article>
+
+    <style>
+        @font-face {
+          font-family: 'tt-AD-Ultra-Serif-ExtraBold';
+          
+          src: url('/articles/20250119_Type_Ultra/AD-Ultra-Serif-ExtraBold.woff2') format('woff2'), 
+          url('/articles/20250119_Type_Ultra/AD-Ultra-Serif-ExtraBold.woff') format('woff'); 
+        font-weight: normal;
+        font-style: normal;
+        }  
+      </style>
+
+  <article class="typepreview">
+
+    
+    <h2 class="textpreviewsample" style="font-family: 'tt-AD-Ultra-Serif-ExtraBold';"><a href="/articles/20250119_Type_Ultra/typetester/">Darkside of the moon!</a></h2>
+    <p>Ultra – A typeface for headings</p>
+
+
+  </article></div>
+      <a href="/articles_typetester/">More type</a>
       
   
 
@@ -156,12 +217,14 @@
 
 
 
-<footer class="bot_nav">
-    <div>
-    <a  href="/privacy">privacy</a>
-    <a  href="/accessibility">accessibility</a>
-    </div>
-    <button class="dmbtntoggler" title="darkmode-toggler">sun</button>
+<footer>
+    <nav class="bot_nav" aria-label="Service navigation">
+        <div>
+            <a  href="/privacy">privacy</a>
+            <a  href="/accessibility">accessibility</a>
+        </div>
+        <button class="dmbtntoggler" title="darkmode-toggler">sun</button>
+    </nav>
 </footer>
 
 </body>
