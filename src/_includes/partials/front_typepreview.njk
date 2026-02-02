@@ -1,0 +1,21 @@
+{# this is the type-specimen-preview as shown on the frontpage #}
+
+    <style>
+        @font-face {
+          font-family: 'tt-{{ post.data.fontname }}';
+          {#URL should be /articles/article-Folder-that's-different-for-every-article/ and then the post.data.fontname#}
+          src: url('{{post.data.urlbase}}{{ post.data.fontname }}.woff2') format('woff2'), {#used to have /fonts/article/#}
+          url('{{post.data.urlbase}}{{ post.data.fontname }}.woff') format('woff'); {#used to have /fonts/article/#}
+        font-weight: normal;
+        font-style: normal;
+        }  
+      </style>
+
+  <article class="typepreview">
+
+    
+    <h3 class="textpreviewsample" style="font-family: 'tt-{{ post.data.fontname }}';"><a href="{{ post.url }}">{{ post.data.initTypeSpecimen }}</a></h2>
+    <p>{{ post.data.title }} – {{ post.data.description }}</p>
+
+
+  </article>
