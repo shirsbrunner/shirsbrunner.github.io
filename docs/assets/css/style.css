@@ -318,7 +318,7 @@ a:visited, a:hover, a:active{
 }
 
 /*text-links for article headers*/
-h2 a, h2 a:visited, h2 a:active, h2 a:hover{ 
+h2 a, h2 a:visited, h2 a:active, h2 a:hover, h3 a, h3 a:visited, h3 a:active, h3 a:hover{
   color: var(--darkGrey);
   text-decoration: none; 
 }
