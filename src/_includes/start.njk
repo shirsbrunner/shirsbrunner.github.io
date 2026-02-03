@@ -22,18 +22,18 @@
     <div class="page_content flow">
       {#{% include "partials/divider.njk" %}#}    
       <div class="pagelist flow">
-      <h2>Latest log entries</h2>
+      <h2>Latest from log</h2>
       {# shows the latest article #}
       {% set postslist = collections.posts | head(-2) %}
         {%- for post in postslist -%}
-            {% include "partials/postpreview.njk" %}
+            {% include "partials/front_postpreview.njk" %}
         {%- endfor -%}
       </div>
       <a href="/articles/">More log</a>
 
       
       <div class="pagelist flow">
-      <h2>Latest type things</h2>
+      <h2>Latest from type</h2>
       {# shows the latest typespecimen #}
       {% set typelist = collections.typefaces | head(-2) %}
         {%- for post in typelist -%}

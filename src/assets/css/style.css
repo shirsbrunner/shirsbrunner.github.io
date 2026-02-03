@@ -296,7 +296,7 @@ h1{
   margin-bottom: 0.2em; 
 }
 
-h2{
+h2, h3.ad_headerincrement{
   font-size: var(--step-2);/*250%*/
   /*margin: var(--space-l) 0 var(--space-2xs); /*top-sides-bottom*/
   /*margin-bottom: 0.1em;*/
