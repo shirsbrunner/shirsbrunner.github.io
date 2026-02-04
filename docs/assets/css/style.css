@@ -302,6 +302,12 @@ h2, .ad_headerincrement h3{
   /*margin-bottom: 0.1em;*/
 }
 
+.dotheader:before { /*adds a dot to the header in question, startpage*/
+  content:"• ";
+  color:var(--red);
+  
+}
+
 div{
   /*border: dashed red; */
 }
@@ -395,6 +401,7 @@ blockquote p {
 }
 
 .pagelist {
+  padding-top: var(--space-xl); 
   display:flex;
   flex-direction:column;
   --flow-space: var(--space-l); /*-- sets the gap for flow --*/
