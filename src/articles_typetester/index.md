@@ -1,6 +1,6 @@
 ---
 title: Type
-subtitle:  Making things look like glyphs 
+subtitle:  Making things that look like glyphs 
 description: A place to play around with typefaces
 layout: page.njk
 eleventyNavigation:
