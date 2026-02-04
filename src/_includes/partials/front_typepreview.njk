@@ -1,5 +1,8 @@
 {# this is the type-specimen-preview as shown on the frontpage #}
 
+
+
+  <article class="typepreview">
     <style>
         @font-face {
           font-family: 'tt-{{ post.data.fontname }}';
@@ -9,10 +12,7 @@
         font-weight: normal;
         font-style: normal;
         }  
-      </style>
-
-  <article class="typepreview">
-
+    </style>
     
     <h3 class="textpreviewsample" style="font-family: 'tt-{{ post.data.fontname }}';"><a href="{{ post.url }}">{{ post.data.initTypeSpecimen }}</a></h2>
     <p>{{ post.data.title }} – {{ post.data.description }}</p>

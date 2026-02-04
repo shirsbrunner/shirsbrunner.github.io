@@ -296,10 +296,14 @@ h1{
   margin-bottom: 0.2em; 
 }
 
-h2, h3.ad_headerincrement{
+h2, .ad_headerincrement h3{
   font-size: var(--step-2);/*250%*/
   /*margin: var(--space-l) 0 var(--space-2xs); /*top-sides-bottom*/
   /*margin-bottom: 0.1em;*/
+}
+
+div{
+  /*border: dashed red; */
 }
 
 h3{
@@ -317,12 +321,13 @@ a:visited, a:hover, a:active{
   color: var(--red);
 }
 
-/*text-links for article headers*/
-h2 a, h2 a:visited, h2 a:active, h2 a:hover, h3 a, h3 a:visited, h3 a:active, h3 a:hover{
+/*text-links for article headers
+Also fixes the colour for incemented headers */
+h2 a, h2 a:visited, h2 a:active, h3 a, h3 a:visited, h3 a:active{
   color: var(--darkGrey);
   text-decoration: none; 
 }
-h2 a:hover{
+h2 a:hover, h3 a:hover{
   text-decoration: underline; 
 }
 
