@@ -104,7 +104,7 @@ header{
 main{ /*-- do we need to adjust this? --*/  
   /*Sticky footer things*/
   flex:1;
-  margin-bottom:2em;
+  margin-bottom:var(--space-2xl);
   /*end of Sticky footer things*/
   
   padding:0px var(--space-s-2xs);
@@ -119,7 +119,7 @@ main{ /*-- do we need to adjust this? --*/
 .page_content{
   flex: 0 1 690px; /*flexbox shorthand for grow, shrink, initial width, or max width. No need for min-Width as flexbox controls it*/
   max-width: 690px;
-  margin-top: var(--space-xl);
+  /*margin-top: var(--space-xl);*/
 }
 
 .page_content p img{ /*-- stuff for the image within an article --*/
@@ -225,7 +225,7 @@ main{ /*-- do we need to adjust this? --*/
   font-style: normal;
   font-weight: bold;
   font-size: var(--step-5);/*3rem; /*-- needs to be adjusted for dynamic type --*/
-  line-height: 1.25 rem; /*-- needs to be adjusted for dynamic type --*/
+  line-height: var(--space-l-xl); /*-- needs to be adjusted for dynamic type --*/
 
 
   margin-top: 3.5rem;
@@ -293,7 +293,7 @@ h1, h2, h3 {
 h1{
   /*font-size: var(--step-4); /*300%*/
   padding-top: var(--space-l);
-  margin-bottom: 0.2em; 
+  margin-bottom: var(--space-s); /*0.2em; 
 }
 
 h2, .ad_headerincrement h3{
@@ -401,7 +401,7 @@ blockquote p {
 }
 
 .pagelist {
-  padding-top: var(--space-xl); 
+  padding-top: var(--space-l); 
   display:flex;
   flex-direction:column;
   --flow-space: var(--space-l); /*-- sets the gap for flow --*/
@@ -673,7 +673,7 @@ footer{
   padding: 0;
   overflow: hidden;
   border-top: 0.5px solid var(--middleGrey); 
-  background-color:aliceblue; 
+  /*background-color:aliceblue; */
 }
 
 .bot_nav{

@@ -1,6 +1,6 @@
 ---
-title: Pixel Things
-description: Adventures in Game Design. After around 10 years, Robazoid is disappearing from the digital world – time to make a new game. 
+title: Adventures in Game Design
+description: After around 10 years, Robazoid is disappearing from the digital world – time to make something new. 
 date: 2025-10-25
 evolution: 2
 previewImage: Robazoid-Preview.png
