@@ -75,7 +75,7 @@ html{
 /*-- structure --*/
 body {
     /* Sticky-Footer-Stuff*/
-    min-height: 100vh;
+    min-height: 100dvh; /*used to be vh*/
     display:flex;
     flex-direction:column; /* The article fills all the space between header & footer*/
     /* end of Sticky-Footer-Stuff*/
