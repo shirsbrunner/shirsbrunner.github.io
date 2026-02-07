@@ -6,7 +6,7 @@
     {% if decoration %}
       <span class="header_deco" aria-hidden="true">{{ decoration }}</span>
     {% endif %}
-    <h1>
+    <h1 class="textWidthLimit">
       <span class="start_hero">{{ title }}</span>
       {#<br>
       <span class="subtitle"> {{subtitle}}</span> #}
@@ -17,7 +17,7 @@
       {{ content | safe }} 
     </div>
   </div>
-  <div class="content_container">
+  <div class="content_container center_content_container">
 
     <div class="page_content flow">
       {#{% include "partials/divider.njk" %}#}    
