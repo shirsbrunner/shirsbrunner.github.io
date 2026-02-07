@@ -293,7 +293,7 @@ h1, h2, h3 {
 h1{
   /*font-size: var(--step-4); /*300%*/
   padding-top: var(--space-l);
-  margin-bottom: var(--space-s); /*0.2em; 
+  margin-bottom: var(--space-s); /*0.2em;*/
 }
 
 h2, .ad_headerincrement h3{
