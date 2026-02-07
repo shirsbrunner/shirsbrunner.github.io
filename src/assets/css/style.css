@@ -251,16 +251,6 @@ main{ /*-- do we need to adjust this? --*/
   flex-direction:row;
   align-items: center;
   justify-content: center;
-  text-shadow:
-    0 0 7px #fff,
-    /*0 0 10px #fff,*/
-    0 0 21px #fff,
-    0 0 42px var(--discoColors),
-    0 0 82px var(--discoColors)/*,
-    0 0 92px var(--discoColors)/*,
-    0 0 102px var(--discoColors)/*,
-    0 0 151px var(--discoColors)*/
-    ;
 }
 
 .big_text{

@@ -3,7 +3,7 @@ title: Snippets, notes, stuff, usefull things
 subtitle: This and that
 description: Testpage generated with @11ty
 layout: start.njk
-decoration: oneup
+decoration: star
 
 ---
 
