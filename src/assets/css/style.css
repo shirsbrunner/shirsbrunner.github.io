@@ -225,7 +225,7 @@ main{ /*-- do we need to adjust this? --*/
 
 .start_hero{
   font-family: "montserrat"; /*make no mistake - this is not a color*/
-  letter-spacing: -0.06em;
+  /*letter-spacing: -0.06em;*/
   font-style: normal;
   font-weight: bold;
   font-size: var(--step-5);/*3rem; /*-- needs to be adjusted for dynamic type --*/
@@ -264,7 +264,7 @@ main{ /*-- do we need to adjust this? --*/
 
 .big_text{
   font-family: "montserrat";
-  letter-spacing: -0.06em;
+  /*letter-spacing: -0.06em;*/
   font-style: normal;
   font-weight: bold;
   font-size: var(--step-4);
