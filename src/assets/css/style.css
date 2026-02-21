@@ -83,22 +83,31 @@ body {
     font-family:CourrierPrimeRegular; /*- body-font -*/
     font-weight: 400;
     font-size: var(--step-0);
-    max-width: 1024px;
+    /*max-width: 1024px;*/
     margin: 0px auto;
     color: var(--darkGrey);
+    align-items:center; 
 }
 
 .flow > * + * {
   margin-block-start: var(--flow-space, 1em);
 }
 
+.header_container{
+    position:fixed;
+    top:0;
+    display:flex;
+    /*align-items:center;*/
+    justify-content: center;
+    width:100%;
+    z-index:100; /*fixing issues with the all clickable cards*/
+    border-bottom: 0.5px solid var(--middleGrey); /*change this into a scroll-shadow maybe - or make the buttons smaller*/
+    background-color: var(--backgroundColor); 
+}
+
 header{
-  position:fixed;
-  top:0;
   max-width:1024px;
   width:100%;
-  background-color: var(--backgroundColor); 
-  z-index:100; /*fixing issues with the all clickable cards*/
 }
 
 main{ /*-- do we need to adjust this? --*/  
@@ -109,6 +118,7 @@ main{ /*-- do we need to adjust this? --*/
   
   padding:0px var(--space-s-2xs);
   margin-top: var(--space-2xl) ;/*4em;*/
+  max-width: 1024px; 
 }
 
 .content_container{ /*-- the flex container to float everything --*/
@@ -530,7 +540,6 @@ blockquote p {
 .nav_top {
   font-family: CourrierPrimeRegular, sans-serif;
   font-weight: 400;
-  border-bottom: 0.5px solid var(--middleGrey); /*change this into a scroll-shadow maybe - or make the buttons smaller*/
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -667,11 +676,22 @@ a img.control_icon{
 }
 
 /*-- things at the bottom of the page --*/
+.footer_container{
+  width:100%;
+  border-top: 0.5px solid var(--middleGrey);
+  background-color: var(--backgroundColor);
+  display:flex; 
+  justify-content: center;
+}
+
 footer{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border-top: 0.5px solid var(--middleGrey); 
+  max-width:1024px; 
+  width:100%; 
+  /*display:flex; 
+  justify-content: center;*/
   /*background-color:aliceblue; */
 }
 
@@ -682,6 +702,7 @@ footer{
   align-items: center;
   justify-content: space-between;
   padding:var(--space-3xs) var(--space-s-2xs);
+  max-width:1024px;
 }
 
 /*the darkmode-toggle button*/
