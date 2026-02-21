@@ -20,8 +20,9 @@
   <div class="content_container center_content_container">
 
     <div class="page_content flow">
-      {#{% include "partials/divider.njk" %}#}    
       <div class="pagelist flow">
+        {% include "partials/divider.njk" %}    
+
         <h2 class="dotheader">From the log</h2>
         <div class = "post_previews flow ad_headerincrement">
           {# shows the latest article #}
@@ -35,6 +36,8 @@
 
       
       <div class="pagelist flow">
+        {% include "partials/divider.njk" %}    
+
         <h2 class="dotheader">Latest type</h2>
         <div class = "post_previews flow"> {#no headerincrement as different sizes anyway#}
           {# shows the latest typespecimen #}
