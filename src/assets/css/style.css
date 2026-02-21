@@ -263,7 +263,7 @@ main{ /*-- do we need to adjust this? --*/
   font-family:"miyconos";
   color: var(--textSampleMarkInverted);
   position:absolute;
-  left:calc(-1.8*var(--space-3xl-xl));/*calc(-2*(var(--space-s) + var(--space-2xl)));/*-85px;*/
+  left:calc(-4*var(--space-3xl-xl));/*calc(-2*(var(--space-s) + var(--space-2xl)));/*-85px;*/
   height: 100%;
   display:flex;
   flex-direction:row;
