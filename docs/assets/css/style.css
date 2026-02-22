@@ -8,7 +8,7 @@
   --sampleBackDark: rgba(0,0,0,0.80); 
   --textSampleMarkInverted: rgb(225,185,185); /*255,185,186*/
   --middleGrey: #666666;
-  --lightGrey: #DEE2E6; 
+  --lightGrey: rgba(255,127,80,0.2); 
   --buttonRed: var(--lightRed); 
   --buttonText: var(--darkGrey);
   --controlIcon: ;
@@ -24,7 +24,7 @@
   --sampleBackDark: rgb(249,248,248); 
   --textSampleMarkInverted: rgb(138, 55, 25);  /*155, 20, 20*/
   --middleGrey: #999999;
-  --lightGrey: #666666; 
+  --lightGrey: rgba(155,20,20,0.1); 
   --buttonRed: var(--lightRed); 
   --buttonText: var(--textsampleWhite);
   --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
@@ -43,7 +43,7 @@
     --sampleBackDark: rgb(249,248,248); 
     --textSampleMarkInverted: rgb(138, 55, 25);  
     --middleGrey: #999999;
-    --lightGrey: #666666; 
+    --lightGrey: rgba(155,20,20,0.1); 
     --buttonRed: var(--lightRed); 
     --buttonText: var(--textsampleWhite);
     --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
@@ -60,7 +60,7 @@
     --sampleBackDark: rgba(0,0,0,0.80); 
     --textSampleMarkInverted: rgb(225,185,185); 
     --middleGrey: #666666;
-    --lightGrey: #DEE2E6; 
+    --lightGrey: rgba(255,127,80,0.2); 
     --buttonRed: var(--lightRed); 
     --buttonText: var(--darkGrey);
     --controlIcon: ;
@@ -318,20 +318,24 @@ h2, .ad_headerincrement h3{
   /*margin-bottom: 0.1em;*/
 }
 
-.dotheader:before { /*adds a dot to the header in question, startpage*/
+/*adds a dot to the header in question, startpage*/
+/*
+.dotheader:before { 
   content:"• ";
   color:var(--red);
   
 }
-
-div{
-  /*border: dashed red; */
-}
+*/
 
 /*The card on the start page*/
 .card_back{
-  background-color: var(--lightGrey);
+  /*background-color: var(--lightGrey);*/
   padding: var(--space-xs);
+  border: 0.5px solid var(--red);
+  border-radius: 8px;
+}
+.card_back:hover{
+  background-color: var(--lightGrey);
 }
 
 h3{
@@ -443,13 +447,20 @@ blockquote p {
   margin:0px 0px var(--space-3xs) 0px;
 }
 
+/*the image for the preview*/
 .log_preview_image {
-  flex-basis:100px;
+  flex-basis:var(--space-3xl);/*100px; /*Image 100px big*/
+  flex-grow:0; 
+  flex-shrink:0;
+}
+.small_preview_image {
+  flex-basis:var(--space-xl);
   flex-grow:0; 
   flex-shrink:0;
 }
 
-.log_preview_image img {
+
+.log_preview_image img, .small_preview_image img {
   border-radius:8px;
 }
 

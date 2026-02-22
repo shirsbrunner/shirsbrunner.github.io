@@ -1,8 +1,8 @@
-{# this is the blog-preview as shown on the pagelist #}
+{# this is the blog-preview as shown on the pagelist - reduced info #}
 
   <article class="article_preview card_back">
 
-    <div class="log_preview_image" aria-hidden="true">
+    <div class="small_preview_image" aria-hidden="true">
       {% if post.data.previewImage %} 
         <img src={{post.data.urlbase}}{{ post.data.previewImage }} alt="">
       {% else %}
@@ -26,7 +26,7 @@
       <p class ="time">
       {% if post.data.date %}<time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time>{% endif %}
       {% if post.data.updateDate %} and updated on: <time datetime="{{ post.data.updateDate | dateymd }}">{{ post.data.updateDate | datefriendly }}</time>{% endif %}
-
+  {#
       {% if post.data.evolution == 1 %}
         – this is more of an Idea
       {% elif post.data.evolution == 2 %}
@@ -34,7 +34,7 @@
       {% else %}
         – this is probably final
       {% endif %}
-
+#}
       – tags: 
       {% set firstTag = true %}
       {% for tag in post.data.tags | filterTagList %}
