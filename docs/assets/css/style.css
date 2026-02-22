@@ -342,8 +342,10 @@ h2, .ad_headerincrement h3{
   border: 0.5px solid var(--red);
   border-radius: 8px;
 }
+
 .card_back:hover{
   background-color: var(--lightGrey);
+  border: 0.5px solid var(--darkGrey);
 }
 
 h3{
