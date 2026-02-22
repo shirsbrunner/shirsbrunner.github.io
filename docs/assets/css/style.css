@@ -97,6 +97,14 @@ body {
   margin-block-start: var(--flow-space, 1em);
 }
 
+.flow_l{
+  --flow-space:var(--space-l);
+}
+
+.flow_s{
+  --flow-space:var(--space-s);
+}
+
 .header_container{
     position:fixed;
     top:0;
@@ -430,7 +438,7 @@ blockquote p {
   padding-top: var(--space-l); 
   /*display:flex;
   flex-direction:column;*/ /*flexbox replaced by gap? */
-  --flow-space: var(--space-l); /*-- sets the gap for flow --*/
+  /*--flow-space: var(--space-l); /*-- sets the gap for flow --*/
   /*gap: var(--space-m); */
 }
 
