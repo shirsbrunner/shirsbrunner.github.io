@@ -7,7 +7,8 @@
   --sampleBackLight: rgb(249,248,248); /*while this is the same as textsampleWhite - it might need to be inverted differently*/
   --sampleBackDark: rgba(0,0,0,0.80); 
   --textSampleMarkInverted: rgb(225,185,185); /*255,185,186*/
-  --middleGrey: #666666; 
+  --middleGrey: #666666;
+  --lightGrey: #DEE2E6; 
   --buttonRed: var(--lightRed); 
   --buttonText: var(--darkGrey);
   --controlIcon: ;
@@ -22,7 +23,8 @@
   --sampleBackLight: #1f1b24; 
   --sampleBackDark: rgb(249,248,248); 
   --textSampleMarkInverted: rgb(138, 55, 25);  /*155, 20, 20*/
-  --middleGrey: #999999; 
+  --middleGrey: #999999;
+  --lightGrey: #666666; 
   --buttonRed: var(--lightRed); 
   --buttonText: var(--textsampleWhite);
   --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
@@ -40,7 +42,8 @@
     --sampleBackLight: #1f1b24; /*while this is the same as textsampleWhite - it might need to be inverted differently*/
     --sampleBackDark: rgb(249,248,248); 
     --textSampleMarkInverted: rgb(138, 55, 25);  
-    --middleGrey: #999999; 
+    --middleGrey: #999999;
+    --lightGrey: #666666; 
     --buttonRed: var(--lightRed); 
     --buttonText: var(--textsampleWhite);
     --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
@@ -56,7 +59,8 @@
     --sampleBackLight: rgb(249,248,248);
     --sampleBackDark: rgba(0,0,0,0.80); 
     --textSampleMarkInverted: rgb(225,185,185); 
-    --middleGrey: #666666; 
+    --middleGrey: #666666;
+    --lightGrey: #DEE2E6; 
     --buttonRed: var(--lightRed); 
     --buttonText: var(--darkGrey);
     --controlIcon: ;
@@ -108,6 +112,7 @@ body {
 header{
   max-width:1024px;
   width:100%;
+  padding:0px var(--space-s-2xs);
 }
 
 main{ /*-- do we need to adjust this? --*/  
@@ -115,10 +120,13 @@ main{ /*-- do we need to adjust this? --*/
   flex:1;
   margin-bottom:var(--space-2xl);
   /*end of Sticky footer things*/
-  
   padding:0px var(--space-s-2xs);
   margin-top: var(--space-2xl) ;/*4em;*/
-  max-width: 1024px; 
+  max-width: 1024px;
+  width:100%;
+
+  display:flex; 
+  flex-direction: column;
 }
 
 .content_container{ /*-- the flex container to float everything --*/
@@ -187,7 +195,6 @@ main{ /*-- do we need to adjust this? --*/
        url('/fonts/structural/GranCirculos-Regular-Webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
@@ -321,6 +328,12 @@ div{
   /*border: dashed red; */
 }
 
+/*The card on the start page*/
+.card_back{
+  background-color: var(--lightGrey);
+  padding: var(--space-xs);
+}
+
 h3{
   font-size: var(--step-1);/*200%*/
   /*margin-bottom: 0.1em;*/
@@ -376,7 +389,7 @@ a.b_small:hover, a.b_small:active{
 
 p {
   line-height: 160%;
-  margin:0px 0px var(--space-xs) 0px; 
+  /*margin:0px 0px var(--space-xs) 0px; */
 }
 
 /*--- end of fonts for titles and things ---*/
@@ -411,8 +424,8 @@ blockquote p {
 
 .pagelist {
   padding-top: var(--space-l); 
-  display:flex;
-  flex-direction:column;
+  /*display:flex;
+  flex-direction:column;*/ /*flexbox replaced by gap? */
   --flow-space: var(--space-l); /*-- sets the gap for flow --*/
   /*gap: var(--space-m); */
 }
@@ -689,7 +702,8 @@ footer{
   padding: 0;
   overflow: hidden;
   max-width:1024px; 
-  width:100%; 
+  width:100%;
+  padding:0px var(--space-s-2xs);
   /*display:flex; 
   justify-content: center;*/
   /*background-color:aliceblue; */

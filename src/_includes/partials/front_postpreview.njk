@@ -1,6 +1,6 @@
 {# this is the blog-preview as shown on the pagelist #}
 
-  <article class="article_preview">
+  <article class="article_preview card_back">
 
     <div class="log_preview_image" aria-hidden="true">
       {% if post.data.previewImage %} 
@@ -11,14 +11,14 @@
     </div>
     <div class="preview_content">
     <h3>
-      <span class="headericon" data-icon="
+      {#<span class="headericon" data-icon="
         {# this adds the state-icon #}
-        {% if post.data.evolution == 1 %} dotcircle
+        {#{% if post.data.evolution == 1 %} dotcircle
         {% elif post.data.evolution == 2 %} enso
         {% else %} spiral
         {% endif %}
         ">
-      </span>
+      </span>#}
       {# this adds the title-link #}    
     <a href="{{ post.url }}" class="breakout-link">{{ post.data.title }}</a></h3>
 
