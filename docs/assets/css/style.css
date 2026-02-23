@@ -600,7 +600,11 @@ blockquote p {
 }
 .nav_top li { /*all li*/
   float: left;
-  margin: 0px var(--space-3xs); 
+  /*margin: 0px var(--space-3xs);*/
+}
+
+.nav_top li:not(:last-child) { 
+   margin-right: var(--space-3xs);  
 }
 
 .nav_top li a { /*non selected list elements*/
@@ -737,7 +741,7 @@ footer{
   overflow: hidden;
   max-width:1024px; 
   width:100%;
-  padding:0px var(--space-s-2xs);
+  /*padding:0px var(--space-s-2xs);*/ /* already on the kids element"/
   /*display:flex; 
   justify-content: center;*/
   /*background-color:aliceblue; */
