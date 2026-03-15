@@ -46,8 +46,8 @@
 
       <div class="article_metrics">
         <p class="time"><time datetime="2025-10-25">25 October, 2025</time></p>
-        
-        <p class="words">2,210 words</p>
+        <p class="time">Updated on: <time datetime="2026-03-15">15 March, 2026</time></p>
+        <p class="words">2,500 words</p>
         <p class="time">State:       
             
               Advanced
@@ -141,25 +141,33 @@ Well, it was time, to make a pixel font, a plan I had ever since I've seen a tal
 </blockquote>
 <p>I had to scale the whole game to use 16px sprites to make the font smaller in comparison. Turns out, this was rather easy to apply in godot (just double everything, but I had to redraw / scale all the sprites).</p>
 <p>Smaller resolutions need smaller typefaces. Apparently can go down to 4 px (well, there is a 2 pixel font, but it's tricky to read) - we will see, what we need in the future.</p>
+<h2>It's here (update 15.03.2026)</h2>
+<p>I've been silently working on this now and then with the intention to make it playable on mobile.
+And finally: Robazoid II is ready to be played. Or at least, it can be played on mobile and desktop too.</p>
+<p>The current product is a HTML5 webpage, that can be played on mobile and desktop. I tried this on Firefox, Chrome and Safari on a Mac and as a PWA on Android (using firefox) and it's playable on all platforms (only Safari is a bit choppy).</p>
+<p>This should work in a browser on an Iphone - but honestly, screens are small on mobile and having the browserbar cover the screen makes it hard to play. So install this as a PWA and help hassling apple and other players into supporting an open web - <a href="https://open-web-advocacy.org/">check out open web advocacy</a>. Also on mobile, play in landscape for bigger controls</p>
+<p>Installing Robazoid II as a PWA also allows you to play this without network, on a plane, in a cave and on a submarine.</p>
+<div class="cta card_back">
+<p>Finally here: <a href="/webApps/RobazoidII/">Robazoid II on the web</a></p>
+</div>
+<p>On updating: This is a PWA with a service worker, it downloads the games data to your device and treats it as an app (if installed). As I'm not sure how godot increments service workers, but after updates, if it's not working, hard refresh the page, uninstall and reinstall the app, close it and reopen it again and you should get the latest version. Not that I'm planning on updating this frequently.</p>
 <h2>The Todo-List</h2>
 <ul>
-<li>This currently only works on my machine from Godot - export this to something more public on where it can be played.</li>
-<li>Hopefully there is some way to play this on batocera or retropie... but the internet will do as well... Godot can push to the web - so maaaaybe on this page?</li>
+<li>Improve Touch controls (Size, Layout, Icons)</li>
+<li>Ingame signs should adapt when playing this on mobile... (some signs still call for spacebar on mobile)</li>
+<li>Catchy background-music to annoy your friends while playing</li>
+<li>Hopefully there is some way to play this on batocera or retropie eventually.</li>
 </ul>
 
 
       <div class="post_nav">
         
-        
-          <div class="post_link_element" id="next_post">
-            <a class="post_link" href="/articles/20260107_usefull_things/article/"><img src="/images/structural/Previous.svg" alt="next post" width="40" height="40">Custom tooling</a>
-          </div>
          
         <div class="post_link_element"> </div>
         
         
           <div class="post_link_element" id="previous_post"> 
-            <a class="post_link" href="/articles/20210625_Type_Miyconos/article/">Icons &amp; Ligatures - Creating an icon font<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+            <a class="post_link" href="/articles/20260107_usefull_things/article/">Custom tooling<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
           </div>
         
       </div>

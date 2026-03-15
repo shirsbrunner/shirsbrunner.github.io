@@ -2,6 +2,7 @@
 title: Adventures in Game Design
 description: After around 10 years, Robazoid is disappearing from the digital world – time to make something new. 
 date: 2025-10-25
+updateDate: 2026-03-15
 evolution: 2
 previewImage: Robazoid-Preview.png
 urlbase: '/articles/20251025_robazoid/'
@@ -86,6 +87,26 @@ I had to scale the whole game to use 16px sprites to make the font smaller in co
 
 Smaller resolutions need smaller typefaces. Apparently can go down to 4 px (well, there is a 2 pixel font, but it's tricky to read) - we will see, what we need in the future. 
 
+## It's here (update 15.03.2026)
+I've been silently working on this now and then with the intention to make it playable on mobile. 
+And finally: Robazoid II is ready to be played. Or at least, it can be played on mobile and desktop too.
+
+The current product is a HTML5 webpage, that can be played on mobile and desktop. I tried this on Firefox, Chrome and Safari on a Mac and as a PWA on Android (using firefox) and it's playable on all platforms (only Safari is a bit choppy). 
+
+This should work in a browser on an Iphone - but honestly, screens are small on mobile and having the browserbar cover the screen makes it hard to play. So install this as a PWA and help hassling apple and other players into supporting an open web - [check out open web advocacy](https://open-web-advocacy.org/). Also on mobile, play in landscape for bigger controls
+
+Installing Robazoid II as a PWA also allows you to play this without network, on a plane, in a cave and on a submarine. 
+
+<div class="cta card_back">
+
+Finally here: [Robazoid II on the web](/webApps/RobazoidII/)
+
+</div>
+
+On updating: This is a PWA with a service worker, it downloads the games data to your device and treats it as an app (if installed). As I'm not sure how godot increments service workers, but after updates, if it's not working, hard refresh the page, uninstall and reinstall the app, close it and reopen it again and you should get the latest version. Not that I'm planning on updating this frequently.
+
 ## The Todo-List
-- This currently only works on my machine from Godot - export this to something more public on where it can be played.
-- Hopefully there is some way to play this on batocera or retropie... but the internet will do as well... Godot can push to the web - so maaaaybe on this page?
+- Improve Touch controls (Size, Layout, Icons)
+- Ingame signs should adapt when playing this on mobile... (some signs still call for spacebar on mobile)
+- Catchy background-music to annoy your friends while playing
+- Hopefully there is some way to play this on batocera or retropie eventually.
