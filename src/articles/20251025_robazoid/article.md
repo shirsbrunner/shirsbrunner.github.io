@@ -91,9 +91,9 @@ Smaller resolutions need smaller typefaces. Apparently can go down to 4 px (well
 I've been silently working on this now and then with the intention to make it playable on mobile. 
 And finally: Robazoid II is ready to be played. Or at least, it can be played on mobile and desktop too.
 
-The current product is a HTML5 webpage, that can be played on mobile and desktop. I tried this on Firefox, Chrome and Safari on a Mac and as a PWA on Android (using firefox) and it's playable on all platforms (only Safari is a bit choppy). 
+The current product is a HTML5 webpage, that can be played on mobile and desktop. I tried this on Firefox, Chrome and Safari (all on a mac), as a PWA on Android (using firefox) and on an iPhone and it's playable on all platforms (only Safari is a bit choppy). 
 
-This should work in a browser on an Iphone - but honestly, screens are small on mobile and having the browserbar cover the screen makes it hard to play. So install this as a PWA and help hassling apple and other players into supporting an open web - [check out open web advocacy](https://open-web-advocacy.org/). Also on mobile, play in landscape for bigger controls
+This works in the browser on an iPhone - but honestly, screens are small on mobile and having the browserbar cover the screen makes it hard to play. So install this as a PWA on android and help hassling apple and other players into supporting an open web - [check out open web advocacy](https://open-web-advocacy.org/). Also on mobile, play in landscape for bigger controls. 
 
 Installing Robazoid II as a PWA also allows you to play this without network, on a plane, in a cave and on a submarine. 
 
