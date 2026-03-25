@@ -27,6 +27,7 @@ function headerize(){
 }
 
 // I saw something like this at henrys place
+// part of the face is from the amazing https://kaomojicool.club/
 function flavoursole(){
         console.log(" \n"+
         " .%%%%%%%% \n"+
