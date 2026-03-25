@@ -1,10 +1,11 @@
 
+// Completely not necessary things
 // setup
 const deco_element = document.getElementById('header_deco');
 const deco_array = ["moon", "sun", "star", "fish", "beholder", "oneup", "uxally"]
 
 const start_hero_text = document.getElementById('start_hero_text');
-const hero_array = ["Snippets-Area", "Notes-Location", "Stuff-Place", "Things-Spot"]
+const hero_array = ["Glimpse-Area", "Notes-Location", "Stuff-Place", "Things-Spot"]
 
 // initialize
 flavourize();
@@ -25,6 +26,13 @@ function headerize(){
     }
 }
 
+// I saw something like this at henrys place
 function flavoursole(){
-        console.log("Welcome to the inner circle! I'm glad you found me, but don't tell anybody, this is just between me and you!")
+        console.log(" \n"+
+        " .%%%%%%%% \n"+
+        "ᕦ⸨○⬤ᴜ⬤○⸩ᕤ\n"+
+        "     –-      \n"+
+        "           \n"+
+        "Welcome to the inner circle!\nI'm glad you found me, but keep it a secret, this is just between me and you!\n"+
+        " ")
 }
