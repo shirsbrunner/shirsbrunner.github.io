@@ -8,5 +8,5 @@ decoration: sun
 ---
 
 ## Welcome
-I'm Simon, a digital designer from Switzerland. I like making digital and touchable stuff. This page is a growing and sometimes changing collection of project notes, snippets and more or less useful things.
+I'm Simon, a digital designer from Switzerland. I like making mainly digital but also tangible stuff. This page is a growing and sometimes changing collection of project notes, snippets and more or less useful things.
 
