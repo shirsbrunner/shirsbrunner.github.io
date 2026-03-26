@@ -1,7 +1,7 @@
 ---
 title: Log-Place
 subtitle: This and that
-description: Testpage generated with @11ty
+description: My page, a place of everything, from a like test to be like fun
 layout: start.njk
 decoration: sun
 
