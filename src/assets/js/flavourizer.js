@@ -5,7 +5,7 @@ const deco_element = document.getElementById('header_deco');
 const deco_array = ["moon", "sun", "star", "fish", "beholder", "oneup", "uxally"]
 
 const start_hero_text = document.getElementById('start_hero_text');
-const hero_array = ["Glimpse-Area", "Notes-Dump", "Stuff-Place", "Things-Spot"]
+const hero_array = ["Log-Place", "Notes-Area", "Stuff-Heap", "Things-Spot"]
 
 // initialize
 flavourize();
@@ -34,6 +34,7 @@ function flavoursole(){
         "ᕦ⸨○⬤ᴜ⬤○⸩ᕤ\n"+
         "     –-      \n"+
         "           \n"+
-        "Welcome to the inner circle!\nI'm glad you found me, but keep it a secret, this is just between me and you!\n"+
+        "Welcome to the inner circle!\nI'm glad you found me, but keep it a secret, this is just a place for you and me!\n"+
+        "You can rest and recharge here safely, before going back into the wild wild web!\n"+
         " ")
 }
