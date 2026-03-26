@@ -5,7 +5,7 @@ const deco_element = document.getElementById('header_deco');
 const deco_array = ["moon", "sun", "star", "fish", "beholder", "oneup", "uxally"]
 
 const start_hero_text = document.getElementById('start_hero_text');
-const hero_array = ["Log-Place", "Notes-Area", "Stuff-Heap", "Things-Spot"]
+const hero_array = ["Log-Place", "Notes-Area", "Stuff-Zone", "Things-Spot"]
 
 // initialize
 flavourize();
