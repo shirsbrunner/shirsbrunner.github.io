@@ -1,5 +1,5 @@
 ---
-title: Snippets, notes, stuff, usefull things
+title: Log-Place
 subtitle: This and that
 description: Testpage generated with @11ty
 layout: start.njk
