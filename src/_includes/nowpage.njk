@@ -1,0 +1,28 @@
+{#Based on the infopages - this is the now page with additional info#}
+
+{% extends "page.njk" %}
+
+{% block content %}
+
+  <h1>
+    <span class="big_text">{{ title }}</span>
+    <br>
+    <span class="subtitle"> {{subtitle}}</span> 
+  </h1>
+
+        <div class="article_metrics">
+        {% if date %}<p class="time">Publication: <time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
+        {% if updateDate %}<p class="time">Updated on: <time datetime="{{ updateDate | dateymd }}">{{ updateDate | datefriendly }}</time></p>{% endif %}
+      </div>
+
+  <div class="content_container">
+    <div class="page_content flow">
+      {{ content | safe }}
+      <div>
+      Whut? – I'm glad you ask. This is a <a href="https://nownownow.com/about">now page</a>, and if you have your own site, maybe you should make one, too?
+      
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

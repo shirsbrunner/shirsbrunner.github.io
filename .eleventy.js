@@ -66,12 +66,6 @@ module.exports = config => {
         )
   );
 
-  config.addCollection('nowlist', collection =>
-    collection
-      .getFilteredByGlob('./src/now/now_log/*.md')
-      //could use the filter above...
-  );
-
 
   
   // Get the first `n` elements of a collection.
