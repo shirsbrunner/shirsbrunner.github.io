@@ -70,7 +70,9 @@ module.exports = config => {
     collection
       .getFilteredByGlob('./src/now/now_log/*.md')
       //could use the filter above...
-  )
+  );
+
+
   
   // Get the first `n` elements of a collection.
   config.addFilter("head", (array, n) => {

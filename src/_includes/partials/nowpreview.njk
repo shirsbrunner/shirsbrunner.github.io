@@ -1,1 +1,6 @@
-<h2>testodroms</h2>
+<h2>{% if post.data.date %}<time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time>{% endif %}</h2>
+<div class="content_container">
+    <div class="page_content flow">
+        {{ content | safe }} 
+    </div>
+</div>
