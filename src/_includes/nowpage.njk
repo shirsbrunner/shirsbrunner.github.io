@@ -11,17 +11,19 @@
   </h1>
 
         <div class="article_metrics">
-        {% if date %}<p class="time">Publication: <time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
-        {% if updateDate %}<p class="time">Updated on: <time datetime="{{ updateDate | dateymd }}">{{ updateDate | datefriendly }}</time></p>{% endif %}
-      </div>
+        {% if date %}<p class="time">Last updated on: <time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
+        </div>
 
   <div class="content_container">
     <div class="page_content flow">
       {{ content | safe }}
-      <div>
-      Whut? – I'm glad you ask. This is a <a href="https://nownownow.com/about">now page</a>, and if you have your own site, maybe you should make one, too?
-      
-      </div>
+      <h2>Whut?</h2>
+      <p>
+      I'm glad you ask. This is a <a href="https://nownownow.com/about">now page</a>, and if you have your own site, maybe you should make one, too?
+      </p>
+      <p>
+      This feels like a small thing to do, but maybe it isn't. I read a lot of people having problems updating now pages. Maybe you just don't feel like sharing some things with the world? Anyway, I'll give it a try and see what happens. 
+      </p>
     </div>
   </div>
 
