@@ -2,9 +2,9 @@
 
 
 {% if pagelist %}
-<p>Browse <a href="/tags">article tags</a> instead</p>
-<div class="pagelist flow_s flow">
 
+<div class="pagelist flow_s flow">
+  <p>Browse <a href="/tags">article tags</a> instead</p>
   {%- for post in pagelist -%}
     {% include "partials/postpreview.njk" %}
   {%- endfor -%}

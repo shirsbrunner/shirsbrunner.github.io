@@ -140,6 +140,7 @@ main{ /*-- do we need to adjust this? --*/
 .content_container{ /*-- the flex container to float everything --*/
   display: flex;
   justify-content: flex-end;
+  margin-top: var(--space-m);
 }
 
 .center_content_container{
