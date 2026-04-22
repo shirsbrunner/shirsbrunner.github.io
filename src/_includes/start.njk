@@ -19,12 +19,12 @@
   </div>
   <div class="content_container center_content_container">
 
-    <div class="page_content flow">
-      <div class="flow_s pagelist flow">
+    <div class="page_content flow flow_l">
+      <div class="pagelist flow">
         {#{% include "partials/divider.njk" %}    #}
 
         <h2>From the log</h2>
-        <div class = "post_previews flow ad_headerincrement">
+        <div class = "post_previews flow flow_s ad_headerincrement">
           {# shows the latest article #}
           {% set postslist = collections.posts | head(-2) %}
             {%- for post in postslist -%}
@@ -42,7 +42,7 @@
         {#{% include "partials/divider.njk" %}    #}
 
         <h2>Latest type</h2>
-        <div class = "post_previews flow"> {#no headerincrement as different sizes anyway#}
+        <div class = "post_previews flow flow_s"> {#no headerincrement as different sizes anyway#}
           {# shows the latest typespecimen #}
           {% set typelist = collections.typefaces | head(-2) %}
             {%- for post in typelist -%}

@@ -451,7 +451,7 @@ blockquote p {
 }
 
 .pagelist {
-  padding-top: var(--space-l); 
+  /*padding-top: var(--space-l); 
   /*display:flex;
   flex-direction:column;*/ /*flexbox replaced by gap? */
   /*--flow-space: var(--space-l); /*-- sets the gap for flow --*/
