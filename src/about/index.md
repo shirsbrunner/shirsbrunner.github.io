@@ -18,17 +18,9 @@ I'm currently more focused at doing the "X" than the "I" of everything related t
 
 I have some degrees in marketing, media science, computer science and have worked in a lot of fields including media research, business consulting, user experience and accessibility. I've also been cutting grass in the mountains using a scythe ages ago, distributed newspapers in the morning hours or worked on a supermarket checkout. 
 
-When I'm not working I like to cook, build little kids LEGO dreams or cardboard armour, visit friends and family, travel to near and far away places where I try to take lots of pictures, look after our jungle at home, read a lot of books, make mustard, design mainly digital things, like this page (made with [eleventy](https://www.11ty.dev/)), the odd computer game or fonts only I will most probably ever use. I like to draw brand-images to put on other things, layout stuff for invitations, flyers or books for myself and other people, create stickers, have something printed for real, drink espresso, enjoy the sun and sometimes play the violin.
+When I'm not at work I like to cook, build little kids LEGO dreams or cardboard armour, visit friends and family, travel to near and far away places where I try to take lots of pictures, look after our jungle at home, read a lot of books, make mustard, design mainly digital things, like this page (made with [eleventy](https://www.11ty.dev/)), the odd computer game or fonts only I will most probably ever use. I like to draw brand-images to put on other things, layout stuff for invitations, flyers or books for myself and other people, create stickers, have something printed for real, drink espresso, enjoy the sun and sometimes play the violin.
 
 I don't update this very often, but I recently added a [now-page](../now/) if you're interested in more current topics.
-
-## Companies I've worked with
-In the last 10 years, I've mainly been working in agencies, consulting clients (sometimes over multiple years) including: 
-- Swiss Post
-- BLS (A Swiss Railway company)
-- SwissLife
-- Swiss Confederation
-- BKD (Bildungs und Kulturdirektion Kanton Bern)
 
 ## Things to look out for
 Where are the pictures...?
