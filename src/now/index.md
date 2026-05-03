@@ -2,7 +2,7 @@
 title: The time is now
 subtitle: Living in the moment
 description: Its already in the past
-date: 2026-04-18
+date: 2026-05-03
 layout: nowpage.njk
 ---
 
