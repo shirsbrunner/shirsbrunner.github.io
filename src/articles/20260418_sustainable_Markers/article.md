@@ -29,7 +29,7 @@ Since last year, I've been trying to find a marker alternative that can be used 
 
 ### Kaweco Sketch up pencil 5.6mm
 This pencil is really heavy and uses a 5.6mm lead. Sadly, the pencil lead is not really visible in a workshop setting. It comes with a very soft lead with 5B, alternatives are harder to find than I thought due to the thickness of the lead. There are colour replacement mines, that I want to try, but I couldn't find them in shops so far (apart from a white option, that does not really promise contrast on yellow post-it's). It's still a nice pencil for big sketches though, but it's a bit messy with the sharpener and adds a lot of graphite to the hands.
-> Viability: not a good option with the basic lead. The opacity or contrast ist not good enough. 
+> Viability: not a good option with the basic lead. The opacity or contrast is not good enough. 
 
 ### Sakura Coupy Marker
 Found in Japan, these "Markers" look more like a pencil for children. They are advertised as replacement for highlighers and seem to make an easily visible mark. Not sure, if they should be put into a pocket, or if they melt in the hand during a workshop. They seem to come in 3 different colours, different sets have different options. I couldn't find a black one, even though it should be available (based on an interent research).
