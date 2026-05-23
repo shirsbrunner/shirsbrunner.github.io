@@ -26,4 +26,4 @@ Next quest: Finding big enough jars to build a home-kombucha factory. While this
 
 ### 2026-03-23 Building a scoby, first try
 After boiling water, already steeping tee in sweet water, I destroyed the big jar during cleaning with hot water.
-Sadly, shops are already closed over the long weekend. Time to make ice-tea.
+Sadly, shops are already closed over the long weekend. Time to make ice-tea. Or just using a smaller 1l glass from the basement. I hope the scoby does not need "enough" tea, even though I believe that less added kombucha might reduce the probability of success. Let's see how this develops.
