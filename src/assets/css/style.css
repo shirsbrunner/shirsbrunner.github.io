@@ -181,7 +181,7 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 @font-face {
-  font-family: 'montserrat';
+  font-family: 'adoup';
   src: url('/fonts/structural/AD-Oup-ExtraBold.woff2') format('woff2'),
        url('/fonts/structural/AD-Oup-ExtraBold.woff') format('woff');
   font-weight: bold;
@@ -250,17 +250,17 @@ main{ /*-- do we need to adjust this? --*/
 /*- fonts for titles and things*/
 
 .start_hero{
-  font-family: "montserrat"; /*make no mistake - this is not a color*/
+  font-family: "adoup"; /*make no mistake - this is not a color*/
   /*letter-spacing: -0.06em;*/
   font-style: normal;
   font-weight: bold;
-  font-size: var(--step-5);/*3rem; /*-- needs to be adjusted for dynamic type --*/
+  font-size: var(--step-6);/*3rem; /*-- needs to be adjusted for dynamic type --*/
   line-height: var(--space-l-xl); /*-- needs to be adjusted for dynamic type --*/
 
 
   margin-top: 3.5rem;
   margin-bottom:0px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   overflow-wrap: break-word;
 }
 
@@ -289,15 +289,15 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 .big_text{
-  font-family: "montserrat";
+  font-family: "adoup";
   /*letter-spacing: -0.06em;*/
   font-style: normal;
   font-weight: bold;
-  font-size: var(--step-4);
+  font-size: var(--step-5);
   line-height: 0.6rem; /*-- needs to be adjusted for dynamic type --*/
   margin-top: 3.5rem;
   margin-bottom:0px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   overflow-wrap: break-word;
 }
 
@@ -318,8 +318,8 @@ h1, h2, h3 {
 
 h1{
   /*font-size: var(--step-4); /*300%*/
-  padding-top: var(--space-l);
-  margin-bottom: var(--space-s); /*0.2em;*/
+  padding-top: var(--space-xl);
+  margin-bottom: var(--space-l); /*0.2em;*/
 }
 
 h2, .ad_headerincrement h3{
