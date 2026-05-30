@@ -182,8 +182,8 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'montserrat';
-  src: url('/fonts/structural/Montserrat-Black.woff2') format('woff2'),
-       url('/fonts/structural/Montserrat-Black.woff') format('woff');
+  src: url('/fonts/structural/AD-Oup-ExtraBold.woff2') format('woff2'),
+       url('/fonts/structural/AD-Oup-ExtraBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 
