@@ -1,6 +1,6 @@
 ---
 title: Primera
-subtitle: Writing by hand
+subtitle: Written by hand
 description: Experiments with a first typeface
 date: 2021-03-09
 layout: typespecimen.njk
