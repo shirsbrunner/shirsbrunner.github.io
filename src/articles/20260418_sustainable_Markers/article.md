@@ -2,7 +2,7 @@
 title: Looking for a better marker
 description: Sustainability from the beginning
 date: 2026-04-19
-updateDate: 2026-05-06
+updateDate: 2026-06-24
 evolution: 1
 previewImage: GreenMarkers-Preview.png
 urlbase: '/articles/20260418_sustainable_Markers/' 
@@ -33,7 +33,8 @@ This pencil is really heavy and uses a 5.6mm lead. Sadly, the pencil lead is not
 
 ### Sakura Coupy Marker
 Found in Japan, these "Markers" look more like a pencil for children. They are advertised as replacement for highlighers and seem to make an easily visible mark. Not sure, if they should be put into a pocket, or if they melt in the hand during a workshop. They seem to come in 3 different colours, different sets have different options. I couldn't find a black one, even though it should be available (based on an interent research).
-> Viability: Sakura Coupy Markers bring quite a nice line on paper. However they don't have enough opacity without a lot of pressure to make them viable on a sticky note. The paper tends to crumble. They are however nicely suited for drawing or colouring. Overall a bit harder than a Caran d'Ache Neocolor. 
+> Viability: Sakura Coupy Markers bring quite a nice line on paper. However they don't have enough opacity without a lot of pressure to make them viable on a sticky note. The paper tends to crumble. They are however nicely suited for drawing or colouring. Overall a bit harder than a Caran d'Ache Neocolor.
+> Update: the Coupy Markers are really handy to be used as "no plastic" markers. I use them a lot while colouring parts of wireframes on papers. 
 
 ## Other pens I'm currently using
 - Brass Kaweco sport fountain pen. This still uses ink cartridges as everybody tells me that the converter alternative always generates a mess (the cardridge is refilled over the nib). The pen is very small when closed. Used with black ink for wireframes and basic designs. 
