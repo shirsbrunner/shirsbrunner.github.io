@@ -174,10 +174,13 @@ main{ /*-- do we need to adjust this? --*/
 /*-- own webfonts --*/
 @font-face {
   font-family: 'segunda';
-  src: url('/fonts/structural/segunda-bold-webfont.woff2') format('woff2'),
-       url('/fonts/structural/segunda-bold-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+  /*src: url('/fonts/structural/segunda-bold-webfont.woff2') format('woff2'),
+       url('/fonts/structural/segunda-bold-webfont.woff') format('woff');*/
+    src: url('/fonts/structural/GranCirculos-Regular-Webfont.woff2') format('woff2'),
+         url('/fonts/structural/GranCirculos-Regular-Webfont.woff') format('woff');    
+  font-feature-settings: "smcp" on;
+  /*font-weight: bold;*/
+  /*font-style: normal;*/
 }
 
 @font-face {
@@ -192,7 +195,7 @@ main{ /*-- do we need to adjust this? --*/
 @font-face {
   font-family: 'CourrierPrimeRegular';
   src: url('/fonts/structural/CourierPrimeSource-Regular.woff2') format('woff2'),
-       url('/fonts/structural/CourierPrimeSource-Regular.woff') format('woff');
+      url('/fonts/structural/CourierPrimeSource-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 
@@ -528,7 +531,7 @@ blockquote p {
 .article_metrics{ /*-- we need this in the article view for detailed metrics --*/
   margin: 0.5em 0px;
   font-family: 'segunda';
-  font-weight:bold;
+  /*font-weight:bold;*/
   font-size: var(--step--1); /*0.8rem*/
   line-height: 1rem;
   color: var(--middleGrey);
@@ -558,7 +561,7 @@ blockquote p {
 
 .time{ /*-- we need this in the article metrics and article preview --*/
   font-family: 'segunda';
-  font-weight:bold;
+  /*font-weight:bold;*/
   font-size: var(--step--1); /*0.8rem*/
   color: var(--middleGrey);
   margin: 0px var(--step--1) 0em 0px; /*margin: 0px 0.8em 0em 0px;*/   
