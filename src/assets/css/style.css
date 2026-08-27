@@ -176,11 +176,14 @@ main{ /*-- do we need to adjust this? --*/
   font-family: 'segunda';
   /*src: url('/fonts/structural/segunda-bold-webfont.woff2') format('woff2'),
        url('/fonts/structural/segunda-bold-webfont.woff') format('woff');*/
-    src: url('/fonts/structural/GranCirculos-Regular-Webfont.woff2') format('woff2'),
-         url('/fonts/structural/GranCirculos-Regular-Webfont.woff') format('woff');    
+    src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
+         url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');    
   font-feature-settings: "smcp" on;
   /*font-weight: bold;*/
   /*font-style: normal;*/
+  font-variation-settings:
+    "wght" 400,
+    "ROND" 0;
 }
 
 @font-face {
@@ -203,10 +206,13 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'grancirculos';
-  src: url('/fonts/structural/GranCirculos-Regular-Webfont.woff2') format('woff2'),
-       url('/fonts/structural/GranCirculos-Regular-Webfont.woff') format('woff');
+  src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
+       url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-variation-settings:
+    "wght" 400,
+    "ROND" 100;
 }
 
 @font-face {
