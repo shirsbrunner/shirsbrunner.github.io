@@ -173,11 +173,9 @@ main{ /*-- do we need to adjust this? --*/
 
 /*-- own webfonts --*/
 @font-face {
-  font-family: 'segunda';
-  /*src: url('/fonts/structural/segunda-bold-webfont.woff2') format('woff2'),
-       url('/fonts/structural/segunda-bold-webfont.woff') format('woff');*/
-    src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
-         url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');    
+  font-family: 'circulEdge';
+  src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
+      url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');    
   font-feature-settings: "smcp" on;
   /*font-weight: bold;*/
   /*font-style: normal;*/
@@ -536,7 +534,7 @@ blockquote p {
 
 .article_metrics{ /*-- we need this in the article view for detailed metrics --*/
   margin: 0.5em 0px;
-  font-family: 'segunda';
+  font-family: 'circulEdge';
   /*font-weight:bold;*/
   font-size: var(--step--1); /*0.8rem*/
   line-height: 1rem;
@@ -566,7 +564,7 @@ blockquote p {
 }
 
 .time{ /*-- we need this in the article metrics and article preview --*/
-  font-family: 'segunda';
+  font-family: 'circulEdge';
   /*font-weight:bold;*/
   font-size: var(--step--1); /*0.8rem*/
   color: var(--middleGrey);
@@ -713,7 +711,7 @@ a img.control_icon{
   margin-bottom: var(--space-3xs);
 }
 .post-tag{
-  font-family:'segunda';
+  font-family:'circulEdge';
   font-weight:bold; 
   font-size: var(--step--1); /*0.8rem*/
   text-decoration: none; 
@@ -811,7 +809,7 @@ hr{ /*a horizontal rule*/
   margin: var(--space-s) 0;/*2em 0;*/
   padding: 0 1em;
   line-height:1rem; 
-  font-family: 'segunda';
+  font-family: 'circulEdge';
   font-weight:bold;
 }
 
