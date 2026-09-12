@@ -2,7 +2,7 @@
 title: Making Kombucha
 description: ... or trying to
 date: 2026-05-23
-updateDate: 2026-06-24
+updateDate: 2026-09-12
 evolution: 1
 previewImage: Kombucha-Preview.png
 urlbase: '/articles/20260523_living_things/'
@@ -30,4 +30,7 @@ After boiling water, already steeping tee in sweet water, I destroyed the big ja
 Sadly, shops are already closed over the long weekend. Time to make ice-tea. Or just using a smaller 1l glass from the basement. I hope the scoby does not need "enough" tea, even though I believe that less added kombucha might reduce the probability of success. Let's see how this develops.
 
 ### 2026-06-24 Update
-No Scobie grow - the tea developed a layer, but it's improbable, that this is a scoby. Based on the instructions, a scobie should be present. This might either be related to the base drink (green tea is not recommendet for growing a scobie), to not having enough black tea, or to something completely different, like heat, chance and so on.
+No Scoby grow - the tea developed a layer, but it's improbable, that this is a scoby. Based on the instructions, a scoby should be present. This might either be related to the base drink (green tea is not recommendet for growing a scoby), to not having enough black tea, or to something completely different, like heat, chance and so on.
+
+### 2026-09-12 Buying a pet
+In hindsight, maybe this was a veeery thin Scoby. I bought a Scoby on the internet and successfully made Kombucha twice already. The small disc sank to the ground the first and the second time and a film grew on the top of the tea. Initially I thought this was yeast, and threw it away (still drinking the Kombucha). The second time I salvaged it and it's now fermenting tea in the vat. My fermenting glass is a bit wide and the scoby has the size of a small plate. Still, flavours are not bad. Apple smells a bit like vinegar, but tastes good. Sour cherries has a good taste and a lot more fizz. 
