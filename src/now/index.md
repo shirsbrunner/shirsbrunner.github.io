@@ -7,8 +7,12 @@ layout: nowpage.njk
 ---
 
 ## Life, Work and Projects
-It's very hot and my cargo bike is having troubles with the power (probably unrelated). It was recently stolen but they couldn't crack the lock. Always invest in a proper lock that can stop the non professional thieves. 
+Autumn is around the corner and public outdoor baths will close soon. The weather is still dry and warm – at least in the afternoon. I'm glad it's not as hot as it used to be a month ago. There is rain now and then. 
 
-Work is going well, I'm having a lot of fun in diverse projects. Still working on my setup as the office device does not let me install all my preferred tools..
+The bike is fixed and reliable again. The battery connector was broken, also some other fixes were needed with the wheel that was initially damaged in July. 
 
-Heat makes mo go more to the public baths than working on the computer, but I started reading an Experience Design book again: Designing Games (a guide to engineering experiences) from Tynan Sylvester - something I can recommend not only for game designers. 
+Glyphs 4 is out, I got a good discount and upgraded early. Having a lot of fun creating variable fonts (among others). It's really a joy to use and to do things with. I previously used a glyphs mini version. There is so much more possible with the current version. 
+
+Work is fun. There are some changes on the corner and some of my work will be visible eventually. Doing a lot of testing and studies again and working with statistics software again. 
+
+I'm still reading the book about Designing Games. Even though I like it very much, summer heath, Glyphs, holidays and other things took over a bit. Looking for longer evenings to finish it eventually. In other "news" I've been reading all of Boulets blog/notes/rogatons. Boulet is a french cartoonist. If you understand french, I can only recommend [Boulet's Website](https://bouletcorp.com/).
