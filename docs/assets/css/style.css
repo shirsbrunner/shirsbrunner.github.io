@@ -180,7 +180,7 @@ main{ /*-- do we need to adjust this? --*/
   /*font-weight: bold;*/
   /*font-style: normal;*/
   font-variation-settings:
-    "wght" 400,
+    "wght" 100,
     "ROND" 0;
 }
 
@@ -195,11 +195,21 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'CourrierPrimeRegular';
-  src: url('/fonts/structural/CourierPrimeSource-Regular.woff2') format('woff2'),
+
+    src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
+      url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');    
+  /*font-feature-settings: "smcp" on;
+  /*font-weight: bold;*/
+  /*font-style: normal;*/
+  font-variation-settings:
+    "wght" 120,
+    "ROND" 0;
+
+  /*src: url('/fonts/structural/CourierPrimeSource-Regular.woff2') format('woff2'),
       url('/fonts/structural/CourierPrimeSource-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-
+  */
 }
 
 @font-face {
@@ -209,8 +219,8 @@ main{ /*-- do we need to adjust this? --*/
   font-weight: normal;
   font-style: normal;
   font-variation-settings:
-    "wght" 400,
-    "ROND" 100;
+    "wght" 800,
+    "ROND" 1;
 }
 
 @font-face {
