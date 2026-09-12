@@ -13,6 +13,7 @@
   --buttonText: var(--darkGrey);
   --controlIcon: ;
   --discoColors:#fff; /*white for the light on day*/
+  --fontWeightFactor:1; /*multiplier for the fontweight in light/dark*/
 }
 :root.dark{ /*copy from below :root, misses the additional classes.... for dark...*/ 
   --red: rgb(255,127,80); 
@@ -29,6 +30,7 @@
   --buttonText: var(--textsampleWhite);
   --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
   --discoColors:var(--lightRed); /*white for the light on day*/
+  --fontWeightFactor:0.9; /*multiplier for the fontweight in light/dark*/
 }
 
 
@@ -48,6 +50,8 @@
     --buttonText: var(--textsampleWhite);
     --controlIcon: invert(64%) sepia(25%) saturate(2834%) hue-rotate(325deg) brightness(100%) contrast(104%);/* for red: invert(25%) sepia(19%) saturate(3528%) hue-rotate(324deg) brightness(123%) contrast(111%);*/
     --discoColors:var(--lightRed); /*white for the light on day*/
+    --fontWeightFactor:0.9; /*multiplier for the fontweight in light/dark*/
+
   }
 
   :root.light{ /*copy from above :root*/
@@ -65,6 +69,7 @@
     --buttonText: var(--darkGrey);
     --controlIcon: ;
     --discoColors:#fff; /*white for the light on day*/
+    --fontWeightFactor:1; /*multiplier for the fontweight in light/dark*/
   }  
 }
 
@@ -83,14 +88,18 @@ body {
     display:flex;
     flex-direction:column; /* The article fills all the space between header & footer*/
     /* end of Sticky-Footer-Stuff*/
-
-    font-family:CourrierPrimeRegular; /*- body-font -*/
-    font-weight: 400;
+    font-family:circulosBody; /*- body-font -*/
+    font-weight: var(--font-weight-body-copy);
     font-size: var(--step-0);
     /*max-width: 1024px;*/
     margin: 0px auto;
     color: var(--darkGrey);
-    align-items:center; 
+    align-items:center;
+
+    /*Font-Weights for variable fonts*/
+    --font-weight-time:calc(500*var(--fontWeightFactor));
+    --font-weight-heading:calc(900*var(--fontWeightFactor));
+    --font-weight-body-copy:calc(180*var(--fontWeightFactor));
 }
 
 .flow > * + * {
@@ -132,7 +141,6 @@ main{ /*-- do we need to adjust this? --*/
   margin-top: var(--space-2xl) ;/*4em;*/
   max-width: 1024px;
   width:100%;
-
   display:flex; 
   flex-direction: column;
 }
@@ -177,10 +185,7 @@ main{ /*-- do we need to adjust this? --*/
   src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
       url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');    
   font-feature-settings: "smcp" on;
-  /*font-weight: bold;*/
-  /*font-style: normal;*/
   font-variation-settings:
-    "wght" 100,
     "ROND" 0;
 }
 
@@ -194,22 +199,12 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 @font-face {
-  font-family: 'CourrierPrimeRegular';
+  font-family: 'circulosBody';
 
     src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
       url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');    
-  /*font-feature-settings: "smcp" on;
-  /*font-weight: bold;*/
-  /*font-style: normal;*/
   font-variation-settings:
-    "wght" 120,
     "ROND" 0;
-
-  /*src: url('/fonts/structural/CourierPrimeSource-Regular.woff2') format('woff2'),
-      url('/fonts/structural/CourierPrimeSource-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  */
 }
 
 @font-face {
@@ -219,7 +214,6 @@ main{ /*-- do we need to adjust this? --*/
   font-weight: normal;
   font-style: normal;
   font-variation-settings:
-    "wght" 800,
     "ROND" 1;
 }
 
@@ -330,7 +324,7 @@ h1::first-letter{
 h1, h2, h3 {
   font-family:'grancirculos';
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--font-weight-heading);
 }
 
 h1{
@@ -414,7 +408,7 @@ a.b_small:hover, a.b_small:active{
   font-family: grancirculos;
   font-size: var(--step-3);/*250%*/
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--font-weight-heading);
   margin: 0px; /*-- needs to be adjusted for dynamic type --*/
   margin-bottom: 1rem;
   letter-spacing: -0.06rem;
@@ -432,8 +426,8 @@ blockquote { /*-- not the metrics block-quote --*/
   border-left: 10px solid var(--lightRed);
   margin: 1.5em 0em;
   padding: 0.25em 10px;
-  font-family: 'CourrierPrimeRegular';
-  font-weight: 400;
+  font-family: 'circulosBody';
+  font-weight: var(--font-weight-body-copy);
   font-size: var(--step-0); /*1em*/
   line-height: 1em;
   color: var(--darkGrey);
@@ -545,7 +539,7 @@ blockquote p {
 .article_metrics{ /*-- we need this in the article view for detailed metrics --*/
   margin: 0.5em 0px;
   font-family: 'circulEdge';
-  /*font-weight:bold;*/
+  font-weight:var(--font-weight-time);
   font-size: var(--step--1); /*0.8rem*/
   line-height: 1rem;
   color: var(--middleGrey);
@@ -575,7 +569,7 @@ blockquote p {
 
 .time{ /*-- we need this in the article metrics and article preview --*/
   font-family: 'circulEdge';
-  /*font-weight:bold;*/
+  font-weight:var(--font-weight-time);
   font-size: var(--step--1); /*0.8rem*/
   color: var(--middleGrey);
   margin: 0px var(--step--1) 0em 0px; /*margin: 0px 0.8em 0em 0px;*/   
@@ -604,8 +598,8 @@ blockquote p {
 }
 
 .nav_top {
-  font-family: CourrierPrimeRegular, sans-serif;
-  font-weight: 400;
+  font-family: circulosBody, sans-serif;
+  font-weight: var(--font-weight-body-copy);
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -674,8 +668,8 @@ nav ul li a:hover { /*non selected hovered list elements*/
   border-top: 0.5px solid var(--middleGrey);
   margin-top: 32px; 
   padding-top: 8px;
-  font-family: CourrierPrimeRegular, sans-serif;
-  font-weight: 400;
+  font-family: circulosBody, sans-serif;
+  font-weight: var(--font-weight-body-copy);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -722,7 +716,7 @@ a img.control_icon{
 }
 .post-tag{
   font-family:'circulEdge';
-  font-weight:bold; 
+  font-weight:var(--font-weight-time);
   font-size: var(--step--1); /*0.8rem*/
   text-decoration: none; 
   display:inline-block; 
@@ -767,8 +761,8 @@ footer{
 }
 
 .bot_nav{
-  font-family: CourrierPrimeRegular, sans-serif;
-  font-weight: 400;
+  font-family: circulosBody, sans-serif;
+  font-weight: var(--font-weight-body-copy);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -819,7 +813,7 @@ hr{ /*a horizontal rule*/
   margin: var(--space-s) 0;/*2em 0;*/
   padding: 0 1em;
   line-height:1rem; 
-  font-family: 'circulEdge';
+  font-weight:var(--font-weight-time);
   font-weight:bold;
 }
 

@@ -28,7 +28,7 @@ DM_BTN.addEventListener("click", function() {
 
     } else {
       // ...apply the .dark-theme class to override the default light styles
-      console.log("now switching to dark?")
+      /*console.log("now switching to dark?")*/
       document.documentElement.classList.toggle("dark");
       var theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
       //console.log(theme);
