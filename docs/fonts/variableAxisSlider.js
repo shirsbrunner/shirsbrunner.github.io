@@ -9,7 +9,7 @@ const class_list = document.getElementById('type-sample').classList;
 //console.log("I have been loaded");
 
 input.addEventListener("input", (event) => {
-    //console.log(event.target.value);
+    console.log(event.target.value);
     removeFontsizeElements(class_list);
     addFontsizeElement(event.target.value); 
     //value.textContent = event.target.value;

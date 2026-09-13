@@ -45,13 +45,15 @@
       </script>
 
       <style>
+        
         @font-face {
           font-family: 'tt-AD-Oup-ExtraBold';
           src: url('../AD-Oup-ExtraBold.woff2') format('woff2'), 
           url('../AD-Oup-ExtraBold.woff') format('woff'); 
-        font-weight: normal;
-        font-style: normal;
-        }  
+          font-weight: normal;
+          font-style: normal;
+        } 
+        
       </style>
 
       <div class="typetesterContainer">
@@ -67,6 +69,9 @@
         <label for="fontsizeSelector">Font size: </label> 
           <input type="range" class="rangeInput" id="fontsizeSelector" name="fontsizeSelector" list="markers" min="-1" max="6" value="3"/>
       </div>
+      <!-- variable axis changer  - add it here -->
+
+      
 
       <!-- this is the content from the type-file - could describe the fonts a bit or something -->
       <h2>Typeface-Info</h2>
@@ -78,6 +83,10 @@
       <!-- the navigation -->
       <div class="post_nav">
         
+        
+          <div class="post_link_element" id="next_post">
+            <a class="post_link" href="/articles/20260913_variations/typetester/"><img src="/images/structural/Previous.svg" alt="next post" width="40" height="40">GranCirculos megapearls</a>
+          </div>
          
         <div class="post_link_element"> </div>
         
@@ -112,6 +121,7 @@
     <script type="text/javascript" src="/assets/js/darkmode.js"></script>
     
    <script type="text/javascript" src="/assets/js/fontsizeSlider.js"></script>
+   <script type="text/javascript" src="/assets/js/variableAxisSlider.js"></script>
     <script type="text/javascript" src="/assets/js/flavourizer.js"></script>
 </html>
 

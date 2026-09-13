@@ -9,7 +9,7 @@ const class_list = document.getElementById('type-sample').classList;
 //console.log("I have been loaded");
 
 input.addEventListener("input", (event) => {
-    console.log(event.target.value);
+    //console.log(event.target.value);
     removeFontsizeElements(class_list);
     addFontsizeElement(event.target.value); 
     //value.textContent = event.target.value;
@@ -23,7 +23,7 @@ function removeFontsizeElements() {
 
 // this concatenates and adds the new class
 function addFontsizeElement(eventValue) {
-    console.log("add was called"); 
+    //console.log("add was called"); 
     let newClass = "typeSize";
     newClass += eventValue;  
     class_list.add(newClass)

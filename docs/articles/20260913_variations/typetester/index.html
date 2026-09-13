@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ultra</title>
-  <meta name="description" content="A typeface for headings">
+  <title>GranCirculos megapearls</title>
+  <meta name="description" content="Type in multiple dimensions">
   <link rel="stylesheet" href="/assets/css/reset.css" />
   <link rel="stylesheet" href="/assets/css/utopia.css" />  
   <link rel="stylesheet" href="/assets/css/style.css" />
@@ -31,9 +31,9 @@
 
 
   <h1>
-    <span class="big_text">Ultra</span>
+    <span class="big_text">GranCirculos megapearls</span>
     <br>
-    <span class="subtitle"> Lots of dark pixels</span> 
+    <span class="subtitle"> Round, but also square!</span> 
   </h1>
     <div class="type_container">
     <div class="type_content">
@@ -46,21 +46,20 @@
 
       <style>
         
-        @font-face {
-          font-family: 'tt-AD-Ultra-Serif-ExtraBold';
-          src: url('../AD-Ultra-Serif-ExtraBold.woff2') format('woff2'), 
-          url('../AD-Ultra-Serif-ExtraBold.woff') format('woff'); 
-          font-weight: normal;
-          font-style: normal;
-        } 
+          @font-face {
+          font-family: 'tt-AD-GranCirculosVF';
+          src: url('../AD-GranCirculosVF.woff2') format('woff2'), 
+          url('../AD-GranCirculosVF.woff') format('woff'); 
+          font-weight:900; 
+          font-style: normal;}
         
       </style>
 
       <div class="typetesterContainer">
       <!-- this is the typetester -->
-        <div class="typetesterfield typeSize3" id="type-sample" contenteditable="true" style="font-family: 'tt-AD-Ultra-Serif-ExtraBold';">
+        <div class="typetesterfield typeSize3" id="type-sample" contenteditable="true" style="font-family: 'tt-AD-GranCirculosVF';">
           
-          Darkside of the moon!
+          Winds of change!
         </div>
       </div>
 
@@ -72,28 +71,37 @@
       <!-- variable axis changer  - add it here -->
 
       
+      <div class="fontsizeContainer"> <!--this probably needs an incrementer or with the axis name-->
+        <label for="variableAxesContainer">Weight</label> 
+          <input type="range" class="variableRangeInput" id=sliderWeight name=wght list="markers" min=0 max=900 value=400/>
+      </div>
+      <!--this probably also needs a JS-Element that changes the correct axis of the font on the page an incrementer or with the axis name-->
+      
+      <div class="fontsizeContainer"> <!--this probably needs an incrementer or with the axis name-->
+        <label for="variableAxesContainer">Terminals</label> 
+          <input type="range" class="variableRangeInput" id=sliderTerminals name=ROND list="markers" min=0 max=1 value=1/>
+      </div>
+      <!--this probably also needs a JS-Element that changes the correct axis of the font on the page an incrementer or with the axis name-->
+      
 
       <!-- this is the content from the type-file - could describe the fonts a bit or something -->
       <h2>Typeface-Info</h2>
-<p>Work in Progress! Something to maybe sometimes replace Montserrat on this page.
-No longer looks like Impact and has some serif appeal now (all over the place, but hey :D )</p>
+<p>Having a go at circulos again. I wasn't happy with the weight and made it thinner, then thicker, then changed the round endings with square ones, then kept both. Variable fonts for the win. I changed some curves and spacing along the way. A yes, it also has small-caps now in all weights. The original typeface is still available at font-weight:400.</p>
+<p>This is the main typeface for the page now. Round fits well with Oup and square is easier to read. The different weights are nice for headings and text.</p>
+<p>I even change weight a bit between dark- and lightmode. While this is not a full multiplex typeface (where all glyphs need the same space over all the weights) most of the characters share the same outline-characteristic over all weights.</p>
 <h2>Things to look out for</h2>
-<p>Adjustments, Kerning, Maybe a variable Font.</p>
+<p>It is a bit rushed - I got carried away. Kerning, Spacing in multiple dimensions: Hard Work and some planning, it seems... Surfing through interpolated space however: fun fun fun!</p>
  
 
       <!-- the navigation -->
       <div class="post_nav">
         
-        
-          <div class="post_link_element" id="next_post">
-            <a class="post_link" href="/articles/20251025_robazoid/typetester/"><img src="/images/structural/Previous.svg" alt="next post" width="40" height="40">Pixelorama8</a>
-          </div>
          
         <div class="post_link_element"> </div>
         
         
           <div class="post_link_element" id="previous_post"> 
-            <a class="post_link" href="/articles/20240602_Intro_dark_arts/typetester/">Ideala<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
+            <a class="post_link" href="/articles/20260530_blobs/typetester/">Oup<img src="/images/structural/Next.svg" alt="previous post" width="40" height="40"></a>
           </div>
         
       </div>

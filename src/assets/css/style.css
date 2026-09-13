@@ -891,7 +891,7 @@ hr{ /*a horizontal rule*/
   margin-bottom: var(--space-s);
 }
 
-.rangeInput {
+.rangeInput, .variableRangeInput {
   -webkit-appearance:none;
   outline:none; 
   background:var(--red);
@@ -900,7 +900,7 @@ hr{ /*a horizontal rule*/
 }
 
 /*thumbhandle for mozilla*/
-.rangeInput::-moz-range-thumb { 
+.rangeInput::-moz-range-thumb, .variableRangeInput::-moz-range-thumb { 
   width: 12px;
   height: 12px;
   background: var(--darkGrey);
@@ -910,7 +910,7 @@ hr{ /*a horizontal rule*/
 }
 
 /*thumb handle for chrome*/
-.rangeInput::-webkit-slider-thumb {
+.rangeInput::-webkit-slider-thumb, .variableRangeInput::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 12px;
@@ -921,10 +921,12 @@ hr{ /*a horizontal rule*/
   border: solid 1px var(--backgroundColor);
 }
 
-.rangeInput::-moz-range-thumb:hover, .rangeInput:focus::-moz-range-thumb{
+.rangeInput::-moz-range-thumb:hover, .rangeInput:focus::-moz-range-thumb,
+.variableRangeInput::-moz-range-thumb:hover, .variableRangeInput:focus::-moz-range-thumb{
   outline: var(--red) solid 3px;
 }
 
-.rangeInput::-webkit-slider-thumb:hover, .rangeInput:focus::-webkit-slider-thumb{
+.rangeInput::-webkit-slider-thumb:hover, .rangeInput:focus::-webkit-slider-thumb,
+.variableRangeInput::-webkit-slider-thumb:hover, .variableRangeInput:focus::-webkit-slider-thumb{
   outline: var(--red) solid 3px;
 }
