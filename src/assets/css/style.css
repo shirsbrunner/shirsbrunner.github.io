@@ -98,7 +98,7 @@ body {
 
     /*Font-Weights for variable fonts*/
     --font-weight-time:calc(500*var(--fontWeightFactor));
-    --font-weight-heading:calc(900*var(--fontWeightFactor));
+    --font-weight-heading:calc(700*var(--fontWeightFactor));
     --font-weight-body-copy:calc(220*var(--fontWeightFactor));
 }
 
@@ -211,7 +211,7 @@ main{ /*-- do we need to adjust this? --*/
   font-family: 'grancirculos';
   src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
        url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-style: normal;
   font-variation-settings:
     "ROND" 1;
