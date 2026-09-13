@@ -770,6 +770,12 @@ footer{
   max-width:1024px;
 }
 
+/*small space between elements - using a flexbox*/
+.small_space{
+  display:flex; 
+  gap: var(--space-xs);
+}
+
 /*the darkmode-toggle button*/
 button.dmbtntoggler {
   background-color:var(--buttonRed);
