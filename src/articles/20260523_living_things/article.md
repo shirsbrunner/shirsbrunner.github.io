@@ -3,7 +3,7 @@ title: Making Kombucha
 description: ... or trying to
 date: 2026-05-23
 updateDate: 2026-09-12
-evolution: 1
+evolution: 2
 previewImage: Kombucha-Preview.png
 urlbase: '/articles/20260523_living_things/'
 tags:
@@ -33,4 +33,15 @@ Sadly, shops are already closed over the long weekend. Time to make ice-tea. Or 
 No Scoby grow - the tea developed a layer, but it's improbable, that this is a scoby. Based on the instructions, a scoby should be present. This might either be related to the base drink (green tea is not recommendet for growing a scoby), to not having enough black tea, or to something completely different, like heat, chance and so on.
 
 ### 2026-09-12 Buying a pet
-In hindsight, maybe this was a veeery thin Scoby. I bought a Scoby on the internet and successfully made Kombucha twice already. The small disc sank to the ground the first and the second time and a film grew on the top of the tea. Initially I thought this was yeast, and threw it away (still drinking the Kombucha). The second time I salvaged it and it's now fermenting tea in the vat. My fermenting glass is a bit wide and the scoby has the size of a small plate. Still, flavours are not bad. Apple smells a bit like vinegar, but tastes good. Sour cherries has a good taste and a lot more fizz. 
+In hindsight, maybe the skin on top was a veeery thiny Scoby. After the summer holidays, I bought a Scoby on the internet. It was delivered in a bag with some starter Kombucha - a thin disc of 10cm in diameter. I've been using this to successfully make Kombucha twice already.
+
+The small disc sank to the ground of the brewing pot both times, and a thin film grew on the top of the tea. Initially I thought this was yeast, and threw it away (still drinking the Kombucha - apparently yeast can only change the taste). The second time I pulled it out with the starter scoby. It's now fermenting tea with his mom.
+
+My fermenting glass is a bit wide and the new scoby has the size of a breakfast plate.
+
+Flavours tested so far: 
+- Apple smells a bit like apple vinegar, but tastes good. Not too many bubbles. 
+- Sour cherries has a good taste and a lot more fizz. The bottles need burping daily. 
+
+## Sidenote
+Apparently, making Kombucha at an industrial scale is done in Switzerland for like 10 years now. The brewers also started doing soft drinks and seem to be behind the current Mate boom. 
