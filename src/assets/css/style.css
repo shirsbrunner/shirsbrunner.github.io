@@ -841,6 +841,7 @@ hr{ /*a horizontal rule*/
   align-items: center;
   justify-content: center; 
   min-height: 10rem; 
+  border-radius: 8px;
 }
 
 .typetesterContainer:focus-within { /*the parent field if the child has focus*/
@@ -885,11 +886,11 @@ hr{ /*a horizontal rule*/
 }
 
 .fontOptionContainer {
-  padding: var(--space-xs);
+  padding: var(--space-s);
   border: 0.5px solid var(--darkGrey);
   border-radius: 8px;
   display:flex;
-  gap: var(--space-l);
+  gap: var(--space-m);
   margin: var(--space-s) 0px var(--space-l) 0px;
   justify-content: space-evenly;
   flex-wrap: wrap; 
