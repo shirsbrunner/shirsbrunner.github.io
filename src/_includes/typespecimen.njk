@@ -46,19 +46,21 @@
       </div>
 
       <!-- fontsize selection -->
-      <div class="fontsizeContainer">
-        <label for="fontsizeSelector">Font size: </label> 
-          <input type="range" class="rangeInput" id="fontsizeSelector" name="fontsizeSelector" list="markers" min="-1" max="6" value="3"/>
-      </div>
-      <!-- variable axis changer  - add it here -->
+      <div class="fontOptionContainer">
+        <div class="fontsizeContainer">
+          <label for="fontsizeSelector">Font size: </label> 
+            <input type="range" class="rangeInput" id="fontsizeSelector" name="fontsizeSelector" list="markers" min="-1" max="6" value="3"/>
+        </div>
+        <!-- variable axis changer  - add it here -->
 
-      {% for item in (varAxes) %}
-      <div class="fontsizeContainer"> <!--this probably needs an incrementer or with the axis name-->
-        <label for="variableAxesContainer">{{item.name}}</label> 
-          <input type="range" class="variableRangeInput" id={{'slider' + item.name}} name={{item.axis}} list="markers" min={{item.low}} max={{item.high}} value={{item.start}}/>
+        {% for item in (varAxes) %}
+        <div class="fontsizeContainer"> <!--this probably needs an incrementer or with the axis name-->
+          <label for="variableAxesContainer">{{item.name}}</label> 
+            <input type="range" class="variableRangeInput" id={{'slider' + item.name}} name={{item.axis}} list="markers" min={{item.low}} max={{item.high}} value={{item.start}}/>
+        </div>
+        <!--this probably also needs a JS-Element that changes the correct axis of the font on the page an incrementer or with the axis name-->
+        {% endfor %}
       </div>
-      <!--this probably also needs a JS-Element that changes the correct axis of the font on the page an incrementer or with the axis name-->
-      {% endfor %}
 
       <!-- this is the content from the type-file - could describe the fonts a bit or something -->
       {{ content | safe }} 

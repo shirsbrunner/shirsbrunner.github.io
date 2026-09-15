@@ -64,25 +64,27 @@
       </div>
 
       <!-- fontsize selection -->
-      <div class="fontsizeContainer">
-        <label for="fontsizeSelector">Font size: </label> 
-          <input type="range" class="rangeInput" id="fontsizeSelector" name="fontsizeSelector" list="markers" min="-1" max="6" value="3"/>
-      </div>
-      <!-- variable axis changer  - add it here -->
+      <div class="fontOptionContainer">
+        <div class="fontsizeContainer">
+          <label for="fontsizeSelector">Font size: </label> 
+            <input type="range" class="rangeInput" id="fontsizeSelector" name="fontsizeSelector" list="markers" min="-1" max="6" value="3"/>
+        </div>
+        <!-- variable axis changer  - add it here -->
 
-      
-      <div class="fontsizeContainer"> <!--this probably needs an incrementer or with the axis name-->
-        <label for="variableAxesContainer">Weight</label> 
-          <input type="range" class="variableRangeInput" id=sliderWeight name=wght list="markers" min=0 max=900 value=400/>
+        
+        <div class="fontsizeContainer"> <!--this probably needs an incrementer or with the axis name-->
+          <label for="variableAxesContainer">Weight</label> 
+            <input type="range" class="variableRangeInput" id=sliderWeight name=wght list="markers" min=0 max=900 value=400/>
+        </div>
+        <!--this probably also needs a JS-Element that changes the correct axis of the font on the page an incrementer or with the axis name-->
+        
+        <div class="fontsizeContainer"> <!--this probably needs an incrementer or with the axis name-->
+          <label for="variableAxesContainer">Terminals</label> 
+            <input type="range" class="variableRangeInput" id=sliderTerminals name=ROND list="markers" min=0 max=1 value=1/>
+        </div>
+        <!--this probably also needs a JS-Element that changes the correct axis of the font on the page an incrementer or with the axis name-->
+        
       </div>
-      <!--this probably also needs a JS-Element that changes the correct axis of the font on the page an incrementer or with the axis name-->
-      
-      <div class="fontsizeContainer"> <!--this probably needs an incrementer or with the axis name-->
-        <label for="variableAxesContainer">Terminals</label> 
-          <input type="range" class="variableRangeInput" id=sliderTerminals name=ROND list="markers" min=0 max=1 value=1/>
-      </div>
-      <!--this probably also needs a JS-Element that changes the correct axis of the font on the page an incrementer or with the axis name-->
-      
 
       <!-- this is the content from the type-file - could describe the fonts a bit or something -->
       <h2>Typeface-Info</h2>
