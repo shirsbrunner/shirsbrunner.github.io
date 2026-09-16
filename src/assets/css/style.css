@@ -844,11 +844,14 @@ hr{ /*a horizontal rule*/
   /*border-radius: 8px;*/
   width: calc(100vw - (2 * (var(--space-2xs))));
   margin-left: calc(-50vw + 50% + var(--space-2xs));
-  padding: var(--space-s-2xs)
+  padding: var(--space-s-2xs); 
+  /*outline: #1f1b24 solid 700px;*/
+  
 }
 
 .typetesterContainer:focus-within { /*the parent field if the child has focus*/
   background-color: var(--textSampleMarkInverted);
+  box-shadow: -50px 0px 0px 0px var(--textSampleMarkInverted), 50px 0px 0px 0px var(--textSampleMarkInverted);
 } 
 
 .typetesterfield { /*the text-div*/
