@@ -836,12 +836,15 @@ hr{ /*a horizontal rule*/
 }
 
 .typetesterContainer{ /*the parent field*/
-  border: 1px solid var(--middleGrey);
+  /*border: 1px solid var(--middleGrey);*/
   display:flex; 
   align-items: center;
   justify-content: center; 
   min-height: 10rem; 
-  border-radius: 8px;
+  /*border-radius: 8px;*/
+  width: calc(100vw - (2 * (var(--space-2xs))));
+  margin-left: calc(-50vw + 50% + var(--space-2xs));
+  padding: var(--space-s-2xs)
 }
 
 .typetesterContainer:focus-within { /*the parent field if the child has focus*/
@@ -886,12 +889,12 @@ hr{ /*a horizontal rule*/
 }
 
 .fontOptionContainer {
-  padding: var(--space-s);
+  padding: var(--space-s-2xs);
   border: 0.5px solid var(--darkGrey);
   border-radius: 8px;
   display:flex;
   gap: var(--space-m);
-  margin: var(--space-s) 0px var(--space-l) 0px;
+  margin: var(--space-s) 0 var(--space-xl);
   justify-content: space-evenly;
   flex-wrap: wrap; 
   background-color: var(--lightGrey);
