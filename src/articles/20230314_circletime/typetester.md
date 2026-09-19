@@ -10,7 +10,9 @@ fontname: GranCirculos-Post
 ---
 
 ## Typeface-Info
-After square typefaces, why not make something round? Using circles and geometry did seem like an easy idea. This is the third iteration (with bigger circles). This typeface (well a different version) is used on the page. 
+After square typefaces, why not make something round? Using circles and geometry did seem like an easy idea. This is the third iteration (with bigger circles).
+
+This typeface (well a different version) was used on the page and has been replaced by MegaPearls, it's extendend and variable younger clone in september 2026. 
 
 ## Things to look out for
 Can be optimized using optical trickery and still has some spacing / kerning issues here and there. 

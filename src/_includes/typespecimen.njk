@@ -63,8 +63,9 @@
       </div>
 
       <!-- this is the content from the type-file - could describe the fonts a bit or something -->
+      <div class="font-text flow">
       {{ content | safe }} 
-
+      </div>
       <!-- the navigation -->
       <div class="post_nav">
         {% set nextPost = collections.typefaces | getNextCollectionItem(page) %}

@@ -68,3 +68,6 @@ I like the soft character of the typeface.
 
 ## Update 2023-03-26
 I adjusted the f and the corresponding ligatures, f now overshoots cap height. Also the r started to bug me and i shortened the [arm](https://typedrawers.com/discussion/3186/what-do-you-call-this-part-of-an-r) of the letter. Also updates to kerning.  
+
+## Update 2026-09-19
+There is now a variable typeface based on that one: MegaPearls, currently in use on this page. 

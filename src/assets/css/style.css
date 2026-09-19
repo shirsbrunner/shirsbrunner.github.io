@@ -88,7 +88,7 @@ body {
     display:flex;
     flex-direction:column; /* The article fills all the space between header & footer*/
     /* end of Sticky-Footer-Stuff*/
-    font-family:circulosBody; /*- body-font -*/
+    font-family:MPBody; /*- body-font -*/
     font-weight: var(--font-weight-body-copy);
     font-size: var(--step-0);
     /*max-width: 1024px;*/
@@ -181,9 +181,9 @@ main{ /*-- do we need to adjust this? --*/
 
 /*-- own webfonts --*/
 @font-face {
-  font-family: 'circulEdge';
-  src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
-      url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');    
+  font-family: 'megaEdge';
+  src: url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff2') format('woff2'),
+      url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff') format('woff');    
   font-feature-settings: "smcp" on;
   font-variation-settings:
     "ROND" 0;
@@ -199,18 +199,18 @@ main{ /*-- do we need to adjust this? --*/
 }
 
 @font-face {
-  font-family: 'circulosBody';
-  src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
-       url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');    
+  font-family: 'MPBody';
+  src: url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff2') format('woff2'),
+      url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff') format('woff');      
   size-adjust: 104%;
   font-variation-settings:
       "ROND" 0;
 }
 
 @font-face {
-  font-family: 'grancirculos';
-  src: url('/fonts/structural/AD-GranCirculosVF-Webfont.woff2') format('woff2'),
-       url('/fonts/structural/AD-GranCirculosVF-Webfont.woff') format('woff');
+  font-family: 'megaperls';
+  src: url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff2') format('woff2'),
+      url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff') format('woff');   
   /*font-weight: normal;*/
   font-style: normal;
   font-variation-settings:
@@ -322,7 +322,7 @@ h1::first-letter{
 }
 
 h1, h2, h3 {
-  font-family:'grancirculos';
+  font-family:'megaperls';
   font-style: normal;
   font-weight: var(--font-weight-heading);
 }
@@ -407,7 +407,7 @@ a.b_small:hover, a.b_small:active{
 }
 
 .subtitle{
-  font-family: grancirculos;
+  font-family: megaperls;
   font-size: var(--step-3);/*250%*/
   font-style: normal;
   font-weight: var(--font-weight-heading);
@@ -428,7 +428,7 @@ blockquote { /*-- not the metrics block-quote --*/
   border-left: 10px solid var(--lightRed);
   margin: 1.5em 0em;
   padding: 0.25em 10px;
-  font-family: 'circulosBody';
+  font-family: 'MPBody';
   font-weight: var(--font-weight-body-copy);
   font-size: var(--step-0); /*1em*/
   line-height: 1em;
@@ -540,7 +540,7 @@ blockquote p {
 
 .article_metrics{ /*-- we need this in the article view for detailed metrics --*/
   margin: 0.5em 0px;
-  font-family: 'circulEdge';
+  font-family: 'megaEdge';
   font-weight:var(--font-weight-time);
   font-size: var(--step--1); /*0.8rem*/
   line-height: 1rem;
@@ -570,7 +570,7 @@ blockquote p {
 }
 
 .time{ /*-- we need this in the article metrics and article preview --*/
-  font-family: 'circulEdge';
+  font-family: 'megaEdge';
   font-weight:var(--font-weight-time);
   font-size: var(--step--1); /*0.8rem*/
   color: var(--middleGrey);
@@ -600,7 +600,7 @@ blockquote p {
 }
 
 .nav_top {
-  font-family: circulosBody, sans-serif;
+  font-family: MPBody, sans-serif;
   font-weight: var(--font-weight-body-copy);
   display: flex;
   justify-content: space-between;
@@ -670,7 +670,7 @@ nav ul li a:hover { /*non selected hovered list elements*/
   border-top: 0.5px solid var(--middleGrey);
   margin-top: 32px; 
   padding-top: 8px;
-  font-family: circulosBody, sans-serif;
+  font-family: MPBody, sans-serif;
   font-weight: var(--font-weight-body-copy);
   display: flex;
   align-items: center;
@@ -717,7 +717,7 @@ a img.control_icon{
   margin-bottom: var(--space-3xs);
 }
 .post-tag{
-  font-family:'circulEdge';
+  font-family:'megaEdge';
   font-weight:var(--font-weight-time);
   font-size: var(--step--1); /*0.8rem*/
   text-decoration: none; 
@@ -763,7 +763,7 @@ footer{
 }
 
 .bot_nav{
-  font-family: circulosBody, sans-serif;
+  font-family: MPBody, sans-serif;
   font-weight: var(--font-weight-body-copy);
   display: flex;
   align-items: center;
