@@ -1,0 +1,24 @@
+
+  {"audio_streams": [
+    {
+      "Name": "SRF3",
+      "Stream": "https://stream.srg-ssr.ch/srgssr/srf3/aac/96"
+    },
+    {
+      "Name": "WorldWide FM",
+      "Stream": "https://worldwide-fm.radiocult.fm/stream"
+    },
+    {
+      "Name": "BBC World",
+      "Stream": "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
+    },
+    {
+      "Name": "-",
+      "Stream": "-"
+    },
+    {
+      "Name": "-",
+      "Stream": "-"
+    }
+  ]
+  }

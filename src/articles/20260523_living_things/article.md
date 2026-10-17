@@ -2,7 +2,7 @@
 title: Making Kombucha
 description: ... or trying to
 date: 2026-05-23
-updateDate: 2026-09-12
+updateDate: 2026-10-17
 evolution: 2
 previewImage: Kombucha-Preview.png
 urlbase: '/articles/20260523_living_things/'
@@ -39,9 +39,14 @@ The small disc sank to the ground of the brewing pot both times, and a thin film
 
 My fermenting glass is a bit wide and the new scoby has the size of a breakfast plate.
 
-Flavours tested so far: 
+### 2026-10-17 Getting fatter
+The kombucha seems to be at home in the big jar. It's getting fatter every day. I wonder if it's a bit tooo big for its habitat as the last batch was a bit on the vinegar side. Still, it looks oke not an issue so far. 
+
+### Flavours tested so far: 
 - Apple smells a bit like apple vinegar, but tastes good. Not too many bubbles. 
 - Sour cherries has a good taste and a lot more fizz. The bottles need burping daily. 
+- Ginger and Lemon create a very fresh drink.
+- Any Kombucha is very tasty with family made tonic water - will try Tonic-Sirup Kombucha eventually. 
 
 ## Sidenote
 Apparently, making Kombucha at an industrial scale is done in Switzerland for like 10 years now. The brewers also started doing soft drinks and seem to be behind the current Mate boom. 

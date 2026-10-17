@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"/> -->
+    <title>RadioWeaver</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <!--<link rel="manifest" href="manifest.json"/>-->
+    <link rel="icon" type="image/png" href="images/LogoM-512x512.png">
+    <script src="app.js" defer></script> <!-- this starts the app-script, that also subscribes the worker -->
+  </head>
+  <body>
+  <div class="sameRow">
+    <h1>RadioWeaver</h1>
+  </div>
+  <div class="content">
+      <!-- this is where content happens -->
+          <div class="radioFrame">
+            <audio id="theAudioPlayer" src="" preload="none"></audio> <!-- Source used to be http://stream.live.vc.bbcmedia.co.uk/bbc_world_service - now initialize-->
+            <!-- Note: the audio-player is visually hidden, adding the word controls into the audiobrackets shows it-->
+            <div class="topContainer">
+              <div class="buttonContainer">
+                <button class="flexButton button " id="playPauseButton" type="button">Off</button>
+                <div class="sameRow">
+                  <button class="flexButton button" id="volumeDown" type="button">Vol -</button>
+                  <button class="flexButton button " id="volumeUp" type="button">Vol +</button>
+                </div>
+              </div>
+              <div class="decoContainer">
+              </div>
+            </div>
+            <div class="radioButtonContainer">            
+              <form>
+                <fieldset id = "listTarget">
+                  <legend>Radios</legend>
+                  <div class="radioButtonCard">
+                    <input type="radio" id="rbutton0" name="stream" value="huey" />
+                    <label id="label0" for="rbutton0" >Huey</label>
+                  </div>
+                  <div class="radioButtonCard">
+                    <input type="radio" id="rbutton1" name="stream" value="dewey" />
+                    <label id="label1" for="rbutton1" >Dewey</label>
+                  </div>
+                  <div class="radioButtonCard">
+                    <input type="radio" id="rbutton2" name="stream" value="louie" />
+                    <label id="label2" for="rbutton2" >Louie</label>
+                  </div>
+                  <div class="radioButtonCard">
+                    <input type="radio" id="rbutton3" name="stream" value="louie" />
+                    <label id="label3" for="rbutton3" >Louie</label>
+                  </div>
+                  <div class="radioButtonCard">
+                    <input type="radio" id="rbutton4" name="stream" value="louie" />
+                    <label id="label4" for="rbutton4" >Louie</label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="buttonContainer sameRow">
+              <button class="button flexButton" id="tuneStationButton" type="button">Tune Selection</button>
+              <button class="button flexButton" id="downloadStationJSON" type="button">Export Stations</button>
+              <!--Input element, hidden, only accepts json-->
+              <input type="file" id="fileElem" accept=".json" /> 
+              <button class="button flexButton" id="fileSelect" type="button">Import Stations</button>
+
+            </div>
+
+            <dialog id="tunerDialog" autofocus>
+              <div class="dialogContainer">
+                <header>
+                  <h1>Change the current stream</h2>
+                </header>
+                <div class="dialogContent">
+                  <form>
+                          <div class="sameRowCondense formGroup">
+                            <label for="stream_name">Stream Name</label>
+                            <input class="dialog" type="text" id="stream_name" required />  
+                          </div>
+                          <div class="sameRowCondense formGroup">
+                            <label for="stream_input">Stream URL</label>
+                            <input class="dialog" type="text" id="stream_input" required />
+                          </div>  
+                    </form>
+                </div>
+                <div class="buttonList sameRow">
+                  <button id="tunerCloser" class="button borderless">close</button>
+                  <button class="button" type="button" id="changeRadio">Change Stream</button>
+                </div>
+              </div>  
+            </dialog>
+          </div>
+
+      <!-- This is where Content Ends-->
+  </div>
+  <div class="footer">
+    <!-- info-corner starts here -->
+    <hr class="dotted">
+    <button id="showInfo" class="button borderless">Toggle info</button>
+      <dialog id="infoCorner" autofocus>
+        <div class="dialogContainer">
+          <header>
+            <h1>Info</h1>
+          </header>
+          <div class="dialogContent">
+            <h2>Disclaimer</h2>
+            <p>Heavy work in progress. This app might make things even I don't expect. So use with caution.</p>
+            <p>Don't call me, if your Computer or phone opens a portal to the Underworld.</p>
+            <h2>What the app does</h2>
+            <p>It's a simple pwa allows to remember and play web radio sources</p>
+            <p>Future Features might include</p>
+              <ul>
+                <li>CHECK Load a stream from a list</li>
+                <li>CHECK change the content of the RadioButtons</li>
+                <li>CHECK Select from the list</li>
+                <li>CHECK Play back the selected stream</li>
+                <li>CHECK Write the JSON if something changes - well, storage</li>
+                <li>CHECK Service-Workers, remember the JSON - well, storage</li>
+                <li>CHECK Fluid app, based on Utopia</li>
+                <li>NOPE play pause could just be a stop-button unchecking all radios... it just pauses</li>
+                <li>fancy-pants animation with web audio API <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API">MDN-Link</a></a></li>
+                <li>maybe volume should be a slider</li>
+              </ul>
+            <p>Missing: this could always be improved</p>
+
+            <h2>radios for testing</h2>
+            <ul>
+              <li>https://stream.srg-ssr.ch/srgssr/srf3/aac/96</li>
+              <li>https://worldwide-fm.radiocult.fm/stream</li>
+            </ul>
+            <h2>PWA intro</h2>
+              <p>A PWA is a progressive web app - basically a programm running in the Browser. A PWA can be installed from different browsers and used offline.</p>
+              <p>Service workers ensure that it works offline, caching things. If done correctly, they should automatically update things as soon as there is web access</p>
+              <p>Uninstall it like any other app</p>
+            <h2>Questions?</h2>
+              <p>Drop me a line: <a href="https://artisandelux.ch">artisandelux</a></p>
+          </div>
+          <div class="buttonList">
+            <button id="closeInfo" class="button borderless">close</button>
+          </div>
+        </div>  
+      </dialog>
+    </div>
+  </body>
+</html>
