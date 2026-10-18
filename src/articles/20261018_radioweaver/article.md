@@ -1,5 +1,5 @@
 ---
-title: Surving the waves
+title: Surfing the waves
 description: Ready to radio
 date: 2026-10-18
 evolution: 1
