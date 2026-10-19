@@ -150,7 +150,28 @@ body {
     border-style:solid;
     border-color:var(--accent);
     border-radius: 0.5em;
-    flex: 3; 
+    flex: 3;
+    display:flex; 
+    align-items: center;
+    gap: 0.25em;
+    padding: 0.25em; 
+}
+
+.waveElement {
+    flex: 1; 
+    background-color: var(--lightblue); 
+    /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?colors=053dbe@0,01d72f@100&gt=l&gd=dtt&from=css
+    */
+    background: linear-gradient(0deg in oklch, var(--lightblue) 0%, var(--darkblue) 50%, var(--lightblue) 100%);
+    /*depending on amount a border is not a good idea */
+    border-style: solid; 
+    border-color: var(--lightblue); 
+    border-width: 1px;
+    height: 25%; 
+    border-radius: 0.25em; 
+    transition: height 0.1s;
 }
 
 .radioButtonContainer {

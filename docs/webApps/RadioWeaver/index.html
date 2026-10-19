@@ -18,8 +18,9 @@
   <div class="content">
       <!-- this is where content happens -->
           <div class="radioFrame">
-            <audio id="theAudioPlayer" src="" preload="none"></audio> <!-- Source used to be http://stream.live.vc.bbcmedia.co.uk/bbc_world_service - now initialize-->
+            <audio id="theAudioPlayer" crossorigin=""  src="" preload="none"></audio> <!-- Source used to be http://stream.live.vc.bbcmedia.co.uk/bbc_world_service - now initialize-->
             <!-- Note: the audio-player is visually hidden, adding the word controls into the audiobrackets shows it-->
+            <!-- While obvs the streams are CORS, audio by itself works but not the context... -->
             <div class="topContainer">
               <div class="buttonContainer">
                 <button class="flexButton button " id="playPauseButton" type="button">Off</button>
@@ -28,7 +29,12 @@
                   <button class="flexButton button " id="volumeUp" type="button">Vol +</button>
                 </div>
               </div>
-              <div class="decoContainer">
+              <div class="decoContainer" id="waveContainer">
+                <!--
+                <div class="waveElement" id="wave1"></div>
+                <div class="waveElement" id="wave2"></div>
+                <div class="waveElement" id="wave3"></div>
+                -->
               </div>
             </div>
             <div class="radioButtonContainer">            
@@ -105,34 +111,23 @@
           </header>
           <div class="dialogContent">
             <h2>Disclaimer</h2>
-            <p>Heavy work in progress. This app might make things even I don't expect. So use with caution.</p>
-            <p>Don't call me, if your Computer or phone opens a portal to the Underworld.</p>
+            <p>This app might make things even I don't expect.</p>
+            <p>Don't call me, if your Computer or phone opens a portal to the underworld.</p>
             <h2>What the app does</h2>
             <p>It's a simple pwa allows to remember and play web radio sources</p>
-            <p>Future Features might include</p>
+            <p>It can store 5 streams for your convenience</p>
+            <p>Web Radio streams can be found everywhere on the internet</p>
+            <h2>Future Features might include</h2>
               <ul>
-                <li>CHECK Load a stream from a list</li>
-                <li>CHECK change the content of the RadioButtons</li>
-                <li>CHECK Select from the list</li>
-                <li>CHECK Play back the selected stream</li>
-                <li>CHECK Write the JSON if something changes - well, storage</li>
-                <li>CHECK Service-Workers, remember the JSON - well, storage</li>
-                <li>CHECK Fluid app, based on Utopia</li>
-                <li>NOPE play pause could just be a stop-button unchecking all radios... it just pauses</li>
-                <li>fancy-pants animation with web audio API <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API">MDN-Link</a></a></li>
-                <li>maybe volume should be a slider</li>
+                <li>Maybe volume should be a slider</li>
+                <li>Maybe the volume button layout needs to be different on mobile</li>
+                <li>I need to make some icons for this</li>
               </ul>
             <p>Missing: this could always be improved</p>
-
-            <h2>radios for testing</h2>
-            <ul>
-              <li>https://stream.srg-ssr.ch/srgssr/srf3/aac/96</li>
-              <li>https://worldwide-fm.radiocult.fm/stream</li>
-            </ul>
             <h2>PWA intro</h2>
               <p>A PWA is a progressive web app - basically a programm running in the Browser. A PWA can be installed from different browsers and used offline.</p>
-              <p>Service workers ensure that it works offline, caching things. If done correctly, they should automatically update things as soon as there is web access</p>
-              <p>Uninstall it like any other app</p>
+              <p>Service workers ensure that it works offline, caching things. If done correctly, they should automatically update things as soon as there is web access.</p>
+              <p>Uninstall it like any other app.</p>
             <h2>Questions?</h2>
               <p>Drop me a line: <a href="https://artisandelux.ch">artisandelux</a></p>
           </div>

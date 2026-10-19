@@ -58,6 +58,12 @@ const initialRadioJSONUrl = "sources.json"; //where the initial stations are sto
 const STORAGE_KEY = "radio-stations"; //where the radios will be kept in storage
 
 var frequencyData //the audioStreamFrequencyData
+var audioCtx // this will be the audiocontext
+var audioAnalyser // this will be the audioanalyser
+const targetfftSize = 32;
+const waveContainer = document.getElementById("waveContainer");
+var waveContainerHeight = waveContainer.offsetHeight; 
+var waveRunning = false; 
 
 /* ---------------------------------
 Initialize
@@ -71,41 +77,84 @@ async function initialize(){
   attachRadioListeners();
   theAudioPlayer.volume = initialVolume;
   //load the audio visualizer
-  //loadAudioContext(); 
+  loadAudioContext(); 
 }
 
 /* ---------------------------------
 THIS is the audio stream analyser based from here: 
 https://www.patrick-wied.at/blog/how-to-create-audio-visualizations-with-javascript-html
 Currently, this does not really work (cross-origin-problem)
-
-
 --------------------------------- */
 
 function loadAudioContext(){
-  var ctx = new AudioContext();
-  var audioSrc = ctx.createMediaElementSource(theAudioPlayer);
-  var analyser = ctx.createAnalyser();
+  audioCtx = new AudioContext();
+  var audioSrc = audioCtx.createMediaElementSource(theAudioPlayer);
+  audioAnalyser = audioCtx.createAnalyser();
+  // we could configure the analyser: e.g. analyser.fftSize (for further infos read the spec) 
   // we have to connect the MediaElementSource with the analyser 
-  audioSrc.connect(analyser);
-  
+  audioSrc.connect(audioAnalyser);
+  // line found here: https://github.com/mathiasvr/audio-oscilloscope/issues/2
+  audioSrc.connect(audioCtx.destination);
+  //fftSize: set this for the amount of bars. 
+  //check this for numbers: https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/frequencyBinCount
+
+  audioAnalyser.fftSize = targetfftSize;
   // frequencyBinCount tells you how many values you'll receive from the analyser
-  frequencyData = new Uint8Array(analyser.frequencyBinCount);
-}
-  // we could configure the analyser: e.g. analyser.fftSize (for further infos read the spec)
- 
-function renderFrame() {
-  requestAnimationFrame(renderFrame);
-  // update data in frequencyData
-  analyser.getByteFrequencyData(frequencyData);
-  // render frame based on values in frequencyData
-  console.log(frequencyData)
+  frequencyData = new Uint8Array(audioAnalyser.frequencyBinCount);
+  createWaveDivs(targetfftSize/2);
+  renderFrame();
 }
 
-//turn this into a loop - I guess? 
-//Starting the Radio should start this loop
-function audioFrequencyLooper(){
-  renderFrame();
+// This loops itself rendering frames of data
+// Should probably use a start stop mechanism somewhere...
+function renderFrame() {
+  if (waveRunning) {
+    // if visualised, set frequency data to real data
+    requestAnimationFrame(renderFrame);
+    audioAnalyser.getByteFrequencyData(frequencyData);
+  } else {
+    // if not visualised anymore, set frequencyData by hand
+    var baseHeight = 10; 
+    for (var i = 0; i < frequencyData.length; ++i) {
+        frequencyData[i] = baseHeight;
+    }
+  }
+  // get height of Container
+  waveContainerHeight = waveContainer.offsetHeight;
+  // visualise
+  visualiseFrenquency();
+}
+
+function visualiseFrenquency(){
+    // render frame based on values in frequencyData
+    // the following gives out a lot of data :D
+    //console.log(frequencyData)
+    for(let i=0; i < (targetfftSize/2); i++){
+      setWaveHeight(i, frequencyData[i]);
+    }
+}
+
+function setWaveHeight(index, height){
+  var tempDiv = document.getElementById("wave"+index);
+  // Quick and dirty safety-net... only scale to 80%...
+  // normalize height
+  var calcHeight = height/255*waveContainerHeight*0.8; 
+  tempDiv.style.height = calcHeight+"px"
+}
+
+// functions to create the divs for the visualization
+function createWaveDivs(count){
+  for (let i = 0; i < count; i++) {
+    var currentDiv = createSingleWaveDiv(i);
+    waveContainer.appendChild(currentDiv);
+  }
+}
+
+function createSingleWaveDiv(index){
+  var wave = document.createElement('div');
+  wave.id = "wave"+index;
+  wave.className = "waveElement"
+  return wave; 
 }
 
 /* ---------------------------------
@@ -433,7 +482,8 @@ pauseButton.addEventListener("click", () => {
     let buttonIDString = "rbutton"+currentIndex;
     let currentButton = document.getElementById(buttonIDString);
     if(Debug){console.log(currentButton)};
-    currentButton.checked = false; //unset the index. 
+    currentButton.checked = false; //unset the index.
+    waveRunning = false; //unset the waverunner
   }
 })
 
@@ -464,6 +514,11 @@ async function setCurrentStream(stream, initial){
       }).catch(function(error){
           playStatic(); 
           //setCurrentStream(staticLink); // play the static file
+      }).finally(function(){
+          // set the wave runner flag
+          waveRunning = true; 
+          // kick on the visualizer
+          renderFrame(); 
       }); 
     }
     if (Debug){console.log("audio player playing something");}  

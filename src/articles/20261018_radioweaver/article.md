@@ -2,7 +2,8 @@
 title: Surfing the waves
 description: Ready to radio
 date: 2026-10-18
-evolution: 1
+updateDate: 2026-10-19
+evolution: 2
 previewImage: RadioWeaver-Preview.png
 urlbase: '/articles/20261018_radioweaver/'
 tags:
@@ -61,10 +62,12 @@ Don't trust the app (yet)? Just click any stream you find and your browser will 
 - Change a single radiostation if you must (give it a name and a stream)
 - Only 5 Radiostations. 
 - Works like these car radios from the olden times, with 5 Radiobuttons (why would you need more) and a stop button.
+- Now there's a fancy visualisation using Audiocontext. As far as I read the documentation, the animation should stop refreshing, when offscreen – thus hopefully not draining mobile phone batteries. It also stops updating, when pausing the music. 
 
 ### Things that probably need fixing
 - There are only 3 out of 5 radiostations at the start. If you use an Iphone, Radiostations need changing every time you open the app, I guess - Hopefully Apple will somewhen in the future allow to install PWAs easily. 
 - Sometimes when switching, Radiostations don't load and there is only selfmade static even though the radios should be there... I guess it's related to switching too fast, while the stream has not yet been loading.
+- Pictos, this needs some radio-pictos from the icon font...
 
 ### Notable things
 - Even thought I try to sanitise some inputs, don't just upload anything you find on the internet...
