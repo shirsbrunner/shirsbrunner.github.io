@@ -49,7 +49,7 @@ After landing on CJ Dunns work playlist via social media (check out his type wor
 
 <div class="cta">
 
-Still very WIP (See below, but here you go) [Get the app here](/webApps/RadioWeaver/)
+Well, it plays radio - still checking out everything [Get the radioweaver here](/webApps/RadioWeaver/)
 
 </div>
 

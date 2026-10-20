@@ -221,6 +221,21 @@ body {
     color: var(--background);
 }
 
+.formGroup {
+    align-items: center !important;
+}
+
+.formGroup > .dialog {
+    border: 2px solid var(--lightblue);
+    background-color: var(--inputBack);
+    color: var(--lightblue);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem 0.4rem;
+    margin: 0;
+    font: 1rem / 1.5 'megaperls';
+    display: block;
+}
+
 @media(hover:hover){
     /*These are media queries for hovering on devices that actually have hover, else nothing
     See: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/hover*/
