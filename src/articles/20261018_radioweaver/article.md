@@ -2,7 +2,7 @@
 title: Surfing the waves
 description: Ready to radio
 date: 2026-10-18
-updateDate: 2026-10-19
+updateDate: 2026-10-21
 evolution: 2
 previewImage: RadioWeaver-Preview.png
 urlbase: '/articles/20261018_radioweaver/'
@@ -42,14 +42,14 @@ How to embrace the exploring again and why would you change your habits? Suddend
 
 In my case, it's also switching jobs into a more restricted ecosystem. Working as an inhouse designer has its advantages and its drawbacks. Not working on my own machine I'm hesitant on just using youtube in the office browser. To stream it to the mobile phone, the phone must be active, else the stream stops (because google want's to sell an upgrade).
 
-## The appeal of webradio
+## Why not just use radio again
 I don't know about you, and maybe I'm a romantic, but radio is currently ticking a lot of boxes for me. Other people listen to radio too. And with the internet, we can listen to radios from allover the world.
 
 After landing on CJ Dunns work playlist via social media (check out his type work over at [CJType](https://cjtype.com/)), I felt inspired to building (read glueing together) another PWA - this time, it's a webradio. 
 
 <div class="cta">
 
-Well, it plays radio - still checking out everything [Get the radioweaver here](/webApps/RadioWeaver/)
+Well, it plays radiostations from allover the world - still checking out and fixing things [Get the radioweaver here](/webApps/RadioWeaver/)
 
 </div>
 
@@ -57,18 +57,17 @@ Don't trust the app (yet)? Just click any stream you find and your browser will 
 
 ## Some notes about the app
 ### Features
-- PWA - add your own radios
+- PWA - add your own radios using the dialog or import
 - Export your radios as a JSON and import them in another instance, or when switching devices.
 - Change a single radiostation if you must (give it a name and a stream)
-- Only 5 Radiostations. 
 - Works like these car radios from the olden times, with 5 Radiobuttons (why would you need more) and a stop button.
-- Now there's a fancy visualisation using Audiocontext. As far as I read the documentation, the animation should stop refreshing, when offscreen – thus hopefully not draining mobile phone batteries. It also stops updating, when pausing the music. 
+- Now there's a fancy visualisation using Audiocontext. As far as I read the documentation, the animation should stop refreshing, when offscreen – thus hopefully not draining mobile phone batteries while walking and listening. It also stops updating, when pausing the music. 
+- Also puts the player into pause, when headphones disconnect
 
 ### Things that probably need fixing
-- There are only 3 out of 5 radiostations at the start. If you use an Iphone, Radiostations need changing every time you open the app, I guess - Hopefully Apple will somewhen in the future allow to install PWAs easily. 
-- Sometimes when switching, Radiostations don't load and there is only selfmade static even though the radios should be there... I guess it's related to switching too fast, while the stream has not yet been loading.
+- There are only 3 out of 5 radiostations at the start. If you use an Iphone, Radiostations need changing every time you open the app, I guess - Tough life, but Apple will hopefully somewhen in the future allow to install PWAs easily. 
+- Sometimes when switching, Radiostations don't load and there is only selfmade static even though the radios should be there... I guess it's related to switching too fast, while the stream has not yet been loading. In the meantime, just turn on / off. 
 - Pictos, this needs some radio-pictos from the icon font...
 
 ### Notable things
 - Even thought I try to sanitise some inputs, don't just upload anything you find on the internet...
-- I'm thinking about some sort of visualisation in the orange box on the upper right. But maybe I'll just fake it visually into a loudspeaker. 

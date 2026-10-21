@@ -474,6 +474,7 @@ function getCurrentRadioIndex(){
   }
 });*/
 
+//if it's pushed to stop
 pauseButton.addEventListener("click", () => {
   if(isPlaying(theAudioPlayer)){
     theAudioPlayer.pause();
@@ -485,7 +486,24 @@ pauseButton.addEventListener("click", () => {
     currentButton.checked = false; //unset the index.
     waveRunning = false; //unset the waverunner
   }
-})
+});
+
+//if it stops by itself i.e., headset unplugged
+//check if "ended" is the correct event - setting this to pause
+theAudioPlayer.addEventListener('pause', () => {
+    if(Debug){console.log("auto turning off")};
+    var currentIndex = getCurrentRadioIndex(); 
+    let buttonIDString = "rbutton"+currentIndex;
+    let currentButton = document.getElementById(buttonIDString);
+    if(Debug){console.log(currentButton)};
+    currentButton.checked = false; //unset the index.
+    waveRunning = false; //unset the waverunner
+});
+
+
+
+
+
 
 // checks if the player is currently playing music, used in the playPauseButton
 function isPlaying(audioPlayer) {

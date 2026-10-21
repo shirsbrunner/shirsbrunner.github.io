@@ -141,6 +141,10 @@ body {
     flex: 1;
 }
 
+.volumeFlex{
+    flex-direction: row-reverse !important; /*Overriding flex direction where necessary*/
+}
+
 .flexButton {
     flex-grow: 1 !important;
 }
