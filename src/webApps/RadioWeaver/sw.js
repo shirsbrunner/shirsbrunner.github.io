@@ -3,7 +3,7 @@
 // Check this: https://goingoffline.adactio.com/chapter1/
 // And this: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Service_workers
 
-const VERSION = "v0.5"; //update this to increase version
+const VERSION = "v0.6"; //update this to increase version
 const CACHE_NAME = `RadioWeaver-${VERSION}`; //name of the cache, increases with version
 
 const assetsToCache = [ //stuff it should cache
@@ -16,7 +16,9 @@ const assetsToCache = [ //stuff it should cache
     './images/LogoM-1024x1024.png',
     './app.js',
     './fonts/AD-MegaPearlsVF.woff',
-    './fonts/AD-MegaPearlsVF.woff2',   
+    './fonts/AD-MegaPearlsVF.woff2',
+    './fonts/ADMiyconosNG-Regular-RWS.woff',
+    './fonts/ADMiyconosNG-Regular-RWS.woff2',   
     './style.css', 
     './reset.css', 
     './Sounds/static.mp3'

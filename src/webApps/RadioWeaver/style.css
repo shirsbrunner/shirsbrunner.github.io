@@ -13,47 +13,36 @@ Note: all colours only work on black...
   }
 
 /*TODO Change Fontface to Megaperls*/
-/*
-@font-face {
-    font-family: 'circulos';
-    src:  url('fonts/GranCirculos-Regular.woff2') format('woff2'),
-          url('fonts/GranCirculos-Regular.woff') format('woff');
-}*/
 
 @font-face {
     font-family: 'megaperls';
-    src:  url('fonts/AD-MegaPearlsVF.woff') format('woff2'),
-          url('fonts/AD-MegaPearlsVF.woff2') format('woff');
+    src:  url('fonts/AD-MegaPearlsVF.woff') format('woff'),
+          url('fonts/AD-MegaPearlsVF.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Miyconos';
+    src:  url('fonts/ADMiyconosNG-Regular-RWS.woff') format('woff'),
+          url('fonts/ADMiyconosNG-Regular-RWS.woff2') format('woff2');
 }
 
 /*
-@font-face {
-  font-family: 'megaEdge';
-  src: url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff2') format('woff2'),
-      url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff') format('woff');    
-  font-feature-settings: "smcp" on;
-  font-variation-settings:
-    "ROND" 0;
-}
-
-@font-face {
-  font-family: 'adoup';
-  src: url('/fonts/structural/AD-Oup-ExtraBold.woff2') format('woff2'),
-       url('/fonts/structural/AD-Oup-ExtraBold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'MPBody';
-  src: url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff2') format('woff2'),
-      url('/fonts/structural/AD-MegaPearlsVF-Webfont.woff') format('woff');      
-  size-adjust: 104%;
-  font-variation-settings:
-      "ROND" 0;
-}
+Icons for the Buttons - see here:
+https://glyphsapp.com/learn/creating-an-icon-webfont
 */
+[data-icon]:before {
+    font-family: 'Miyconos';
+    content: attr(data-icon);
+    color:var(--darkblue);
+    font-size: var(--step-1)
+   /*remains to be seen if I need to hide this. */
+}
+
+@media (hover: hover) {
+    .button:hover > [data-icon]:before {
+        color:var(--background); 
+    }
+}
 
 /* enter utopia
 /* @link https://utopia.fyi/type/calculator?c=320,16,1.333,1024,28,1.414,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
