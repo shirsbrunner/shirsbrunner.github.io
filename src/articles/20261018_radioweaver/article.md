@@ -2,7 +2,7 @@
 title: Surfing the waves
 description: Ready to radio
 date: 2026-10-18
-updateDate: 2026-10-21
+updateDate: 2026-10-23
 evolution: 2
 previewImage: RadioWeaver-Preview.png
 urlbase: '/articles/20261018_radioweaver/'

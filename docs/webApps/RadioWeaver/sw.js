@@ -3,7 +3,7 @@
 // Check this: https://goingoffline.adactio.com/chapter1/
 // And this: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Service_workers
 
-const VERSION = "v0.6"; //update this to increase version
+const VERSION = "v0.7"; //update this to increase version
 const CACHE_NAME = `RadioWeaver-${VERSION}`; //name of the cache, increases with version
 
 const assetsToCache = [ //stuff it should cache
