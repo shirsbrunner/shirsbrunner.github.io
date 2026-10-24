@@ -2,7 +2,7 @@
 title: Icons & Ligatures - Creating an icon font
 description: There are icon fonts available, but you can make your own and learn about ligatures among other things
 date: 2021-06-25
-updateDate: 2025-03-17
+updateDate: 2026-10-24
 evolution: 2
 urlbase: '/articles/20210625_Type_Miyconos/'
 previewImage: Miyconos-Preview.png
@@ -26,8 +26,8 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
 
 @font-face {
   font-family: 'miyconos_post';
-  src: url('/articles/20210625_Type_Miyconos/AD-Miyconos-Regular.woff2') format('woff2'),
-       url('/articles/20210625_Type_Miyconos/AD-Miyconos-Regular.woff') format('woff');
+  src: url('/articles/20210625_Type_Miyconos/ADMiyconosNG-Regular.woff2') format('woff2'),
+       url('/articles/20210625_Type_Miyconos/ADMiyconosNG-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -132,3 +132,17 @@ A lot of the icons still need a touch up and I have yet to check for hidden chan
 
 ## Update 2025-03-17
 The icons above are now smaller in size and have slight space around. I tried to adjust the line weights and also use more similar sizes for similar shapes. Some icons are still way darker than others given the need for more details. I also removed some of the icons and added others. I hope nobody did use that set for anything special (well me) - else make sure to adjust your icons a bit. 
+
+## Update 2026-10-24
+New icons! I needed some additional icons for play/pause/stop/volume in the radioweaver project. These are added now. Furthermore, the icons are now also having a unicode value in the private use area (E000-somewhere, I skipped some, completely forgetting, that unicode is in hex...). Why unicode? Glyphs can be integrated in a more screenreader-friendly way, while currently, they just announce the text of the ligature (i.e. "sun" for the sun-glyph). Ligatures are still available though. I also slightly adjusted some of the old icons. 
+
+### New icons
+<div class="text_sample" style="display:flex; flex-wrap:wrap; justify-content:center; flex-direction: row; margin:0em">
+
+  <div class='Entryicon'><p>play</p></div>
+  <div class='Entryicon'><p>pause</p></div>
+  <div class='Entryicon'><p>stop</p></div>
+  <div class='Entryicon'><p>voldown</p></div>
+  <div class='Entryicon'><p>volup</p></div>
+  
+</div>
