@@ -48,7 +48,7 @@ module.exports = config => {
         )
   );
 
-  // typeface-collection (in src/typetester)
+  // typeface-collection (in src/articles/typetester)
   config.addCollection('typefaces', collection =>
     collection
       .getFilteredByGlob('./src/articles/**/*typetester.md')
@@ -64,6 +64,25 @@ module.exports = config => {
           isNaN(a.data.date) ? 0 : a.data.date, 
           isNaN(a.data.updateDate) ? 0 : a.data.updateDate) 
         )
+  );
+
+  // tools collection (in src/tools)
+  config.addCollection('tools', collection =>
+    collection
+      .getFilteredByGlob('./src/webAppsIndex/indexBase/*_tool.md') //to be seen, if this works
+      .filter(p => dev || (!p.data.draft && p.data.date <= now)) //need to change this filter to move updated content to the front
+      .sort((b,a) => 
+        // this assigns a pair b,a (change to a,b if reverse sorting) the following function
+        // the function picks the bigger of the updateDate and data.date and sorts accordingly
+        Math.max(
+          isNaN(b.data.date) ? 0 : b.data.date, 
+          isNaN(b.data.updateDate) ? 0 : b.data.updateDate) 
+          - 
+        Math.max(
+          isNaN(a.data.date) ? 0 : a.data.date, 
+          isNaN(a.data.updateDate) ? 0 : a.data.updateDate) 
+        )
+
   );
 
 
