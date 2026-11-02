@@ -20,7 +20,12 @@
     <span class="subtitle"> {{subtitle}}</span> 
   </h1>
   <div class="content_container center_content_container">
-    <div class="page_content flow">
+    {#Tools uses the full width, while readable pages are smaller#}
+    {% if toolslist%}
+      <div class="tools_content flow">
+    {% else %}
+      <div class="page_content flow">
+    {% endif %}
       {{ content | safe }} 
       {# postlist and pagelist are alias for the lists defined in frontmatter of the collection making up the page #}
       {% if pagelist %}

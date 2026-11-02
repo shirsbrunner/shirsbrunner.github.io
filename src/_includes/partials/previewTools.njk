@@ -1,6 +1,6 @@
-{# this is the blog-preview as shown on the pagelist #}
+{# this is the tools-preview as shown on the toolslist #}
 
-  <article class="article_preview card_back">
+  <article class="tool_preview card_back">
     {# This could be some glyph or image - if we feel like doing this 
     <div class="small_preview_image" aria-hidden="true">
       {% if post.data.previewImage %} 
@@ -13,7 +13,7 @@
     <div class="preview_content">
       <h2>
         {# this adds the title-link - the link to the webapp in this case #}    
-      <a href="{{ post.url }}" class="breakout-link">{{ post.data.title }}</a></h2>
+      <a href="{{ post.data.urlbase }}" class="breakout-link">{{ post.data.title }}</a></h2>
 
       <div class="tag_group">
         <p class ="time">

@@ -177,6 +177,13 @@ main{ /*-- do we need to adjust this? --*/
   color: var(--darkGrey);  
 }
 
+.tools_content{
+  flex: 0 1 1024px; /*flexbox shorthand for grow, shrink, initial width, or max width. No need for min-Width as flexbox controls it*/
+  max-width: 1024px;
+  /*margin-top: var(--space-xl);*/
+}
+
+
 /*-- end of structure *--/
 
 /*-- own webfonts --*/
@@ -348,7 +355,7 @@ h2, .ad_headerincrement h3{
 }
 */
 
-/*The card on the start page*/
+/*The card on the start page and everywhere else*/
 .card_back{
   /*background-color: var(--lightGrey);*/
   padding: var(--space-xs);
@@ -471,6 +478,13 @@ blockquote p {
   /*gap: var(--space-m); */
 }
 
+.toolslist{ /*-- the list on the tools-page--*/
+  display:flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  gap: var(--space-m); 
+}
+
 .article_preview {/*-- the box containing the article preview --*/
   /*margin: 0px 0px var(--space-m) 0px; /* maybe adjust to dynamic sizing */ 
   position: relative; /*needed for the breakout-link*/
@@ -482,6 +496,16 @@ blockquote p {
 
 .article_preview > p {
   margin:0px 0px var(--space-3xs) 0px;
+}
+
+.tool_preview { /*-- the box containing the preview of a single tool --*/
+  position: relative; /*needed for the breakout-link*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center; 
+  gap: var(--space-m);
+  flex-basis: calc((1024px - 2 * (var(--space-m) + var(--space-s-2xs)))/3);
+  flex-grow: 1; 
 }
 
 /*the image for the preview*/
