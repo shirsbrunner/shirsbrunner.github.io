@@ -10,17 +10,24 @@
       {% endif %}
     </div>
     #}
-    <div class="preview_content">
-      <h2>
-        {# this adds the title-link - the link to the webapp in this case #}    
-      <a href="{{ post.data.urlbase }}" class="breakout-link">{{ post.data.title }}</a></h2>
+    <div class="preview_content flex_gap_link">
+      <div>
+        <h2>
+          {# this adds the title-link - the link to the webapp in this case #}    
+          {{ post.data.title }}
+        </h2>
 
-      <div class="tag_group">
-        <p class ="time">
-        {% if post.data.date %}<time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time>{% endif %}
-        {% if post.data.updateDate %} and updated on: <time datetime="{{ post.data.updateDate | dateymd }}">{{ post.data.updateDate | datefriendly }}</time>{% endif %}
+        <div>
+          <p class ="time">
+          {% if post.data.date %}Published: <time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time>{% endif %} </p>
+          <p class ="time">
+          {% if post.data.updateDate %} Updated: <time datetime="{{ post.data.updateDate | dateymd }}">{{ post.data.updateDate | datefriendly }}</time>{% endif %}
+        </div>
+        <p>{{ post.data.description }}</p>
       </div>
-      <p>{{ post.data.description }}</p>
+
+      <a href="{{ post.data.urlbase }}" aria-label="start {{ post.data.title }}"class="breakout-link">Start webapp</a>
+
     </div>
 
 

@@ -531,6 +531,14 @@ blockquote p {
   flex-shrink:1;
 }
 
+/*eventually merge this with the above, if all cards use a descriptive link at the bot*/
+.flex_gap_link{
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  gap:var(--space-s)
+}
+
 .article_preview_nav{ /*-- the nav in the preview articles --*/
   display:flex;
   align-items: flex-end;
