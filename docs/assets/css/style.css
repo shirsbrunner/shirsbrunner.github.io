@@ -226,8 +226,8 @@ main{ /*-- do we need to adjust this? --*/
 
 @font-face {
   font-family: 'miyconos';
-  src: url('/fonts/structural/miyconos-webfont.woff2') format('woff2'),
-       url('/fonts/structural/miyconos-webfont.woff') format('woff');
+  src: url('/fonts/structural/ADMiyconosNG-Regular.woff2') format('woff2'),
+       url('/fonts/structural/ADMiyconosNG-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

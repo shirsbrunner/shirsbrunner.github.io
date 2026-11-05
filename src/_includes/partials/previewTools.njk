@@ -25,9 +25,14 @@
         </div>
         <p>{{ post.data.description }}</p>
       </div>
-
+      <div>
+            <span class="headericon" data-icon="
+        {# this adds the icon #}
+        {{ post.data.icon}}
+        ">
+      </span>
       <a href="{{ post.data.urlbase }}" aria-label="start {{ post.data.title }}"class="breakout-link">Start webapp</a>
-
+      </div>
     </div>
 
 

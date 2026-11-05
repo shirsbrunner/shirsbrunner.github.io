@@ -26,8 +26,8 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
 
 @font-face {
   font-family: 'miyconos_post';
-  src: url('/articles/20210625_Type_Miyconos/ADMiyconosNG-Regular.woff2') format('woff2'),
-       url('/articles/20210625_Type_Miyconos/ADMiyconosNG-Regular.woff') format('woff');
+  src: url('/articles/20210625_Type_Miyconos/Article_ADMiyconosNG-Regular.woff2') format('woff2'),
+       url('/articles/20210625_Type_Miyconos/Article_ADMiyconosNG-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
