@@ -96,7 +96,7 @@ body {
     color: var(--darkGrey);
     align-items:center;
 
-    /*Font-Weights for variable fonts*/
+    /*Font-Weights for variable fonts - note, that this overrides everything where not set*/
     --font-weight-time:calc(500*var(--fontWeightFactor));
     --font-weight-heading:calc(700*var(--fontWeightFactor));
     --font-weight-body-copy:calc(220*var(--fontWeightFactor));
@@ -896,6 +896,7 @@ hr{ /*a horizontal rule*/
 .textpreviewsample{
   font-size: var(--step-5);
   line-height:100%;
+  font-weight: 400; 
 }
 
 .typepreview a {
