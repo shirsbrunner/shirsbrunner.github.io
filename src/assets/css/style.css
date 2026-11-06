@@ -832,6 +832,49 @@ button.dmbtntoggler {
     background-color: var(--middleGrey);
   }
 }
+/*The mobile Menu Button and the other menu*/
+
+@media screen and (width <= 700px){
+  .mobileMenu{
+    display:block; 
+  }
+  .desktopMenu {
+    display:none; 
+  }
+}
+
+@media screen and (width > 700px){
+  .mobileMenu {
+    display:none; 
+  }
+  .desktopMenu {
+    display:block; 
+  }
+}
+
+/*The mobile Menu Button styling*/
+button#menuButton {
+  background-color:var(--buttonRed);
+  border: 1px solid var(--darkGrey);
+  border-radius: 3px; 
+  color: var(--buttonText);
+  min-height: 40px;
+  min-width: 40px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /*margin: 4px 8px;*/
+  cursor: pointer;
+  font-family: 'miyconos';
+}
+
+@media (hover: hover) {
+  button#menuButton:hover{
+    color: var(--backgroundColor);
+    background-color: var(--middleGrey);
+  }
+}
+
 
 .divider{
   display:flex; 

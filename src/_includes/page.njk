@@ -6,7 +6,18 @@
       <a href="/">
       <img class="logo" src="/images/structural/Logo_48.png" alt="Home, Pagelogo showing the Hirschlbrummbär">
       </a>
-      {% navlist collections.all | eleventyNavigation, page, 1 %}
+      <div>
+        <div class="desktopMenu"> {#Desktop-Nav#}
+          {% navlist collections.all | eleventyNavigation, page, 1 %}
+        </div>
+        <div class="mobileMenu"> {#Mobile-Nav#}
+          <button id="menuButton" title="Menu">menu</button>
+          <dialog id="mobileMenuDialog" autofocus>
+            {% navlist collections.all | eleventyNavigation, page, 1 %}
+            <button id="menuCloseButton">close</button>
+          </dialog>
+        </div>
+      <div>
     </nav>
   </header>
 </div>
