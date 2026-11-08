@@ -1,0 +1,15 @@
+{#This is the Menu, that is shown on a Mobile-Screen#}
+<dialog id="mobileMenuDialog" autofocus>
+    <div class="nav_top">
+        <a href="/">
+            <img class="logo" src="/images/structural/Logo_48.png" alt="Home, Pagelogo showing the Hirschlbrummbär">
+        </a>
+        <button id="menuCloseButton" class="iconButton" title="Close menu">fish</button>
+    </div>
+    <div class="navDialogContent">
+        <h1>
+            <span class="big_text">Menu</span>
+        </h1>
+        {% navlist collections.all | eleventyNavigation, page, 1 %}
+    </div>
+</dialog>

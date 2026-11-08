@@ -11,11 +11,8 @@
           {% navlist collections.all | eleventyNavigation, page, 1 %}
         </div>
         <div class="mobileMenu"> {#Mobile-Nav#}
-          <button id="menuButton" title="Menu">menu</button>
-          <dialog id="mobileMenuDialog" autofocus>
-            {% navlist collections.all | eleventyNavigation, page, 1 %}
-            <button id="menuCloseButton">close</button>
-          </dialog>
+          <button id="menuButton" class="iconButton" title="Menu">menu</button>
+          {% include "partials/mobileMenuDialog.njk" %}
         </div>
       <div>
     </nav>

@@ -832,10 +832,10 @@ button.dmbtntoggler {
     background-color: var(--middleGrey);
   }
 }
-/*The mobile Menu Button and the other menu*/
+/*The mobile Menu Button and the other menu - responsive Sizes*/ 
 
-@media screen and (width <= 700px){
-  .mobileMenu{
+@media screen and (width <= 1000px){
+  .mobileMenu {
     display:block; 
   }
   .desktopMenu {
@@ -843,7 +843,7 @@ button.dmbtntoggler {
   }
 }
 
-@media screen and (width > 700px){
+@media screen and (width > 1000px){
   .mobileMenu {
     display:none; 
   }
@@ -852,8 +852,8 @@ button.dmbtntoggler {
   }
 }
 
-/*The mobile Menu Button styling*/
-button#menuButton {
+/*The mobile Menu Trigger Button styling*/
+button.iconButton {
   background-color:var(--buttonRed);
   border: 1px solid var(--darkGrey);
   border-radius: 3px; 
@@ -869,12 +869,38 @@ button#menuButton {
 }
 
 @media (hover: hover) {
-  button#menuButton:hover{
+  button.iconButton:hover{
     color: var(--backgroundColor);
     background-color: var(--middleGrey);
   }
 }
 
+#mobileMenuDialog{
+  max-width:100vw; 
+  max-height:100vh; 
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0px var(--space-s-2xs); 
+}
+
+/*This is where the nav lives in the dialog menu*/
+.navDialogContent{
+    flex: 0 1 690px; /*flexbox shorthand for grow, shrink, initial width, or max width. No need for min-Width as flexbox controls it*/
+    max-width: 690px;
+}
+
+.navDialogContent > ul {
+  all: revert;
+  display:flex; 
+  flex-direction:column;
+}
+
+.navDialogcontent > ul > li {
+  all: revert; 
+}
+
+/*END OF MOBILE MENU*/
 
 .divider{
   display:flex; 
