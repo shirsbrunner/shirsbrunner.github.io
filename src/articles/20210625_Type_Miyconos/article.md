@@ -2,7 +2,7 @@
 title: Icons & Ligatures - Creating an icon font
 description: There are icon fonts available, but you can make your own and learn about ligatures among other things
 date: 2021-06-25
-updateDate: 2026-10-24
+updateDate: 2026-11-08
 evolution: 2
 urlbase: '/articles/20210625_Type_Miyconos/'
 previewImage: Miyconos-Preview.png
@@ -26,8 +26,8 @@ Let me know if you want to use the icons for anything and/or if you miss a speci
 
 @font-face {
   font-family: 'miyconos_post';
-  src: url('/articles/20210625_Type_Miyconos/Article_ADMiyconosNG-Regular.woff2') format('woff2'),
-       url('/articles/20210625_Type_Miyconos/Article_ADMiyconosNG-Regular.woff') format('woff');
+  src: url('/articles/20210625_Type_Miyconos/ADMiyconosNG-Regular.woff2') format('woff2'),
+       url('/articles/20210625_Type_Miyconos/ADMiyconosNG-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -144,5 +144,17 @@ New icons! I needed some additional icons for play/pause/stop/volume in the radi
   <div class='Entryicon'><p>stop</p></div>
   <div class='Entryicon'><p>voldown</p></div>
   <div class='Entryicon'><p>volup</p></div>
+  
+</div>
+
+## Update 2026-11-08
+Icon update - this time for the mobile menu and the new "Tools" section. The wave-icon is based on a traditional Japanese pattern. I've also been tweaking existing icons. 
+
+### New icons
+<div class="text_sample" style="display:flex; flex-wrap:wrap; justify-content:center; flex-direction: row; margin:0em">
+
+  <div class='Entryicon'><p>wave</p></div>
+  <div class='Entryicon'><p>menu</p></div>
+  <div class='Entryicon'><p>close</p></div>
   
 </div>
