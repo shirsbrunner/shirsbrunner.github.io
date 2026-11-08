@@ -813,28 +813,6 @@ footer{
   gap: var(--space-xs);
 }
 
-/*the darkmode-toggle button*/
-button.dmbtntoggler {
-  background-color:var(--buttonRed);
-  border: 1px solid var(--darkGrey);
-  border-radius: 3px; 
-  color: var(--buttonText);
-  min-height: 40px;
-  min-width: 40px; 
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  /*margin: 4px 8px;*/
-  cursor: pointer;
-  font-family: 'miyconos';
-}
-
-@media (hover: hover) {
-  button.dmbtntoggler:hover{
-    color: var(--backgroundColor);
-    background-color: var(--middleGrey);
-  }
-}
 /*The mobile Menu Button and the other menu - responsive Sizes*/ 
 
 @media screen and (width <= 1000px){
@@ -855,7 +833,7 @@ button.dmbtntoggler {
   }
 }
 
-/*The mobile Menu Trigger Button styling*/
+/*All Icon Buttons - mobile Menu Trigger Button, Darkmode-Toggler*/
 button.iconButton {
   background-color:var(--buttonRed);
   border: 1px solid var(--darkGrey);
@@ -884,16 +862,29 @@ button.iconButton {
   width: 100%;
   height: 100%;
   border: none;
+  padding:0px; 
+}
+
+.reverseFlex{
+  flex-direction: row-reverse;
+}
+
+.mobileMenuHeaderContainer{
+  border-bottom: 0.5px solid var(--middleGrey);
   padding: 0px var(--space-s-2xs); 
 }
 
 /*This is where the nav lives in the dialog menu*/
 .navDialogContent{
-    flex: 0 1 690px; /*flexbox shorthand for grow, shrink, initial width, or max width. No need for min-Width as flexbox controls it*/
-    max-width: 690px;
+  padding: 0px var(--space-s-2xs);
+  display:flex;
+  align-items:center;
+  flex-direction:column;
 }
 
 .navDialogContent > ul {
+  flex: 0 1 690px; /*flexbox shorthand for grow, shrink, initial width, or max width. No need for min-Width as flexbox controls it*/
+  /*max-width: 690px;*/
   display:flex; 
   flex-direction:column;
   gap: var(--space-xs);

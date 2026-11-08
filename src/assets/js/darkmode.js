@@ -1,15 +1,17 @@
-const DM_BTN = document.querySelector(".dmbtntoggler");
+const DM_BTN = document.getElementById("dmbtntoggler");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const currentTheme = localStorage.getItem("theme"); //checks for previously saved darkmode
 
 if (currentTheme == "dark"){
   //toggle the dark theme
   document.documentElement.classList.toggle("dark");
-  document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "sun";
+  //document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "sun";
+  DM_BTN.innerHTML = "sun";
 } else if (currentTheme == "light") {
   //toggle light
   document.documentElement.classList.toggle("light");
-  document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "moon";
+  //document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "moon";
+  DM_BTN.innerHTML = "moon";
 }
 
 // Listen for a click on the button 
@@ -35,9 +37,11 @@ DM_BTN.addEventListener("click", function() {
     }
      /*toggle the icon*/ 
     if(theme == "dark"){
-      document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "sun";
+      //document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "sun";
+      DM_BTN.innerHTML = "sun";
     } else {
-      document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "moon";
+      //document.getElementsByClassName("dmbtntoggler")[0].innerHTML = "moon";
+      DM_BTN.innerHTML = "moon";
     }
 
     //save the current seting
