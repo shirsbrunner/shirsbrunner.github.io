@@ -5,7 +5,7 @@ description: What I do all day long.
 layout: about.njk
 updateDate: 2026-04-19
 eleventyNavigation:
-  key: about
+  key: About
   order: 900
 ---
 

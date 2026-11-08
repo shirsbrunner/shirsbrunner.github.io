@@ -4,7 +4,7 @@ subtitle: Useful and distracting things
 description: Some tools for rare use cases
 layout: page.njk
 eleventyNavigation:
-  key: tool
+  key: Tools
   order: 400
 pagination:
   data: collections.tools

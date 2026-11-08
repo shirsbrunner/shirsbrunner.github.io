@@ -4,7 +4,7 @@ subtitle:  Making things that look like glyphs
 description: A place to play around with typefaces
 layout: page.njk
 eleventyNavigation:
-  key: type
+  key: Type
   order: 300
 pagination:
   data: collections.typefaces

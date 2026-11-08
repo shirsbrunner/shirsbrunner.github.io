@@ -16,4 +16,7 @@ menuCloseButton.addEventListener("click", () => {
   mobileMenuDialog.close();
 });
 
-// TODO: Close on resize
+// TODO: Close on resize else, switching to landscape eliminates interaction...
+window.addEventListener('resize', function(event){
+  mobileMenuDialog.close(); 
+});
