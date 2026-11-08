@@ -661,14 +661,16 @@ blockquote p {
   padding: calc(var(--space-xs)*1.1) var(--space-s) calc(var(--space-xs)*0.9);
   text-decoration: none;
   border-radius: var(--space-xs);/*99px;*/
+  border: 1px solid transparent;  
 }
 
 nav ul li a:hover { /*non selected hovered list elements*/
-  background-color: var(--darkGrey);
-  color: var(--backgroundColor);
+  background-color: var(--lightGrey);
+  color: var(--darkGrey);
+  border: 1px solid var(--darkGrey);
 }
 
-.active { /*the active list elements (that are not a link)*/
+.active { /*the active nav list elements (that are not a link)*/
   display: block;
   color: var(--backgroundColor);
   text-align: center;
@@ -677,6 +679,7 @@ nav ul li a:hover { /*non selected hovered list elements*/
   border-radius: var(--space-xs); /*99px*/ 
   text-decoration: none;
   background-color: var(--darkGrey);
+  border: 1px solid transparent;  
 }
 
 .button{ /*-- we need this --*/
@@ -891,13 +894,25 @@ button.iconButton {
 }
 
 .navDialogContent > ul {
-  all: revert;
   display:flex; 
   flex-direction:column;
+  gap: var(--space-xs);
+  padding:0px; 
 }
 
-.navDialogcontent > ul > li {
-  all: revert; 
+.navDialogContent li a {
+  text-align: left; 
+  border-bottom: 1px solid var(--darkGrey);
+  border-radius: 0px;
+}
+
+.navDialogContent li a:hover {
+  border-radius: var(--space-xs);
+}
+
+.navDialogContent li.active {
+  text-align: left; 
+  border-bottom: 1px solid transparent;
 }
 
 /*END OF MOBILE MENU*/
