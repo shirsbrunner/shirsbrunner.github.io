@@ -1,0 +1,25 @@
+Todo: 
+- [x] Use a reset-css for easy blocking of unwanted styles...
+- [x] Change Fonts (Megaperls, new Miyconos)
+- [x] Responsive typography (add utopia)
+- [x] Replace all instances with dynamic spacing and type - more or less
+- [x] Dynamic die size - maybe put dice in grid? - Should be fixed now - check later.
+- [x] Info into modal
+- [x] Add "flow"
+- [x] fix manualSizeContainer (hidden and flexbox don't work well together) - does not work in chrome / Safari at the moment
+probably needs a flexbox move... or some additional container that0s not the flex container...
+- [x] Autofocus Input field given Selection "other"
+- [x] Buttons need a Focus-Style
+- [x] What does the screenreader say... - added an aria-live region - dice need better alt text - should be better now
+- [ ] Add Hover prevention for touch devices
+
+Might not fix this...
+- [ ] hiding the Input field works now, but the input-field is 15px high in chromium based browsers... (Safari, firefox oke) why o why
+
+Additional features:
+- [ ] max-button-size should be set to 9999 and at least 1... - this is a bit of code, I guess - add rails
+- [ ] Improve the service worker (Keep dice, Keep states, when app closes) - QOL-Improvement
+- [ ] HP-Counters, that allow to increment / decrement on click (i.e., a die with a +/- next to it)
+- [ ] Remove a single die
+- [ ] Create custom groups / areas / tabs for different things (i.e. health-counters, dice-groups for different heroes)
+- [ ] Monospacing Dice-Rolls and labels? If possible to make it easier to read - this would need a new typeface...
