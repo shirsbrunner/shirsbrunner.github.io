@@ -2,12 +2,11 @@
 // but... what does it need to do? 
 // https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Service_workers
 
-const VERSION = "v1.6"; //update this to increase version
+const VERSION = "v1.7"; //update this to increase version
 const CACHE_NAME = `DigiDice-${VERSION}`; //name of the cache, increases with version
 const assetsToCache = [ //stuff it should cache
     '.',
     'index.html',
-    'manifest.json',
     //'pages/',
     //'pages/info.html',
     //'images/',
@@ -24,7 +23,7 @@ const assetsToCache = [ //stuff it should cache
     'fonts/Segunda-Bold.woff2',
     'fonts/Slicer-Regular.woff',
     'fonts/Slicer-Regular.woff2',    
-    'style.css'
+    'css/style.css'
 ]
 
 self.addEventListener('install', ( event ) => {

@@ -5,36 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"/> -->
     <title>DCounter</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="manifest" href="manifest.json"/>
     <link rel="icon" type="image/png" href="images/LogoD-512x512.png">
     <script src="app.js" defer></script> <!-- this starts the app-script, that subscribes the worker -->
   </head>
-  <body>
-  <div class="sameRow">
+  <body class="flow">
     <h1>DigiDice</h1>
-    <!--<a href="pages/info.html" class="button">?</a>-->
-  </div>
     <!--<hr class="dotted">-->
     <!-- <h2>This is the App</h2> -->
         <div id="sizeSelector" class="borderContainer">
           
             <div class="sameRowCondense">
               <div class="formColumn">
-                <label id="preset_label" for="presetDiceSize">Select dice size</label> <!--attach correctly!-->
+                <label id="preset_label" for="presetDiceSize">Select die size</label> <!--attach correctly!-->
                 <div class="selectdiv">
                   <select id="presetDiceSize" aria-labelledby="preset_label" onchange="getProgressive(value)">
-                      <option disabled selected value>select option</option>
-                      <option value="6">6 sides</option>
+                      <!--<option disabled selected value>select option</option>-->
+                      <option selected value="6">6 sides</option>
                       <option value="10">10 sides</option>
                       <option value="12">12 sides</option>
                       <option value="other">Custom</option>
                   </select>
                 </div>
               </div>
-              <div class="formColumn, hidden" id="manualSizeContainer">
-                <label id="custom_label" for="manualDiceSize">1-9999</label>
-                <input type="number" id="manualDiceSize" aria-labelledby="custom_label" min="1" max="9999">
+              <div id="mscWrapper" class="flexWrapper hidden">
+                <div class="formColumn" id="manualSizeContainer">
+                  <label id="custom_label" for="manualDiceSize">1-9999</label>
+                  <input type="number" id="manualDiceSize" aria-labelledby="custom_label" min="1" max="9999">
+                </div>
               </div>
               <div class="formColumn">
                 <label id="icon_label" for="diceIcon">Iconize</label>
@@ -46,59 +46,73 @@
                       <option value="fish">Fish</option>
                       <option value="oneup">Mushroom</option>
                       <option value="flash">Flash</option>  
-                      <option value="smile">Smiley</option>                      
+                      <option value="happy">Happy</option>                      
                       <option value="flower">Flower</option>                      
                       <option value="moon">Moon</option>
                       <option value="peace">Peace</option>                      
                   </select>                
                 </div>
               </div>              
-              <button class="button" onclick="buttonBuildDice()">Add dice!</button>
+              <button class="button smallTextButton" type="button" onclick="buttonBuildDice()">Add die!</button>
             </div> 
         </div>
         <!-- <hr class="dotted"> -->
-        <div id="diceArea" class="hidden">
+        <div id="diceArea" class="hidden flow">
           <div class="sameRow">
             <h2>Let's Roll</h2>
             <div class="rollerButtonArea" id="rollerButton">
-              <button id="RollAllButton" class="button" class="hidden" onclick="rollAllDice()">Roll all dice!</button>        
+              <button id="RollAllButton" class="button smallTextButton" type="button" class="hidden" onclick="rollAllDice()">Roll all dice!</button>        
             </div>
           </div>
-          <div class="diceRollerArea" id="target">
+          <!--should this be assertive? It's rolling dice, hence it might be relevant?-->
+          <div class="diceRollerArea" id="target" aria-live="assertive" aria-relevant="all">
             <!-- this is where the dynamic stuff happens-->
           </div>
           <div id="cancelator" class="hidden">
-            <button onclick="resetAll()" class="button">Remove all!</button>
+            <button onclick="resetAll()" class="button smallTextButton" type="button">Remove all!</button>
           </div>
         </div>
-        <div id="rollLog" class="hidden">
+        <div id="rollLog" class="hidden flow">
           <hr class="dotted">
           <h2>Roll History</h2>
           <div id="history_lines"></div>
         </div>
         <!-- info-corner starts here -->
         <hr class="dotted">
-        <button id="showInfo" class="button borderless" onclick="toggleHide('infoCorner')">Toggle info</button>
-        <div id="infoCorner" class="hidden">
-          <h2>What the app does</h2>
-          <p>It's a simple pwa to roll dice of different sizes</p>
-          <p>Features include
-            <ul>
-              <li>Create dice from presets</li>
-              <li>Create dice from input</li>
-              <li>Roll one or multiple dice</li>
-              <li>See a list of past rolls to prevent cheating</li>
-              <li>Add an icon to your dice</li>
-            </ul>
-          </p>
-          <p>Missing: A11Y check, deleting / undo a single dice, stay tuned for future updates.</p>
-        <h2>PWA intro</h2>
-          <p>DigiDies was built to learn more about PWAs.</p>
-          <p>A PWA is a progressive web app - basically a programm running in the Browser. A PWA can be installed from different browsers and used offline.</p>
-          <p>Service workers ensure that it works offline, caching things. If done correctly, they should automatically update things as soon as there is web access</p>
-          <p>Uninstall it like any web app</p>
-        <h2>Questions?</h2>
-          <p>Drop me a line: <a href="https://artisandelux.ch">artisandelux</a></p>
+        <div class="footer">
+        <!-- info-corner starts here -->
+          <button id="showInfo" class="button borderless" type="button">About</button>
+          <dialog id="infoCorner" autofocus>
+            <div class="dialogContainer">
+              <header>
+                <h1>Info</h1>
+              </header>
+              <div class="dialogContent flow">
+              <h2>What the app does</h2>
+              <p>It's a simple pwa to roll dice of different sizes</p>
+              <p>Features include
+                <ul>
+                  <li>Create dice from presets</li>
+                  <li>Create dice from input</li>
+                  <li>Roll one or multiple dice</li>
+                  <li>See a list of past rolls to prevent cheating</li>
+                  <li>Add an icon to your dice</li>
+                </ul>
+              </p>
+              <p>Missing: A11Y check, deleting / undo a single dice, stay tuned for future updates.</p>
+            <h2>PWA intro</h2>
+              <p>DigiDies was built to learn more about PWAs.</p>
+              <p>A PWA is a progressive web app - basically a programm running in the Browser. A PWA can be installed from different browsers and used offline.</p>
+              <p>Service workers ensure that it works offline, caching things. If done correctly, they should automatically update things as soon as there is web access</p>
+              <p>Uninstall it like any web app</p>
+            <h2>Questions?</h2>
+              <p>Drop me a line: <a href="https://artisandelux.ch">artisandelux</a></p>
+              </div>
+              <div class="buttonList">
+                <button id="closeInfo" class="button borderless">close</button>
+              </div>
+            </div>  
+          </dialog>
         </div>
   </body>
 </html>

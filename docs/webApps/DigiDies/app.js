@@ -1,8 +1,7 @@
 
 // Registering Service Worker
-// regarding scope: https://stackoverflow.com/questions/47486756/can-i-have-multiple-pwas-on-the-same-domain-under-different-url-paths
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js'); //was , {scope: './'} or within '../DigiDies/'
+    navigator.serviceWorker.register('./sw.js');
   }
 
 
@@ -46,6 +45,7 @@ function buttonBuildDice(){
 }
 
 /* this actually creates the dice */
+
 function createDice(diceSize, selectedIcon){
   /*toggleHide("sizeSelector");*/
   showID("diceArea");
@@ -68,6 +68,12 @@ function createDice(diceSize, selectedIcon){
   //diceOutcome.innerHTML = "click";
   diceOutcome.addEventListener('click', function(){rollDice(diceOutcome.id, false)});
 
+  //make an ARIA-Label
+  /*TODO This needs a described by to show "Die 1 star 500 is a 222" Thus "Die 2 sun 600 is a 15"
+  This should also update during a roll*/
+  let aria_label = diceSize+" die ID "+currentDiceCount+", "+selectedIcon+", is not rolled yet";
+  diceOutcome.setAttribute('aria-label', aria_label);
+
   //now append a count element or something
   let diceFaceCountBatch = document.createElement("div");
   diceFaceCountBatch.className ="diceFaceCountBatch";
@@ -76,12 +82,14 @@ function createDice(diceSize, selectedIcon){
   //also add a rollOutcomeElement or something
   let rollOutcomeElement = document.createElement("div");
   rollOutcomeElement.className ="rollOutcomeElement";
-  rollOutcomeElement.innerHTML="click";
+  rollOutcomeElement.innerHTML="roll";
 
   //bottom spacer
   let dicerBot = document.createElement("div");
   dicerBot.className ="dicerBot";
   dicerBot.innerHTML=selectedIcon;
+
+
 
   //Attach stuff to the button
   diceOutcome.appendChild(diceFaceCountBatch);
@@ -111,16 +119,22 @@ function rollAllDice(){
 function rollDice(dice, rollAll){
   // get the element of the dice
   let diceToRoll = document.getElementById(dice);
+  let facecount = diceToRoll.dataset.facecount;
+  let diceLogo = diceToRoll.getElementsByClassName("dicerBot")[0].innerHTML;
+  let diceID = diceToRoll.id.substring(10);//TODO: get the ID for the dice alt text - i.e., the 2 in singleDice2
   // get the dice value of the dice
-  if (diceToRoll.dataset.facecount > 0){
-    outcome = getRandomInt(diceToRoll.dataset.facecount);
+  if (facecount > 0){
+    outcome = getRandomInt(facecount);
+
+    //Fix Aria label after roll
+    let aria_label = facecount+" sided die ID "+diceID+", "+diceLogo+", shows "+outcome;
+    diceToRoll.setAttribute('aria-label', aria_label);
   }
   else {
     outcome = "-"
+    let aria_label = "Die with no sides can't be rolled";
+    diceToRoll.setAttribute('aria-label', aria_label);
   }
-  
-  // roll the dice
-  let diceOutcome = document.getElementById(dice); //is expecting something like "singleDice"
   
   /* would be nice, to have a little animation here
   */
@@ -132,7 +146,7 @@ function rollDice(dice, rollAll){
     duration: 500 //if only duration is specified, only 1 iteration is made
     }
   );
-  diceOutcome.getElementsByClassName("rollOutcomeElement")[0].innerHTML = outcome;
+  diceToRoll.getElementsByClassName("rollOutcomeElement")[0].innerHTML = outcome;
 
   /* single roll documentation*/
   if(!rollAll){
@@ -192,11 +206,32 @@ function getHumanTime(timestamp){
 /*progressive disclosure for the input-field*/
 function getProgressive(selection) { 
   if (selection === "other") {
-    showID("manualSizeContainer")
+    showID("mscWrapper");/*"manualSizeContainer")*/
+    /*focus the Input-Element within within*/
+    document.getElementById("manualDiceSize").focus(); 
   } else {
-    hideID("manualSizeContainer");
+    hideID("mscWrapper");/*"manualSizeContainer")*/
   }
 }
+
+/* ---------------------------------
+Dialog-Stuff, based on 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+--------------------------------- */
+const infoDialog = document.getElementById("infoCorner");
+const infoShowButton = document.getElementById("showInfo");
+const infoCloseButton = document.getElementById("closeInfo");
+
+// "Show the dialog" button opens the dialog modally
+infoShowButton.addEventListener("click", () => {
+  infoDialog.showModal();
+});
+
+// "Close" button closes the dialog
+infoCloseButton.addEventListener("click", () => {
+  infoDialog.close();
+});
+
 
 /* ---------------------------------
 Hiding things from the DOM: 
@@ -228,6 +263,8 @@ function resetAll(){
     target.removeChild(target.firstChild);
   }
   toggleHide("diceArea")
+  // put focus on where to add dice to restart again
+  document.getElementById("presetDiceSize").focus();
 }
 
 /*
