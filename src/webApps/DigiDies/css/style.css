@@ -228,12 +228,14 @@ Stuff with the dice - Buttons built dynamically
 }
 
 /* On mouse-over, add a grey background color */
+@media (hover: hover) {
 .singleDice:hover {
     color:var(--background); 
     background-color: var(--lightblue);
     border-color: var(--darkblue);
     background-size: 300%;
     background-position-x: 100%;
+}
 }
 
 /* Button pressed*/
@@ -389,14 +391,18 @@ select::-ms-expand {
     color:var(--darkblue) !important; 
 }
 
+@media (hover: hover) {
 .borderless.button:hover {
     color:var(--accent)!important;
 }
+}
 
+@media (hover: hover) {
 .button:hover {
     color:var(--background); 
     background-color: var(--lightblue);
     border-color: var(--darkblue);
+}
 }
 
 .button:active {
@@ -407,19 +413,21 @@ select::-ms-expand {
 }
 
  /* unvisited link */
- a:link {
+a:link {
     color: var(--accent);
-  }
+}
   
   /* visited link */
-  a:visited {
+a:visited {
     color: var(--lightblue);
-  }
+}
   
   /* mouse over link */
+@media (hover: hover) {
   a:hover {
     color: var(--darkblue);
   }
+}
   
   /* selected link */
   a:active {
