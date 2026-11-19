@@ -2,6 +2,7 @@
 title: Alea iacta est
 description: Building a simpler PWA
 date: 2024-01-28
+updateDate: 2026-11-19
 evolution: 2
 urlbase: '/articles/20240128_progression/'
 previewImage: Digidies-Preview.png
@@ -66,6 +67,14 @@ The basic PWA and Service worker is based on info on these sites (regarding PWA 
 - [Mozilla dev intro to PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Secure_connection)
 - [Mozilla regarding service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 - [Web.dev regarding service workers](https://web.dev/learn/pwa/service-workers/)
+
+## Update 2026.11.19
+I've not been changing the dice app for years. Mainly because I didn't know how to properly scope the service workers and was making two different versions during initial production. 
+
+Well, building more PWAs, and eventually consulting [Jeremy Keiths book on progressive webapps](https://goingoffline.adactio.com/), these problems went away. The design of my PWA boilerplate changed a bit and I wanted to bring this back to the first one I published on this page. 
+
+The update to digidice includes fluid typography, updates to typefaces and some improvements towards better accessibility.
+The link is a bit further up or on the previously added [tools selection](/webAppsIndex/). 
 
 ## Todos
 - accept enter to submit the dice building form
